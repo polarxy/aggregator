@@ -5,299 +5,379 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国-纽约-001-1A, server: 45.135.135.229, port: 22077, type: vmess, uuid: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-003-1D, server: 45.135.135.229, port: 25009, type: vmess, uuid: 8113f899-1307-4122-9198-d3bcb268a7d3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇳🇱 荷兰-1B, server: flyhl.flylink.cyou, port: 35250, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyhl.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1C, server: 45.135.135.229, port: 33079, type: hysteria2, password: b2274026-4f6b-4f21-8b06-bbdbc30743a7, auth: b2274026-4f6b-4f21-8b06-bbdbc30743a7, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1E, server: 45.135.135.229, port: 80, type: hysteria2, password: 6e1e078f-2195-40dc-bcb5-3d06994206cc, auth: 6e1e078f-2195-40dc-bcb5-3d06994206cc, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-003-1C, server: 45.135.135.229, port: 25009, type: vmess, uuid: b2274026-4f6b-4f21-8b06-bbdbc30743a7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1B, server: 45.135.135.229, port: 33079, type: hysteria2, password: 73d4cd16-b001-4df9-bd92-7b0f93891b19, auth: 73d4cd16-b001-4df9-bd92-7b0f93891b19, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1A, server: 45.135.135.229, port: 33079, type: hysteria2, password: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, auth: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇭🇰 香港-1C, server: xg.dashuai.cyou, port: 19901, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-纽约-001-1C, server: 45.135.135.229, port: 22077, type: vmess, uuid: b2274026-4f6b-4f21-8b06-bbdbc30743a7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1B, server: 45.135.135.229, port: 80, type: hysteria2, password: 73d4cd16-b001-4df9-bd92-7b0f93891b19, auth: 73d4cd16-b001-4df9-bd92-7b0f93891b19, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
-  - {name: 🇯🇵 日本-1B, server: flyrb.flylink.cyou, port: 35300, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyxg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇷🇺 俄罗斯-1A, server: flyels.flylink.cyou, port: 35270, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyels.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇹🇼 台湾2, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇨🇦 加拿大-1B, server: flyjnd.flylink.cyou, port: 35280, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyjnd.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇦🇺 澳大利亚原生1, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-纽约-HY-001-1B, server: 45.135.135.229, port: 31008, type: hysteria2, password: 73d4cd16-b001-4df9-bd92-7b0f93891b19, auth: 73d4cd16-b001-4df9-bd92-7b0f93891b19, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇹🇼 台湾1, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇩🇪 德国-1A, server: flydg.flylink.cyou, port: 35230, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flydg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇹🇭 泰国NO1, server: haa.dashuai.cyou, port: 45060, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇯🇵 日本NO.1, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-纽约-HY-001-1E, server: 45.135.135.229, port: 31008, type: hysteria2, password: 6e1e078f-2195-40dc-bcb5-3d06994206cc, auth: 6e1e078f-2195-40dc-bcb5-3d06994206cc, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇯🇵 日本-1A, server: flyrb.flylink.cyou, port: 35300, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyxg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇲🇾 马来西亚专线NO2, server: xdd.dashuai.cyou, port: 45059, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港-1A, server: flyxghy.flylink.cyou, port: 35260, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyxghy.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇨🇦 加拿大2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇲🇾 马来西亚专线NO1, server: haa.dashuai.cyou, port: 45058, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1D, server: 45.135.135.229, port: 80, type: hysteria2, password: 8113f899-1307-4122-9198-d3bcb268a7d3, auth: 8113f899-1307-4122-9198-d3bcb268a7d3, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-003-1B, server: 45.135.135.229, port: 25009, type: vmess, uuid: 73d4cd16-b001-4df9-bd92-7b0f93891b19, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇷🇺 俄罗斯-1B, server: flyels.flylink.cyou, port: 35270, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyels.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇳🇱 荷兰-1A, server: flyhl.flylink.cyou, port: 35250, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyhl.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇫🇷 法国2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇬🇧 英国1, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国NO.1, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港1-1B, server: flyxg.flylink.cyou, port: 35290, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyxg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1A, server: 45.135.135.229, port: 80, type: hysteria2, password: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, auth: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
-  - {name: 🇺🇸 美国-纽约-001-1D, server: 45.135.135.229, port: 22077, type: vmess, uuid: 8113f899-1307-4122-9198-d3bcb268a7d3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1D, server: 45.135.135.229, port: 33079, type: hysteria2, password: 8113f899-1307-4122-9198-d3bcb268a7d3, auth: 8113f899-1307-4122-9198-d3bcb268a7d3, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇫🇷 法国1, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇰🇷 韩国 专线NO1, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-003-1E, server: 45.135.135.229, port: 25009, type: vmess, uuid: 6e1e078f-2195-40dc-bcb5-3d06994206cc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇹🇭 泰国NO2, server: xdd.dashuai.cyou, port: 45061, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇰🇷 韩国-1B, server: flyhg.flylink.cyou, port: 35310, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyhg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇰🇷 韩国-1A, server: flyhg.flylink.cyou, port: 35310, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyhg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇭🇰 香港-1B, server: flyxghy.flylink.cyou, port: 35260, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyxghy.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇨🇦 加拿大1, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇮🇳 印度1, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇬🇧 英国2, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇬🇧 英国-1B, server: flyyg.flylink.cyou, port: 35240, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyyg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇭🇰 香港1-1A, server: flyxg.flylink.cyou, port: 35290, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyxg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇮🇳 印度2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-纽约-HY-001-1D, server: 45.135.135.229, port: 31008, type: hysteria2, password: 8113f899-1307-4122-9198-d3bcb268a7d3, auth: 8113f899-1307-4122-9198-d3bcb268a7d3, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇬🇧 英国-1A, server: flyyg.flylink.cyou, port: 35240, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyyg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇰🇷 韩国 专线NO2, server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 香港NO.2, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-003-1A, server: 45.135.135.229, port: 25009, type: vmess, uuid: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国NO.2, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇸🇬 新加坡NO.1, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇸 美国-纽约-001-1B, server: 45.135.135.229, port: 22077, type: vmess, uuid: 73d4cd16-b001-4df9-bd92-7b0f93891b19, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国-纽约-001-1E, server: 45.135.135.229, port: 22077, type: vmess, uuid: 6e1e078f-2195-40dc-bcb5-3d06994206cc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇯🇵 日本NO.2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇩🇪 德国-1B, server: flydg.flylink.cyou, port: 35230, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flydg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇺🇸 美国-纽约-HY-001-1C, server: 45.135.135.229, port: 31008, type: hysteria2, password: b2274026-4f6b-4f21-8b06-bbdbc30743a7, auth: b2274026-4f6b-4f21-8b06-bbdbc30743a7, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇦🇺 澳大利亚原生2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇨🇦 加拿大-1A, server: flyjnd.flylink.cyou, port: 35280, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyjnd.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1E, server: 45.135.135.229, port: 33079, type: hysteria2, password: 6e1e078f-2195-40dc-bcb5-3d06994206cc, auth: 6e1e078f-2195-40dc-bcb5-3d06994206cc, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1C, server: 45.135.135.229, port: 80, type: hysteria2, password: b2274026-4f6b-4f21-8b06-bbdbc30743a7, auth: b2274026-4f6b-4f21-8b06-bbdbc30743a7, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
-  - {name: 🇺🇸 美国-纽约-HY-001-1A, server: 45.135.135.229, port: 31008, type: hysteria2, password: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, auth: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇸🇬 新加坡NO.2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 98718213-73f9-479c-96d2-76c227861fe4, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-1B, server: flyhg.flylink.cyou, port: 35310, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyhg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇮🇳 印度1, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1B, server: 45.135.135.229, port: 33079, type: hysteria2, password: 8113f899-1307-4122-9198-d3bcb268a7d3, auth: 8113f899-1307-4122-9198-d3bcb268a7d3, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇰🇷 韩国 专线NO1, server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-003-1B, server: 45.135.135.229, port: 25009, type: vmess, uuid: 8113f899-1307-4122-9198-d3bcb268a7d3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇯🇵 日本-1B, server: flyrb.flylink.cyou, port: 35300, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyxg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1A, server: 45.135.135.229, port: 22077, type: vmess, uuid: 6e1e078f-2195-40dc-bcb5-3d06994206cc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇨🇦 加拿大1, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-003-1I, server: 45.135.135.229, port: 25009, type: vmess, uuid: 750b7dd9-37cb-4fd5-9d37-da6f317ec8aa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇯🇵 日本-1A, server: flyrb.flylink.cyou, port: 35300, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyxg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1I, server: 45.135.135.229, port: 22077, type: vmess, uuid: 750b7dd9-37cb-4fd5-9d37-da6f317ec8aa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1C, server: 45.135.135.229, port: 80, type: hysteria2, password: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, auth: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1D, server: 45.135.135.229, port: 22077, type: vmess, uuid: 73d4cd16-b001-4df9-bd92-7b0f93891b19, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 香港-1B, server: flyxghy.flylink.cyou, port: 35260, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyxghy.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1E, server: 45.135.135.229, port: 80, type: hysteria2, password: b2274026-4f6b-4f21-8b06-bbdbc30743a7, auth: b2274026-4f6b-4f21-8b06-bbdbc30743a7, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
+  - {name: 🇩🇪 德国-1A, server: flydg.flylink.cyou, port: 35230, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flydg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇨🇦 加拿大2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1F, server: 45.135.135.229, port: 22077, type: vmess, uuid: a10f4e00-b238-456f-a2b6-82f932126306, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-003-1G, server: 45.135.135.229, port: 25009, type: vmess, uuid: 30077fc6-adf8-439d-abc0-1bfd1de09ebb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇳🇱 荷兰-1B, server: flyhl.flylink.cyou, port: 35250, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyhl.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1E, server: 45.135.135.229, port: 33079, type: hysteria2, password: b2274026-4f6b-4f21-8b06-bbdbc30743a7, auth: b2274026-4f6b-4f21-8b06-bbdbc30743a7, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇷🇺 俄罗斯-1B, server: flyels.flylink.cyou, port: 35270, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyels.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1H, server: 45.135.135.229, port: 80, type: hysteria2, password: 841ab7d0-ffcd-4137-b0ba-a145a9ea92ed, auth: 841ab7d0-ffcd-4137-b0ba-a145a9ea92ed, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-003-1D, server: 45.135.135.229, port: 25009, type: vmess, uuid: 73d4cd16-b001-4df9-bd92-7b0f93891b19, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇮🇳 印度2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇼 台湾2, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇫🇷 法国1, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-003-1H, server: 45.135.135.229, port: 25009, type: vmess, uuid: 841ab7d0-ffcd-4137-b0ba-a145a9ea92ed, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇯🇵 日本NO.2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1B, server: 45.135.135.229, port: 80, type: hysteria2, password: 8113f899-1307-4122-9198-d3bcb268a7d3, auth: 8113f899-1307-4122-9198-d3bcb268a7d3, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1A, server: 45.135.135.229, port: 80, type: hysteria2, password: 6e1e078f-2195-40dc-bcb5-3d06994206cc, auth: 6e1e078f-2195-40dc-bcb5-3d06994206cc, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
+  - {name: 🇭🇰 香港NO.2, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-纽约-HY-001-1E, server: 45.135.135.229, port: 31008, type: hysteria2, password: b2274026-4f6b-4f21-8b06-bbdbc30743a7, auth: b2274026-4f6b-4f21-8b06-bbdbc30743a7, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇺🇸 美国-纽约-HY-001-1A, server: 45.135.135.229, port: 31008, type: hysteria2, password: 6e1e078f-2195-40dc-bcb5-3d06994206cc, auth: 6e1e078f-2195-40dc-bcb5-3d06994206cc, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇳🇱 荷兰-1A, server: flyhl.flylink.cyou, port: 35250, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyhl.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇸🇬 新加坡NO.2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国NO.1, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-纽约-HY-001-1G, server: 45.135.135.229, port: 31008, type: hysteria2, password: 30077fc6-adf8-439d-abc0-1bfd1de09ebb, auth: 30077fc6-adf8-439d-abc0-1bfd1de09ebb, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇭🇰 香港-1A, server: flyxghy.flylink.cyou, port: 35260, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyxghy.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1G, server: 45.135.135.229, port: 33079, type: hysteria2, password: 30077fc6-adf8-439d-abc0-1bfd1de09ebb, auth: 30077fc6-adf8-439d-abc0-1bfd1de09ebb, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-003-1A, server: 45.135.135.229, port: 25009, type: vmess, uuid: 6e1e078f-2195-40dc-bcb5-3d06994206cc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇬🇧 英国1, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 日本NO.1, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇨🇦 加拿大-1B, server: flyjnd.flylink.cyou, port: 35280, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyjnd.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1G, server: 45.135.135.229, port: 22077, type: vmess, uuid: 30077fc6-adf8-439d-abc0-1bfd1de09ebb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1H, server: 45.135.135.229, port: 22077, type: vmess, uuid: 841ab7d0-ffcd-4137-b0ba-a145a9ea92ed, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇭🇰 香港1-1A, server: flyxg.flylink.cyou, port: 35290, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyxg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇭🇰 香港-1C, server: xg.dashuai.cyou, port: 19901, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国-1A, server: flyhg.flylink.cyou, port: 35310, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyhg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1D, server: 45.135.135.229, port: 33079, type: hysteria2, password: 73d4cd16-b001-4df9-bd92-7b0f93891b19, auth: 73d4cd16-b001-4df9-bd92-7b0f93891b19, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇲🇾 马来西亚专线NO2, server: xdd.dashuai.cyou, port: 45059, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-纽约-HY-001-1C, server: 45.135.135.229, port: 31008, type: hysteria2, password: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, auth: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇫🇷 法国2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇹🇭 泰国NO1, server: haa.dashuai.cyou, port: 45060, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1I, server: 45.135.135.229, port: 33079, type: hysteria2, password: 750b7dd9-37cb-4fd5-9d37-da6f317ec8aa, auth: 750b7dd9-37cb-4fd5-9d37-da6f317ec8aa, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1I, server: 45.135.135.229, port: 80, type: hysteria2, password: 750b7dd9-37cb-4fd5-9d37-da6f317ec8aa, auth: 750b7dd9-37cb-4fd5-9d37-da6f317ec8aa, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
+  - {name: 🇭🇰 香港1-1B, server: flyxg.flylink.cyou, port: 35290, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyxg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇲🇾 马来西亚专线NO1, server: haa.dashuai.cyou, port: 45058, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-纽约-HY-001-1H, server: 45.135.135.229, port: 31008, type: hysteria2, password: 841ab7d0-ffcd-4137-b0ba-a145a9ea92ed, auth: 841ab7d0-ffcd-4137-b0ba-a145a9ea92ed, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-003-1E, server: 45.135.135.229, port: 25009, type: vmess, uuid: b2274026-4f6b-4f21-8b06-bbdbc30743a7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-纽约-HY-001-1B, server: 45.135.135.229, port: 31008, type: hysteria2, password: 8113f899-1307-4122-9198-d3bcb268a7d3, auth: 8113f899-1307-4122-9198-d3bcb268a7d3, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇬🇧 英国-1B, server: flyyg.flylink.cyou, port: 35240, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flyyg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇦🇺 澳大利亚原生1, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1B, server: 45.135.135.229, port: 22077, type: vmess, uuid: 8113f899-1307-4122-9198-d3bcb268a7d3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1C, server: 45.135.135.229, port: 33079, type: hysteria2, password: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, auth: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1E, server: 45.135.135.229, port: 22077, type: vmess, uuid: b2274026-4f6b-4f21-8b06-bbdbc30743a7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1G, server: 45.135.135.229, port: 80, type: hysteria2, password: 30077fc6-adf8-439d-abc0-1bfd1de09ebb, auth: 30077fc6-adf8-439d-abc0-1bfd1de09ebb, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
+  - {name: 🇹🇭 泰国NO2, server: xdd.dashuai.cyou, port: 45061, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇰🇷 韩国 专线NO2, server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国NO.2, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-003-1C, server: 45.135.135.229, port: 25009, type: vmess, uuid: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1A, server: 45.135.135.229, port: 33079, type: hysteria2, password: 6e1e078f-2195-40dc-bcb5-3d06994206cc, auth: 6e1e078f-2195-40dc-bcb5-3d06994206cc, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇦🇺 澳大利亚原生2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1H, server: 45.135.135.229, port: 33079, type: hysteria2, password: 841ab7d0-ffcd-4137-b0ba-a145a9ea92ed, auth: 841ab7d0-ffcd-4137-b0ba-a145a9ea92ed, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇷🇺 俄罗斯-1A, server: flyels.flylink.cyou, port: 35270, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyels.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇨🇦 加拿大-1A, server: flyjnd.flylink.cyou, port: 35280, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyjnd.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇺🇸 美国-纽约-HY-001-1D, server: 45.135.135.229, port: 31008, type: hysteria2, password: 73d4cd16-b001-4df9-bd92-7b0f93891b19, auth: 73d4cd16-b001-4df9-bd92-7b0f93891b19, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1D, server: 45.135.135.229, port: 80, type: hysteria2, password: 73d4cd16-b001-4df9-bd92-7b0f93891b19, auth: 73d4cd16-b001-4df9-bd92-7b0f93891b19, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
+  - {name: 🇬🇧 英国-1A, server: flyyg.flylink.cyou, port: 35240, type: hysteria2, password: 74332878-d170-41cc-be22-e08e0527a9b8, auth: 74332878-d170-41cc-be22-e08e0527a9b8, sni: flyyg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇬🇧 英国2, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇩🇪 德国-1B, server: flydg.flylink.cyou, port: 35230, type: hysteria2, password: 86091081-f701-4307-80fb-171f26240e6f, auth: 86091081-f701-4307-80fb-171f26240e6f, sni: flydg.flylink.cyou, skip-cert-verify: true, obfs: salamander, obfs-password: ZWYxYjI3YjlmY2I0OGEwYw==, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-003-1F, server: 45.135.135.229, port: 80, type: hysteria2, password: a10f4e00-b238-456f-a2b6-82f932126306, auth: a10f4e00-b238-456f-a2b6-82f932126306, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: OGU1NTEyMGE2ZDhkODdhOQ==, udp: true}
+  - {name: 🇺🇸 美国-纽约-HY-001-1I, server: 45.135.135.229, port: 31008, type: hysteria2, password: 750b7dd9-37cb-4fd5-9d37-da6f317ec8aa, auth: 750b7dd9-37cb-4fd5-9d37-da6f317ec8aa, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇸🇬 新加坡NO.1, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-003-1F, server: 45.135.135.229, port: 25009, type: vmess, uuid: a10f4e00-b238-456f-a2b6-82f932126306, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国-拉斯维加斯-HY-002-1F, server: 45.135.135.229, port: 33079, type: hysteria2, password: a10f4e00-b238-456f-a2b6-82f932126306, auth: a10f4e00-b238-456f-a2b6-82f932126306, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇺🇸 美国-纽约-001-1C, server: 45.135.135.229, port: 22077, type: vmess, uuid: 6d5246b2-6357-4e88-9443-9060bb6bc6c7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇹🇼 台湾1, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 0d53019f-1733-4ad9-9a3d-d3022331f3fc, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇸 美国-纽约-HY-001-1F, server: 45.135.135.229, port: 31008, type: hysteria2, password: a10f4e00-b238-456f-a2b6-82f932126306, auth: a10f4e00-b238-456f-a2b6-82f932126306, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇳🇱 荷兰-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇭🇰 香港-1C
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇯🇵 日本-1B
-      - 🇷🇺 俄罗斯-1A
-      - 🇹🇼 台湾2
-      - 🇨🇦 加拿大-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇹🇼 台湾1
-      - 🇩🇪 德国-1A
-      - 🇹🇭 泰国NO1
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇯🇵 日本-1A
-      - 🇲🇾 马来西亚专线NO2
-      - 🇭🇰 香港-1A
-      - 🇨🇦 加拿大2
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇷🇺 俄罗斯-1B
-      - 🇳🇱 荷兰-1A
-      - 🇫🇷 法国2
-      - 🇬🇧 英国1
-      - 🇺🇸 美国NO.1
-      - 🇭🇰 香港1-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇹🇭 泰国NO2
       - 🇰🇷 韩国-1B
-      - 🇰🇷 韩国-1A
-      - 🇭🇰 香港-1B
-      - 🇨🇦 加拿大1
       - 🇮🇳 印度1
-      - 🇬🇧 英国2
-      - 🇬🇧 英国-1B
-      - 🇭🇰 香港1-1A
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇬🇧 英国-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国NO.2
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇯🇵 日本NO.2
-      - 🇩🇪 德国-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇨🇦 加拿大-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
+      - 🇰🇷 韩国 专线NO1
+      - 🇺🇸 美国-拉斯维加斯-003-1B
+      - 🇯🇵 日本-1B
+      - 🇺🇸 美国-纽约-001-1A
+      - 🇨🇦 加拿大1
+      - 🇺🇸 美国-拉斯维加斯-003-1I
+      - 🇯🇵 日本-1A
+      - 🇺🇸 美国-纽约-001-1I
       - 🇺🇸 美国-拉斯维加斯-HY-003-1C
+      - 🇺🇸 美国-纽约-001-1D
+      - 🇭🇰 香港-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
+      - 🇩🇪 德国-1A
+      - 🇨🇦 加拿大2
+      - 🇺🇸 美国-纽约-001-1F
+      - 🇺🇸 美国-拉斯维加斯-003-1G
+      - 🇳🇱 荷兰-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇷🇺 俄罗斯-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1D
+      - 🇮🇳 印度2
+      - 🇹🇼 台湾2
+      - 🇫🇷 法国1
+      - 🇺🇸 美国-拉斯维加斯-003-1H
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
+      - 🇭🇰 香港NO.2
+      - 🇺🇸 美国-纽约-HY-001-1E
       - 🇺🇸 美国-纽约-HY-001-1A
+      - 🇳🇱 荷兰-1A
       - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-纽约-HY-001-1G
+      - 🇭🇰 香港-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
+      - 🇺🇸 美国-拉斯维加斯-003-1A
+      - 🇬🇧 英国1
+      - 🇯🇵 日本NO.1
+      - 🇨🇦 加拿大-1B
+      - 🇺🇸 美国-纽约-001-1G
+      - 🇺🇸 美国-纽约-001-1H
+      - 🇭🇰 香港1-1A
+      - 🇭🇰 香港-1C
+      - 🇰🇷 韩国-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
+      - 🇲🇾 马来西亚专线NO2
+      - 🇺🇸 美国-纽约-HY-001-1C
+      - 🇫🇷 法国2
+      - 🇹🇭 泰国NO1
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1I
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1I
+      - 🇭🇰 香港1-1B
+      - 🇲🇾 马来西亚专线NO1
+      - 🇺🇸 美国-纽约-HY-001-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1E
+      - 🇺🇸 美国-纽约-HY-001-1B
+      - 🇬🇧 英国-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇺🇸 美国-纽约-001-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
+      - 🇺🇸 美国-纽约-001-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国 专线NO2
+      - 🇺🇸 美国NO.2
+      - 🇺🇸 美国-拉斯维加斯-003-1C
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
+      - 🇦🇺 澳大利亚原生2
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
+      - 🇷🇺 俄罗斯-1A
+      - 🇨🇦 加拿大-1A
+      - 🇺🇸 美国-纽约-HY-001-1D
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
+      - 🇬🇧 英国-1A
+      - 🇬🇧 英国2
+      - 🇩🇪 德国-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
+      - 🇺🇸 美国-纽约-HY-001-1I
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国-拉斯维加斯-003-1F
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
+      - 🇺🇸 美国-纽约-001-1C
+      - 🇹🇼 台湾1
+      - 🇺🇸 美国-纽约-HY-001-1F
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇳🇱 荷兰-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇭🇰 香港-1C
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇯🇵 日本-1B
-      - 🇷🇺 俄罗斯-1A
-      - 🇹🇼 台湾2
-      - 🇨🇦 加拿大-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇹🇼 台湾1
-      - 🇩🇪 德国-1A
-      - 🇹🇭 泰国NO1
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇯🇵 日本-1A
-      - 🇲🇾 马来西亚专线NO2
-      - 🇭🇰 香港-1A
-      - 🇨🇦 加拿大2
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇷🇺 俄罗斯-1B
-      - 🇳🇱 荷兰-1A
-      - 🇫🇷 法国2
-      - 🇬🇧 英国1
-      - 🇺🇸 美国NO.1
-      - 🇭🇰 香港1-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇹🇭 泰国NO2
       - 🇰🇷 韩国-1B
-      - 🇰🇷 韩国-1A
-      - 🇭🇰 香港-1B
-      - 🇨🇦 加拿大1
       - 🇮🇳 印度1
-      - 🇬🇧 英国2
-      - 🇬🇧 英国-1B
-      - 🇭🇰 香港1-1A
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇬🇧 英国-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国NO.2
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇯🇵 日本NO.2
-      - 🇩🇪 德国-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇨🇦 加拿大-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
+      - 🇰🇷 韩国 专线NO1
+      - 🇺🇸 美国-拉斯维加斯-003-1B
+      - 🇯🇵 日本-1B
+      - 🇺🇸 美国-纽约-001-1A
+      - 🇨🇦 加拿大1
+      - 🇺🇸 美国-拉斯维加斯-003-1I
+      - 🇯🇵 日本-1A
+      - 🇺🇸 美国-纽约-001-1I
       - 🇺🇸 美国-拉斯维加斯-HY-003-1C
+      - 🇺🇸 美国-纽约-001-1D
+      - 🇭🇰 香港-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
+      - 🇩🇪 德国-1A
+      - 🇨🇦 加拿大2
+      - 🇺🇸 美国-纽约-001-1F
+      - 🇺🇸 美国-拉斯维加斯-003-1G
+      - 🇳🇱 荷兰-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇷🇺 俄罗斯-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1D
+      - 🇮🇳 印度2
+      - 🇹🇼 台湾2
+      - 🇫🇷 法国1
+      - 🇺🇸 美国-拉斯维加斯-003-1H
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
+      - 🇭🇰 香港NO.2
+      - 🇺🇸 美国-纽约-HY-001-1E
       - 🇺🇸 美国-纽约-HY-001-1A
+      - 🇳🇱 荷兰-1A
       - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-纽约-HY-001-1G
+      - 🇭🇰 香港-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
+      - 🇺🇸 美国-拉斯维加斯-003-1A
+      - 🇬🇧 英国1
+      - 🇯🇵 日本NO.1
+      - 🇨🇦 加拿大-1B
+      - 🇺🇸 美国-纽约-001-1G
+      - 🇺🇸 美国-纽约-001-1H
+      - 🇭🇰 香港1-1A
+      - 🇭🇰 香港-1C
+      - 🇰🇷 韩国-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
+      - 🇲🇾 马来西亚专线NO2
+      - 🇺🇸 美国-纽约-HY-001-1C
+      - 🇫🇷 法国2
+      - 🇹🇭 泰国NO1
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1I
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1I
+      - 🇭🇰 香港1-1B
+      - 🇲🇾 马来西亚专线NO1
+      - 🇺🇸 美国-纽约-HY-001-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1E
+      - 🇺🇸 美国-纽约-HY-001-1B
+      - 🇬🇧 英国-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇺🇸 美国-纽约-001-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
+      - 🇺🇸 美国-纽约-001-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国 专线NO2
+      - 🇺🇸 美国NO.2
+      - 🇺🇸 美国-拉斯维加斯-003-1C
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
+      - 🇦🇺 澳大利亚原生2
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
+      - 🇷🇺 俄罗斯-1A
+      - 🇨🇦 加拿大-1A
+      - 🇺🇸 美国-纽约-HY-001-1D
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
+      - 🇬🇧 英国-1A
+      - 🇬🇧 英国2
+      - 🇩🇪 德国-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
+      - 🇺🇸 美国-纽约-HY-001-1I
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国-拉斯维加斯-003-1F
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
+      - 🇺🇸 美国-纽约-001-1C
+      - 🇹🇼 台湾1
+      - 🇺🇸 美国-纽约-HY-001-1F
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇳🇱 荷兰-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇭🇰 香港-1C
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇯🇵 日本-1B
-      - 🇷🇺 俄罗斯-1A
-      - 🇹🇼 台湾2
-      - 🇨🇦 加拿大-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇹🇼 台湾1
-      - 🇩🇪 德国-1A
-      - 🇹🇭 泰国NO1
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇯🇵 日本-1A
-      - 🇲🇾 马来西亚专线NO2
-      - 🇭🇰 香港-1A
-      - 🇨🇦 加拿大2
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇷🇺 俄罗斯-1B
-      - 🇳🇱 荷兰-1A
-      - 🇫🇷 法国2
-      - 🇬🇧 英国1
-      - 🇺🇸 美国NO.1
-      - 🇭🇰 香港1-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇹🇭 泰国NO2
       - 🇰🇷 韩国-1B
-      - 🇰🇷 韩国-1A
-      - 🇭🇰 香港-1B
-      - 🇨🇦 加拿大1
       - 🇮🇳 印度1
-      - 🇬🇧 英国2
-      - 🇬🇧 英国-1B
-      - 🇭🇰 香港1-1A
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇬🇧 英国-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国NO.2
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇯🇵 日本NO.2
-      - 🇩🇪 德国-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇨🇦 加拿大-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
+      - 🇰🇷 韩国 专线NO1
+      - 🇺🇸 美国-拉斯维加斯-003-1B
+      - 🇯🇵 日本-1B
+      - 🇺🇸 美国-纽约-001-1A
+      - 🇨🇦 加拿大1
+      - 🇺🇸 美国-拉斯维加斯-003-1I
+      - 🇯🇵 日本-1A
+      - 🇺🇸 美国-纽约-001-1I
       - 🇺🇸 美国-拉斯维加斯-HY-003-1C
+      - 🇺🇸 美国-纽约-001-1D
+      - 🇭🇰 香港-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
+      - 🇩🇪 德国-1A
+      - 🇨🇦 加拿大2
+      - 🇺🇸 美国-纽约-001-1F
+      - 🇺🇸 美国-拉斯维加斯-003-1G
+      - 🇳🇱 荷兰-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇷🇺 俄罗斯-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1D
+      - 🇮🇳 印度2
+      - 🇹🇼 台湾2
+      - 🇫🇷 法国1
+      - 🇺🇸 美国-拉斯维加斯-003-1H
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
+      - 🇭🇰 香港NO.2
+      - 🇺🇸 美国-纽约-HY-001-1E
       - 🇺🇸 美国-纽约-HY-001-1A
+      - 🇳🇱 荷兰-1A
       - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-纽约-HY-001-1G
+      - 🇭🇰 香港-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
+      - 🇺🇸 美国-拉斯维加斯-003-1A
+      - 🇬🇧 英国1
+      - 🇯🇵 日本NO.1
+      - 🇨🇦 加拿大-1B
+      - 🇺🇸 美国-纽约-001-1G
+      - 🇺🇸 美国-纽约-001-1H
+      - 🇭🇰 香港1-1A
+      - 🇭🇰 香港-1C
+      - 🇰🇷 韩国-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
+      - 🇲🇾 马来西亚专线NO2
+      - 🇺🇸 美国-纽约-HY-001-1C
+      - 🇫🇷 法国2
+      - 🇹🇭 泰国NO1
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1I
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1I
+      - 🇭🇰 香港1-1B
+      - 🇲🇾 马来西亚专线NO1
+      - 🇺🇸 美国-纽约-HY-001-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1E
+      - 🇺🇸 美国-纽约-HY-001-1B
+      - 🇬🇧 英国-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇺🇸 美国-纽约-001-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
+      - 🇺🇸 美国-纽约-001-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国 专线NO2
+      - 🇺🇸 美国NO.2
+      - 🇺🇸 美国-拉斯维加斯-003-1C
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
+      - 🇦🇺 澳大利亚原生2
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
+      - 🇷🇺 俄罗斯-1A
+      - 🇨🇦 加拿大-1A
+      - 🇺🇸 美国-纽约-HY-001-1D
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
+      - 🇬🇧 英国-1A
+      - 🇬🇧 英国2
+      - 🇩🇪 德国-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
+      - 🇺🇸 美国-纽约-HY-001-1I
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国-拉斯维加斯-003-1F
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
+      - 🇺🇸 美国-纽约-001-1C
+      - 🇹🇼 台湾1
+      - 🇺🇸 美国-纽约-HY-001-1F
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -316,311 +396,391 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇳🇱 荷兰-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇭🇰 香港-1C
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇯🇵 日本-1B
-      - 🇷🇺 俄罗斯-1A
-      - 🇹🇼 台湾2
-      - 🇨🇦 加拿大-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇹🇼 台湾1
-      - 🇩🇪 德国-1A
-      - 🇹🇭 泰国NO1
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇯🇵 日本-1A
-      - 🇲🇾 马来西亚专线NO2
-      - 🇭🇰 香港-1A
-      - 🇨🇦 加拿大2
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇷🇺 俄罗斯-1B
-      - 🇳🇱 荷兰-1A
-      - 🇫🇷 法国2
-      - 🇬🇧 英国1
-      - 🇺🇸 美国NO.1
-      - 🇭🇰 香港1-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇹🇭 泰国NO2
       - 🇰🇷 韩国-1B
-      - 🇰🇷 韩国-1A
-      - 🇭🇰 香港-1B
-      - 🇨🇦 加拿大1
       - 🇮🇳 印度1
-      - 🇬🇧 英国2
-      - 🇬🇧 英国-1B
-      - 🇭🇰 香港1-1A
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇬🇧 英国-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国NO.2
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇯🇵 日本NO.2
-      - 🇩🇪 德国-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇨🇦 加拿大-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
+      - 🇰🇷 韩国 专线NO1
+      - 🇺🇸 美国-拉斯维加斯-003-1B
+      - 🇯🇵 日本-1B
+      - 🇺🇸 美国-纽约-001-1A
+      - 🇨🇦 加拿大1
+      - 🇺🇸 美国-拉斯维加斯-003-1I
+      - 🇯🇵 日本-1A
+      - 🇺🇸 美国-纽约-001-1I
       - 🇺🇸 美国-拉斯维加斯-HY-003-1C
+      - 🇺🇸 美国-纽约-001-1D
+      - 🇭🇰 香港-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
+      - 🇩🇪 德国-1A
+      - 🇨🇦 加拿大2
+      - 🇺🇸 美国-纽约-001-1F
+      - 🇺🇸 美国-拉斯维加斯-003-1G
+      - 🇳🇱 荷兰-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇷🇺 俄罗斯-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1D
+      - 🇮🇳 印度2
+      - 🇹🇼 台湾2
+      - 🇫🇷 法国1
+      - 🇺🇸 美国-拉斯维加斯-003-1H
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
+      - 🇭🇰 香港NO.2
+      - 🇺🇸 美国-纽约-HY-001-1E
       - 🇺🇸 美国-纽约-HY-001-1A
+      - 🇳🇱 荷兰-1A
       - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-纽约-HY-001-1G
+      - 🇭🇰 香港-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
+      - 🇺🇸 美国-拉斯维加斯-003-1A
+      - 🇬🇧 英国1
+      - 🇯🇵 日本NO.1
+      - 🇨🇦 加拿大-1B
+      - 🇺🇸 美国-纽约-001-1G
+      - 🇺🇸 美国-纽约-001-1H
+      - 🇭🇰 香港1-1A
+      - 🇭🇰 香港-1C
+      - 🇰🇷 韩国-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
+      - 🇲🇾 马来西亚专线NO2
+      - 🇺🇸 美国-纽约-HY-001-1C
+      - 🇫🇷 法国2
+      - 🇹🇭 泰国NO1
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1I
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1I
+      - 🇭🇰 香港1-1B
+      - 🇲🇾 马来西亚专线NO1
+      - 🇺🇸 美国-纽约-HY-001-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1E
+      - 🇺🇸 美国-纽约-HY-001-1B
+      - 🇬🇧 英国-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇺🇸 美国-纽约-001-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
+      - 🇺🇸 美国-纽约-001-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国 专线NO2
+      - 🇺🇸 美国NO.2
+      - 🇺🇸 美国-拉斯维加斯-003-1C
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
+      - 🇦🇺 澳大利亚原生2
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
+      - 🇷🇺 俄罗斯-1A
+      - 🇨🇦 加拿大-1A
+      - 🇺🇸 美国-纽约-HY-001-1D
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
+      - 🇬🇧 英国-1A
+      - 🇬🇧 英国2
+      - 🇩🇪 德国-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
+      - 🇺🇸 美国-纽约-HY-001-1I
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国-拉斯维加斯-003-1F
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
+      - 🇺🇸 美国-纽约-001-1C
+      - 🇹🇼 台湾1
+      - 🇺🇸 美国-纽约-HY-001-1F
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港-1C
-      - 🇹🇼 台湾2
-      - 🇹🇼 台湾1
-      - 🇭🇰 香港-1A
-      - 🇭🇰 香港1-1B
       - 🇭🇰 香港-1B
-      - 🇭🇰 香港1-1A
+      - 🇹🇼 台湾2
       - 🇭🇰 香港NO.2
+      - 🇭🇰 香港-1A
+      - 🇭🇰 香港1-1A
+      - 🇭🇰 香港-1C
+      - 🇭🇰 香港1-1B
+      - 🇹🇼 台湾1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇳🇱 荷兰-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇭🇰 香港-1C
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇯🇵 日本-1B
-      - 🇷🇺 俄罗斯-1A
-      - 🇹🇼 台湾2
-      - 🇨🇦 加拿大-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇹🇼 台湾1
-      - 🇩🇪 德国-1A
-      - 🇹🇭 泰国NO1
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇯🇵 日本-1A
-      - 🇲🇾 马来西亚专线NO2
-      - 🇭🇰 香港-1A
-      - 🇨🇦 加拿大2
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇷🇺 俄罗斯-1B
-      - 🇳🇱 荷兰-1A
-      - 🇫🇷 法国2
-      - 🇬🇧 英国1
-      - 🇺🇸 美国NO.1
-      - 🇭🇰 香港1-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇹🇭 泰国NO2
       - 🇰🇷 韩国-1B
-      - 🇰🇷 韩国-1A
-      - 🇭🇰 香港-1B
-      - 🇨🇦 加拿大1
       - 🇮🇳 印度1
-      - 🇬🇧 英国2
-      - 🇬🇧 英国-1B
-      - 🇭🇰 香港1-1A
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇬🇧 英国-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国NO.2
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇯🇵 日本NO.2
-      - 🇩🇪 德国-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇨🇦 加拿大-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
+      - 🇰🇷 韩国 专线NO1
+      - 🇺🇸 美国-拉斯维加斯-003-1B
+      - 🇯🇵 日本-1B
+      - 🇺🇸 美国-纽约-001-1A
+      - 🇨🇦 加拿大1
+      - 🇺🇸 美国-拉斯维加斯-003-1I
+      - 🇯🇵 日本-1A
+      - 🇺🇸 美国-纽约-001-1I
       - 🇺🇸 美国-拉斯维加斯-HY-003-1C
+      - 🇺🇸 美国-纽约-001-1D
+      - 🇭🇰 香港-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
+      - 🇩🇪 德国-1A
+      - 🇨🇦 加拿大2
+      - 🇺🇸 美国-纽约-001-1F
+      - 🇺🇸 美国-拉斯维加斯-003-1G
+      - 🇳🇱 荷兰-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇷🇺 俄罗斯-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1D
+      - 🇮🇳 印度2
+      - 🇹🇼 台湾2
+      - 🇫🇷 法国1
+      - 🇺🇸 美国-拉斯维加斯-003-1H
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
+      - 🇭🇰 香港NO.2
+      - 🇺🇸 美国-纽约-HY-001-1E
       - 🇺🇸 美国-纽约-HY-001-1A
+      - 🇳🇱 荷兰-1A
       - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-纽约-HY-001-1G
+      - 🇭🇰 香港-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
+      - 🇺🇸 美国-拉斯维加斯-003-1A
+      - 🇬🇧 英国1
+      - 🇯🇵 日本NO.1
+      - 🇨🇦 加拿大-1B
+      - 🇺🇸 美国-纽约-001-1G
+      - 🇺🇸 美国-纽约-001-1H
+      - 🇭🇰 香港1-1A
+      - 🇭🇰 香港-1C
+      - 🇰🇷 韩国-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
+      - 🇲🇾 马来西亚专线NO2
+      - 🇺🇸 美国-纽约-HY-001-1C
+      - 🇫🇷 法国2
+      - 🇹🇭 泰国NO1
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1I
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1I
+      - 🇭🇰 香港1-1B
+      - 🇲🇾 马来西亚专线NO1
+      - 🇺🇸 美国-纽约-HY-001-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1E
+      - 🇺🇸 美国-纽约-HY-001-1B
+      - 🇬🇧 英国-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇺🇸 美国-纽约-001-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
+      - 🇺🇸 美国-纽约-001-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国 专线NO2
+      - 🇺🇸 美国NO.2
+      - 🇺🇸 美国-拉斯维加斯-003-1C
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
+      - 🇦🇺 澳大利亚原生2
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
+      - 🇷🇺 俄罗斯-1A
+      - 🇨🇦 加拿大-1A
+      - 🇺🇸 美国-纽约-HY-001-1D
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
+      - 🇬🇧 英国-1A
+      - 🇬🇧 英国2
+      - 🇩🇪 德国-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
+      - 🇺🇸 美国-纽约-HY-001-1I
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国-拉斯维加斯-003-1F
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
+      - 🇺🇸 美国-纽约-001-1C
+      - 🇹🇼 台湾1
+      - 🇺🇸 美国-纽约-HY-001-1F
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇳🇱 荷兰-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇭🇰 香港-1C
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇯🇵 日本-1B
-      - 🇷🇺 俄罗斯-1A
-      - 🇹🇼 台湾2
-      - 🇨🇦 加拿大-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇹🇼 台湾1
-      - 🇩🇪 德国-1A
-      - 🇹🇭 泰国NO1
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇯🇵 日本-1A
-      - 🇲🇾 马来西亚专线NO2
-      - 🇭🇰 香港-1A
-      - 🇨🇦 加拿大2
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇷🇺 俄罗斯-1B
-      - 🇳🇱 荷兰-1A
-      - 🇫🇷 法国2
-      - 🇬🇧 英国1
-      - 🇺🇸 美国NO.1
-      - 🇭🇰 香港1-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇹🇭 泰国NO2
       - 🇰🇷 韩国-1B
-      - 🇰🇷 韩国-1A
-      - 🇭🇰 香港-1B
-      - 🇨🇦 加拿大1
       - 🇮🇳 印度1
-      - 🇬🇧 英国2
-      - 🇬🇧 英国-1B
-      - 🇭🇰 香港1-1A
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇬🇧 英国-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国NO.2
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇯🇵 日本NO.2
-      - 🇩🇪 德国-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇨🇦 加拿大-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
+      - 🇰🇷 韩国 专线NO1
+      - 🇺🇸 美国-拉斯维加斯-003-1B
+      - 🇯🇵 日本-1B
+      - 🇺🇸 美国-纽约-001-1A
+      - 🇨🇦 加拿大1
+      - 🇺🇸 美国-拉斯维加斯-003-1I
+      - 🇯🇵 日本-1A
+      - 🇺🇸 美国-纽约-001-1I
       - 🇺🇸 美国-拉斯维加斯-HY-003-1C
+      - 🇺🇸 美国-纽约-001-1D
+      - 🇭🇰 香港-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
+      - 🇩🇪 德国-1A
+      - 🇨🇦 加拿大2
+      - 🇺🇸 美国-纽约-001-1F
+      - 🇺🇸 美国-拉斯维加斯-003-1G
+      - 🇳🇱 荷兰-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇷🇺 俄罗斯-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1D
+      - 🇮🇳 印度2
+      - 🇹🇼 台湾2
+      - 🇫🇷 法国1
+      - 🇺🇸 美国-拉斯维加斯-003-1H
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
+      - 🇭🇰 香港NO.2
+      - 🇺🇸 美国-纽约-HY-001-1E
       - 🇺🇸 美国-纽约-HY-001-1A
+      - 🇳🇱 荷兰-1A
       - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-纽约-HY-001-1G
+      - 🇭🇰 香港-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
+      - 🇺🇸 美国-拉斯维加斯-003-1A
+      - 🇬🇧 英国1
+      - 🇯🇵 日本NO.1
+      - 🇨🇦 加拿大-1B
+      - 🇺🇸 美国-纽约-001-1G
+      - 🇺🇸 美国-纽约-001-1H
+      - 🇭🇰 香港1-1A
+      - 🇭🇰 香港-1C
+      - 🇰🇷 韩国-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
+      - 🇲🇾 马来西亚专线NO2
+      - 🇺🇸 美国-纽约-HY-001-1C
+      - 🇫🇷 法国2
+      - 🇹🇭 泰国NO1
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1I
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1I
+      - 🇭🇰 香港1-1B
+      - 🇲🇾 马来西亚专线NO1
+      - 🇺🇸 美国-纽约-HY-001-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1E
+      - 🇺🇸 美国-纽约-HY-001-1B
+      - 🇬🇧 英国-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇺🇸 美国-纽约-001-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
+      - 🇺🇸 美国-纽约-001-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国 专线NO2
+      - 🇺🇸 美国NO.2
+      - 🇺🇸 美国-拉斯维加斯-003-1C
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
+      - 🇦🇺 澳大利亚原生2
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
+      - 🇷🇺 俄罗斯-1A
+      - 🇨🇦 加拿大-1A
+      - 🇺🇸 美国-纽约-HY-001-1D
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
+      - 🇬🇧 英国-1A
+      - 🇬🇧 英国2
+      - 🇩🇪 德国-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
+      - 🇺🇸 美国-纽约-HY-001-1I
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国-拉斯维加斯-003-1F
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
+      - 🇺🇸 美国-纽约-001-1C
+      - 🇹🇼 台湾1
+      - 🇺🇸 美国-纽约-HY-001-1F
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇳🇱 荷兰-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇭🇰 香港-1C
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇯🇵 日本-1B
-      - 🇷🇺 俄罗斯-1A
-      - 🇹🇼 台湾2
-      - 🇨🇦 加拿大-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇹🇼 台湾1
-      - 🇩🇪 德国-1A
-      - 🇹🇭 泰国NO1
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇯🇵 日本-1A
-      - 🇲🇾 马来西亚专线NO2
-      - 🇭🇰 香港-1A
-      - 🇨🇦 加拿大2
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇷🇺 俄罗斯-1B
-      - 🇳🇱 荷兰-1A
-      - 🇫🇷 法国2
-      - 🇬🇧 英国1
-      - 🇺🇸 美国NO.1
-      - 🇭🇰 香港1-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇹🇭 泰国NO2
       - 🇰🇷 韩国-1B
-      - 🇰🇷 韩国-1A
-      - 🇭🇰 香港-1B
-      - 🇨🇦 加拿大1
       - 🇮🇳 印度1
-      - 🇬🇧 英国2
-      - 🇬🇧 英国-1B
-      - 🇭🇰 香港1-1A
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇬🇧 英国-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国NO.2
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇯🇵 日本NO.2
-      - 🇩🇪 德国-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇨🇦 加拿大-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
+      - 🇰🇷 韩国 专线NO1
+      - 🇺🇸 美国-拉斯维加斯-003-1B
+      - 🇯🇵 日本-1B
+      - 🇺🇸 美国-纽约-001-1A
+      - 🇨🇦 加拿大1
+      - 🇺🇸 美国-拉斯维加斯-003-1I
+      - 🇯🇵 日本-1A
+      - 🇺🇸 美国-纽约-001-1I
       - 🇺🇸 美国-拉斯维加斯-HY-003-1C
+      - 🇺🇸 美国-纽约-001-1D
+      - 🇭🇰 香港-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
+      - 🇩🇪 德国-1A
+      - 🇨🇦 加拿大2
+      - 🇺🇸 美国-纽约-001-1F
+      - 🇺🇸 美国-拉斯维加斯-003-1G
+      - 🇳🇱 荷兰-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇷🇺 俄罗斯-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1D
+      - 🇮🇳 印度2
+      - 🇹🇼 台湾2
+      - 🇫🇷 法国1
+      - 🇺🇸 美国-拉斯维加斯-003-1H
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
+      - 🇭🇰 香港NO.2
+      - 🇺🇸 美国-纽约-HY-001-1E
       - 🇺🇸 美国-纽约-HY-001-1A
+      - 🇳🇱 荷兰-1A
       - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-纽约-HY-001-1G
+      - 🇭🇰 香港-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
+      - 🇺🇸 美国-拉斯维加斯-003-1A
+      - 🇬🇧 英国1
+      - 🇯🇵 日本NO.1
+      - 🇨🇦 加拿大-1B
+      - 🇺🇸 美国-纽约-001-1G
+      - 🇺🇸 美国-纽约-001-1H
+      - 🇭🇰 香港1-1A
+      - 🇭🇰 香港-1C
+      - 🇰🇷 韩国-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
+      - 🇲🇾 马来西亚专线NO2
+      - 🇺🇸 美国-纽约-HY-001-1C
+      - 🇫🇷 法国2
+      - 🇹🇭 泰国NO1
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1I
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1I
+      - 🇭🇰 香港1-1B
+      - 🇲🇾 马来西亚专线NO1
+      - 🇺🇸 美国-纽约-HY-001-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1E
+      - 🇺🇸 美国-纽约-HY-001-1B
+      - 🇬🇧 英国-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇺🇸 美国-纽约-001-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
+      - 🇺🇸 美国-纽约-001-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国 专线NO2
+      - 🇺🇸 美国NO.2
+      - 🇺🇸 美国-拉斯维加斯-003-1C
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
+      - 🇦🇺 澳大利亚原生2
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
+      - 🇷🇺 俄罗斯-1A
+      - 🇨🇦 加拿大-1A
+      - 🇺🇸 美国-纽约-HY-001-1D
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
+      - 🇬🇧 英国-1A
+      - 🇬🇧 英国2
+      - 🇩🇪 德国-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
+      - 🇺🇸 美国-纽约-HY-001-1I
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国-拉斯维加斯-003-1F
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
+      - 🇺🇸 美国-纽约-001-1C
+      - 🇹🇼 台湾1
+      - 🇺🇸 美国-纽约-HY-001-1F
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -636,75 +796,95 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国-纽约-001-1A
-      - 🇺🇸 美国-拉斯维加斯-003-1D
-      - 🇳🇱 荷兰-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
-      - 🇺🇸 美国-拉斯维加斯-003-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
-      - 🇭🇰 香港-1C
-      - 🇺🇸 美国-纽约-001-1C
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
-      - 🇯🇵 日本-1B
-      - 🇷🇺 俄罗斯-1A
-      - 🇹🇼 台湾2
-      - 🇨🇦 加拿大-1B
-      - 🇦🇺 澳大利亚原生1
-      - 🇺🇸 美国-纽约-HY-001-1B
-      - 🇹🇼 台湾1
-      - 🇩🇪 德国-1A
-      - 🇹🇭 泰国NO1
-      - 🇯🇵 日本NO.1
-      - 🇺🇸 美国-纽约-HY-001-1E
-      - 🇯🇵 日本-1A
-      - 🇲🇾 马来西亚专线NO2
-      - 🇭🇰 香港-1A
-      - 🇨🇦 加拿大2
-      - 🇲🇾 马来西亚专线NO1
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
-      - 🇺🇸 美国-拉斯维加斯-003-1B
-      - 🇷🇺 俄罗斯-1B
-      - 🇳🇱 荷兰-1A
-      - 🇫🇷 法国2
-      - 🇬🇧 英国1
-      - 🇺🇸 美国NO.1
-      - 🇭🇰 香港1-1B
-      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
-      - 🇺🇸 美国-纽约-001-1D
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
-      - 🇫🇷 法国1
-      - 🇰🇷 韩国 专线NO1
-      - 🇺🇸 美国-拉斯维加斯-003-1E
-      - 🇹🇭 泰国NO2
       - 🇰🇷 韩国-1B
-      - 🇰🇷 韩国-1A
-      - 🇭🇰 香港-1B
-      - 🇨🇦 加拿大1
       - 🇮🇳 印度1
-      - 🇬🇧 英国2
-      - 🇬🇧 英国-1B
-      - 🇭🇰 香港1-1A
-      - 🇮🇳 印度2
-      - 🇺🇸 美国-纽约-HY-001-1D
-      - 🇬🇧 英国-1A
-      - 🇰🇷 韩国 专线NO2
-      - 🇭🇰 香港NO.2
-      - 🇺🇸 美国-拉斯维加斯-003-1A
-      - 🇺🇸 美国NO.2
-      - 🇸🇬 新加坡NO.1
-      - 🇺🇸 美国-纽约-001-1B
-      - 🇺🇸 美国-纽约-001-1E
-      - 🇯🇵 日本NO.2
-      - 🇩🇪 德国-1B
-      - 🇺🇸 美国-纽约-HY-001-1C
-      - 🇦🇺 澳大利亚原生2
-      - 🇨🇦 加拿大-1A
-      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1B
+      - 🇰🇷 韩国 专线NO1
+      - 🇺🇸 美国-拉斯维加斯-003-1B
+      - 🇯🇵 日本-1B
+      - 🇺🇸 美国-纽约-001-1A
+      - 🇨🇦 加拿大1
+      - 🇺🇸 美国-拉斯维加斯-003-1I
+      - 🇯🇵 日本-1A
+      - 🇺🇸 美国-纽约-001-1I
       - 🇺🇸 美国-拉斯维加斯-HY-003-1C
+      - 🇺🇸 美国-纽约-001-1D
+      - 🇭🇰 香港-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1E
+      - 🇩🇪 德国-1A
+      - 🇨🇦 加拿大2
+      - 🇺🇸 美国-纽约-001-1F
+      - 🇺🇸 美国-拉斯维加斯-003-1G
+      - 🇳🇱 荷兰-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1E
+      - 🇷🇺 俄罗斯-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1D
+      - 🇮🇳 印度2
+      - 🇹🇼 台湾2
+      - 🇫🇷 法国1
+      - 🇺🇸 美国-拉斯维加斯-003-1H
+      - 🇯🇵 日本NO.2
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1A
+      - 🇭🇰 香港NO.2
+      - 🇺🇸 美国-纽约-HY-001-1E
       - 🇺🇸 美国-纽约-HY-001-1A
+      - 🇳🇱 荷兰-1A
       - 🇸🇬 新加坡NO.2
+      - 🇺🇸 美国NO.1
+      - 🇺🇸 美国-纽约-HY-001-1G
+      - 🇭🇰 香港-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1G
+      - 🇺🇸 美国-拉斯维加斯-003-1A
+      - 🇬🇧 英国1
+      - 🇯🇵 日本NO.1
+      - 🇨🇦 加拿大-1B
+      - 🇺🇸 美国-纽约-001-1G
+      - 🇺🇸 美国-纽约-001-1H
+      - 🇭🇰 香港1-1A
+      - 🇭🇰 香港-1C
+      - 🇰🇷 韩国-1A
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1D
+      - 🇲🇾 马来西亚专线NO2
+      - 🇺🇸 美国-纽约-HY-001-1C
+      - 🇫🇷 法国2
+      - 🇹🇭 泰国NO1
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1I
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1I
+      - 🇭🇰 香港1-1B
+      - 🇲🇾 马来西亚专线NO1
+      - 🇺🇸 美国-纽约-HY-001-1H
+      - 🇺🇸 美国-拉斯维加斯-003-1E
+      - 🇺🇸 美国-纽约-HY-001-1B
+      - 🇬🇧 英国-1B
+      - 🇦🇺 澳大利亚原生1
+      - 🇺🇸 美国-纽约-001-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1C
+      - 🇺🇸 美国-纽约-001-1E
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1G
+      - 🇹🇭 泰国NO2
+      - 🇰🇷 韩国 专线NO2
+      - 🇺🇸 美国NO.2
+      - 🇺🇸 美国-拉斯维加斯-003-1C
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1A
+      - 🇦🇺 澳大利亚原生2
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1H
+      - 🇷🇺 俄罗斯-1A
+      - 🇨🇦 加拿大-1A
+      - 🇺🇸 美国-纽约-HY-001-1D
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1D
+      - 🇬🇧 英国-1A
+      - 🇬🇧 英国2
+      - 🇩🇪 德国-1B
+      - 🇺🇸 美国-拉斯维加斯-HY-003-1F
+      - 🇺🇸 美国-纽约-HY-001-1I
+      - 🇸🇬 新加坡NO.1
+      - 🇺🇸 美国-拉斯维加斯-003-1F
+      - 🇺🇸 美国-拉斯维加斯-HY-002-1F
+      - 🇺🇸 美国-纽约-001-1C
+      - 🇹🇼 台湾1
+      - 🇺🇸 美国-纽约-HY-001-1F
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
