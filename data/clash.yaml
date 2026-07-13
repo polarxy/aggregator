@@ -5,539 +5,811 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 JAPAN-SS-1B, server: 167.179.99.83, port: 8445, type: ss, cipher: aes-256-gcm, password: 4ac765ec-51cc-4b96-b007-8b8d32e35e11, udp: true}
-  - {name: 🇰🇷 韩国一号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42112, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1G, server: 216.23.121.126, port: 4433, type: vless, uuid: de3e5ee8-c1fb-4189-9806-74f1fa3320ad, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: GA-FZS, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 4a891417-da50-48fe-92be-f31ae190cb11, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 046f146c-5d0e-4b56-9567-e69c643d40be, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1E, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 41b3467f-b00a-4d75-bd4d-9db709e5fae0, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: 🇻🇳 越南三号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42012, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 046f146c-5d0e-4b56-9567-e69c643d40be, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 TTC9999 香港, server: ww2.ttc9999.com, port: 443, type: vmess, uuid: e1ed2402-fced-44d0-8827-83470de454b5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ww2.ttc9999.com}}, udp: true}
-  - {name: 🇭🇰 香港三号|高速|解锁|家宽IP-1A, server: wandann2.wandajiasu.xyz, port: 42003, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇻🇳 越南二号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42011, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇺🇸 美国二号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42005, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: WF-FWZ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 3bc7a459-d5b4-4494-a319-485e2f462229, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇺🇸 HY-03 | US, server: usflare1.cloudaddy.top, port: 30004, type: hysteria2, password: 83488bd4-9ae3-4b64-b367-c1d24997445f, auth: 83488bd4-9ae3-4b64-b367-c1d24997445f, sni: us1.cloudsegl1.ccwu.cc, up: 5000, down: 5000, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JAPAN-01-1A, server: 167.179.99.83, port: 8443, type: vmess, uuid: 0256e140-b6f9-4a8c-9f49-6e60bbc148c9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray}, udp: true}
-  - {name: 🇲🇾 马来西亚一号 专线|解锁-1B, server: wandann2.wandajiasu.xyz, port: 42126, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 046f146c-5d0e-4b56-9567-e69c643d40be, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: fc975785-da74-4174-a2ca-c9de4d41e87f, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JAPAN-SS-1A, server: 167.179.99.83, port: 8445, type: ss, cipher: aes-256-gcm, password: 0256e140-b6f9-4a8c-9f49-6e60bbc148c9, udp: true}
-  - {name: 🇺🇸 HY-04 | US, server: usflare1.cloudaddy.top, port: 30005, type: hysteria2, password: 83488bd4-9ae3-4b64-b367-c1d24997445f, auth: 83488bd4-9ae3-4b64-b367-c1d24997445f, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港三号|高速|解锁|家宽IP-1B, server: wandann2.wandajiasu.xyz, port: 42003, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: fc975785-da74-4174-a2ca-c9de4d41e87f, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 法国二号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42014, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1F, server: 216.23.121.126, port: 4433, type: vless, uuid: 09cf82d7-f1eb-4dfe-9e99-4efff3449fc6, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: 🇲🇾 马来西亚一号 专线|解锁-1A, server: wandann2.wandajiasu.xyz, port: 42126, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇻🇳 越南二号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42011, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: FV2026-7-7-1L, server: 101.43.62.88, port: 22001, type: vless, uuid: 2c64bd05-3f00-47e5-8c80-7501db8a5685, tls: false, network: tcp, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1E, server: 216.23.121.126, port: 4433, type: vless, uuid: 41b3467f-b00a-4d75-bd4d-9db709e5fae0, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: 🇺🇸 美国一号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42004, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇹🇼 台湾二号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42008, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇲🇾 马来西亚二号 专线|解锁-1A, server: wandann2.wandajiasu.xyz, port: 42127, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: AT-YSO, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 2c64bd05-3f00-47e5-8c80-7501db8a5685, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: db8fdd4f-b260-4ff9-bb21-3f6f5b2a8a56, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 美国三号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42006, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇫🇷 法国一号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42013, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: db8fdd4f-b260-4ff9-bb21-3f6f5b2a8a56, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: FV2026-7-7-1A, server: 101.43.62.88, port: 22001, type: vless, uuid: 58ed85b0-552f-4c67-9822-7ddbcfb613c2, tls: false, network: tcp, udp: true}
-  - {name: FV2026-7-7-1F, server: 101.43.62.88, port: 22001, type: vless, uuid: 8b85acd4-e09a-4efb-8372-244b19df635e, tls: false, network: tcp, udp: true}
-  - {name: 🇹🇼 台湾一号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42007, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: A1-GWK, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 6a381743-a31f-4ed5-99f2-f1313d78df60, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 774a5d72-9508-4ebf-86ac-02b71c155eed, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: ee76801b-1b6c-4de9-9cdb-952c1da3e81e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1A, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡一号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42114, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇭🇰 香港一号|高速|解锁|家宽IP-1A, server: wandann2.wandajiasu.xyz, port: 42001, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇺🇸 美国一号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42004, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: FV2026-7-7-1J, server: 101.43.62.88, port: 22001, type: vless, uuid: b3f981e9-4aec-4555-938e-70a4f7944c93, tls: false, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡二号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42115, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 774a5d72-9508-4ebf-86ac-02b71c155eed, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇹🇼 台湾三号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42009, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 3x-KNS, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 58ed85b0-552f-4c67-9822-7ddbcfb613c2, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: db8fdd4f-b260-4ff9-bb21-3f6f5b2a8a56, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1C, server: 216.23.121.126, port: 4433, type: vless, uuid: a0f23c90-e9fc-44a4-a510-03034ee3054f, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: 🇭🇰 HK-A-1B, server: 207.57.128.27, port: 8081, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: FC-VWQ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: b3f981e9-4aec-4555-938e-70a4f7944c93, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 44377ea8-36c7-43b6-a068-640fe4cb840d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 44377ea8-36c7-43b6-a068-640fe4cb840d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: db8fdd4f-b260-4ff9-bb21-3f6f5b2a8a56, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1D, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: d8fabb3e-e6a5-4b24-af65-a19bbca1554d, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: HT-WIV, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 0d873b22-d0ea-4640-aa26-d38e41c6218c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇲🇾 马来西亚二号 专线|解锁-1B, server: wandann2.wandajiasu.xyz, port: 42127, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 3b47118d-bfd0-4182-9061-f4df8722b2fc, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 3b47118d-bfd0-4182-9061-f4df8722b2fc, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇫🇷 法国二号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42014, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇯🇵 日本一号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42110, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: liulianglm.cc, udp: true}
-  - {name: 🇻🇳 越南一号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42010, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: LD-NJI, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: ef82dfaf-6f30-4c70-bb1e-7735cbb8a81a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: FV2026-7-7-1D, server: 101.43.62.88, port: 22001, type: vless, uuid: ef82dfaf-6f30-4c70-bb1e-7735cbb8a81a, tls: false, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 44377ea8-36c7-43b6-a068-640fe4cb840d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: fc975785-da74-4174-a2ca-c9de4d41e87f, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 3b47118d-bfd0-4182-9061-f4df8722b2fc, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇻🇳 越南一号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42010, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 774a5d72-9508-4ebf-86ac-02b71c155eed, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇫🇷 法国三号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42015, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 046f146c-5d0e-4b56-9567-e69c643d40be, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: OY-QVI, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: a8b326dc-3112-420d-b592-80e75f8b51f4, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇹🇼 台湾三号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42009, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: fc975785-da74-4174-a2ca-c9de4d41e87f, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港二号|高速|解锁|家宽IP-1A, server: wandann3.wandajiasu.xyz, port: 42002, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇸🇬 新加坡一号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42114, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1A, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 4dd12c31-0a5f-492c-9fa6-828d63db20b1, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: 🇯🇵 日本一号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42110, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: liulianglm.cc, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1B, server: 216.23.121.126, port: 4433, type: vless, uuid: 3b867da4-5efb-4540-82f9-30273fa8c519, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1D, server: 216.23.121.126, port: 4433, type: vless, uuid: d8fabb3e-e6a5-4b24-af65-a19bbca1554d, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: 🇺🇸 HY-02 | US, server: usflare1.cloudaddy.top, port: 30003, type: hysteria2, password: 83488bd4-9ae3-4b64-b367-c1d24997445f, auth: 83488bd4-9ae3-4b64-b367-c1d24997445f, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
-  - {name: Y9-OMZ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 50b9493c-5503-4f97-bbeb-adaaaaf1dc3d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇰🇷 韩国二号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42113, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇯🇵 JAPAN-01-1B, server: 167.179.99.83, port: 8443, type: vmess, uuid: 4ac765ec-51cc-4b96-b007-8b8d32e35e11, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray}, udp: true}
-  - {name: 🇰🇷 韩国一号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42112, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1C, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: a0f23c90-e9fc-44a4-a510-03034ee3054f, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: FV2026-7-7-1G, server: 101.43.62.88, port: 22001, type: vless, uuid: 4a891417-da50-48fe-92be-f31ae190cb11, tls: false, network: tcp, udp: true}
-  - {name: FV2026-7-7-1I, server: 101.43.62.88, port: 22001, type: vless, uuid: 50b9493c-5503-4f97-bbeb-adaaaaf1dc3d, tls: false, network: tcp, udp: true}
-  - {name: 🇭🇰 香港二号|高速|解锁|家宽IP-1B, server: wandann3.wandajiasu.xyz, port: 42002, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇺🇸 美国二号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42005, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: MK-IZT, server: empty.node, port: 443, type: trojan, password: 1296c7f6-8fd8-42a0-98cd-79f71626b1f6, sni: empty.node, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡二号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42115, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: fc975785-da74-4174-a2ca-c9de4d41e87f, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇼 台湾一号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42007, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇭🇰 HK-A-1A, server: 207.57.128.27, port: 8081, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1E, server: 101.43.62.88, port: 22001, type: vless, uuid: 0d873b22-d0ea-4640-aa26-d38e41c6218c, tls: false, network: tcp, udp: true}
-  - {name: FV2026-7-7-1B, server: 101.43.62.88, port: 22001, type: vless, uuid: a8b326dc-3112-420d-b592-80e75f8b51f4, tls: false, network: tcp, udp: true}
-  - {name: 🇫🇷 法国一号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42013, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇯🇵 日本二号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42111, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: liulianglm.cc, udp: true}
-  - {name: 🇯🇵 JAPAN-01-1C, server: 167.179.99.83, port: 8443, type: vmess, uuid: af18fdfc-38f4-42f8-ab32-7fe0c34ce422, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray}, udp: true}
-  - {name: SILICONVALLEY-01-1C, server: 144.202.98.98, port: 8444, type: vmess, uuid: af18fdfc-38f4-42f8-ab32-7fe0c34ce422, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1G, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: de3e5ee8-c1fb-4189-9806-74f1fa3320ad, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 3b47118d-bfd0-4182-9061-f4df8722b2fc, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 HY-05| US, server: usflare1.cloudaddy.top, port: 30006, type: hysteria2, password: 83488bd4-9ae3-4b64-b367-c1d24997445f, auth: 83488bd4-9ae3-4b64-b367-c1d24997445f, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
-  - {name: 🇻🇳 越南三号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42012, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: FV2026-7-7-1L, server: 101.43.62.88, port: 22001, type: vless, uuid: 0d873b22-d0ea-4640-aa26-d38e41c6218c, tls: false, network: tcp, udp: true}
+  - {name: 优选 29, server: www.sloomb.com, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: FV2026-7-7-1D, server: 101.43.62.88, port: 22001, type: vless, uuid: 50b9493c-5503-4f97-bbeb-adaaaaf1dc3d, tls: false, network: tcp, udp: true}
+  - {name: 🇫🇷 法国一号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42013, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇭🇰 香港一号|高速|解锁|家宽IP-1B, server: wandann2.wandajiasu.xyz, port: 42001, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 44377ea8-36c7-43b6-a068-640fe4cb840d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 HY-04 | US, server: usflare1.cloudaddy.top, port: 30005, type: hysteria2, password: f0d0c8cc-88d2-4b0d-9554-a8b8fbaf5067, auth: f0d0c8cc-88d2-4b0d-9554-a8b8fbaf5067, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: QS-VWG, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 50b9493c-5503-4f97-bbeb-adaaaaf1dc3d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 046f146c-5d0e-4b56-9567-e69c643d40be, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 优选 23, server: sanwang.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇯🇵 JAPAN-SS-1A, server: 167.179.99.83, port: 8445, type: ss, cipher: aes-256-gcm, password: 4ac765ec-51cc-4b96-b007-8b8d32e35e11, udp: true}
+  - {name: 优选 43, server: yg9.ygkkk.dpdns.org, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1A, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: FV2026-7-7-1K, server: 101.43.62.88, port: 22001, type: vless, uuid: 6cf636bc-0fab-4324-bef3-ed3ab64f33c7, tls: false, network: tcp, udp: true}
+  - {name: SILICONVALLEY-01-1A, server: 144.202.98.98, port: 8444, type: vmess, uuid: 4ac765ec-51cc-4b96-b007-8b8d32e35e11, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1C, server: 216.23.121.126, port: 4433, type: vless, uuid: c3ed0771-1dc2-46b8-b94e-beae401206ed, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: 优选 54, server: www.shopify.com, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 5, server: edgeone.gh-proxy.org, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: FV2026-7-7-1I, server: 101.43.62.88, port: 22001, type: vless, uuid: ef82dfaf-6f30-4c70-bb1e-7735cbb8a81a, tls: false, network: tcp, udp: true}
+  - {name: ZK-HQK, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: b3f981e9-4aec-4555-938e-70a4f7944c93, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: safari, network: tcp, udp: true}
+  - {name: 🇻🇳 越南一号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42010, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: db8fdd4f-b260-4ff9-bb21-3f6f5b2a8a56, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 优选 3, server: gh-proxy.com, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: YJ-TYP, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 6a381743-a31f-4ed5-99f2-f1313d78df60, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: 优选 17, server: cloudflare.cfgo.cc, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇹🇼 台湾二号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42008, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇺🇦 A4-UAT, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 0d873b22-d0ea-4640-aa26-d38e41c6218c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 优选 1, server: 2.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 3834b9ec-1ae8-460c-ac13-43eb54add2a6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1G, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 8767791f-1609-44b0-87e6-108036f10e91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 优选 33, server: staticdelivery.nexusmods.com, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 11, server: dnew.cc, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇰🇷 韩国二号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42113, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1E, server: 216.23.121.126, port: 4433, type: vless, uuid: 7edbcd85-4cc3-4c7e-ac0a-57227bbc9700, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 046f146c-5d0e-4b56-9567-e69c643d40be, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 优选 37, server: 123.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇬🇧 英国 1, server: www.ox.ac.uk, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇰🇷 韩国二号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42113, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇲🇾 马来西亚一号 专线|解锁-1B, server: wandann2.wandajiasu.xyz, port: 42126, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇫🇷 法国三号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42015, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, skip-cert-verify: true, udp: true}
+  - {name: 优选 38, server: uac.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 4723463f-e9e3-4d6e-9512-a9af561bb1e2, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
+  - {name: 优选 36, server: keji.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: FV2026-7-7-1F, server: 101.43.62.88, port: 22001, type: vless, uuid: b3f981e9-4aec-4555-938e-70a4f7944c93, tls: false, network: tcp, udp: true}
+  - {name: 优选 46, server: cf.nyanya.moe, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
   - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 774a5d72-9508-4ebf-86ac-02b71c155eed, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1B, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 3b867da4-5efb-4540-82f9-30273fa8c519, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: 🇯🇵 VLESS-日本-1A, server: 216.23.121.126, port: 4433, type: vless, uuid: 4dd12c31-0a5f-492c-9fa6-828d63db20b1, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
-  - {name: FV2026-7-7-1K, server: 101.43.62.88, port: 22001, type: vless, uuid: 6a381743-a31f-4ed5-99f2-f1313d78df60, tls: false, network: tcp, udp: true}
-  - {name: 🇰🇷 韩国二号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42113, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: SILICONVALLEY-01-1B, server: 144.202.98.98, port: 8444, type: vmess, uuid: 4ac765ec-51cc-4b96-b007-8b8d32e35e11, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: UH-LMX, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 6cf636bc-0fab-4324-bef3-ed3ab64f33c7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇹🇼 台湾二号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42008, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 44377ea8-36c7-43b6-a068-640fe4cb840d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 VLESS-香港-1F, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 09cf82d7-f1eb-4dfe-9e99-4efff3449fc6, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
-  - {name: FV2026-7-7-1H, server: 101.43.62.88, port: 22001, type: vless, uuid: 6cf636bc-0fab-4324-bef3-ed3ab64f33c7, tls: false, network: tcp, udp: true}
-  - {name: OL-HTW, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 8b85acd4-e09a-4efb-8372-244b19df635e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇯🇵 日本二号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42111, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: liulianglm.cc, udp: true}
-  - {name: 🇺🇸 美国三号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42006, type: trojan, password: dfbf3848-a289-477c-a9be-bba7f9cc5519, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: FV2026-7-7-1C, server: 101.43.62.88, port: 22001, type: vless, uuid: 3bc7a459-d5b4-4494-a319-485e2f462229, tls: false, network: tcp, udp: true}
-  - {name: 🇯🇵 JAPAN-SS-1C, server: 167.179.99.83, port: 8445, type: ss, cipher: aes-256-gcm, password: af18fdfc-38f4-42f8-ab32-7fe0c34ce422, udp: true}
-  - {name: 🇫🇷 法国三号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42015, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 香港一号|高速|解锁|家宽IP-1B, server: wandann2.wandajiasu.xyz, port: 42001, type: trojan, password: 1ac466ef-22ad-441e-a4c6-1bbe7e8c7211, sni: any-cert.chegnxiaochang.cn, udp: true}
-  - {name: SILICONVALLEY-01-1A, server: 144.202.98.98, port: 8444, type: vmess, uuid: 0256e140-b6f9-4a8c-9f49-6e60bbc148c9, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇯🇵 JAPAN-01-1A, server: 167.179.99.83, port: 8443, type: vmess, uuid: 4ac765ec-51cc-4b96-b007-8b8d32e35e11, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray}, udp: true}
+  - {name: 🇰🇷 韩国一号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42112, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇲🇾 马来西亚一号 专线|解锁-1A, server: wandann2.wandajiasu.xyz, port: 42126, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇺🇸 美国二号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42005, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇭🇰 HK-A-1B, server: 207.57.128.27, port: 8081, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 优选 13, server: cdn.091224.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1F, server: 216.23.121.126, port: 4433, type: vless, uuid: 6d10ceed-5db0-4f67-8c42-690488d1ae02, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: 优选 25, server: yg11.ygkkk.dpdns.org, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇭🇰 香港三号|高速|解锁|家宽IP-1A, server: wandann2.wandajiasu.xyz, port: 42003, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇲🇾 马来西亚二号 专线|解锁-1B, server: wandann2.wandajiasu.xyz, port: 42127, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 优选 49, server: youxuan.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 48, server: www.mc.js.cool, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇺🇸 美国三号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42006, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇺🇸 HY-05| US, server: usflare1.cloudaddy.top, port: 30006, type: hysteria2, password: f0d0c8cc-88d2-4b0d-9554-a8b8fbaf5067, auth: f0d0c8cc-88d2-4b0d-9554-a8b8fbaf5067, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK-A-1A, server: 207.57.128.27, port: 8081, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 3b47118d-bfd0-4182-9061-f4df8722b2fc, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 046f146c-5d0e-4b56-9567-e69c643d40be, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 香港 1, server: hk.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇯🇵 日本 1, server: jp.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 14, server: ct.hw.090227.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 44377ea8-36c7-43b6-a068-640fe4cb840d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 优选 40, server: eteaf.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 3b47118d-bfd0-4182-9061-f4df8722b2fc, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇹🇼 台湾一号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42007, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇸🇬 新加坡二号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42115, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 774a5d72-9508-4ebf-86ac-02b71c155eed, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1C, server: 101.43.62.88, port: 22001, type: vless, uuid: 4a891417-da50-48fe-92be-f31ae190cb11, tls: false, network: tcp, udp: true}
+  - {name: 优选 39, server: avido.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇭🇰 香港一号|高速|解锁|家宽IP-1A, server: wandann2.wandajiasu.xyz, port: 42001, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: db8fdd4f-b260-4ff9-bb21-3f6f5b2a8a56, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 3b47118d-bfd0-4182-9061-f4df8722b2fc, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇫🇷 法国一号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42013, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇸🇬 新加坡一号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42114, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇭🇰 香港二号|高速|解锁|家宽IP-1A, server: wandann3.wandajiasu.xyz, port: 42002, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 4723463f-e9e3-4d6e-9512-a9af561bb1e2, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 优选 7, server: nexusmods.com, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: FV2026-7-7-1G, server: 101.43.62.88, port: 22001, type: vless, uuid: 58ed85b0-552f-4c67-9822-7ddbcfb613c2, tls: false, network: tcp, udp: true}
+  - {name: 优选 42, server: 4.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇯🇵 日本二号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42111, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: liulianglm.cc, udp: true}
+  - {name: YR-GAF, server: 1.1.1.1, port: 443, type: ss, cipher: aes-128-gcm, password: 00000000000000000000000000000000, udp: true}
+  - {name: 🇭🇰 香港二号|高速|解锁|家宽IP-1B, server: wandann3.wandajiasu.xyz, port: 42002, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 优选 53, server: cf.553314.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: AV-HYV, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 84fbb844-716f-4deb-9aa4-1d52099f5772, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: safari, network: tcp, udp: true}
+  - {name: 优选 22, server: serviceshub.samsclub.com, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 26, server: www.nexusmods.com, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇺🇸 美国 1, server: 162.159.198.1, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 44, server: kniu.cc, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: e327d1fe-3197-4f4e-8cb9-35eef5ad14d6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
+  - {name: 优选 20, server: cloudflare.rainyfall.com, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 046f146c-5d0e-4b56-9567-e69c643d40be, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 3b47118d-bfd0-4182-9061-f4df8722b2fc, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1E, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 7edbcd85-4cc3-4c7e-ac0a-57227bbc9700, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: 🇯🇵 JAPAN-01-1B, server: 167.179.99.83, port: 8443, type: vmess, uuid: af18fdfc-38f4-42f8-ab32-7fe0c34ce422, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray}, udp: true}
+  - {name: 2N-HKQ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 2c64bd05-3f00-47e5-8c80-7501db8a5685, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: db8fdd4f-b260-4ff9-bb21-3f6f5b2a8a56, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 香港三号|高速|解锁|家宽IP-1B, server: wandann2.wandajiasu.xyz, port: 42003, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇹🇼 台湾三号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42009, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 优选 2, server: ex.warspite.dpdns.org, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: YL-MGR, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: ef82dfaf-6f30-4c70-bb1e-7735cbb8a81a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: 优选 12, server: hfqek.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 19, server: test.509666.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 44377ea8-36c7-43b6-a068-640fe4cb840d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇻🇳 越南二号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42011, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇫🇷 法国二号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42014, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇹🇼 台湾二号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42008, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇻🇳 越南三号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42012, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: db8fdd4f-b260-4ff9-bb21-3f6f5b2a8a56, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国一号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42004, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 3834b9ec-1ae8-460c-ac13-43eb54add2a6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1J, server: 101.43.62.88, port: 22001, type: vless, uuid: 2c64bd05-3f00-47e5-8c80-7501db8a5685, tls: false, network: tcp, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1D, server: 216.23.121.126, port: 4433, type: vless, uuid: cdcad01a-e780-48d0-87d6-169a92bc29e9, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡一号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42114, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇯🇵 日本一号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42110, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: liulianglm.cc, udp: true}
+  - {name: 优选 6, server: freeyx.cloudflare88.eu.org, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 51, server: cnllm.com, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 31, server: cu.877774.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 44377ea8-36c7-43b6-a068-640fe4cb840d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1B, server: 101.43.62.88, port: 22001, type: vless, uuid: a8b326dc-3112-420d-b592-80e75f8b51f4, tls: false, network: tcp, udp: true}
+  - {name: 🇻🇳 越南一号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42010, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 774a5d72-9508-4ebf-86ac-02b71c155eed, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 优选 50, server: 7.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇹🇼 台湾一号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42007, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1G, server: 216.23.121.126, port: 4433, type: vless, uuid: 52c0eb19-54be-4756-a43c-7070552457d5, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: 优选 21, server: cf-cname.xingpingcn.top, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇫🇷 法国二号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42014, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 优选 47, server: bbs.alipansou.com, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: FV2026-7-7-1A, server: 101.43.62.88, port: 22001, type: vless, uuid: 3bc7a459-d5b4-4494-a319-485e2f462229, tls: false, network: tcp, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1B, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 52ace424-bfff-4fc9-8a0e-2abef29d392c, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: 优选 35, server: cdn.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 15, server: snipaste5.speedip.eu.org, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇻🇳 越南二号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42011, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: FV2026-7-7-1M, server: 101.43.62.88, port: 22001, type: vless, uuid: 84fbb844-716f-4deb-9aa4-1d52099f5772, tls: false, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1G, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 8767791f-1609-44b0-87e6-108036f10e91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1B, server: 216.23.121.126, port: 4433, type: vless, uuid: 52ace424-bfff-4fc9-8a0e-2abef29d392c, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: IY-KXR, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 3bc7a459-d5b4-4494-a319-485e2f462229, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: safari, network: tcp, udp: true}
+  - {name: 🇲🇾 马来西亚二号 专线|解锁-1A, server: wandann2.wandajiasu.xyz, port: 42127, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇹🇼 台湾三号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42009, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: NJ-SJB, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 8b85acd4-e09a-4efb-8372-244b19df635e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇭🇰 TTC9999 香港, server: ww2.ttc9999.com, port: 443, type: vmess, uuid: 4f66b210-e16e-425e-a745-e7da3a2d5ab1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ww2.ttc9999.com}}, udp: true}
+  - {name: UN-RAD, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 58ed85b0-552f-4c67-9822-7ddbcfb613c2, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 4723463f-e9e3-4d6e-9512-a9af561bb1e2, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇦 FS-PUA, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 6cf636bc-0fab-4324-bef3-ed3ab64f33c7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡 1, server: sg.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 4, server: cfvip.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 10, server: www.swowd.com, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 34, server: cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: SILICONVALLEY-01-1B, server: 144.202.98.98, port: 8444, type: vmess, uuid: af18fdfc-38f4-42f8-ab32-7fe0c34ce422, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: FV2026-7-7-1E, server: 101.43.62.88, port: 22001, type: vless, uuid: 8b85acd4-e09a-4efb-8372-244b19df635e, tls: false, network: tcp, udp: true}
+  - {name: 🇺🇸 美国三号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42006, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: W3-KJQ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 4a891417-da50-48fe-92be-f31ae190cb11, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: safari, network: tcp, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1C, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: c3ed0771-1dc2-46b8-b94e-beae401206ed, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: 优选 32, server: cdn.204910.best, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 3834b9ec-1ae8-460c-ac13-43eb54add2a6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 优选 41, server: 3.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1G, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 8767791f-1609-44b0-87e6-108036f10e91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 优选 18, server: saas.sin.fan, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 8, server: cloudflare.idc.rocks, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇯🇵 JAPAN-SS-1B, server: 167.179.99.83, port: 8445, type: ss, cipher: aes-256-gcm, password: af18fdfc-38f4-42f8-ab32-7fe0c34ce422, udp: true}
+  - {name: 🇰🇷 韩国一号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42112, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1A, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 5ca36699-75b0-4cf9-ab88-745ef39e6128, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: 🇺🇸 HY-02 | US, server: usflare1.cloudaddy.top, port: 30003, type: hysteria2, password: f0d0c8cc-88d2-4b0d-9554-a8b8fbaf5067, auth: f0d0c8cc-88d2-4b0d-9554-a8b8fbaf5067, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本二号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42111, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: liulianglm.cc, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 774a5d72-9508-4ebf-86ac-02b71c155eed, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 日本一号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42110, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: liulianglm.cc, udp: true}
+  - {name: 🇻🇳 越南三号|高速|解锁|负载-1B, server: wandann3.wandajiasu.xyz, port: 42012, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 优选 27, server: eii.at, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: MJ-VHS, server: empty.node, port: 443, type: trojan, password: b5c8888b-6311-4850-b7e6-0abe926d73e5, sni: empty.node, skip-cert-verify: false, udp: true}
+  - {name: 优选 45, server: www.xflash.vip, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 4723463f-e9e3-4d6e-9512-a9af561bb1e2, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: JD-HUK, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: a8b326dc-3112-420d-b592-80e75f8b51f4, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 优选 28, server: idc.urkeji.com, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1G, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 52c0eb19-54be-4756-a43c-7070552457d5, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1F, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: 6d10ceed-5db0-4f67-8c42-690488d1ae02, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: 🇫🇷 法国三号|高速|解锁|负载-1A, server: wandann2.wandajiasu.xyz, port: 42015, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 英国 2, server: www.leics.police.uk, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇺🇸 HY-03 | US, server: usflare1.cloudaddy.top, port: 30004, type: hysteria2, password: f0d0c8cc-88d2-4b0d-9554-a8b8fbaf5067, auth: f0d0c8cc-88d2-4b0d-9554-a8b8fbaf5067, sni: us1.cloudsegl1.ccwu.cc, up: 5000, down: 5000, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国一号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42004, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 优选 9, server: run.254301.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇯🇵 VLESS-日本-1A, server: 216.23.121.126, port: 4433, type: vless, uuid: 5ca36699-75b0-4cf9-ab88-745ef39e6128, tls: true, servername: vless-zouter-jp.pinchela.org, network: tcp, udp: true}
+  - {name: FV2026-7-7-1H, server: 101.43.62.88, port: 22001, type: vless, uuid: 6a381743-a31f-4ed5-99f2-f1313d78df60, tls: false, network: tcp, udp: true}
+  - {name: 优选 16, server: kuaidianlian.com.cn, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 30, server: yg7.ygkkk.dpdns.org, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇭🇰 VLESS-香港-1D, server: hk-vless-zouter.pinchela.xyz, port: 4433, type: vless, uuid: cdcad01a-e780-48d0-87d6-169a92bc29e9, tls: true, servername: hk-vless-zouter.pinchela.xyz, network: tcp, udp: true}
+  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 4723463f-e9e3-4d6e-9512-a9af561bb1e2, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 3834b9ec-1ae8-460c-ac13-43eb54add2a6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 优选 24, server: 8.cf.3666888.xyz, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 优选 52, server: fk.hshwk.org, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp1.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp1.cc.cd}}, udp: true}
+  - {name: 🇸🇬 新加坡二号|高速|解锁|负载-1A, server: wandann3.wandajiasu.xyz, port: 42115, type: trojan, password: 0bfe1322-48b2-4843-bcca-993ae3c11c7f, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇺🇸 美国二号|高速|解锁|负载-1B, server: wandann2.wandajiasu.xyz, port: 42005, type: trojan, password: 2fc7b54b-5ae5-4c66-b8d3-0f87dacd572b, sni: any-cert.chegnxiaochang.cn, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1G, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 8767791f-1609-44b0-87e6-108036f10e91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - FV2026-7-7-1L
+      - 优选 29
+      - FV2026-7-7-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1B
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇺🇸 HY-04 | US
+      - QS-VWG
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 优选 23
+      - 🇯🇵 JAPAN-SS-1A
+      - 优选 43
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1K
+      - SILICONVALLEY-01-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 优选 54
+      - 优选 5
+      - FV2026-7-7-1I
+      - ZK-HQK
+      - 🇻🇳 越南一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 优选 3
+      - YJ-TYP
+      - 优选 17
+      - 🇹🇼 台湾二号|高速|解锁|负载-1B
+      - 🇺🇦 A4-UAT
+      - 优选 1
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 优选 33
+      - 优选 11
+      - 🇰🇷 韩国二号|高速|解锁|负载-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 优选 37
+      - 🇬🇧 英国 1
+      - 🇰🇷 韩国二号|高速|解锁|负载-1B
+      - 🇲🇾 马来西亚一号 专线|解锁-1B
+      - 🇫🇷 法国三号|高速|解锁|负载-1B
+      - 优选 38
+      - 🇨🇳 中国联通节点1
+      - 优选 36
+      - FV2026-7-7-1F
+      - 优选 46
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇯🇵 JAPAN-01-1A
+      - 🇰🇷 韩国一号|高速|解锁|负载-1A
+      - 🇲🇾 马来西亚一号 专线|解锁-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1A
+      - 🇭🇰 HK-A-1B
+      - 优选 13
+      - 🇯🇵 VLESS-日本-1F
+      - 优选 25
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
+      - 🇲🇾 马来西亚二号 专线|解锁-1B
+      - 优选 49
+      - 优选 48
+      - 🇺🇸 美国三号|高速|解锁|负载-1B
+      - 🇺🇸 HY-05| US
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 香港 1
+      - 🇯🇵 日本 1
+      - 优选 14
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 优选 40
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇹🇼 台湾一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1A
+      - FV2026-7-7-1C
+      - 优选 39
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
+      - 🇺🇸 美国高速节点1
+      - 优选 7
+      - FV2026-7-7-1G
+      - 优选 42
+      - 🇯🇵 日本二号|高速|解锁|负载-1B
+      - YR-GAF
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
+      - 优选 53
+      - AV-HYV
+      - 优选 22
+      - 优选 26
+      - 🇺🇸 美国 1
+      - 优选 44
+      - G I C A B N H T H N
+      - 优选 20
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇭🇰 VLESS-香港-1E
+      - 🇯🇵 JAPAN-01-1B
+      - 2N-HKQ
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
+      - 🇹🇼 台湾三号|高速|解锁|负载-1B
+      - 优选 2
+      - YL-MGR
+      - 优选 12
+      - 优选 19
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇻🇳 越南二号|高速|解锁|负载-1A
+      - 🇫🇷 法国二号|高速|解锁|负载-1A
+      - 🇹🇼 台湾二号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇺🇸 美国一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - FV2026-7-7-1J
+      - 🇯🇵 VLESS-日本-1D
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1B
+      - 优选 6
+      - 优选 51
+      - 优选 31
+      - 🇩🇪 德国-法兰克福-002-1E
+      - FV2026-7-7-1B
+      - 🇻🇳 越南一号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 优选 50
+      - 🇹🇼 台湾一号|高速|解锁|负载-1B
+      - 🇯🇵 VLESS-日本-1G
+      - 优选 21
+      - 🇫🇷 法国二号|高速|解锁|负载-1B
+      - 优选 47
+      - FV2026-7-7-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 优选 35
+      - 优选 15
+      - 🇻🇳 越南二号|高速|解锁|负载-1B
+      - FV2026-7-7-1M
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇯🇵 VLESS-日本-1B
+      - IY-KXR
+      - 🇲🇾 马来西亚二号 专线|解锁-1A
+      - 🇹🇼 台湾三号|高速|解锁|负载-1A
+      - 🇰🇷 韩国节点-B-1B
+      - NJ-SJB
+      - 🇭🇰 TTC9999 香港
+      - UN-RAD
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇦 FS-PUA
+      - 🇸🇬 新加坡 1
+      - 优选 4
+      - 优选 10
+      - 优选 34
+      - SILICONVALLEY-01-1B
+      - FV2026-7-7-1E
+      - 🇺🇸 美国三号|高速|解锁|负载-1A
+      - W3-KJQ
+      - 🇭🇰 VLESS-香港-1C
+      - 优选 32
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 41
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 优选 18
+      - 优选 8
       - 🇯🇵 JAPAN-SS-1B
       - 🇰🇷 韩国一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1G
-      - GA-FZS
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇻🇳 越南三号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇭🇰 TTC9999 香港
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1A
-      - 🇺🇸 美国二号|高速|解锁|负载-1A
-      - WF-FWZ
-      - 🇺🇸 HY-03 | US
-      - 🇯🇵 JAPAN-01-1A
-      - 🇲🇾 马来西亚一号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇺🇸 HY-04 | US
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇫🇷 法国二号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1F
-      - 🇲🇾 马来西亚一号 专线|解锁-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1B
-      - FV2026-7-7-1L
-      - 🇯🇵 VLESS-日本-1E
-      - 🇺🇸 美国一号|高速|解锁|负载-1B
-      - 🇹🇼 台湾二号|高速|解锁|负载-1A
-      - 🇲🇾 马来西亚二号 专线|解锁-1A
-      - AT-YSO
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇺🇸 美国三号|高速|解锁|负载-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - FV2026-7-7-1A
-      - FV2026-7-7-1F
-      - 🇹🇼 台湾一号|高速|解锁|负载-1B
-      - A1-GWK
-      - 🇩🇪 德国-法兰克福-002-1A
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
-      - 🇺🇸 美国一号|高速|解锁|负载-1A
-      - FV2026-7-7-1J
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇹🇼 台湾三号|高速|解锁|负载-1A
-      - 3x-KNS
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇯🇵 VLESS-日本-1C
-      - 🇭🇰 HK-A-1B
-      - FC-VWQ
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 VLESS-香港-1D
-      - HT-WIV
-      - 🇲🇾 马来西亚二号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇫🇷 法国二号|高速|解锁|负载-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1A
-      - 🇻🇳 越南一号|高速|解锁|负载-1A
-      - LD-NJI
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇻🇳 越南一号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇫🇷 法国三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - OY-QVI
-      - 🇹🇼 台湾三号|高速|解锁|负载-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
       - 🇭🇰 VLESS-香港-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1B
-      - 🇯🇵 VLESS-日本-1D
       - 🇺🇸 HY-02 | US
-      - Y9-OMZ
-      - 🇰🇷 韩国二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1B
-      - 🇰🇷 韩国一号|高速|解锁|负载-1A
-      - 🇭🇰 VLESS-香港-1C
-      - FV2026-7-7-1G
-      - FV2026-7-7-1I
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
-      - 🇺🇸 美国二号|高速|解锁|负载-1B
-      - MK-IZT
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 台湾一号|高速|解锁|负载-1A
-      - 🇭🇰 HK-A-1A
-      - FV2026-7-7-1E
-      - FV2026-7-7-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1B
       - 🇯🇵 日本二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1C
-      - SILICONVALLEY-01-1C
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1B
+      - 优选 27
+      - MJ-VHS
+      - 优选 45
+      - 🇹🇼 台湾高速节点2
+      - JD-HUK
+      - 优选 28
       - 🇭🇰 VLESS-香港-1G
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇺🇸 HY-05| US
-      - 🇻🇳 越南三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 VLESS-香港-1B
-      - 🇯🇵 VLESS-日本-1A
-      - FV2026-7-7-1K
-      - 🇰🇷 韩国二号|高速|解锁|负载-1B
-      - SILICONVALLEY-01-1B
-      - UH-LMX
-      - 🇹🇼 台湾二号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1B
       - 🇭🇰 VLESS-香港-1F
+      - 🇫🇷 法国三号|高速|解锁|负载-1A
+      - 🇬🇧 英国 2
+      - 🇺🇸 HY-03 | US
+      - 🇺🇸 美国一号|高速|解锁|负载-1A
+      - 优选 9
+      - 🇯🇵 VLESS-日本-1A
       - FV2026-7-7-1H
-      - OL-HTW
-      - 🇯🇵 日本二号|高速|解锁|负载-1B
-      - 🇺🇸 美国三号|高速|解锁|负载-1A
-      - FV2026-7-7-1C
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇫🇷 法国三号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
-      - SILICONVALLEY-01-1A
+      - 优选 16
+      - 优选 30
+      - 🇭🇰 VLESS-香港-1D
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 优选 24
+      - 优选 52
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1G
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - FV2026-7-7-1L
+      - 优选 29
+      - FV2026-7-7-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1B
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇺🇸 HY-04 | US
+      - QS-VWG
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 优选 23
+      - 🇯🇵 JAPAN-SS-1A
+      - 优选 43
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1K
+      - SILICONVALLEY-01-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 优选 54
+      - 优选 5
+      - FV2026-7-7-1I
+      - ZK-HQK
+      - 🇻🇳 越南一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 优选 3
+      - YJ-TYP
+      - 优选 17
+      - 🇹🇼 台湾二号|高速|解锁|负载-1B
+      - 🇺🇦 A4-UAT
+      - 优选 1
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 优选 33
+      - 优选 11
+      - 🇰🇷 韩国二号|高速|解锁|负载-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 优选 37
+      - 🇬🇧 英国 1
+      - 🇰🇷 韩国二号|高速|解锁|负载-1B
+      - 🇲🇾 马来西亚一号 专线|解锁-1B
+      - 🇫🇷 法国三号|高速|解锁|负载-1B
+      - 优选 38
+      - 🇨🇳 中国联通节点1
+      - 优选 36
+      - FV2026-7-7-1F
+      - 优选 46
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇯🇵 JAPAN-01-1A
+      - 🇰🇷 韩国一号|高速|解锁|负载-1A
+      - 🇲🇾 马来西亚一号 专线|解锁-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1A
+      - 🇭🇰 HK-A-1B
+      - 优选 13
+      - 🇯🇵 VLESS-日本-1F
+      - 优选 25
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
+      - 🇲🇾 马来西亚二号 专线|解锁-1B
+      - 优选 49
+      - 优选 48
+      - 🇺🇸 美国三号|高速|解锁|负载-1B
+      - 🇺🇸 HY-05| US
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 香港 1
+      - 🇯🇵 日本 1
+      - 优选 14
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 优选 40
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇹🇼 台湾一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1A
+      - FV2026-7-7-1C
+      - 优选 39
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
+      - 🇺🇸 美国高速节点1
+      - 优选 7
+      - FV2026-7-7-1G
+      - 优选 42
+      - 🇯🇵 日本二号|高速|解锁|负载-1B
+      - YR-GAF
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
+      - 优选 53
+      - AV-HYV
+      - 优选 22
+      - 优选 26
+      - 🇺🇸 美国 1
+      - 优选 44
+      - G I C A B N H T H N
+      - 优选 20
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇭🇰 VLESS-香港-1E
+      - 🇯🇵 JAPAN-01-1B
+      - 2N-HKQ
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
+      - 🇹🇼 台湾三号|高速|解锁|负载-1B
+      - 优选 2
+      - YL-MGR
+      - 优选 12
+      - 优选 19
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇻🇳 越南二号|高速|解锁|负载-1A
+      - 🇫🇷 法国二号|高速|解锁|负载-1A
+      - 🇹🇼 台湾二号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇺🇸 美国一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - FV2026-7-7-1J
+      - 🇯🇵 VLESS-日本-1D
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1B
+      - 优选 6
+      - 优选 51
+      - 优选 31
+      - 🇩🇪 德国-法兰克福-002-1E
+      - FV2026-7-7-1B
+      - 🇻🇳 越南一号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 优选 50
+      - 🇹🇼 台湾一号|高速|解锁|负载-1B
+      - 🇯🇵 VLESS-日本-1G
+      - 优选 21
+      - 🇫🇷 法国二号|高速|解锁|负载-1B
+      - 优选 47
+      - FV2026-7-7-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 优选 35
+      - 优选 15
+      - 🇻🇳 越南二号|高速|解锁|负载-1B
+      - FV2026-7-7-1M
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇯🇵 VLESS-日本-1B
+      - IY-KXR
+      - 🇲🇾 马来西亚二号 专线|解锁-1A
+      - 🇹🇼 台湾三号|高速|解锁|负载-1A
+      - 🇰🇷 韩国节点-B-1B
+      - NJ-SJB
+      - 🇭🇰 TTC9999 香港
+      - UN-RAD
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇦 FS-PUA
+      - 🇸🇬 新加坡 1
+      - 优选 4
+      - 优选 10
+      - 优选 34
+      - SILICONVALLEY-01-1B
+      - FV2026-7-7-1E
+      - 🇺🇸 美国三号|高速|解锁|负载-1A
+      - W3-KJQ
+      - 🇭🇰 VLESS-香港-1C
+      - 优选 32
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 41
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 优选 18
+      - 优选 8
       - 🇯🇵 JAPAN-SS-1B
       - 🇰🇷 韩国一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1G
-      - GA-FZS
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇻🇳 越南三号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇭🇰 TTC9999 香港
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1A
-      - 🇺🇸 美国二号|高速|解锁|负载-1A
-      - WF-FWZ
-      - 🇺🇸 HY-03 | US
-      - 🇯🇵 JAPAN-01-1A
-      - 🇲🇾 马来西亚一号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇺🇸 HY-04 | US
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇫🇷 法国二号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1F
-      - 🇲🇾 马来西亚一号 专线|解锁-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1B
-      - FV2026-7-7-1L
-      - 🇯🇵 VLESS-日本-1E
-      - 🇺🇸 美国一号|高速|解锁|负载-1B
-      - 🇹🇼 台湾二号|高速|解锁|负载-1A
-      - 🇲🇾 马来西亚二号 专线|解锁-1A
-      - AT-YSO
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇺🇸 美国三号|高速|解锁|负载-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - FV2026-7-7-1A
-      - FV2026-7-7-1F
-      - 🇹🇼 台湾一号|高速|解锁|负载-1B
-      - A1-GWK
-      - 🇩🇪 德国-法兰克福-002-1A
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
-      - 🇺🇸 美国一号|高速|解锁|负载-1A
-      - FV2026-7-7-1J
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇹🇼 台湾三号|高速|解锁|负载-1A
-      - 3x-KNS
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇯🇵 VLESS-日本-1C
-      - 🇭🇰 HK-A-1B
-      - FC-VWQ
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 VLESS-香港-1D
-      - HT-WIV
-      - 🇲🇾 马来西亚二号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇫🇷 法国二号|高速|解锁|负载-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1A
-      - 🇻🇳 越南一号|高速|解锁|负载-1A
-      - LD-NJI
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇻🇳 越南一号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇫🇷 法国三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - OY-QVI
-      - 🇹🇼 台湾三号|高速|解锁|负载-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
       - 🇭🇰 VLESS-香港-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1B
-      - 🇯🇵 VLESS-日本-1D
       - 🇺🇸 HY-02 | US
-      - Y9-OMZ
-      - 🇰🇷 韩国二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1B
-      - 🇰🇷 韩国一号|高速|解锁|负载-1A
-      - 🇭🇰 VLESS-香港-1C
-      - FV2026-7-7-1G
-      - FV2026-7-7-1I
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
-      - 🇺🇸 美国二号|高速|解锁|负载-1B
-      - MK-IZT
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 台湾一号|高速|解锁|负载-1A
-      - 🇭🇰 HK-A-1A
-      - FV2026-7-7-1E
-      - FV2026-7-7-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1B
       - 🇯🇵 日本二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1C
-      - SILICONVALLEY-01-1C
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1B
+      - 优选 27
+      - MJ-VHS
+      - 优选 45
+      - 🇹🇼 台湾高速节点2
+      - JD-HUK
+      - 优选 28
       - 🇭🇰 VLESS-香港-1G
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇺🇸 HY-05| US
-      - 🇻🇳 越南三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 VLESS-香港-1B
-      - 🇯🇵 VLESS-日本-1A
-      - FV2026-7-7-1K
-      - 🇰🇷 韩国二号|高速|解锁|负载-1B
-      - SILICONVALLEY-01-1B
-      - UH-LMX
-      - 🇹🇼 台湾二号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1B
       - 🇭🇰 VLESS-香港-1F
+      - 🇫🇷 法国三号|高速|解锁|负载-1A
+      - 🇬🇧 英国 2
+      - 🇺🇸 HY-03 | US
+      - 🇺🇸 美国一号|高速|解锁|负载-1A
+      - 优选 9
+      - 🇯🇵 VLESS-日本-1A
       - FV2026-7-7-1H
-      - OL-HTW
-      - 🇯🇵 日本二号|高速|解锁|负载-1B
-      - 🇺🇸 美国三号|高速|解锁|负载-1A
-      - FV2026-7-7-1C
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇫🇷 法国三号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
-      - SILICONVALLEY-01-1A
+      - 优选 16
+      - 优选 30
+      - 🇭🇰 VLESS-香港-1D
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 优选 24
+      - 优选 52
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1G
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - FV2026-7-7-1L
+      - 优选 29
+      - FV2026-7-7-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1B
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇺🇸 HY-04 | US
+      - QS-VWG
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 优选 23
+      - 🇯🇵 JAPAN-SS-1A
+      - 优选 43
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1K
+      - SILICONVALLEY-01-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 优选 54
+      - 优选 5
+      - FV2026-7-7-1I
+      - ZK-HQK
+      - 🇻🇳 越南一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 优选 3
+      - YJ-TYP
+      - 优选 17
+      - 🇹🇼 台湾二号|高速|解锁|负载-1B
+      - 🇺🇦 A4-UAT
+      - 优选 1
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 优选 33
+      - 优选 11
+      - 🇰🇷 韩国二号|高速|解锁|负载-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 优选 37
+      - 🇬🇧 英国 1
+      - 🇰🇷 韩国二号|高速|解锁|负载-1B
+      - 🇲🇾 马来西亚一号 专线|解锁-1B
+      - 🇫🇷 法国三号|高速|解锁|负载-1B
+      - 优选 38
+      - 🇨🇳 中国联通节点1
+      - 优选 36
+      - FV2026-7-7-1F
+      - 优选 46
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇯🇵 JAPAN-01-1A
+      - 🇰🇷 韩国一号|高速|解锁|负载-1A
+      - 🇲🇾 马来西亚一号 专线|解锁-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1A
+      - 🇭🇰 HK-A-1B
+      - 优选 13
+      - 🇯🇵 VLESS-日本-1F
+      - 优选 25
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
+      - 🇲🇾 马来西亚二号 专线|解锁-1B
+      - 优选 49
+      - 优选 48
+      - 🇺🇸 美国三号|高速|解锁|负载-1B
+      - 🇺🇸 HY-05| US
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 香港 1
+      - 🇯🇵 日本 1
+      - 优选 14
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 优选 40
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇹🇼 台湾一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1A
+      - FV2026-7-7-1C
+      - 优选 39
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
+      - 🇺🇸 美国高速节点1
+      - 优选 7
+      - FV2026-7-7-1G
+      - 优选 42
+      - 🇯🇵 日本二号|高速|解锁|负载-1B
+      - YR-GAF
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
+      - 优选 53
+      - AV-HYV
+      - 优选 22
+      - 优选 26
+      - 🇺🇸 美国 1
+      - 优选 44
+      - G I C A B N H T H N
+      - 优选 20
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇭🇰 VLESS-香港-1E
+      - 🇯🇵 JAPAN-01-1B
+      - 2N-HKQ
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
+      - 🇹🇼 台湾三号|高速|解锁|负载-1B
+      - 优选 2
+      - YL-MGR
+      - 优选 12
+      - 优选 19
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇻🇳 越南二号|高速|解锁|负载-1A
+      - 🇫🇷 法国二号|高速|解锁|负载-1A
+      - 🇹🇼 台湾二号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇺🇸 美国一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - FV2026-7-7-1J
+      - 🇯🇵 VLESS-日本-1D
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1B
+      - 优选 6
+      - 优选 51
+      - 优选 31
+      - 🇩🇪 德国-法兰克福-002-1E
+      - FV2026-7-7-1B
+      - 🇻🇳 越南一号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 优选 50
+      - 🇹🇼 台湾一号|高速|解锁|负载-1B
+      - 🇯🇵 VLESS-日本-1G
+      - 优选 21
+      - 🇫🇷 法国二号|高速|解锁|负载-1B
+      - 优选 47
+      - FV2026-7-7-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 优选 35
+      - 优选 15
+      - 🇻🇳 越南二号|高速|解锁|负载-1B
+      - FV2026-7-7-1M
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇯🇵 VLESS-日本-1B
+      - IY-KXR
+      - 🇲🇾 马来西亚二号 专线|解锁-1A
+      - 🇹🇼 台湾三号|高速|解锁|负载-1A
+      - 🇰🇷 韩国节点-B-1B
+      - NJ-SJB
+      - 🇭🇰 TTC9999 香港
+      - UN-RAD
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇦 FS-PUA
+      - 🇸🇬 新加坡 1
+      - 优选 4
+      - 优选 10
+      - 优选 34
+      - SILICONVALLEY-01-1B
+      - FV2026-7-7-1E
+      - 🇺🇸 美国三号|高速|解锁|负载-1A
+      - W3-KJQ
+      - 🇭🇰 VLESS-香港-1C
+      - 优选 32
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 41
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 优选 18
+      - 优选 8
       - 🇯🇵 JAPAN-SS-1B
       - 🇰🇷 韩国一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1G
-      - GA-FZS
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇻🇳 越南三号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇭🇰 TTC9999 香港
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1A
-      - 🇺🇸 美国二号|高速|解锁|负载-1A
-      - WF-FWZ
-      - 🇺🇸 HY-03 | US
-      - 🇯🇵 JAPAN-01-1A
-      - 🇲🇾 马来西亚一号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇺🇸 HY-04 | US
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇫🇷 法国二号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1F
-      - 🇲🇾 马来西亚一号 专线|解锁-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1B
-      - FV2026-7-7-1L
-      - 🇯🇵 VLESS-日本-1E
-      - 🇺🇸 美国一号|高速|解锁|负载-1B
-      - 🇹🇼 台湾二号|高速|解锁|负载-1A
-      - 🇲🇾 马来西亚二号 专线|解锁-1A
-      - AT-YSO
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇺🇸 美国三号|高速|解锁|负载-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - FV2026-7-7-1A
-      - FV2026-7-7-1F
-      - 🇹🇼 台湾一号|高速|解锁|负载-1B
-      - A1-GWK
-      - 🇩🇪 德国-法兰克福-002-1A
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
-      - 🇺🇸 美国一号|高速|解锁|负载-1A
-      - FV2026-7-7-1J
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇹🇼 台湾三号|高速|解锁|负载-1A
-      - 3x-KNS
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇯🇵 VLESS-日本-1C
-      - 🇭🇰 HK-A-1B
-      - FC-VWQ
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 VLESS-香港-1D
-      - HT-WIV
-      - 🇲🇾 马来西亚二号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇫🇷 法国二号|高速|解锁|负载-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1A
-      - 🇻🇳 越南一号|高速|解锁|负载-1A
-      - LD-NJI
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇻🇳 越南一号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇫🇷 法国三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - OY-QVI
-      - 🇹🇼 台湾三号|高速|解锁|负载-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
       - 🇭🇰 VLESS-香港-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1B
-      - 🇯🇵 VLESS-日本-1D
       - 🇺🇸 HY-02 | US
-      - Y9-OMZ
-      - 🇰🇷 韩国二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1B
-      - 🇰🇷 韩国一号|高速|解锁|负载-1A
-      - 🇭🇰 VLESS-香港-1C
-      - FV2026-7-7-1G
-      - FV2026-7-7-1I
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
-      - 🇺🇸 美国二号|高速|解锁|负载-1B
-      - MK-IZT
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 台湾一号|高速|解锁|负载-1A
-      - 🇭🇰 HK-A-1A
-      - FV2026-7-7-1E
-      - FV2026-7-7-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1B
       - 🇯🇵 日本二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1C
-      - SILICONVALLEY-01-1C
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1B
+      - 优选 27
+      - MJ-VHS
+      - 优选 45
+      - 🇹🇼 台湾高速节点2
+      - JD-HUK
+      - 优选 28
       - 🇭🇰 VLESS-香港-1G
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇺🇸 HY-05| US
-      - 🇻🇳 越南三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 VLESS-香港-1B
-      - 🇯🇵 VLESS-日本-1A
-      - FV2026-7-7-1K
-      - 🇰🇷 韩国二号|高速|解锁|负载-1B
-      - SILICONVALLEY-01-1B
-      - UH-LMX
-      - 🇹🇼 台湾二号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1B
       - 🇭🇰 VLESS-香港-1F
+      - 🇫🇷 法国三号|高速|解锁|负载-1A
+      - 🇬🇧 英国 2
+      - 🇺🇸 HY-03 | US
+      - 🇺🇸 美国一号|高速|解锁|负载-1A
+      - 优选 9
+      - 🇯🇵 VLESS-日本-1A
       - FV2026-7-7-1H
-      - OL-HTW
-      - 🇯🇵 日本二号|高速|解锁|负载-1B
-      - 🇺🇸 美国三号|高速|解锁|负载-1A
-      - FV2026-7-7-1C
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇫🇷 法国三号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
-      - SILICONVALLEY-01-1A
+      - 优选 16
+      - 优选 30
+      - 🇭🇰 VLESS-香港-1D
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 优选 24
+      - 优选 52
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1G
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -556,566 +828,839 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - FV2026-7-7-1L
+      - 优选 29
+      - FV2026-7-7-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1B
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇺🇸 HY-04 | US
+      - QS-VWG
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 优选 23
+      - 🇯🇵 JAPAN-SS-1A
+      - 优选 43
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1K
+      - SILICONVALLEY-01-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 优选 54
+      - 优选 5
+      - FV2026-7-7-1I
+      - ZK-HQK
+      - 🇻🇳 越南一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 优选 3
+      - YJ-TYP
+      - 优选 17
+      - 🇹🇼 台湾二号|高速|解锁|负载-1B
+      - 🇺🇦 A4-UAT
+      - 优选 1
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 优选 33
+      - 优选 11
+      - 🇰🇷 韩国二号|高速|解锁|负载-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 优选 37
+      - 🇬🇧 英国 1
+      - 🇰🇷 韩国二号|高速|解锁|负载-1B
+      - 🇲🇾 马来西亚一号 专线|解锁-1B
+      - 🇫🇷 法国三号|高速|解锁|负载-1B
+      - 优选 38
+      - 🇨🇳 中国联通节点1
+      - 优选 36
+      - FV2026-7-7-1F
+      - 优选 46
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇯🇵 JAPAN-01-1A
+      - 🇰🇷 韩国一号|高速|解锁|负载-1A
+      - 🇲🇾 马来西亚一号 专线|解锁-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1A
+      - 🇭🇰 HK-A-1B
+      - 优选 13
+      - 🇯🇵 VLESS-日本-1F
+      - 优选 25
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
+      - 🇲🇾 马来西亚二号 专线|解锁-1B
+      - 优选 49
+      - 优选 48
+      - 🇺🇸 美国三号|高速|解锁|负载-1B
+      - 🇺🇸 HY-05| US
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 香港 1
+      - 🇯🇵 日本 1
+      - 优选 14
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 优选 40
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇹🇼 台湾一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1A
+      - FV2026-7-7-1C
+      - 优选 39
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
+      - 🇺🇸 美国高速节点1
+      - 优选 7
+      - FV2026-7-7-1G
+      - 优选 42
+      - 🇯🇵 日本二号|高速|解锁|负载-1B
+      - YR-GAF
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
+      - 优选 53
+      - AV-HYV
+      - 优选 22
+      - 优选 26
+      - 🇺🇸 美国 1
+      - 优选 44
+      - G I C A B N H T H N
+      - 优选 20
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇭🇰 VLESS-香港-1E
+      - 🇯🇵 JAPAN-01-1B
+      - 2N-HKQ
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
+      - 🇹🇼 台湾三号|高速|解锁|负载-1B
+      - 优选 2
+      - YL-MGR
+      - 优选 12
+      - 优选 19
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇻🇳 越南二号|高速|解锁|负载-1A
+      - 🇫🇷 法国二号|高速|解锁|负载-1A
+      - 🇹🇼 台湾二号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇺🇸 美国一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - FV2026-7-7-1J
+      - 🇯🇵 VLESS-日本-1D
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1B
+      - 优选 6
+      - 优选 51
+      - 优选 31
+      - 🇩🇪 德国-法兰克福-002-1E
+      - FV2026-7-7-1B
+      - 🇻🇳 越南一号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 优选 50
+      - 🇹🇼 台湾一号|高速|解锁|负载-1B
+      - 🇯🇵 VLESS-日本-1G
+      - 优选 21
+      - 🇫🇷 法国二号|高速|解锁|负载-1B
+      - 优选 47
+      - FV2026-7-7-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 优选 35
+      - 优选 15
+      - 🇻🇳 越南二号|高速|解锁|负载-1B
+      - FV2026-7-7-1M
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇯🇵 VLESS-日本-1B
+      - IY-KXR
+      - 🇲🇾 马来西亚二号 专线|解锁-1A
+      - 🇹🇼 台湾三号|高速|解锁|负载-1A
+      - 🇰🇷 韩国节点-B-1B
+      - NJ-SJB
+      - 🇭🇰 TTC9999 香港
+      - UN-RAD
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇦 FS-PUA
+      - 🇸🇬 新加坡 1
+      - 优选 4
+      - 优选 10
+      - 优选 34
+      - SILICONVALLEY-01-1B
+      - FV2026-7-7-1E
+      - 🇺🇸 美国三号|高速|解锁|负载-1A
+      - W3-KJQ
+      - 🇭🇰 VLESS-香港-1C
+      - 优选 32
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 41
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 优选 18
+      - 优选 8
       - 🇯🇵 JAPAN-SS-1B
       - 🇰🇷 韩国一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1G
-      - GA-FZS
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇻🇳 越南三号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇭🇰 TTC9999 香港
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1A
-      - 🇺🇸 美国二号|高速|解锁|负载-1A
-      - WF-FWZ
-      - 🇺🇸 HY-03 | US
-      - 🇯🇵 JAPAN-01-1A
-      - 🇲🇾 马来西亚一号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇺🇸 HY-04 | US
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇫🇷 法国二号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1F
-      - 🇲🇾 马来西亚一号 专线|解锁-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1B
-      - FV2026-7-7-1L
-      - 🇯🇵 VLESS-日本-1E
-      - 🇺🇸 美国一号|高速|解锁|负载-1B
-      - 🇹🇼 台湾二号|高速|解锁|负载-1A
-      - 🇲🇾 马来西亚二号 专线|解锁-1A
-      - AT-YSO
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇺🇸 美国三号|高速|解锁|负载-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - FV2026-7-7-1A
-      - FV2026-7-7-1F
-      - 🇹🇼 台湾一号|高速|解锁|负载-1B
-      - A1-GWK
-      - 🇩🇪 德国-法兰克福-002-1A
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
-      - 🇺🇸 美国一号|高速|解锁|负载-1A
-      - FV2026-7-7-1J
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇹🇼 台湾三号|高速|解锁|负载-1A
-      - 3x-KNS
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇯🇵 VLESS-日本-1C
-      - 🇭🇰 HK-A-1B
-      - FC-VWQ
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 VLESS-香港-1D
-      - HT-WIV
-      - 🇲🇾 马来西亚二号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇫🇷 法国二号|高速|解锁|负载-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1A
-      - 🇻🇳 越南一号|高速|解锁|负载-1A
-      - LD-NJI
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇻🇳 越南一号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇫🇷 法国三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - OY-QVI
-      - 🇹🇼 台湾三号|高速|解锁|负载-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
       - 🇭🇰 VLESS-香港-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1B
-      - 🇯🇵 VLESS-日本-1D
       - 🇺🇸 HY-02 | US
-      - Y9-OMZ
-      - 🇰🇷 韩国二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1B
-      - 🇰🇷 韩国一号|高速|解锁|负载-1A
-      - 🇭🇰 VLESS-香港-1C
-      - FV2026-7-7-1G
-      - FV2026-7-7-1I
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
-      - 🇺🇸 美国二号|高速|解锁|负载-1B
-      - MK-IZT
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 台湾一号|高速|解锁|负载-1A
-      - 🇭🇰 HK-A-1A
-      - FV2026-7-7-1E
-      - FV2026-7-7-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1B
       - 🇯🇵 日本二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1C
-      - SILICONVALLEY-01-1C
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1B
+      - 优选 27
+      - MJ-VHS
+      - 优选 45
+      - 🇹🇼 台湾高速节点2
+      - JD-HUK
+      - 优选 28
       - 🇭🇰 VLESS-香港-1G
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇺🇸 HY-05| US
-      - 🇻🇳 越南三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 VLESS-香港-1B
-      - 🇯🇵 VLESS-日本-1A
-      - FV2026-7-7-1K
-      - 🇰🇷 韩国二号|高速|解锁|负载-1B
-      - SILICONVALLEY-01-1B
-      - UH-LMX
-      - 🇹🇼 台湾二号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1B
       - 🇭🇰 VLESS-香港-1F
+      - 🇫🇷 法国三号|高速|解锁|负载-1A
+      - 🇬🇧 英国 2
+      - 🇺🇸 HY-03 | US
+      - 🇺🇸 美国一号|高速|解锁|负载-1A
+      - 优选 9
+      - 🇯🇵 VLESS-日本-1A
       - FV2026-7-7-1H
-      - OL-HTW
-      - 🇯🇵 日本二号|高速|解锁|负载-1B
-      - 🇺🇸 美国三号|高速|解锁|负载-1A
-      - FV2026-7-7-1C
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇫🇷 法国三号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
-      - SILICONVALLEY-01-1A
+      - 优选 16
+      - 优选 30
+      - 🇭🇰 VLESS-香港-1D
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 优选 24
+      - 优选 52
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1G
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 VLESS-香港-1E
-      - 🇭🇰 TTC9999 香港
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
+      - 🇹🇼 台湾二号|高速|解锁|负载-1B
       - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
-      - 🇹🇼 台湾高速节点2
+      - 🇭🇰 香港 1
+      - 🇹🇼 台湾一号|高速|解锁|负载-1A
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
+      - 🇭🇰 VLESS-香港-1E
       - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
-      - 🇹🇼 台湾高速节点3
+      - 🇹🇼 台湾三号|高速|解锁|负载-1B
       - 🇹🇼 台湾二号|高速|解锁|负载-1A
       - 🇹🇼 台湾一号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
-      - 🇹🇼 台湾三号|高速|解锁|负载-1A
-      - 🇭🇰 VLESS-香港-1D
-      - 🇹🇼 台湾三号|高速|解锁|负载-1B
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
-      - 🇭🇰 VLESS-香港-1A
-      - 🇭🇰 VLESS-香港-1C
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
-      - 🇹🇼 台湾一号|高速|解锁|负载-1A
-      - 🇭🇰 VLESS-香港-1G
       - 🇭🇰 VLESS-香港-1B
-      - 🇹🇼 台湾二号|高速|解锁|负载-1B
+      - 🇹🇼 台湾三号|高速|解锁|负载-1A
+      - 🇭🇰 TTC9999 香港
+      - 🇹🇼 台湾高速节点3
+      - 🇭🇰 VLESS-香港-1C
+      - 🇭🇰 VLESS-香港-1A
+      - 🇹🇼 台湾高速节点2
+      - 🇭🇰 VLESS-香港-1G
       - 🇭🇰 VLESS-香港-1F
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
+      - 🇭🇰 VLESS-香港-1D
+      - 🇹🇼 台湾高速节点
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - FV2026-7-7-1L
+      - 优选 29
+      - FV2026-7-7-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1B
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇺🇸 HY-04 | US
+      - QS-VWG
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 优选 23
+      - 🇯🇵 JAPAN-SS-1A
+      - 优选 43
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1K
+      - SILICONVALLEY-01-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 优选 54
+      - 优选 5
+      - FV2026-7-7-1I
+      - ZK-HQK
+      - 🇻🇳 越南一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 优选 3
+      - YJ-TYP
+      - 优选 17
+      - 🇹🇼 台湾二号|高速|解锁|负载-1B
+      - 🇺🇦 A4-UAT
+      - 优选 1
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 优选 33
+      - 优选 11
+      - 🇰🇷 韩国二号|高速|解锁|负载-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 优选 37
+      - 🇬🇧 英国 1
+      - 🇰🇷 韩国二号|高速|解锁|负载-1B
+      - 🇲🇾 马来西亚一号 专线|解锁-1B
+      - 🇫🇷 法国三号|高速|解锁|负载-1B
+      - 优选 38
+      - 🇨🇳 中国联通节点1
+      - 优选 36
+      - FV2026-7-7-1F
+      - 优选 46
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇯🇵 JAPAN-01-1A
+      - 🇰🇷 韩国一号|高速|解锁|负载-1A
+      - 🇲🇾 马来西亚一号 专线|解锁-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1A
+      - 🇭🇰 HK-A-1B
+      - 优选 13
+      - 🇯🇵 VLESS-日本-1F
+      - 优选 25
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
+      - 🇲🇾 马来西亚二号 专线|解锁-1B
+      - 优选 49
+      - 优选 48
+      - 🇺🇸 美国三号|高速|解锁|负载-1B
+      - 🇺🇸 HY-05| US
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 香港 1
+      - 🇯🇵 日本 1
+      - 优选 14
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 优选 40
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇹🇼 台湾一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1A
+      - FV2026-7-7-1C
+      - 优选 39
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
+      - 🇺🇸 美国高速节点1
+      - 优选 7
+      - FV2026-7-7-1G
+      - 优选 42
+      - 🇯🇵 日本二号|高速|解锁|负载-1B
+      - YR-GAF
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
+      - 优选 53
+      - AV-HYV
+      - 优选 22
+      - 优选 26
+      - 🇺🇸 美国 1
+      - 优选 44
+      - G I C A B N H T H N
+      - 优选 20
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇭🇰 VLESS-香港-1E
+      - 🇯🇵 JAPAN-01-1B
+      - 2N-HKQ
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
+      - 🇹🇼 台湾三号|高速|解锁|负载-1B
+      - 优选 2
+      - YL-MGR
+      - 优选 12
+      - 优选 19
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇻🇳 越南二号|高速|解锁|负载-1A
+      - 🇫🇷 法国二号|高速|解锁|负载-1A
+      - 🇹🇼 台湾二号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇺🇸 美国一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - FV2026-7-7-1J
+      - 🇯🇵 VLESS-日本-1D
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1B
+      - 优选 6
+      - 优选 51
+      - 优选 31
+      - 🇩🇪 德国-法兰克福-002-1E
+      - FV2026-7-7-1B
+      - 🇻🇳 越南一号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 优选 50
+      - 🇹🇼 台湾一号|高速|解锁|负载-1B
+      - 🇯🇵 VLESS-日本-1G
+      - 优选 21
+      - 🇫🇷 法国二号|高速|解锁|负载-1B
+      - 优选 47
+      - FV2026-7-7-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 优选 35
+      - 优选 15
+      - 🇻🇳 越南二号|高速|解锁|负载-1B
+      - FV2026-7-7-1M
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇯🇵 VLESS-日本-1B
+      - IY-KXR
+      - 🇲🇾 马来西亚二号 专线|解锁-1A
+      - 🇹🇼 台湾三号|高速|解锁|负载-1A
+      - 🇰🇷 韩国节点-B-1B
+      - NJ-SJB
+      - 🇭🇰 TTC9999 香港
+      - UN-RAD
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇦 FS-PUA
+      - 🇸🇬 新加坡 1
+      - 优选 4
+      - 优选 10
+      - 优选 34
+      - SILICONVALLEY-01-1B
+      - FV2026-7-7-1E
+      - 🇺🇸 美国三号|高速|解锁|负载-1A
+      - W3-KJQ
+      - 🇭🇰 VLESS-香港-1C
+      - 优选 32
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 41
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 优选 18
+      - 优选 8
       - 🇯🇵 JAPAN-SS-1B
       - 🇰🇷 韩国一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1G
-      - GA-FZS
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇻🇳 越南三号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇭🇰 TTC9999 香港
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1A
-      - 🇺🇸 美国二号|高速|解锁|负载-1A
-      - WF-FWZ
-      - 🇺🇸 HY-03 | US
-      - 🇯🇵 JAPAN-01-1A
-      - 🇲🇾 马来西亚一号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇺🇸 HY-04 | US
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇫🇷 法国二号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1F
-      - 🇲🇾 马来西亚一号 专线|解锁-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1B
-      - FV2026-7-7-1L
-      - 🇯🇵 VLESS-日本-1E
-      - 🇺🇸 美国一号|高速|解锁|负载-1B
-      - 🇹🇼 台湾二号|高速|解锁|负载-1A
-      - 🇲🇾 马来西亚二号 专线|解锁-1A
-      - AT-YSO
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇺🇸 美国三号|高速|解锁|负载-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - FV2026-7-7-1A
-      - FV2026-7-7-1F
-      - 🇹🇼 台湾一号|高速|解锁|负载-1B
-      - A1-GWK
-      - 🇩🇪 德国-法兰克福-002-1A
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
-      - 🇺🇸 美国一号|高速|解锁|负载-1A
-      - FV2026-7-7-1J
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇹🇼 台湾三号|高速|解锁|负载-1A
-      - 3x-KNS
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇯🇵 VLESS-日本-1C
-      - 🇭🇰 HK-A-1B
-      - FC-VWQ
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 VLESS-香港-1D
-      - HT-WIV
-      - 🇲🇾 马来西亚二号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇫🇷 法国二号|高速|解锁|负载-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1A
-      - 🇻🇳 越南一号|高速|解锁|负载-1A
-      - LD-NJI
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇻🇳 越南一号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇫🇷 法国三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - OY-QVI
-      - 🇹🇼 台湾三号|高速|解锁|负载-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
       - 🇭🇰 VLESS-香港-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1B
-      - 🇯🇵 VLESS-日本-1D
       - 🇺🇸 HY-02 | US
-      - Y9-OMZ
-      - 🇰🇷 韩国二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1B
-      - 🇰🇷 韩国一号|高速|解锁|负载-1A
-      - 🇭🇰 VLESS-香港-1C
-      - FV2026-7-7-1G
-      - FV2026-7-7-1I
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
-      - 🇺🇸 美国二号|高速|解锁|负载-1B
-      - MK-IZT
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 台湾一号|高速|解锁|负载-1A
-      - 🇭🇰 HK-A-1A
-      - FV2026-7-7-1E
-      - FV2026-7-7-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1B
       - 🇯🇵 日本二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1C
-      - SILICONVALLEY-01-1C
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1B
+      - 优选 27
+      - MJ-VHS
+      - 优选 45
+      - 🇹🇼 台湾高速节点2
+      - JD-HUK
+      - 优选 28
       - 🇭🇰 VLESS-香港-1G
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇺🇸 HY-05| US
-      - 🇻🇳 越南三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 VLESS-香港-1B
-      - 🇯🇵 VLESS-日本-1A
-      - FV2026-7-7-1K
-      - 🇰🇷 韩国二号|高速|解锁|负载-1B
-      - SILICONVALLEY-01-1B
-      - UH-LMX
-      - 🇹🇼 台湾二号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1B
       - 🇭🇰 VLESS-香港-1F
+      - 🇫🇷 法国三号|高速|解锁|负载-1A
+      - 🇬🇧 英国 2
+      - 🇺🇸 HY-03 | US
+      - 🇺🇸 美国一号|高速|解锁|负载-1A
+      - 优选 9
+      - 🇯🇵 VLESS-日本-1A
       - FV2026-7-7-1H
-      - OL-HTW
-      - 🇯🇵 日本二号|高速|解锁|负载-1B
-      - 🇺🇸 美国三号|高速|解锁|负载-1A
-      - FV2026-7-7-1C
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇫🇷 法国三号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
-      - SILICONVALLEY-01-1A
+      - 优选 16
+      - 优选 30
+      - 🇭🇰 VLESS-香港-1D
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 优选 24
+      - 优选 52
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1G
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - FV2026-7-7-1L
+      - 优选 29
+      - FV2026-7-7-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1B
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇺🇸 HY-04 | US
+      - QS-VWG
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 优选 23
+      - 🇯🇵 JAPAN-SS-1A
+      - 优选 43
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1K
+      - SILICONVALLEY-01-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 优选 54
+      - 优选 5
+      - FV2026-7-7-1I
+      - ZK-HQK
+      - 🇻🇳 越南一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 优选 3
+      - YJ-TYP
+      - 优选 17
+      - 🇹🇼 台湾二号|高速|解锁|负载-1B
+      - 🇺🇦 A4-UAT
+      - 优选 1
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 优选 33
+      - 优选 11
+      - 🇰🇷 韩国二号|高速|解锁|负载-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 优选 37
+      - 🇬🇧 英国 1
+      - 🇰🇷 韩国二号|高速|解锁|负载-1B
+      - 🇲🇾 马来西亚一号 专线|解锁-1B
+      - 🇫🇷 法国三号|高速|解锁|负载-1B
+      - 优选 38
+      - 🇨🇳 中国联通节点1
+      - 优选 36
+      - FV2026-7-7-1F
+      - 优选 46
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇯🇵 JAPAN-01-1A
+      - 🇰🇷 韩国一号|高速|解锁|负载-1A
+      - 🇲🇾 马来西亚一号 专线|解锁-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1A
+      - 🇭🇰 HK-A-1B
+      - 优选 13
+      - 🇯🇵 VLESS-日本-1F
+      - 优选 25
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
+      - 🇲🇾 马来西亚二号 专线|解锁-1B
+      - 优选 49
+      - 优选 48
+      - 🇺🇸 美国三号|高速|解锁|负载-1B
+      - 🇺🇸 HY-05| US
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 香港 1
+      - 🇯🇵 日本 1
+      - 优选 14
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 优选 40
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇹🇼 台湾一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1A
+      - FV2026-7-7-1C
+      - 优选 39
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
+      - 🇺🇸 美国高速节点1
+      - 优选 7
+      - FV2026-7-7-1G
+      - 优选 42
+      - 🇯🇵 日本二号|高速|解锁|负载-1B
+      - YR-GAF
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
+      - 优选 53
+      - AV-HYV
+      - 优选 22
+      - 优选 26
+      - 🇺🇸 美国 1
+      - 优选 44
+      - G I C A B N H T H N
+      - 优选 20
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇭🇰 VLESS-香港-1E
+      - 🇯🇵 JAPAN-01-1B
+      - 2N-HKQ
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
+      - 🇹🇼 台湾三号|高速|解锁|负载-1B
+      - 优选 2
+      - YL-MGR
+      - 优选 12
+      - 优选 19
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇻🇳 越南二号|高速|解锁|负载-1A
+      - 🇫🇷 法国二号|高速|解锁|负载-1A
+      - 🇹🇼 台湾二号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇺🇸 美国一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - FV2026-7-7-1J
+      - 🇯🇵 VLESS-日本-1D
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1B
+      - 优选 6
+      - 优选 51
+      - 优选 31
+      - 🇩🇪 德国-法兰克福-002-1E
+      - FV2026-7-7-1B
+      - 🇻🇳 越南一号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 优选 50
+      - 🇹🇼 台湾一号|高速|解锁|负载-1B
+      - 🇯🇵 VLESS-日本-1G
+      - 优选 21
+      - 🇫🇷 法国二号|高速|解锁|负载-1B
+      - 优选 47
+      - FV2026-7-7-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 优选 35
+      - 优选 15
+      - 🇻🇳 越南二号|高速|解锁|负载-1B
+      - FV2026-7-7-1M
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇯🇵 VLESS-日本-1B
+      - IY-KXR
+      - 🇲🇾 马来西亚二号 专线|解锁-1A
+      - 🇹🇼 台湾三号|高速|解锁|负载-1A
+      - 🇰🇷 韩国节点-B-1B
+      - NJ-SJB
+      - 🇭🇰 TTC9999 香港
+      - UN-RAD
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇦 FS-PUA
+      - 🇸🇬 新加坡 1
+      - 优选 4
+      - 优选 10
+      - 优选 34
+      - SILICONVALLEY-01-1B
+      - FV2026-7-7-1E
+      - 🇺🇸 美国三号|高速|解锁|负载-1A
+      - W3-KJQ
+      - 🇭🇰 VLESS-香港-1C
+      - 优选 32
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 41
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 优选 18
+      - 优选 8
       - 🇯🇵 JAPAN-SS-1B
       - 🇰🇷 韩国一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1G
-      - GA-FZS
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇻🇳 越南三号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇭🇰 TTC9999 香港
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1A
-      - 🇺🇸 美国二号|高速|解锁|负载-1A
-      - WF-FWZ
-      - 🇺🇸 HY-03 | US
-      - 🇯🇵 JAPAN-01-1A
-      - 🇲🇾 马来西亚一号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇺🇸 HY-04 | US
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇫🇷 法国二号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1F
-      - 🇲🇾 马来西亚一号 专线|解锁-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1B
-      - FV2026-7-7-1L
-      - 🇯🇵 VLESS-日本-1E
-      - 🇺🇸 美国一号|高速|解锁|负载-1B
-      - 🇹🇼 台湾二号|高速|解锁|负载-1A
-      - 🇲🇾 马来西亚二号 专线|解锁-1A
-      - AT-YSO
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇺🇸 美国三号|高速|解锁|负载-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - FV2026-7-7-1A
-      - FV2026-7-7-1F
-      - 🇹🇼 台湾一号|高速|解锁|负载-1B
-      - A1-GWK
-      - 🇩🇪 德国-法兰克福-002-1A
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
-      - 🇺🇸 美国一号|高速|解锁|负载-1A
-      - FV2026-7-7-1J
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇹🇼 台湾三号|高速|解锁|负载-1A
-      - 3x-KNS
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇯🇵 VLESS-日本-1C
-      - 🇭🇰 HK-A-1B
-      - FC-VWQ
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 VLESS-香港-1D
-      - HT-WIV
-      - 🇲🇾 马来西亚二号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇫🇷 法国二号|高速|解锁|负载-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1A
-      - 🇻🇳 越南一号|高速|解锁|负载-1A
-      - LD-NJI
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇻🇳 越南一号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇫🇷 法国三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - OY-QVI
-      - 🇹🇼 台湾三号|高速|解锁|负载-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
       - 🇭🇰 VLESS-香港-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1B
-      - 🇯🇵 VLESS-日本-1D
       - 🇺🇸 HY-02 | US
-      - Y9-OMZ
-      - 🇰🇷 韩国二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1B
-      - 🇰🇷 韩国一号|高速|解锁|负载-1A
-      - 🇭🇰 VLESS-香港-1C
-      - FV2026-7-7-1G
-      - FV2026-7-7-1I
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
-      - 🇺🇸 美国二号|高速|解锁|负载-1B
-      - MK-IZT
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 台湾一号|高速|解锁|负载-1A
-      - 🇭🇰 HK-A-1A
-      - FV2026-7-7-1E
-      - FV2026-7-7-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1B
       - 🇯🇵 日本二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1C
-      - SILICONVALLEY-01-1C
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1B
+      - 优选 27
+      - MJ-VHS
+      - 优选 45
+      - 🇹🇼 台湾高速节点2
+      - JD-HUK
+      - 优选 28
       - 🇭🇰 VLESS-香港-1G
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇺🇸 HY-05| US
-      - 🇻🇳 越南三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 VLESS-香港-1B
-      - 🇯🇵 VLESS-日本-1A
-      - FV2026-7-7-1K
-      - 🇰🇷 韩国二号|高速|解锁|负载-1B
-      - SILICONVALLEY-01-1B
-      - UH-LMX
-      - 🇹🇼 台湾二号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1B
       - 🇭🇰 VLESS-香港-1F
+      - 🇫🇷 法国三号|高速|解锁|负载-1A
+      - 🇬🇧 英国 2
+      - 🇺🇸 HY-03 | US
+      - 🇺🇸 美国一号|高速|解锁|负载-1A
+      - 优选 9
+      - 🇯🇵 VLESS-日本-1A
       - FV2026-7-7-1H
-      - OL-HTW
-      - 🇯🇵 日本二号|高速|解锁|负载-1B
-      - 🇺🇸 美国三号|高速|解锁|负载-1A
-      - FV2026-7-7-1C
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇫🇷 法国三号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
-      - SILICONVALLEY-01-1A
+      - 优选 16
+      - 优选 30
+      - 🇭🇰 VLESS-香港-1D
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 优选 24
+      - 优选 52
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1G
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - FV2026-7-7-1L
+      - 优选 29
+      - FV2026-7-7-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1B
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇺🇸 HY-04 | US
+      - QS-VWG
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 优选 23
+      - 🇯🇵 JAPAN-SS-1A
+      - 优选 43
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1K
+      - SILICONVALLEY-01-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 优选 54
+      - 优选 5
+      - FV2026-7-7-1I
+      - ZK-HQK
+      - 🇻🇳 越南一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 优选 3
+      - YJ-TYP
+      - 优选 17
+      - 🇹🇼 台湾二号|高速|解锁|负载-1B
+      - 🇺🇦 A4-UAT
+      - 优选 1
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 优选 33
+      - 优选 11
+      - 🇰🇷 韩国二号|高速|解锁|负载-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 优选 37
+      - 🇬🇧 英国 1
+      - 🇰🇷 韩国二号|高速|解锁|负载-1B
+      - 🇲🇾 马来西亚一号 专线|解锁-1B
+      - 🇫🇷 法国三号|高速|解锁|负载-1B
+      - 优选 38
+      - 🇨🇳 中国联通节点1
+      - 优选 36
+      - FV2026-7-7-1F
+      - 优选 46
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇯🇵 JAPAN-01-1A
+      - 🇰🇷 韩国一号|高速|解锁|负载-1A
+      - 🇲🇾 马来西亚一号 专线|解锁-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1A
+      - 🇭🇰 HK-A-1B
+      - 优选 13
+      - 🇯🇵 VLESS-日本-1F
+      - 优选 25
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
+      - 🇲🇾 马来西亚二号 专线|解锁-1B
+      - 优选 49
+      - 优选 48
+      - 🇺🇸 美国三号|高速|解锁|负载-1B
+      - 🇺🇸 HY-05| US
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 香港 1
+      - 🇯🇵 日本 1
+      - 优选 14
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 优选 40
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇹🇼 台湾一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1A
+      - FV2026-7-7-1C
+      - 优选 39
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
+      - 🇺🇸 美国高速节点1
+      - 优选 7
+      - FV2026-7-7-1G
+      - 优选 42
+      - 🇯🇵 日本二号|高速|解锁|负载-1B
+      - YR-GAF
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
+      - 优选 53
+      - AV-HYV
+      - 优选 22
+      - 优选 26
+      - 🇺🇸 美国 1
+      - 优选 44
+      - G I C A B N H T H N
+      - 优选 20
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇭🇰 VLESS-香港-1E
+      - 🇯🇵 JAPAN-01-1B
+      - 2N-HKQ
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
+      - 🇹🇼 台湾三号|高速|解锁|负载-1B
+      - 优选 2
+      - YL-MGR
+      - 优选 12
+      - 优选 19
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇻🇳 越南二号|高速|解锁|负载-1A
+      - 🇫🇷 法国二号|高速|解锁|负载-1A
+      - 🇹🇼 台湾二号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇺🇸 美国一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - FV2026-7-7-1J
+      - 🇯🇵 VLESS-日本-1D
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1B
+      - 优选 6
+      - 优选 51
+      - 优选 31
+      - 🇩🇪 德国-法兰克福-002-1E
+      - FV2026-7-7-1B
+      - 🇻🇳 越南一号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 优选 50
+      - 🇹🇼 台湾一号|高速|解锁|负载-1B
+      - 🇯🇵 VLESS-日本-1G
+      - 优选 21
+      - 🇫🇷 法国二号|高速|解锁|负载-1B
+      - 优选 47
+      - FV2026-7-7-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 优选 35
+      - 优选 15
+      - 🇻🇳 越南二号|高速|解锁|负载-1B
+      - FV2026-7-7-1M
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇯🇵 VLESS-日本-1B
+      - IY-KXR
+      - 🇲🇾 马来西亚二号 专线|解锁-1A
+      - 🇹🇼 台湾三号|高速|解锁|负载-1A
+      - 🇰🇷 韩国节点-B-1B
+      - NJ-SJB
+      - 🇭🇰 TTC9999 香港
+      - UN-RAD
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇦 FS-PUA
+      - 🇸🇬 新加坡 1
+      - 优选 4
+      - 优选 10
+      - 优选 34
+      - SILICONVALLEY-01-1B
+      - FV2026-7-7-1E
+      - 🇺🇸 美国三号|高速|解锁|负载-1A
+      - W3-KJQ
+      - 🇭🇰 VLESS-香港-1C
+      - 优选 32
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 41
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 优选 18
+      - 优选 8
       - 🇯🇵 JAPAN-SS-1B
       - 🇰🇷 韩国一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1G
-      - GA-FZS
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇻🇳 越南三号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇭🇰 TTC9999 香港
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1A
-      - 🇺🇸 美国二号|高速|解锁|负载-1A
-      - WF-FWZ
-      - 🇺🇸 HY-03 | US
-      - 🇯🇵 JAPAN-01-1A
-      - 🇲🇾 马来西亚一号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇺🇸 HY-04 | US
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇫🇷 法国二号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1F
-      - 🇲🇾 马来西亚一号 专线|解锁-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1B
-      - FV2026-7-7-1L
-      - 🇯🇵 VLESS-日本-1E
-      - 🇺🇸 美国一号|高速|解锁|负载-1B
-      - 🇹🇼 台湾二号|高速|解锁|负载-1A
-      - 🇲🇾 马来西亚二号 专线|解锁-1A
-      - AT-YSO
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇺🇸 美国三号|高速|解锁|负载-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - FV2026-7-7-1A
-      - FV2026-7-7-1F
-      - 🇹🇼 台湾一号|高速|解锁|负载-1B
-      - A1-GWK
-      - 🇩🇪 德国-法兰克福-002-1A
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
-      - 🇺🇸 美国一号|高速|解锁|负载-1A
-      - FV2026-7-7-1J
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇹🇼 台湾三号|高速|解锁|负载-1A
-      - 3x-KNS
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇯🇵 VLESS-日本-1C
-      - 🇭🇰 HK-A-1B
-      - FC-VWQ
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 VLESS-香港-1D
-      - HT-WIV
-      - 🇲🇾 马来西亚二号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇫🇷 法国二号|高速|解锁|负载-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1A
-      - 🇻🇳 越南一号|高速|解锁|负载-1A
-      - LD-NJI
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇻🇳 越南一号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇫🇷 法国三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - OY-QVI
-      - 🇹🇼 台湾三号|高速|解锁|负载-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
       - 🇭🇰 VLESS-香港-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1B
-      - 🇯🇵 VLESS-日本-1D
       - 🇺🇸 HY-02 | US
-      - Y9-OMZ
-      - 🇰🇷 韩国二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1B
-      - 🇰🇷 韩国一号|高速|解锁|负载-1A
-      - 🇭🇰 VLESS-香港-1C
-      - FV2026-7-7-1G
-      - FV2026-7-7-1I
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
-      - 🇺🇸 美国二号|高速|解锁|负载-1B
-      - MK-IZT
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 台湾一号|高速|解锁|负载-1A
-      - 🇭🇰 HK-A-1A
-      - FV2026-7-7-1E
-      - FV2026-7-7-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1B
       - 🇯🇵 日本二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1C
-      - SILICONVALLEY-01-1C
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1B
+      - 优选 27
+      - MJ-VHS
+      - 优选 45
+      - 🇹🇼 台湾高速节点2
+      - JD-HUK
+      - 优选 28
       - 🇭🇰 VLESS-香港-1G
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇺🇸 HY-05| US
-      - 🇻🇳 越南三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 VLESS-香港-1B
-      - 🇯🇵 VLESS-日本-1A
-      - FV2026-7-7-1K
-      - 🇰🇷 韩国二号|高速|解锁|负载-1B
-      - SILICONVALLEY-01-1B
-      - UH-LMX
-      - 🇹🇼 台湾二号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1B
       - 🇭🇰 VLESS-香港-1F
+      - 🇫🇷 法国三号|高速|解锁|负载-1A
+      - 🇬🇧 英国 2
+      - 🇺🇸 HY-03 | US
+      - 🇺🇸 美国一号|高速|解锁|负载-1A
+      - 优选 9
+      - 🇯🇵 VLESS-日本-1A
       - FV2026-7-7-1H
-      - OL-HTW
-      - 🇯🇵 日本二号|高速|解锁|负载-1B
-      - 🇺🇸 美国三号|高速|解锁|负载-1A
-      - FV2026-7-7-1C
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇫🇷 法国三号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
-      - SILICONVALLEY-01-1A
+      - 优选 16
+      - 优选 30
+      - 🇭🇰 VLESS-香港-1D
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 优选 24
+      - 优选 52
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1G
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1131,135 +1676,203 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - FV2026-7-7-1L
+      - 优选 29
+      - FV2026-7-7-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1B
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇺🇸 HY-04 | US
+      - QS-VWG
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 优选 23
+      - 🇯🇵 JAPAN-SS-1A
+      - 优选 43
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1K
+      - SILICONVALLEY-01-1A
+      - 🇯🇵 VLESS-日本-1C
+      - 优选 54
+      - 优选 5
+      - FV2026-7-7-1I
+      - ZK-HQK
+      - 🇻🇳 越南一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 优选 3
+      - YJ-TYP
+      - 优选 17
+      - 🇹🇼 台湾二号|高速|解锁|负载-1B
+      - 🇺🇦 A4-UAT
+      - 优选 1
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 优选 33
+      - 优选 11
+      - 🇰🇷 韩国二号|高速|解锁|负载-1A
+      - 🇯🇵 VLESS-日本-1E
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 优选 37
+      - 🇬🇧 英国 1
+      - 🇰🇷 韩国二号|高速|解锁|负载-1B
+      - 🇲🇾 马来西亚一号 专线|解锁-1B
+      - 🇫🇷 法国三号|高速|解锁|负载-1B
+      - 优选 38
+      - 🇨🇳 中国联通节点1
+      - 优选 36
+      - FV2026-7-7-1F
+      - 优选 46
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇯🇵 JAPAN-01-1A
+      - 🇰🇷 韩国一号|高速|解锁|负载-1A
+      - 🇲🇾 马来西亚一号 专线|解锁-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1A
+      - 🇭🇰 HK-A-1B
+      - 优选 13
+      - 🇯🇵 VLESS-日本-1F
+      - 优选 25
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
+      - 🇲🇾 马来西亚二号 专线|解锁-1B
+      - 优选 49
+      - 优选 48
+      - 🇺🇸 美国三号|高速|解锁|负载-1B
+      - 🇺🇸 HY-05| US
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 香港 1
+      - 🇯🇵 日本 1
+      - 优选 14
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 优选 40
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇹🇼 台湾一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1A
+      - FV2026-7-7-1C
+      - 优选 39
+      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇫🇷 法国一号|高速|解锁|负载-1A
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
+      - 🇺🇸 美国高速节点1
+      - 优选 7
+      - FV2026-7-7-1G
+      - 优选 42
+      - 🇯🇵 日本二号|高速|解锁|负载-1B
+      - YR-GAF
+      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
+      - 优选 53
+      - AV-HYV
+      - 优选 22
+      - 优选 26
+      - 🇺🇸 美国 1
+      - 优选 44
+      - G I C A B N H T H N
+      - 优选 20
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇭🇰 VLESS-香港-1E
+      - 🇯🇵 JAPAN-01-1B
+      - 2N-HKQ
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
+      - 🇹🇼 台湾三号|高速|解锁|负载-1B
+      - 优选 2
+      - YL-MGR
+      - 优选 12
+      - 优选 19
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇻🇳 越南二号|高速|解锁|负载-1A
+      - 🇫🇷 法国二号|高速|解锁|负载-1A
+      - 🇹🇼 台湾二号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇺🇸 美国一号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1F
+      - FV2026-7-7-1J
+      - 🇯🇵 VLESS-日本-1D
+      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1B
+      - 优选 6
+      - 优选 51
+      - 优选 31
+      - 🇩🇪 德国-法兰克福-002-1E
+      - FV2026-7-7-1B
+      - 🇻🇳 越南一号|高速|解锁|负载-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 优选 50
+      - 🇹🇼 台湾一号|高速|解锁|负载-1B
+      - 🇯🇵 VLESS-日本-1G
+      - 优选 21
+      - 🇫🇷 法国二号|高速|解锁|负载-1B
+      - 优选 47
+      - FV2026-7-7-1A
+      - 🇭🇰 VLESS-香港-1B
+      - 优选 35
+      - 优选 15
+      - 🇻🇳 越南二号|高速|解锁|负载-1B
+      - FV2026-7-7-1M
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇯🇵 VLESS-日本-1B
+      - IY-KXR
+      - 🇲🇾 马来西亚二号 专线|解锁-1A
+      - 🇹🇼 台湾三号|高速|解锁|负载-1A
+      - 🇰🇷 韩国节点-B-1B
+      - NJ-SJB
+      - 🇭🇰 TTC9999 香港
+      - UN-RAD
+      - 🇹🇼 台湾高速节点3
+      - 🇺🇦 FS-PUA
+      - 🇸🇬 新加坡 1
+      - 优选 4
+      - 优选 10
+      - 优选 34
+      - SILICONVALLEY-01-1B
+      - FV2026-7-7-1E
+      - 🇺🇸 美国三号|高速|解锁|负载-1A
+      - W3-KJQ
+      - 🇭🇰 VLESS-香港-1C
+      - 优选 32
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 41
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 优选 18
+      - 优选 8
       - 🇯🇵 JAPAN-SS-1B
       - 🇰🇷 韩国一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1G
-      - GA-FZS
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇭🇰 VLESS-香港-1E
-      - 🇻🇳 越南三号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇭🇰 TTC9999 香港
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1A
-      - 🇺🇸 美国二号|高速|解锁|负载-1A
-      - WF-FWZ
-      - 🇺🇸 HY-03 | US
-      - 🇯🇵 JAPAN-01-1A
-      - 🇲🇾 马来西亚一号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇯🇵 JAPAN-SS-1A
-      - 🇺🇸 HY-04 | US
-      - 🇭🇰 香港三号|高速|解锁|家宽IP-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇫🇷 法国二号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1F
-      - 🇲🇾 马来西亚一号 专线|解锁-1A
-      - 🇻🇳 越南二号|高速|解锁|负载-1B
-      - FV2026-7-7-1L
-      - 🇯🇵 VLESS-日本-1E
-      - 🇺🇸 美国一号|高速|解锁|负载-1B
-      - 🇹🇼 台湾二号|高速|解锁|负载-1A
-      - 🇲🇾 马来西亚二号 专线|解锁-1A
-      - AT-YSO
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇺🇸 美国三号|高速|解锁|负载-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1D
-      - FV2026-7-7-1A
-      - FV2026-7-7-1F
-      - 🇹🇼 台湾一号|高速|解锁|负载-1B
-      - A1-GWK
-      - 🇩🇪 德国-法兰克福-002-1A
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1A
-      - 🇺🇸 美国一号|高速|解锁|负载-1A
-      - FV2026-7-7-1J
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇹🇼 台湾三号|高速|解锁|负载-1A
-      - 3x-KNS
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇯🇵 VLESS-日本-1C
-      - 🇭🇰 HK-A-1B
-      - FC-VWQ
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 VLESS-香港-1D
-      - HT-WIV
-      - 🇲🇾 马来西亚二号 专线|解锁-1B
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇫🇷 法国二号|高速|解锁|负载-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1A
-      - 🇻🇳 越南一号|高速|解锁|负载-1A
-      - LD-NJI
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇻🇳 越南一号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇫🇷 法国三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - OY-QVI
-      - 🇹🇼 台湾三号|高速|解锁|负载-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1A
-      - 🇸🇬 新加坡一号|高速|解锁|负载-1A
       - 🇭🇰 VLESS-香港-1A
-      - 🇯🇵 日本一号|高速|解锁|负载-1B
-      - 🇯🇵 VLESS-日本-1B
-      - 🇯🇵 VLESS-日本-1D
       - 🇺🇸 HY-02 | US
-      - Y9-OMZ
-      - 🇰🇷 韩国二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1B
-      - 🇰🇷 韩国一号|高速|解锁|负载-1A
-      - 🇭🇰 VLESS-香港-1C
-      - FV2026-7-7-1G
-      - FV2026-7-7-1I
-      - 🇭🇰 香港二号|高速|解锁|家宽IP-1B
-      - 🇺🇸 美国二号|高速|解锁|负载-1B
-      - MK-IZT
-      - 🇸🇬 新加坡二号|高速|解锁|负载-1B
-      - 🇨🇳 中国联通节点1
-      - 🇹🇼 台湾一号|高速|解锁|负载-1A
-      - 🇭🇰 HK-A-1A
-      - FV2026-7-7-1E
-      - FV2026-7-7-1B
-      - 🇫🇷 法国一号|高速|解锁|负载-1B
       - 🇯🇵 日本二号|高速|解锁|负载-1A
-      - 🇯🇵 JAPAN-01-1C
-      - SILICONVALLEY-01-1C
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇯🇵 日本一号|高速|解锁|负载-1A
+      - 🇻🇳 越南三号|高速|解锁|负载-1B
+      - 优选 27
+      - MJ-VHS
+      - 优选 45
+      - 🇹🇼 台湾高速节点2
+      - JD-HUK
+      - 优选 28
       - 🇭🇰 VLESS-香港-1G
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇺🇸 HY-05| US
-      - 🇻🇳 越南三号|高速|解锁|负载-1A
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 VLESS-香港-1B
-      - 🇯🇵 VLESS-日本-1A
-      - FV2026-7-7-1K
-      - 🇰🇷 韩国二号|高速|解锁|负载-1B
-      - SILICONVALLEY-01-1B
-      - UH-LMX
-      - 🇹🇼 台湾二号|高速|解锁|负载-1B
-      - 🇩🇪 德国-法兰克福-002-1B
       - 🇭🇰 VLESS-香港-1F
+      - 🇫🇷 法国三号|高速|解锁|负载-1A
+      - 🇬🇧 英国 2
+      - 🇺🇸 HY-03 | US
+      - 🇺🇸 美国一号|高速|解锁|负载-1A
+      - 优选 9
+      - 🇯🇵 VLESS-日本-1A
       - FV2026-7-7-1H
-      - OL-HTW
-      - 🇯🇵 日本二号|高速|解锁|负载-1B
-      - 🇺🇸 美国三号|高速|解锁|负载-1A
-      - FV2026-7-7-1C
-      - 🇯🇵 JAPAN-SS-1C
-      - 🇫🇷 法国三号|高速|解锁|负载-1B
-      - 🇭🇰 香港一号|高速|解锁|家宽IP-1B
-      - SILICONVALLEY-01-1A
+      - 优选 16
+      - 优选 30
+      - 🇭🇰 VLESS-香港-1D
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 优选 24
+      - 优选 52
+      - 🇸🇬 新加坡二号|高速|解锁|负载-1A
+      - 🇺🇸 美国二号|高速|解锁|负载-1B
+      - 🇩🇪 德国-法兰克福-001-1G
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
