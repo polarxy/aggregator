@@ -5,639 +5,635 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇹🇼 台湾, server: 3bd9.55dba.e048.f65-fef1f.yfjcs.com, port: 443, type: vless, uuid: 53deb85f-9bc6-495f-b89a-d40bf3127d2e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: N6xp9sw9ALhLxOtVRt_8PNI2e2q1vf0Ay6MaoP3l6Hw, short-id: "be823fa3" }, servername: cdn-dynmedia-1.microsoft.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 03e0b1d2-d678-401f-bb52-6d38b1b03332, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
-  - {name: 🇮🇳 印度马哈拉施特拉孟买 38, server: 152.67.1.223, port: 44363, type: ss, cipher: aes-256-gcm, password: 6rcBjQuF0jM6if5e, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 12a2179a-08ea-4ee4-a243-886ca04fc188, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1G, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 5ebd86e1-830f-4dfc-b1da-1710675b9548, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: PR-ZTC, server: proxyip.jp.cmliussss.net, port: 443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp10.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp10.pages.dev}}, udp: true}
-  - {name: INCHEON2 SS-A GROUP, server: agroup.node2.s2.nodelist-airport.com, port: 23981, type: ss, cipher: aes-256-gcm, password: f288156b-8723-4edb-8cca-4ce9d2df3a11, udp: true}
-  - {name: CALIFORNIA V2-C GROUP, server: cgroup.node5.v.nodelist-airport.com, port: 32735, type: vmess, uuid: 65bc6206-ee8e-458b-823c-91de8a8dff10, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cgroup.node5.v.nodelist-airport.com}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 2645a8a4-761f-412a-a59e-21b372bfdedf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: e34b199d-a53c-46c8-960f-389a5bdf5699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇳🇱 NL AMS-02-1A, server: 87.199.205.95, port: 39154, type: vless, uuid: e522ef39-9486-446b-b724-6d400733345f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: WEMJ-tqGjsjNEAV85q2AIr1jLR2aLfFLCWkkHSb3ViU, short-id: "d68bea4c" }, servername: ozon.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 1-1B, server: 104.18.46.46, port: 443, type: vless, uuid: b81995be-eb16-4290-b1b7-441e62b20e3c, tls: true, servername: jlsjp2.jswstlsweb.top, client-fingerprint: edge, network: ws, ws-opts: {path: /jsjc/jp2, headers: {Host: jlsjp2.jswstlsweb.top}}, udp: true}
-  - {name: 🇯🇵 日本4号-0.1x, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 267848b4-67f4-4e37-8c4b-c69c1d239da5, tls: true, servername: yfjc-jp3.wangpan.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: /yfjc/jp, headers: {Host: yfjc-jp3.wangpan.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1I, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: d5b7a588-7a2f-4db8-ae17-1a50b2a7d12a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 新加坡三网专线2号-1A, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 64c010ce-9575-46fb-948e-41508d25fad0, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: safari, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
-  - {name: 🇧🇪 比利时 2, server: 141.253.124.138, port: 443, type: vless, uuid: f87d5104-d077-45a1-a0e7-86d6478f6075, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: gkl6bqL44xulia53I8gd_BtiVRzU1rsIu4WeffywLBY, short-id: "78f5a5a5" }, servername: tv.apple.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 119d7930-5b92-4084-973c-07fee352d867, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-A-1B, server: 207.57.128.27, port: 8081, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡高速06|BGP|CTCU-1B, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 9c40503f-dbc2-496d-8aa1-050ef21bcf73, tls: true, servername: lx-1sg.lxy1015.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, udp: true}
-  - {name: 🇺🇸 美国 1-1A, server: 104.18.46.46, port: 443, type: vless, uuid: 1dc57523-4663-4398-928b-3a083639b6b2, tls: true, servername: jlsjp2.jswstlsweb.top, client-fingerprint: edge, network: ws, ws-opts: {path: /jsjc/jp2, headers: {Host: jlsjp2.jswstlsweb.top}}, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1C, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇯🇵 日本 4, server: 108.162.198.19, port: 443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp39.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp39.cc.cd}}, udp: true}
-  - {name: 🇳🇱 NL AMS-02 UDP-1B, server: 87.199.205.95, port: 443, type: hysteria2, password: 5c4a1e4c-c679-4030-8b5d-9704e4891223, auth: 5c4a1e4c-c679-4030-8b5d-9704e4891223, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-ams02, udp: true}
-  - {name: 🇭🇰 TTC9999 香港-1A, server: ww2.ttc9999.com, port: 443, type: vmess, uuid: 2cf2a83d-bd17-469a-b17d-6aa4717054f5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ww2.ttc9999.com}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1G, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 5ebd86e1-830f-4dfc-b1da-1710675b9548, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 03e0b1d2-d678-401f-bb52-6d38b1b03332, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇷 土耳其 3, server: 103.83.86.231, port: 443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp11.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp11.cc.cd}}, udp: true}
-  - {name: 5x-1A, server: bgp-1313122-228.834928.xyz, port: 20363, type: ss, cipher: aes-256-gcm, password: 6rcBjQuF0jM6if5e, udp: true}
-  - {name: 🇳🇱 NL AMS-01-1B, server: ams1.globalschool.edu.kg, port: 26017, type: vless, uuid: 5c4a1e4c-c679-4030-8b5d-9704e4891223, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: snnMwSpENuf47GWK2JdxShaz-GvK8G93SnURv-SY5Gg, short-id: "675cad89" }, servername: ok.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 55b1b4f5-d293-4ccd-af85-1b5032de0f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: CALIFORNIA2 SS-B GROUP-1A, server: bgroup.node5.s2.nodelist-airport.com, port: 23122, type: ss, cipher: aes-256-gcm, password: 3cbc6984-e05c-48dc-ba27-b47725a8dea9, udp: true}
-  - {name: 🇯🇵 日本2号-0.1x-1A, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 5307fbad-fe68-47ce-92d4-849da71d2fdc, tls: true, servername: yfjc-jp2.wangpan.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: /yfjc/jp, headers: {Host: yfjc-jp2.wangpan.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: e34b199d-a53c-46c8-960f-389a5bdf5699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 日本 1, server: 108.162.198.5, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp7.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp7.cc.cd}}, udp: true}
-  - {name: 🇭🇰 中国香港 36-1B, server: 43.245.223.34, port: 443, type: vless, uuid: 49972d73-a5c1-414d-9787-6f2c2a0c76d8, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: BiwY7Que5N4TjVfseuMWWC2AO1U8G196O1fEFocOK0w, short-id: "8004932d" }, servername: cdn-dynmedia-1.microsoft.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇳🇱 NL AMS-01-1A, server: 195.63.143.185, port: 26017, type: vless, uuid: e522ef39-9486-446b-b724-6d400733345f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: snnMwSpENuf47GWK2JdxShaz-GvK8G93SnURv-SY5Gg, short-id: "675cad89" }, servername: ok.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: INCHEON SS-B GROUP, server: bgroup.node2.s.nodelist-airport.com, port: 50001, type: ss, cipher: aes-256-gcm, password: 3cbc6984-e05c-48dc-ba27-b47725a8dea9, udp: true}
-  - {name: 🇭🇰 HONGKONG2 SS-C GROUP-1B, server: cgroup.node4.s2.nodelist-airport.com, port: 48722, type: ss, cipher: aes-256-gcm, password: b98845ac-ed38-47f6-8524-ef9a05c8eab4, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 03cc9381-09e5-4ca4-8a6d-cca2456736c8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇬🇧 英国伦敦 38-1B, server: 140.238.101.15, port: 443, type: vless, uuid: 49972d73-a5c1-414d-9787-6f2c2a0c76d8, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bup-dr56at91n37SQwAMnsNtcmk44UQBGCYN8hkU0nQ, short-id: "903a1801" }, servername: buylite.music.apple.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 55b1b4f5-d293-4ccd-af85-1b5032de0f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONGKONG2 SS-C GROUP-1A, server: cgroup.node4.s2.nodelist-airport.com, port: 48722, type: ss, cipher: aes-256-gcm, password: 65bc6206-ee8e-458b-823c-91de8a8dff10, udp: true}
-  - {name: 🇺🇸 美国 26-1A, server: 104.18.37.188, port: 443, type: vless, uuid: 15b4ea75-b154-46d9-a2d9-5f1b7daef1ca, tls: true, servername: d2-us4.djwstlsweb.top, client-fingerprint: ios, network: ws, ws-opts: {path: /djjc/us4, headers: {Host: d2-us4.djwstlsweb.top}}, udp: true}
-  - {name: UDP EDGE-04-1B, server: 185.81.29.188, port: 443, type: hysteria2, password: 5c4a1e4c-c679-4030-8b5d-9704e4891223, auth: 5c4a1e4c-c679-4030-8b5d-9704e4891223, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-e188, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 12a2179a-08ea-4ee4-a243-886ca04fc188, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: CALIFORNIA SS-B GROUP-1A, server: bgroup.node5.s.nodelist-airport.com, port: 59167, type: ss, cipher: aes-256-gcm, password: 95433298-f181-4c3d-87e4-f7ee4800a39d, udp: true}
-  - {name: 🇸🇬 新加坡三网专线2号-1C, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 49972d73-a5c1-414d-9787-6f2c2a0c76d8, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: safari, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
-  - {name: CALIFORNIA2 SS-B GROUP-1B, server: bgroup.node5.s2.nodelist-airport.com, port: 23122, type: ss, cipher: aes-256-gcm, password: 95433298-f181-4c3d-87e4-f7ee4800a39d, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 119d7930-5b92-4084-973c-07fee352d867, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 2645a8a4-761f-412a-a59e-21b372bfdedf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1G, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 12a2179a-08ea-4ee4-a243-886ca04fc188, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡三网专线1号-1B, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 82b1e20f-2638-417c-af44-aa5b74bbaa31, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 119d7930-5b92-4084-973c-07fee352d867, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 13f5b792-a026-48ec-b898-5fffba063fb6, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
   - {name: 🇳🇱 NL AMS-01 UDP-1B, server: 195.63.143.185, port: 443, type: hysteria2, password: 5c4a1e4c-c679-4030-8b5d-9704e4891223, auth: 5c4a1e4c-c679-4030-8b5d-9704e4891223, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-ams01, udp: true}
-  - {name: 🇯🇵 日本高速08|BGP|CTCU-1B, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: ab401e71-f036-47ec-82a8-446c63a180c3, tls: true, servername: lxs2jp.lxy1015.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: lx-2jp.lxy1015.top}}, udp: true}
-  - {name: 🇺🇸 美国 4, server: 103.196.20.32, port: 8443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp33.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp33.cc.cd}}, udp: true}
-  - {name: 🇯🇵 日本-4号-0.1x, server: 3bd9.55dca.e048.f7-fef1f.yfjcs.com, port: 443, type: vless, uuid: f13898a2-3c15-4df1-ab04-13e13fb84c08, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: SMnrjqT7vDwVYRL05E6qgSFkNpEyLpyZtWMHvhHr9BM, short-id: "ab2909fe" }, servername: updates.cdn-apple.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇳🇱 NL AMS-02-1B, server: ams2.globalschool.edu.kg, port: 39154, type: vless, uuid: 5c4a1e4c-c679-4030-8b5d-9704e4891223, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: WEMJ-tqGjsjNEAV85q2AIr1jLR2aLfFLCWkkHSb3ViU, short-id: "d68bea4c" }, servername: ozon.ru, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡三网专线1号-1A, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 82b1e20f-2638-417c-af44-aa5b74bbaa31, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1H, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: b97398ce-7653-4d87-93b0-203a49657693, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 03e0b1d2-d678-401f-bb52-6d38b1b03332, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 韩国 2, server: 114.204.41.241, port: 30003, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp42.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp42.cc.cd}}, udp: true}
-  - {name: SMART TURBO 01-1B, server: cdn.globalschool.edu.kg, port: 10001, type: vless, uuid: 5c4a1e4c-c679-4030-8b5d-9704e4891223, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ShgC38ulwKG4MApqt3kb85py9GgEVHWmqZzaiAWtvns, short-id: "1299373a" }, servername: www.icloud.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇳🇱 NL AMS-01 UDP-1A, server: 195.63.143.185, port: 443, type: hysteria2, password: e522ef39-9486-446b-b724-6d400733345f, auth: e522ef39-9486-446b-b724-6d400733345f, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-ams01, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 03cc9381-09e5-4ca4-8a6d-cca2456736c8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 亚太地区 2, server: 103.167.235.130, port: 443, type: vless, uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b, tls: true, servername: vp8.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp8.cc.cd}}, udp: true}
-  - {name: 🇯🇵 TOKYO SS-B GROUP, server: bgroup.node1.s.nodelist-airport.com, port: 55131, type: ss, cipher: aes-256-gcm, password: 175db038-b8e2-4859-a208-40415fc79572, udp: true}
-  - {name: CALIFORNIA SS-A GROUP, server: agroup.node5.s.nodelist-airport.com, port: 19212, type: ss, cipher: aes-256-gcm, password: f288156b-8723-4edb-8cca-4ce9d2df3a11, udp: true}
-  - {name: 🇩🇪 德国 10, server: 103.228.171.165, port: 443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp35.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp35.cc.cd}}, udp: true}
-  - {name: 🇯🇵 日本高速02|CTCU|0.5x, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 7fcd2975-141e-4f2e-9485-d260ca5ea749, tls: true, servername: jp2-lx.777076.xyz, client-fingerprint: safari, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: jp2-lx.777076.xyz}}, udp: true}
-  - {name: 2x-1C, server: bgp-1313122-228.834928.xyz, port: 52355, type: ss, cipher: aes-256-gcm, password: 6rcBjQuF0jM6if5e, udp: true}
-  - {name: 🇺🇸 美国 1-1C, server: 104.18.46.46, port: 443, type: vless, uuid: f9ca7f47-d971-44a6-863d-5e3b0248588c, tls: true, servername: jlsjp2.jswstlsweb.top, client-fingerprint: edge, network: ws, ws-opts: {path: /jsjc/jp2, headers: {Host: jlsjp2.jswstlsweb.top}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 55b1b4f5-d293-4ccd-af85-1b5032de0f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇬🇧 英国伦敦 38-1A, server: 140.238.101.15, port: 443, type: vless, uuid: 5307fbad-fe68-47ce-92d4-849da71d2fdc, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bup-dr56at91n37SQwAMnsNtcmk44UQBGCYN8hkU0nQ, short-id: "903a1801" }, servername: buylite.music.apple.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 5x-1B, server: bgp-1313122-228.834928.xyz, port: 31055, type: ss, cipher: aes-256-gcm, password: 6rcBjQuF0jM6if5e, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 2645a8a4-761f-412a-a59e-21b372bfdedf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 新加坡高速06|BGP|CTCU-1C, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 0c18933e-8c6f-439c-8e46-a583d35e56f9, tls: true, servername: lx-1sg.lxy1015.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, udp: true}
-  - {name: 🇸🇬 SINGAPORE2 SS-B GROUP, server: bgroup.node3.s2.nodelist-airport.com, port: 34112, type: ss, cipher: aes-256-gcm, password: 3cbc6984-e05c-48dc-ba27-b47725a8dea9, udp: true}
-  - {name: 5x-1C, server: bgp-1313122-228.834928.xyz, port: 14323, type: ss, cipher: aes-256-gcm, password: 6rcBjQuF0jM6if5e, udp: true}
-  - {name: 🇯🇵 日本高速08|BGP|CTCU-1A, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 451a9573-de0e-4611-aa7f-c5a9eaed828c, tls: true, servername: lxs2jp.lxy1015.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: lx-2jp.lxy1015.top}}, udp: true}
-  - {name: 🇸🇬 新加坡三网专线1号-1B, server: cf.yfjc.sbs, port: 443, type: vless, uuid: c693699e-5bb9-4f31-8d84-c3c869e56a19, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 12a2179a-08ea-4ee4-a243-886ca04fc188, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: UDP EDGE-03-1A, server: 212.135.39.110, port: 443, type: hysteria2, password: e522ef39-9486-446b-b724-6d400733345f, auth: e522ef39-9486-446b-b724-6d400733345f, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-e110, udp: true}
-  - {name: 🇭🇰 HONGKONG V2-B GROUP, server: bgroup.node4.v.nodelist-airport.com, port: 43313, type: vmess, uuid: 95433298-f181-4c3d-87e4-f7ee4800a39d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: bgroup.node4.v.nodelist-airport.com}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1I, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: d5b7a588-7a2f-4db8-ae17-1a50b2a7d12a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 2645a8a4-761f-412a-a59e-21b372bfdedf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇬🇧 英国伦敦 2, server: 193.123.187.39, port: 443, type: vless, uuid: 49972d73-a5c1-414d-9787-6f2c2a0c76d8, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: i7DUE1GbZSybS9hVNoLXkNBUOhy_428gM8v5fKfjS0Q, short-id: "375cd304" }, servername: buylite.music.apple.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 24, server: 104.18.37.188, port: 443, type: vless, uuid: d6cb70dc-a52c-43e8-a581-863a189a2b65, tls: true, servername: d2-us1.djwstlsweb.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /djjc/us1, headers: {Host: d2-us1.djwstlsweb.top}}, udp: true}
-  - {name: 🇯🇵 日本-1号-0.1x, server: 3bd9.55dca.e048.f6-fef1f.yfjcs.com, port: 443, type: vless, uuid: f87d5104-d077-45a1-a0e7-86d6478f6075, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: OpOPkgvdODyl87_5Yd4gJlaSD1Bc10TVjLlzKNHx40k, short-id: "5ab35065" }, servername: osxapps.itunes.apple.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇸🇬 美国新泽西 2-1A, server: 165.1.68.155, port: 443, type: vless, uuid: f13898a2-3c15-4df1-ab04-13e13fb84c08, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 48Fc8APUOtIJDFrpdULD7Sr7Z7NVp_0K1H9u4LcmfmE, short-id: "67fed015" }, servername: www.mi.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 55b1b4f5-d293-4ccd-af85-1b5032de0f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 HY-05| US, server: usflare1.cloudaddy.top, port: 30006, type: hysteria2, password: 8b175634-015e-463b-8c17-7612fd1f6a06, auth: 8b175634-015e-463b-8c17-7612fd1f6a06, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1I, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: d5b7a588-7a2f-4db8-ae17-1a50b2a7d12a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: SMART TURBO 02-1B, server: media.globalschool.edu.kg, port: 10002, type: vless, uuid: 5c4a1e4c-c679-4030-8b5d-9704e4891223, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: G90QHqX9hS3dcSfGKSZtxfjW_eFiaIeEMzw3BKIzwkg, short-id: "8a430229" }, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HK-A-1C, server: 207.57.128.27, port: 8081, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 日本高速04|BGP|CUCM, server: aws-link20.liangxin1.xyz, port: 443, type: vless, uuid: 0c18933e-8c6f-439c-8e46-a583d35e56f9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: QE5l0RUqs4OsH3j3u_xHm06-4NlILmQivZUJqiEx11o, short-id: "6314e825" }, servername: download-porter.hoyoverse.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: CALIFORNIA2 SS-A GROUP, server: agroup.node5.s2.nodelist-airport.com, port: 22232, type: ss, cipher: aes-256-gcm, password: f288156b-8723-4edb-8cca-4ce9d2df3a11, udp: true}
-  - {name: 🇭🇰 HK-A-1A, server: 207.57.128.27, port: 8081, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡高速06|BGP|CTCU-1E, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 34fed926-9345-4139-9554-26d86b7339d2, tls: true, servername: lx-1sg.lxy1015.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, udp: true}
+  - {name: 🇲🇾 MY-JGU, server: empty.node, port: 443, type: trojan, password: 2f03e4f4-18fa-4327-99ce-c3434333821f, sni: empty.node, skip-cert-verify: false, udp: true}
+  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 13f5b792-a026-48ec-b898-5fffba063fb6, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1J, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 44c1c4f6-e533-4d0e-b948-967c32c443db, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
   - {name: UDP EDGE-05-1B, server: 23.144.20.235, port: 443, type: hysteria2, password: 5c4a1e4c-c679-4030-8b5d-9704e4891223, auth: 5c4a1e4c-c679-4030-8b5d-9704e4891223, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-e235, udp: true}
-  - {name: 🇯🇵 日本 3, server: 103.31.77.108, port: 2053, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp40.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp40.cc.cd}}, udp: true}
-  - {name: 🇭🇰 HONGKONG SS-C GROUP, server: cgroup.node4.s.nodelist-airport.com, port: 32313, type: ss, cipher: aes-256-gcm, password: b98845ac-ed38-47f6-8524-ef9a05c8eab4, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇺🇸 HY-03 | US, server: usflare1.cloudaddy.top, port: 30004, type: hysteria2, password: 8b175634-015e-463b-8c17-7612fd1f6a06, auth: 8b175634-015e-463b-8c17-7612fd1f6a06, sni: us1.cloudsegl1.ccwu.cc, up: 5000, down: 5000, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1I, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: d5b7a588-7a2f-4db8-ae17-1a50b2a7d12a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: e34b199d-a53c-46c8-960f-389a5bdf5699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: FV2026-7-7, server: fv2026.node2.top, port: 21001, type: vless, uuid: ef426863-ae34-4fcd-aa59-88ec3fdd1f57, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 TOKYO SS-C GROUP, server: cgroup.node1.s.nodelist-airport.com, port: 12429, type: ss, cipher: aes-256-gcm, password: b98845ac-ed38-47f6-8524-ef9a05c8eab4, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 03cc9381-09e5-4ca4-8a6d-cca2456736c8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: INCHEON SS-A GROUP, server: agroup.node2.s.nodelist-airport.com, port: 19823, type: ss, cipher: aes-256-gcm, password: f288156b-8723-4edb-8cca-4ce9d2df3a11, udp: true}
-  - {name: CALIFORNIA2 SS-C GROUP, server: cgroup.node5.s2.nodelist-airport.com, port: 38521, type: ss, cipher: aes-256-gcm, password: 65bc6206-ee8e-458b-823c-91de8a8dff10, udp: true}
-  - {name: CALIFORNIA SS-B GROUP-1B, server: bgroup.node5.s.nodelist-airport.com, port: 59167, type: ss, cipher: aes-256-gcm, password: 3cbc6984-e05c-48dc-ba27-b47725a8dea9, udp: true}
-  - {name: 🇭🇰 香港 18, server: 219.76.13.181, port: 443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp43.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp43.cc.cd}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 2645a8a4-761f-412a-a59e-21b372bfdedf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: YP-ASW, server: 1.1.1.1, port: 443, type: ss, cipher: aes-128-gcm, password: 00000000000000000000000000000000, udp: true}
-  - {name: UDP EDGE-04-1A, server: 185.81.29.188, port: 443, type: hysteria2, password: e522ef39-9486-446b-b724-6d400733345f, auth: e522ef39-9486-446b-b724-6d400733345f, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-e188, udp: true}
-  - {name: 🇺🇸 美国3号-0.1x, server: cf.yfjc.sbs, port: 443, type: vless, uuid: f13898a2-3c15-4df1-ab04-13e13fb84c08, tls: true, servername: yfjc-us1.wangpan.shop, client-fingerprint: ios, network: ws, ws-opts: {path: /yfjc/us1, headers: {Host: yfjc-us1.wangpan.shop}}, udp: true}
-  - {name: 🇸🇬 美国新泽西 2-1B, server: 165.1.68.155, port: 443, type: vless, uuid: 53deb85f-9bc6-495f-b89a-d40bf3127d2e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 48Fc8APUOtIJDFrpdULD7Sr7Z7NVp_0K1H9u4LcmfmE, short-id: "67fed015" }, servername: www.mi.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 HY-04 | US, server: usflare1.cloudaddy.top, port: 30005, type: hysteria2, password: 8b175634-015e-463b-8c17-7612fd1f6a06, auth: 8b175634-015e-463b-8c17-7612fd1f6a06, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 26-1B, server: 104.18.37.188, port: 443, type: vless, uuid: e6f93969-345d-4ceb-aea9-49d5c947d58c, tls: true, servername: d2-us4.djwstlsweb.top, client-fingerprint: ios, network: ws, ws-opts: {path: /djjc/us4, headers: {Host: d2-us4.djwstlsweb.top}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 12a2179a-08ea-4ee4-a243-886ca04fc188, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: 41c2af03-a8f5-4927-9289-27c6fabf1d50, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1G, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 5ebd86e1-830f-4dfc-b1da-1710675b9548, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 日本高速08|BGP|CTCU, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: ab401e71-f036-47ec-82a8-446c63a180c3, tls: true, servername: lxs2jp.lxy1015.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: lx-2jp.lxy1015.top}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1G, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 12a2179a-08ea-4ee4-a243-886ca04fc188, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 119d7930-5b92-4084-973c-07fee352d867, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇫🇷 法国 1, server: 141.94.205.161, port: 2053, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp22.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp22.cc.cd}}, udp: true}
   - {name: SMART TURBO 01-1A, server: cdn.globalschool.edu.kg, port: 10001, type: vless, uuid: e522ef39-9486-446b-b724-6d400733345f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ShgC38ulwKG4MApqt3kb85py9GgEVHWmqZzaiAWtvns, short-id: "1299373a" }, servername: www.icloud.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: UDP EDGE-05-1A, server: 23.144.20.235, port: 443, type: hysteria2, password: e522ef39-9486-446b-b724-6d400733345f, auth: e522ef39-9486-446b-b724-6d400733345f, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-e235, udp: true}
-  - {name: SMART TURBO 02-1A, server: media.globalschool.edu.kg, port: 10002, type: vless, uuid: e522ef39-9486-446b-b724-6d400733345f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: G90QHqX9hS3dcSfGKSZtxfjW_eFiaIeEMzw3BKIzwkg, short-id: "8a430229" }, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: FI HELSINKI UDP-1B, server: 188.241.54.30, port: 443, type: hysteria2, password: 5c4a1e4c-c679-4030-8b5d-9704e4891223, auth: 5c4a1e4c-c679-4030-8b5d-9704e4891223, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-obfs-2026, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1J, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 44c1c4f6-e533-4d0e-b948-967c32c443db, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1J, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 44c1c4f6-e533-4d0e-b948-967c32c443db, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 TTC9999 香港-1B, server: ww2.ttc9999.com, port: 443, type: vmess, uuid: ff651e5f-6699-4308-9265-b9d3271c3405, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ww2.ttc9999.com}}, udp: true}
   - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 03cc9381-09e5-4ca4-8a6d-cca2456736c8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 日本高速08|BGP|CTCU-1C, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: d9c278cd-4d6d-4f17-ab67-9bbb88cc8ef5, tls: true, servername: lxs2jp.lxy1015.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: lx-2jp.lxy1015.top}}, udp: true}
-  - {name: MH-GMU, server: empty.node, port: 443, type: trojan, password: 63befba1-3025-4a5b-85ad-e1f08435b61b, sni: empty.node, skip-cert-verify: false, udp: true}
-  - {name: AE-KTI, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: ef426863-ae34-4fcd-aa59-88ec3fdd1f57, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HONGKONG SS-B GROUP, server: bgroup.node4.s.nodelist-airport.com, port: 51135, type: ss, cipher: aes-256-gcm, password: 175db038-b8e2-4859-a208-40415fc79572, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1H, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: b97398ce-7653-4d87-93b0-203a49657693, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 HY-02 | US, server: usflare1.cloudaddy.top, port: 30003, type: hysteria2, password: 8b175634-015e-463b-8c17-7612fd1f6a06, auth: 8b175634-015e-463b-8c17-7612fd1f6a06, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 中国香港 37, server: 43.245.223.80, port: 443, type: vless, uuid: f87d5104-d077-45a1-a0e7-86d6478f6075, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ohHYewuCouiKzI-fFvhKzYY62m_oDtElS23sosvA6Wc, short-id: "fbb5600c" }, servername: osxapps.itunes.apple.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: e34b199d-a53c-46c8-960f-389a5bdf5699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 日本2号-0.1x-1B, server: cf.yfjc.sbs, port: 443, type: vless, uuid: f87d5104-d077-45a1-a0e7-86d6478f6075, tls: true, servername: yfjc-jp2.wangpan.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: /yfjc/jp, headers: {Host: yfjc-jp2.wangpan.shop}}, udp: true}
-  - {name: 2x-1B, server: bgp-1313122-228.834928.xyz, port: 24329, type: ss, cipher: aes-256-gcm, password: 6rcBjQuF0jM6if5e, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1H, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: b97398ce-7653-4d87-93b0-203a49657693, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇬🇧 UK RELAY-1B, server: 193.124.112.67, port: 520, type: vless, uuid: 5c4a1e4c-c679-4030-8b5d-9704e4891223, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: RFA_9kIf6Gr0SpDKsILGI4igXWZxxTYCE1MWpk0oVmA, short-id: "fb0a6872" }, servername: www.amazon.co.uk, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: CALIFORNIA SS-A GROUP, server: agroup.node5.s.nodelist-airport.com, port: 19212, type: ss, cipher: aes-256-gcm, password: f288156b-8723-4edb-8cca-4ce9d2df3a11, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1H, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 55b1b4f5-d293-4ccd-af85-1b5032de0f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇳🇱 NL AMS-02-1A, server: 87.199.205.95, port: 39154, type: vless, uuid: e522ef39-9486-446b-b724-6d400733345f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: WEMJ-tqGjsjNEAV85q2AIr1jLR2aLfFLCWkkHSb3ViU, short-id: "d68bea4c" }, servername: ozon.ru, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 5ebd86e1-830f-4dfc-b1da-1710675b9548, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: UDP EDGE-05-1A, server: 23.144.20.235, port: 443, type: hysteria2, password: e522ef39-9486-446b-b724-6d400733345f, auth: e522ef39-9486-446b-b724-6d400733345f, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-e235, udp: true}
+  - {name: 🇭🇰 TTC9999 香港-1A, server: ww2.ttc9999.com, port: 443, type: vmess, uuid: fe4d28e8-17da-4039-9f88-5dea5ff4885e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ww2.ttc9999.com}}, udp: true}
+  - {name: 🇳🇱 NL AMS-01-1A, server: 195.63.143.185, port: 26017, type: vless, uuid: e522ef39-9486-446b-b724-6d400733345f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: snnMwSpENuf47GWK2JdxShaz-GvK8G93SnURv-SY5Gg, short-id: "675cad89" }, servername: ok.ru, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1K, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 4548e9cd-8a3e-406e-ae1f-8a452ac345e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 SINGAPORE2 SS-B GROUP-1B, server: bgroup.node3.s2.nodelist-airport.com, port: 34112, type: ss, cipher: aes-256-gcm, password: 3cbc6984-e05c-48dc-ba27-b47725a8dea9, udp: true}
+  - {name: 🇺🇸 HY-05| US, server: usflare1.cloudaddy.top, port: 30006, type: hysteria2, password: 5287665f-4759-4582-a5ce-ea6c0d8020e3, auth: 5287665f-4759-4582-a5ce-ea6c0d8020e3, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL AMS-01-1B, server: ams1.globalschool.edu.kg, port: 26017, type: vless, uuid: 5c4a1e4c-c679-4030-8b5d-9704e4891223, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: snnMwSpENuf47GWK2JdxShaz-GvK8G93SnURv-SY5Gg, short-id: "675cad89" }, servername: ok.ru, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 日本高速02|CTCU|0.5x, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 7fcd2975-141e-4f2e-9485-d260ca5ea749, tls: true, servername: jp2-lx.777076.xyz, client-fingerprint: safari, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: jp2-lx.777076.xyz}}, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1A, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: edge, network: tcp, udp: true}
   - {name: 🇬🇧 UK RELAY-1A, server: 31.77.238.30, port: 520, type: vless, uuid: e522ef39-9486-446b-b724-6d400733345f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: RFA_9kIf6Gr0SpDKsILGI4igXWZxxTYCE1MWpk0oVmA, short-id: "fb0a6872" }, servername: www.amazon.co.uk, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 TOKYO2 SS-C GROUP, server: cgroup.node1.s2.nodelist-airport.com, port: 51205, type: ss, cipher: aes-256-gcm, password: b98845ac-ed38-47f6-8524-ef9a05c8eab4, udp: true}
-  - {name: 🇸🇬 新加坡 2, server: 104.64.206.111, port: 8443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp41.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp41.cc.cd}}, udp: true}
-  - {name: UDP EDGE-03-1B, server: 212.135.39.110, port: 443, type: hysteria2, password: 5c4a1e4c-c679-4030-8b5d-9704e4891223, auth: 5c4a1e4c-c679-4030-8b5d-9704e4891223, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-e110, udp: true}
-  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 03e0b1d2-d678-401f-bb52-6d38b1b03332, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1G, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 5ebd86e1-830f-4dfc-b1da-1710675b9548, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国 1-1B, server: 104.18.46.46, port: 443, type: vless, uuid: f9ca7f47-d971-44a6-863d-5e3b0248588c, tls: true, servername: jlsjp2.jswstlsweb.top, client-fingerprint: edge, network: ws, ws-opts: {path: /jsjc/jp2, headers: {Host: jlsjp2.jswstlsweb.top}}, udp: true}
+  - {name: 🇯🇵 日本高速05|BGP|CUCM, server: aws-link23.liangxin1.xyz, port: 443, type: vless, uuid: 34fed926-9345-4139-9554-26d86b7339d2, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: dLmUAqcdy4Z7iucApd9zjOhkXTjl-xt_eHumShIYW0c, short-id: "ba826a54" }, servername: download-porter.hoyoverse.com, client-fingerprint: safari, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1K, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 4548e9cd-8a3e-406e-ae1f-8a452ac345e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇮🇩 印度尼西亚 1, server: 103.178.153.198, port: 443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp16.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp16.cc.cd}}, udp: true}
+  - {name: 🇺🇸 美国-VLESS-6, server: jp2.dnscloudcloud.top, port: 56702, type: vless, uuid: 99e88df5-1502-42d5-a9be-510214d846da, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8, short-id: "792147b8" }, servername: addons.mozilla.org, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 13f5b792-a026-48ec-b898-5fffba063fb6, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本高速01|CTCU|0.5x-1B, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 366292b8-abe1-4b18-ac1e-57a4abc9b1f3, tls: true, servername: jp-lx.777076.xyz, client-fingerprint: safari, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: jp-lx.777076.xyz}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 119d7930-5b92-4084-973c-07fee352d867, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: e34b199d-a53c-46c8-960f-389a5bdf5699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: e34b199d-a53c-46c8-960f-389a5bdf5699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1K, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 4548e9cd-8a3e-406e-ae1f-8a452ac345e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 香港 3, server: 103.193.172.164, port: 443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp19.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp19.cc.cd}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1J, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 44c1c4f6-e533-4d0e-b948-967c32c443db, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国 24, server: 104.18.37.188, port: 443, type: vless, uuid: ac727d3f-8f5e-47b0-b811-5c3928924e7b, tls: true, servername: d2-us1.djwstlsweb.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /djjc/us1, headers: {Host: d2-us1.djwstlsweb.top}}, udp: true}
   - {name: FI HELSINKI UDP-1A, server: 188.241.54.30, port: 443, type: hysteria2, password: e522ef39-9486-446b-b724-6d400733345f, auth: e522ef39-9486-446b-b724-6d400733345f, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-obfs-2026, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 119d7930-5b92-4084-973c-07fee352d867, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇪 瑞典 41, server: 141.147.33.180, port: 443, type: vless, uuid: f13898a2-3c15-4df1-ab04-13e13fb84c08, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: CxZKPoPJmBg2SSXYFRoasAPw-f_ESjRxr1fySPgrG3g, short-id: "e3a0f28a" }, servername: music.apple.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 119d7930-5b92-4084-973c-07fee352d867, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 新加坡高速06|BGP|CTCU-1A, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 0d7a74e3-4383-4f33-b04b-8954f25117c6, tls: true, servername: lx-1sg.lxy1015.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, udp: true}
-  - {name: 🇭🇰 中国香港 36-1A, server: 43.245.223.34, port: 443, type: vless, uuid: f87d5104-d077-45a1-a0e7-86d6478f6075, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: BiwY7Que5N4TjVfseuMWWC2AO1U8G196O1fEFocOK0w, short-id: "8004932d" }, servername: cdn-dynmedia-1.microsoft.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡三网专线2号-1B, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 53deb85f-9bc6-495f-b89a-d40bf3127d2e, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: safari, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
-  - {name: 🇭🇰 TTC9999 香港-1B, server: ww2.ttc9999.com, port: 443, type: vmess, uuid: dc82b68c-faf5-48c9-8472-fe572781d53a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ww2.ttc9999.com}}, udp: true}
-  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 03e0b1d2-d678-401f-bb52-6d38b1b03332, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1H, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: b97398ce-7653-4d87-93b0-203a49657693, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 2x-1A, server: bgp-1313122-228.834928.xyz, port: 20511, type: ss, cipher: aes-256-gcm, password: 6rcBjQuF0jM6if5e, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1A, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1G, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 12a2179a-08ea-4ee4-a243-886ca04fc188, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1I, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: b97398ce-7653-4d87-93b0-203a49657693, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 5ebd86e1-830f-4dfc-b1da-1710675b9548, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇳🇱 荷兰 11, server: 103.45.247.85, port: 443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp32.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp32.cc.cd}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1H, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 55b1b4f5-d293-4ccd-af85-1b5032de0f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国 4, server: 103.196.20.32, port: 8443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp33.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp33.cc.cd}}, udp: true}
+  - {name: FV2026-7-7-1B, server: fv2026.node2.top, port: 21001, type: vless, uuid: 89bca12c-9805-4b6e-94c8-9c3aac2bcfae, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡高速06|BGP|CTCU-1D, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 9c40503f-dbc2-496d-8aa1-050ef21bcf73, tls: true, servername: lx-1sg.lxy1015.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, udp: true}
+  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: 62f8585a-0312-46fd-b004-89e498dd6c04, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
+  - {name: UDP EDGE-03-1A, server: 212.135.39.110, port: 443, type: hysteria2, password: e522ef39-9486-446b-b724-6d400733345f, auth: e522ef39-9486-446b-b724-6d400733345f, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-e110, udp: true}
+  - {name: SMART TURBO 02-1B, server: media.globalschool.edu.kg, port: 10002, type: vless, uuid: 5c4a1e4c-c679-4030-8b5d-9704e4891223, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: G90QHqX9hS3dcSfGKSZtxfjW_eFiaIeEMzw3BKIzwkg, short-id: "8a430229" }, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国 15, server: 103.7.55.148, port: 2053, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp21.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp21.cc.cd}}, udp: true}
+  - {name: FV2026-7-7-1A, server: fv2026.node2.top, port: 21001, type: vless, uuid: ef426863-ae34-4fcd-aa59-88ec3fdd1f57, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡三网专线1号-1D, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 3bb4ced4-785a-4971-862e-86fe42ab8a51, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡三网专线2号-1C, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 53deb85f-9bc6-495f-b89a-d40bf3127d2e, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: safari, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: d5b7a588-7a2f-4db8-ae17-1a50b2a7d12a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 03cc9381-09e5-4ca4-8a6d-cca2456736c8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: CALIFORNIA2 SS-B GROUP-1B, server: bgroup.node5.s2.nodelist-airport.com, port: 23122, type: ss, cipher: aes-256-gcm, password: 95433298-f181-4c3d-87e4-f7ee4800a39d, udp: true}
+  - {name: 5x-1A, server: bgp-1313122-228.834928.xyz, port: 20363, type: ss, cipher: aes-256-gcm, password: 6rcBjQuF0jM6if5e, udp: true}
+  - {name: 🇸🇬 新加坡三网专线1号-1A, server: cf.yfjc.sbs, port: 443, type: vless, uuid: c693699e-5bb9-4f31-8d84-c3c869e56a19, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: e34b199d-a53c-46c8-960f-389a5bdf5699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国 2, server: 103.152.113.60, port: 443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp15.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp15.cc.cd}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 2645a8a4-761f-412a-a59e-21b372bfdedf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
   - {name: 🇳🇱 NL AMS-02 UDP-1A, server: 87.199.205.95, port: 443, type: hysteria2, password: e522ef39-9486-446b-b724-6d400733345f, auth: e522ef39-9486-446b-b724-6d400733345f, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-ams02, udp: true}
+  - {name: 🇺🇸 美国 15, server: 157.245.215.195, port: 8443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp14.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp14.cc.cd}}, udp: true}
+  - {name: 🇸🇬 新加坡三网专线2号-1E, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 36aeb349-0018-404c-9784-41dabb146a6e, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: safari, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1G, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 12a2179a-08ea-4ee4-a243-886ca04fc188, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 13f5b792-a026-48ec-b898-5fffba063fb6, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: CALIFORNIA V2-C GROUP, server: cgroup.node5.v.nodelist-airport.com, port: 32735, type: vmess, uuid: 65bc6206-ee8e-458b-823c-91de8a8dff10, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cgroup.node5.v.nodelist-airport.com}}, udp: true}
+  - {name: SMART TURBO 02-1A, server: media.globalschool.edu.kg, port: 10002, type: vless, uuid: e522ef39-9486-446b-b724-6d400733345f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: G90QHqX9hS3dcSfGKSZtxfjW_eFiaIeEMzw3BKIzwkg, short-id: "8a430229" }, servername: www.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 5ebd86e1-830f-4dfc-b1da-1710675b9548, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: AR-GAF, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 89bca12c-9805-4b6e-94c8-9c3aac2bcfae, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 2x-1B, server: bgp-1313122-228.834928.xyz, port: 52355, type: ss, cipher: aes-256-gcm, password: 6rcBjQuF0jM6if5e, udp: true}
+  - {name: 🇭🇰 HK-A-1C, server: 207.57.128.27, port: 8081, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1K, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 4548e9cd-8a3e-406e-ae1f-8a452ac345e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡高速06|BGP|CTCU-1F, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 48cde63c-f675-4463-b896-ba001e73672c, tls: true, servername: lx-1sg.lxy1015.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, udp: true}
+  - {name: 🇬🇧 英国伦敦 33, server: 144.24.206.147, port: 443, type: vless, uuid: 64c010ce-9575-46fb-948e-41508d25fad0, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: cu2H4WP9LU3ZdD85MNr8w4jUS79Wx6YVUxVeRGVBQyc, short-id: "be05a235" }, servername: tv.apple.com, client-fingerprint: safari, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1H, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 55b1b4f5-d293-4ccd-af85-1b5032de0f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 日本-1号-0.1x, server: 3bd9.55dca.e048.f6-fef1f.yfjcs.com, port: 443, type: vless, uuid: f87d5104-d077-45a1-a0e7-86d6478f6075, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: OpOPkgvdODyl87_5Yd4gJlaSD1Bc10TVjLlzKNHx40k, short-id: "5ab35065" }, servername: osxapps.itunes.apple.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇬🇧 UK RELAY-1B, server: 193.124.112.67, port: 520, type: vless, uuid: 5c4a1e4c-c679-4030-8b5d-9704e4891223, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: RFA_9kIf6Gr0SpDKsILGI4igXWZxxTYCE1MWpk0oVmA, short-id: "fb0a6872" }, servername: www.amazon.co.uk, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 NL AMS-02 UDP-1B, server: 87.199.205.95, port: 443, type: hysteria2, password: 5c4a1e4c-c679-4030-8b5d-9704e4891223, auth: 5c4a1e4c-c679-4030-8b5d-9704e4891223, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-ams02, udp: true}
+  - {name: 🇺🇸 美国 26-1A, server: 104.18.37.188, port: 443, type: vless, uuid: 63e67336-bf82-4fd0-8881-0e04a855f07f, tls: true, servername: d2-us4.djwstlsweb.top, client-fingerprint: ios, network: ws, ws-opts: {path: /djjc/us4, headers: {Host: d2-us4.djwstlsweb.top}}, udp: true}
+  - {name: UDP EDGE-03-1B, server: 212.135.39.110, port: 443, type: hysteria2, password: 5c4a1e4c-c679-4030-8b5d-9704e4891223, auth: 5c4a1e4c-c679-4030-8b5d-9704e4891223, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-e110, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1I, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: b97398ce-7653-4d87-93b0-203a49657693, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: CALIFORNIA2 SS-B GROUP-1A, server: bgroup.node5.s2.nodelist-airport.com, port: 23122, type: ss, cipher: aes-256-gcm, password: 3cbc6984-e05c-48dc-ba27-b47725a8dea9, udp: true}
+  - {name: 🇸🇬 新加坡三网专线2号-1A, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 49972d73-a5c1-414d-9787-6f2c2a0c76d8, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: safari, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡高速06|BGP|CTCU-1C, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 0d7a74e3-4383-4f33-b04b-8954f25117c6, tls: true, servername: lx-1sg.lxy1015.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇯🇵 日本2号-0.1x, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 5307fbad-fe68-47ce-92d4-849da71d2fdc, tls: true, servername: yfjc-jp2.wangpan.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: /yfjc/jp, headers: {Host: yfjc-jp2.wangpan.shop}}, udp: true}
+  - {name: 🇺🇸 美国-VLESS-13, server: us3do.dnscloudcloud.top, port: 56702, type: vless, uuid: 99e88df5-1502-42d5-a9be-510214d846da, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8, short-id: "792147b8" }, servername: addons.mozilla.org, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 9Y-EVK, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: ef426863-ae34-4fcd-aa59-88ec3fdd1f57, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡高速06|BGP|CTCU-1A, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 850b4c52-db8e-4b6d-9902-eb159ff35501, tls: true, servername: lx-1sg.lxy1015.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, udp: true}
+  - {name: 🇯🇵 TOKYO SS-C GROUP, server: cgroup.node1.s.nodelist-airport.com, port: 12429, type: ss, cipher: aes-256-gcm, password: b98845ac-ed38-47f6-8524-ef9a05c8eab4, udp: true}
+  - {name: UDP EDGE-04-1B, server: 185.81.29.188, port: 443, type: hysteria2, password: 5c4a1e4c-c679-4030-8b5d-9704e4891223, auth: 5c4a1e4c-c679-4030-8b5d-9704e4891223, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-e188, udp: true}
+  - {name: 🇺🇸 HY-04 | US, server: usflare1.cloudaddy.top, port: 30005, type: hysteria2, password: 5287665f-4759-4582-a5ce-ea6c0d8020e3, auth: 5287665f-4759-4582-a5ce-ea6c0d8020e3, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 HY-02 | US, server: usflare1.cloudaddy.top, port: 30003, type: hysteria2, password: 5287665f-4759-4582-a5ce-ea6c0d8020e3, auth: 5287665f-4759-4582-a5ce-ea6c0d8020e3, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 日本高速01|CTCU|0.5x-1C, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 451a9573-de0e-4611-aa7f-c5a9eaed828c, tls: true, servername: jp-lx.777076.xyz, client-fingerprint: safari, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: jp-lx.777076.xyz}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1I, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: b97398ce-7653-4d87-93b0-203a49657693, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡三网专线2号-1G, server: cf.yfjc.sbs, port: 443, type: vless, uuid: ebca2aa5-da44-4429-807d-12a6d5239fde, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: safari, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 119d7930-5b92-4084-973c-07fee352d867, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡三网专线2号-1F, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 89cd5ddd-e397-4987-ab94-8093d1f7941b, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: safari, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: d5b7a588-7a2f-4db8-ae17-1a50b2a7d12a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国 26-1B, server: 104.18.37.188, port: 443, type: vless, uuid: e6f93969-345d-4ceb-aea9-49d5c947d58c, tls: true, servername: d2-us4.djwstlsweb.top, client-fingerprint: ios, network: ws, ws-opts: {path: /djjc/us4, headers: {Host: d2-us4.djwstlsweb.top}}, udp: true}
+  - {name: 🇺🇸 HY-03 | US, server: usflare1.cloudaddy.top, port: 30004, type: hysteria2, password: 5287665f-4759-4582-a5ce-ea6c0d8020e3, auth: 5287665f-4759-4582-a5ce-ea6c0d8020e3, sni: us1.cloudsegl1.ccwu.cc, up: 5000, down: 5000, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡三网专线2号-1B, server: cf.yfjc.sbs, port: 443, type: vless, uuid: ffa6ed8d-5ca3-4e17-a593-f155a01ddfbc, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: safari, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 03cc9381-09e5-4ca4-8a6d-cca2456736c8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 日本-4号-0.1x, server: 3bd9.55dca.e048.f7-fef1f.yfjcs.com, port: 443, type: vless, uuid: f13898a2-3c15-4df1-ab04-13e13fb84c08, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: SMnrjqT7vDwVYRL05E6qgSFkNpEyLpyZtWMHvhHr9BM, short-id: "ab2909fe" }, servername: updates.cdn-apple.com, client-fingerprint: safari, network: tcp, udp: true}
+  - {name: 🇺🇸 美国 27, server: 104.18.37.188, port: 443, type: vless, uuid: d276c5b5-12b1-4e5e-b25d-7323361ddf75, tls: true, servername: d2-jp2.djwstlsweb.top, client-fingerprint: safari, network: ws, ws-opts: {path: /djjc/jp2, headers: {Host: d2-jp2.djwstlsweb.top}}, udp: true}
+  - {name: 2x-1A, server: bgp-1313122-228.834928.xyz, port: 37386, type: ss, cipher: aes-256-gcm, password: 6rcBjQuF0jM6if5e, udp: true}
+  - {name: 🇺🇸 美国-洛杉矶-PRO, server: 5.253.38.67, port: 40444, type: vless, uuid: ad98ab75-0579-4df2-94a1-303866021007, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-A-1A, server: 207.57.128.27, port: 8081, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: UDP EDGE-04-1A, server: 185.81.29.188, port: 443, type: hysteria2, password: e522ef39-9486-446b-b724-6d400733345f, auth: e522ef39-9486-446b-b724-6d400733345f, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-e188, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 2645a8a4-761f-412a-a59e-21b372bfdedf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK-A-1B, server: 207.57.128.27, port: 8081, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇩🇪 德国 3, server: 104.21.0.8, port: 443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp28.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp28.cc.cd}}, udp: true}
+  - {name: SMART TURBO 01-1B, server: cdn.globalschool.edu.kg, port: 10001, type: vless, uuid: 5c4a1e4c-c679-4030-8b5d-9704e4891223, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ShgC38ulwKG4MApqt3kb85py9GgEVHWmqZzaiAWtvns, short-id: "1299373a" }, servername: www.icloud.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: LG-PNH, server: proxyip.jp.cmliussss.net, port: 443, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp10.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp10.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: e34b199d-a53c-46c8-960f-389a5bdf5699, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 2645a8a4-761f-412a-a59e-21b372bfdedf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 03cc9381-09e5-4ca4-8a6d-cca2456736c8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡高速06|BGP|CTCU-1B, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 0c18933e-8c6f-439c-8e46-a583d35e56f9, tls: true, servername: lx-1sg.lxy1015.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /liangxin/sg1, headers: {Host: lx-1sg.lxy1015.top}}, udp: true}
+  - {name: 🇸🇬 SINGAPORE2 SS-B GROUP-1A, server: bgroup.node3.s2.nodelist-airport.com, port: 34112, type: ss, cipher: aes-256-gcm, password: 95433298-f181-4c3d-87e4-f7ee4800a39d, udp: true}
+  - {name: 🇺🇸 美国 1-1C, server: 104.18.46.46, port: 443, type: vless, uuid: 1dc57523-4663-4398-928b-3a083639b6b2, tls: true, servername: jlsjp2.jswstlsweb.top, client-fingerprint: edge, network: ws, ws-opts: {path: /jsjc/jp2, headers: {Host: jlsjp2.jswstlsweb.top}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1I, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: b97398ce-7653-4d87-93b0-203a49657693, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 日本4号-0.1x-1B, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 40cc2739-8eec-49c8-a276-5523918a4f5d, tls: true, servername: yfjc-jp3.wangpan.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: /yfjc/jp, headers: {Host: yfjc-jp3.wangpan.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 5ebd86e1-830f-4dfc-b1da-1710675b9548, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国1号-0.1x, server: cf.yfjc.sbs, port: 443, type: vless, uuid: fbd08723-3977-440a-95e8-f77f11d2bca7, tls: true, servername: yfjc-us1.wangpan.shop, client-fingerprint: safari, network: ws, ws-opts: {path: /yfjc/us1, headers: {Host: yfjc-us1.wangpan.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: d5b7a588-7a2f-4db8-ae17-1a50b2a7d12a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡三网专线2号-1D, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 64c010ce-9575-46fb-948e-41508d25fad0, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: safari, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
+  - {name: 🇳🇱 NL AMS-02-1B, server: ams2.globalschool.edu.kg, port: 39154, type: vless, uuid: 5c4a1e4c-c679-4030-8b5d-9704e4891223, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: WEMJ-tqGjsjNEAV85q2AIr1jLR2aLfFLCWkkHSb3ViU, short-id: "d68bea4c" }, servername: ozon.ru, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡三网专线1号-1C, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 7b79f244-ed25-437e-a78a-70fd6b9240b1, tls: true, servername: yfjc-sg1.wangpan.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: /yfjc/sg, headers: {Host: yfjc-sg1.wangpan.shop}}, udp: true}
+  - {name: 🇺🇸 美国 28, server: 104.18.37.188, port: 443, type: vless, uuid: d6cb70dc-a52c-43e8-a581-863a189a2b65, tls: true, servername: d2-jp2.djwstlsweb.top, client-fingerprint: ios, network: ws, ws-opts: {path: /djjc/jp2, headers: {Host: d2-jp2.djwstlsweb.top}}, udp: true}
+  - {name: 🇺🇸 美国 1-1A, server: 104.18.46.46, port: 443, type: vless, uuid: b81995be-eb16-4290-b1b7-441e62b20e3c, tls: true, servername: jlsjp2.jswstlsweb.top, client-fingerprint: edge, network: ws, ws-opts: {path: /jsjc/jp2, headers: {Host: jlsjp2.jswstlsweb.top}}, udp: true}
+  - {name: 🇯🇵 日本4号-0.1x-1A, server: cf.yfjc.sbs, port: 443, type: vless, uuid: 267848b4-67f4-4e37-8c4b-c69c1d239da5, tls: true, servername: yfjc-jp3.wangpan.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: /yfjc/jp, headers: {Host: yfjc-jp3.wangpan.shop}}, udp: true}
+  - {name: 🇭🇰 HONGKONG SS-B GROUP, server: bgroup.node4.s.nodelist-airport.com, port: 51135, type: ss, cipher: aes-256-gcm, password: 175db038-b8e2-4859-a208-40415fc79572, udp: true}
+  - {name: 🇹🇷 土耳其 1, server: 103.215.218.43, port: 2087, type: vless, uuid: 7b102311-43fd-4e8f-877e-8090623c101d, tls: true, servername: vp26.cc.cd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: vp26.cc.cd}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: d5b7a588-7a2f-4db8-ae17-1a50b2a7d12a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1C, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1H, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 55b1b4f5-d293-4ccd-af85-1b5032de0f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 13f5b792-a026-48ec-b898-5fffba063fb6, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL AMS-01 UDP-1A, server: 195.63.143.185, port: 443, type: hysteria2, password: e522ef39-9486-446b-b724-6d400733345f, auth: e522ef39-9486-446b-b724-6d400733345f, sni: ok.ru, skip-cert-verify: true, obfs: salamander, obfs-password: whale-hy-ams01, udp: true}
+  - {name: 🇯🇵 日本高速01|CTCU|0.5x-1A, server: cfyes.lxy1015.top, port: 443, type: vless, uuid: 80a5bef7-75e1-4e31-95e9-a5dd4ea4136b, tls: true, servername: jp-lx.777076.xyz, client-fingerprint: safari, network: ws, ws-opts: {path: /liangxin/jp1, headers: {Host: jp-lx.777076.xyz}}, udp: true}
+  - {name: 5x-1B, server: bgp-1313122-228.834928.xyz, port: 14323, type: ss, cipher: aes-256-gcm, password: 6rcBjQuF0jM6if5e, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇼 台湾
-      - 🇨🇳 中国联通节点1
-      - 🇮🇳 印度马哈拉施特拉孟买 38
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-004-1G
-      - PR-ZTC
-      - INCHEON2 SS-A GROUP
-      - CALIFORNIA V2-C GROUP
-      - 🇩🇪 德国-法兰克福-004-1F
       - 🇩🇪 德国-法兰克福-001-1E
-      - 🇳🇱 NL AMS-02-1A
-      - 🇺🇸 美国 1-1B
-      - 🇯🇵 日本4号-0.1x
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇸🇬 新加坡三网专线2号-1A
-      - 🇧🇪 比利时 2
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 HK-A-1B
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
-      - 🇺🇸 美国 1-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 日本 4
-      - 🇳🇱 NL AMS-02 UDP-1B
-      - 🇭🇰 TTC9999 香港-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇹🇼 台湾高速节点
-      - 🇹🇷 土耳其 3
-      - 5x-1A
-      - 🇳🇱 NL AMS-01-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - CALIFORNIA2 SS-B GROUP-1A
-      - 🇯🇵 日本2号-0.1x-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇯🇵 日本 1
-      - 🇭🇰 中国香港 36-1B
-      - 🇳🇱 NL AMS-01-1A
-      - INCHEON SS-B GROUP
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1B
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇬🇧 英国伦敦 38-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1A
-      - 🇺🇸 美国 26-1A
-      - UDP EDGE-04-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - CALIFORNIA SS-B GROUP-1A
-      - 🇸🇬 新加坡三网专线2号-1C
-      - CALIFORNIA2 SS-B GROUP-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇳🇱 NL AMS-01 UDP-1B
-      - 🇯🇵 日本高速08|BGP|CTCU-1B
-      - 🇺🇸 美国 4
-      - 🇯🇵 日本-4号-0.1x
-      - 🇳🇱 NL AMS-02-1B
-      - 🇸🇬 新加坡三网专线1号-1A
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇹🇼 台湾高速节点2
-      - 🇰🇷 韩国 2
-      - SMART TURBO 01-1B
-      - 🇳🇱 NL AMS-01 UDP-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 亚太地区 2
-      - 🇯🇵 TOKYO SS-B GROUP
-      - CALIFORNIA SS-A GROUP
-      - 🇩🇪 德国 10
-      - 🇯🇵 日本高速02|CTCU|0.5x
-      - 2x-1C
-      - 🇺🇸 美国 1-1C
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇬🇧 英国伦敦 38-1A
-      - 5x-1B
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
-      - 🇸🇬 SINGAPORE2 SS-B GROUP
-      - 5x-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1A
-      - 🇸🇬 新加坡三网专线1号-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - UDP EDGE-03-1A
-      - 🇭🇰 HONGKONG V2-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇬🇧 英国伦敦 2
-      - 🇺🇸 美国 24
-      - 🇯🇵 日本-1号-0.1x
-      - 🇸🇬 美国新泽西 2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 HY-05| US
-      - 🇩🇪 德国-法兰克福-004-1I
-      - SMART TURBO 02-1B
-      - 🇭🇰 HK-A-1C
-      - 🇯🇵 日本高速04|BGP|CUCM
-      - CALIFORNIA2 SS-A GROUP
-      - 🇭🇰 HK-A-1A
-      - UDP EDGE-05-1B
-      - 🇯🇵 日本 3
-      - 🇭🇰 HONGKONG SS-C GROUP
-      - 🇰🇷 韩国节点-B-1B
-      - 🇺🇸 HY-03 | US
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-002-1E
-      - FV2026-7-7
-      - 🇯🇵 TOKYO SS-C GROUP
-      - 🇩🇪 德国-法兰克福-003-1C
-      - INCHEON SS-A GROUP
-      - CALIFORNIA2 SS-C GROUP
-      - CALIFORNIA SS-B GROUP-1B
-      - 🇭🇰 香港 18
-      - 🇩🇪 德国-法兰克福-003-1F
-      - YP-ASW
-      - UDP EDGE-04-1A
-      - 🇺🇸 美国3号-0.1x
-      - 🇸🇬 美国新泽西 2-1B
-      - 🇺🇸 HY-04 | US
-      - 🇺🇸 美国 26-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - G I C A B N H T H N
       - 🇩🇪 德国-法兰克福-003-1G
-      - SMART TURBO 01-1A
-      - UDP EDGE-05-1A
-      - SMART TURBO 02-1A
-      - FI HELSINKI UDP-1B
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1C
-      - MH-GMU
-      - AE-KTI
-      - 🇭🇰 HONGKONG SS-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇺🇸 HY-02 | US
-      - 🇭🇰 中国香港 37
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇯🇵 日本2号-0.1x-1B
-      - 2x-1B
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇬🇧 UK RELAY-1B
-      - 🇬🇧 UK RELAY-1A
-      - 🇯🇵 TOKYO2 SS-C GROUP
-      - 🇸🇬 新加坡 2
-      - UDP EDGE-03-1B
-      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 新加坡三网专线1号-1B
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇨🇳 中国联通节点1
+      - 🇳🇱 NL AMS-01 UDP-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1E
+      - 🇲🇾 MY-JGU
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1J
+      - UDP EDGE-05-1B
+      - 🇯🇵 日本高速08|BGP|CTCU
       - 🇩🇪 德国-法兰克福-001-1G
-      - FI HELSINKI UDP-1A
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇸🇪 瑞典 41
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
-      - 🇭🇰 中国香港 36-1A
-      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇫🇷 法国 1
+      - SMART TURBO 01-1A
+      - FI HELSINKI UDP-1B
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-001-1J
       - 🇭🇰 TTC9999 香港-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 2x-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - CALIFORNIA SS-A GROUP
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇳🇱 NL AMS-02-1A
+      - 🇩🇪 德国-法兰克福-001-1F
+      - UDP EDGE-05-1A
+      - 🇭🇰 TTC9999 香港-1A
+      - 🇳🇱 NL AMS-01-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1B
+      - 🇺🇸 HY-05| US
+      - 🇳🇱 NL AMS-01-1B
+      - 🇯🇵 日本高速02|CTCU|0.5x
       - 🇰🇷 韩国节点-B-1A
+      - 🇬🇧 UK RELAY-1A
+      - 🇺🇸 美国 1-1B
+      - 🇯🇵 日本高速05|BGP|CUCM
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇮🇩 印度尼西亚 1
+      - 🇺🇸 美国-VLESS-6
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本高速01|CTCU|0.5x-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇭🇰 香港 3
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 🇺🇸 美国 24
+      - FI HELSINKI UDP-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇳🇱 荷兰 11
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 美国 4
+      - FV2026-7-7-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1D
+      - G I C A B N H T H N
+      - UDP EDGE-03-1A
+      - SMART TURBO 02-1B
+      - 🇩🇪 德国 15
+      - FV2026-7-7-1A
+      - 🇸🇬 新加坡三网专线1号-1D
+      - 🇸🇬 新加坡三网专线2号-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - CALIFORNIA2 SS-B GROUP-1B
+      - 5x-1A
+      - 🇸🇬 新加坡三网专线1号-1A
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国 2
+      - 🇩🇪 德国-法兰克福-002-1E
       - 🇳🇱 NL AMS-02 UDP-1A
+      - 🇺🇸 美国 15
+      - 🇸🇬 新加坡三网专线2号-1E
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点3
+      - CALIFORNIA V2-C GROUP
+      - SMART TURBO 02-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - AR-GAF
+      - 2x-1B
+      - 🇭🇰 HK-A-1C
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1F
+      - 🇬🇧 英国伦敦 33
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇯🇵 日本-1号-0.1x
+      - 🇬🇧 UK RELAY-1B
+      - 🇳🇱 NL AMS-02 UDP-1B
+      - 🇺🇸 美国 26-1A
+      - UDP EDGE-03-1B
+      - 🇩🇪 德国-法兰克福-004-1I
+      - CALIFORNIA2 SS-B GROUP-1A
+      - 🇸🇬 新加坡三网专线2号-1A
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
+      - 🇰🇷 韩国节点-B-1B
+      - 🇯🇵 日本2号-0.1x
+      - 🇺🇸 美国-VLESS-13
+      - 9Y-EVK
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
+      - 🇯🇵 TOKYO SS-C GROUP
+      - UDP EDGE-04-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-02 | US
+      - 🇯🇵 日本高速01|CTCU|0.5x-1C
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇸🇬 新加坡三网专线2号-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 新加坡三网专线2号-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 26-1B
+      - 🇺🇸 HY-03 | US
+      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-4号-0.1x
+      - 🇺🇸 美国 27
+      - 2x-1A
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇭🇰 HK-A-1A
+      - UDP EDGE-04-1A
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国 3
+      - SMART TURBO 01-1B
+      - LG-PNH
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1A
+      - 🇺🇸 美国 1-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇯🇵 日本4号-0.1x-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇺🇸 美国1号-0.1x
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇸🇬 新加坡三网专线2号-1D
+      - 🇳🇱 NL AMS-02-1B
+      - 🇸🇬 新加坡三网专线1号-1C
+      - 🇺🇸 美国 28
+      - 🇺🇸 美国 1-1A
+      - 🇯🇵 日本4号-0.1x-1A
+      - 🇭🇰 HONGKONG SS-B GROUP
+      - 🇹🇷 土耳其 1
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇺🇸 美国高速节点1
+      - 🇳🇱 NL AMS-01 UDP-1A
+      - 🇯🇵 日本高速01|CTCU|0.5x-1A
+      - 5x-1B
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇹🇼 台湾
-      - 🇨🇳 中国联通节点1
-      - 🇮🇳 印度马哈拉施特拉孟买 38
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-004-1G
-      - PR-ZTC
-      - INCHEON2 SS-A GROUP
-      - CALIFORNIA V2-C GROUP
-      - 🇩🇪 德国-法兰克福-004-1F
       - 🇩🇪 德国-法兰克福-001-1E
-      - 🇳🇱 NL AMS-02-1A
-      - 🇺🇸 美国 1-1B
-      - 🇯🇵 日本4号-0.1x
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇸🇬 新加坡三网专线2号-1A
-      - 🇧🇪 比利时 2
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 HK-A-1B
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
-      - 🇺🇸 美国 1-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 日本 4
-      - 🇳🇱 NL AMS-02 UDP-1B
-      - 🇭🇰 TTC9999 香港-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇹🇼 台湾高速节点
-      - 🇹🇷 土耳其 3
-      - 5x-1A
-      - 🇳🇱 NL AMS-01-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - CALIFORNIA2 SS-B GROUP-1A
-      - 🇯🇵 日本2号-0.1x-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇯🇵 日本 1
-      - 🇭🇰 中国香港 36-1B
-      - 🇳🇱 NL AMS-01-1A
-      - INCHEON SS-B GROUP
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1B
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇬🇧 英国伦敦 38-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1A
-      - 🇺🇸 美国 26-1A
-      - UDP EDGE-04-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - CALIFORNIA SS-B GROUP-1A
-      - 🇸🇬 新加坡三网专线2号-1C
-      - CALIFORNIA2 SS-B GROUP-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇳🇱 NL AMS-01 UDP-1B
-      - 🇯🇵 日本高速08|BGP|CTCU-1B
-      - 🇺🇸 美国 4
-      - 🇯🇵 日本-4号-0.1x
-      - 🇳🇱 NL AMS-02-1B
-      - 🇸🇬 新加坡三网专线1号-1A
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇹🇼 台湾高速节点2
-      - 🇰🇷 韩国 2
-      - SMART TURBO 01-1B
-      - 🇳🇱 NL AMS-01 UDP-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 亚太地区 2
-      - 🇯🇵 TOKYO SS-B GROUP
-      - CALIFORNIA SS-A GROUP
-      - 🇩🇪 德国 10
-      - 🇯🇵 日本高速02|CTCU|0.5x
-      - 2x-1C
-      - 🇺🇸 美国 1-1C
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇬🇧 英国伦敦 38-1A
-      - 5x-1B
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
-      - 🇸🇬 SINGAPORE2 SS-B GROUP
-      - 5x-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1A
-      - 🇸🇬 新加坡三网专线1号-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - UDP EDGE-03-1A
-      - 🇭🇰 HONGKONG V2-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇬🇧 英国伦敦 2
-      - 🇺🇸 美国 24
-      - 🇯🇵 日本-1号-0.1x
-      - 🇸🇬 美国新泽西 2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 HY-05| US
-      - 🇩🇪 德国-法兰克福-004-1I
-      - SMART TURBO 02-1B
-      - 🇭🇰 HK-A-1C
-      - 🇯🇵 日本高速04|BGP|CUCM
-      - CALIFORNIA2 SS-A GROUP
-      - 🇭🇰 HK-A-1A
-      - UDP EDGE-05-1B
-      - 🇯🇵 日本 3
-      - 🇭🇰 HONGKONG SS-C GROUP
-      - 🇰🇷 韩国节点-B-1B
-      - 🇺🇸 HY-03 | US
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-002-1E
-      - FV2026-7-7
-      - 🇯🇵 TOKYO SS-C GROUP
-      - 🇩🇪 德国-法兰克福-003-1C
-      - INCHEON SS-A GROUP
-      - CALIFORNIA2 SS-C GROUP
-      - CALIFORNIA SS-B GROUP-1B
-      - 🇭🇰 香港 18
-      - 🇩🇪 德国-法兰克福-003-1F
-      - YP-ASW
-      - UDP EDGE-04-1A
-      - 🇺🇸 美国3号-0.1x
-      - 🇸🇬 美国新泽西 2-1B
-      - 🇺🇸 HY-04 | US
-      - 🇺🇸 美国 26-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - G I C A B N H T H N
       - 🇩🇪 德国-法兰克福-003-1G
-      - SMART TURBO 01-1A
-      - UDP EDGE-05-1A
-      - SMART TURBO 02-1A
-      - FI HELSINKI UDP-1B
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1C
-      - MH-GMU
-      - AE-KTI
-      - 🇭🇰 HONGKONG SS-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇺🇸 HY-02 | US
-      - 🇭🇰 中国香港 37
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇯🇵 日本2号-0.1x-1B
-      - 2x-1B
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇬🇧 UK RELAY-1B
-      - 🇬🇧 UK RELAY-1A
-      - 🇯🇵 TOKYO2 SS-C GROUP
-      - 🇸🇬 新加坡 2
-      - UDP EDGE-03-1B
-      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 新加坡三网专线1号-1B
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇨🇳 中国联通节点1
+      - 🇳🇱 NL AMS-01 UDP-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1E
+      - 🇲🇾 MY-JGU
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1J
+      - UDP EDGE-05-1B
+      - 🇯🇵 日本高速08|BGP|CTCU
       - 🇩🇪 德国-法兰克福-001-1G
-      - FI HELSINKI UDP-1A
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇸🇪 瑞典 41
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
-      - 🇭🇰 中国香港 36-1A
-      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇫🇷 法国 1
+      - SMART TURBO 01-1A
+      - FI HELSINKI UDP-1B
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-001-1J
       - 🇭🇰 TTC9999 香港-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 2x-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - CALIFORNIA SS-A GROUP
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇳🇱 NL AMS-02-1A
+      - 🇩🇪 德国-法兰克福-001-1F
+      - UDP EDGE-05-1A
+      - 🇭🇰 TTC9999 香港-1A
+      - 🇳🇱 NL AMS-01-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1B
+      - 🇺🇸 HY-05| US
+      - 🇳🇱 NL AMS-01-1B
+      - 🇯🇵 日本高速02|CTCU|0.5x
       - 🇰🇷 韩国节点-B-1A
+      - 🇬🇧 UK RELAY-1A
+      - 🇺🇸 美国 1-1B
+      - 🇯🇵 日本高速05|BGP|CUCM
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇮🇩 印度尼西亚 1
+      - 🇺🇸 美国-VLESS-6
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本高速01|CTCU|0.5x-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇭🇰 香港 3
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 🇺🇸 美国 24
+      - FI HELSINKI UDP-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇳🇱 荷兰 11
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 美国 4
+      - FV2026-7-7-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1D
+      - G I C A B N H T H N
+      - UDP EDGE-03-1A
+      - SMART TURBO 02-1B
+      - 🇩🇪 德国 15
+      - FV2026-7-7-1A
+      - 🇸🇬 新加坡三网专线1号-1D
+      - 🇸🇬 新加坡三网专线2号-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - CALIFORNIA2 SS-B GROUP-1B
+      - 5x-1A
+      - 🇸🇬 新加坡三网专线1号-1A
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国 2
+      - 🇩🇪 德国-法兰克福-002-1E
       - 🇳🇱 NL AMS-02 UDP-1A
+      - 🇺🇸 美国 15
+      - 🇸🇬 新加坡三网专线2号-1E
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点3
+      - CALIFORNIA V2-C GROUP
+      - SMART TURBO 02-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - AR-GAF
+      - 2x-1B
+      - 🇭🇰 HK-A-1C
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1F
+      - 🇬🇧 英国伦敦 33
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇯🇵 日本-1号-0.1x
+      - 🇬🇧 UK RELAY-1B
+      - 🇳🇱 NL AMS-02 UDP-1B
+      - 🇺🇸 美国 26-1A
+      - UDP EDGE-03-1B
+      - 🇩🇪 德国-法兰克福-004-1I
+      - CALIFORNIA2 SS-B GROUP-1A
+      - 🇸🇬 新加坡三网专线2号-1A
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
+      - 🇰🇷 韩国节点-B-1B
+      - 🇯🇵 日本2号-0.1x
+      - 🇺🇸 美国-VLESS-13
+      - 9Y-EVK
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
+      - 🇯🇵 TOKYO SS-C GROUP
+      - UDP EDGE-04-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-02 | US
+      - 🇯🇵 日本高速01|CTCU|0.5x-1C
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇸🇬 新加坡三网专线2号-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 新加坡三网专线2号-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 26-1B
+      - 🇺🇸 HY-03 | US
+      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-4号-0.1x
+      - 🇺🇸 美国 27
+      - 2x-1A
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇭🇰 HK-A-1A
+      - UDP EDGE-04-1A
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国 3
+      - SMART TURBO 01-1B
+      - LG-PNH
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1A
+      - 🇺🇸 美国 1-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇯🇵 日本4号-0.1x-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇺🇸 美国1号-0.1x
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇸🇬 新加坡三网专线2号-1D
+      - 🇳🇱 NL AMS-02-1B
+      - 🇸🇬 新加坡三网专线1号-1C
+      - 🇺🇸 美国 28
+      - 🇺🇸 美国 1-1A
+      - 🇯🇵 日本4号-0.1x-1A
+      - 🇭🇰 HONGKONG SS-B GROUP
+      - 🇹🇷 土耳其 1
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇺🇸 美国高速节点1
+      - 🇳🇱 NL AMS-01 UDP-1A
+      - 🇯🇵 日本高速01|CTCU|0.5x-1A
+      - 5x-1B
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇼 台湾
-      - 🇨🇳 中国联通节点1
-      - 🇮🇳 印度马哈拉施特拉孟买 38
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-004-1G
-      - PR-ZTC
-      - INCHEON2 SS-A GROUP
-      - CALIFORNIA V2-C GROUP
-      - 🇩🇪 德国-法兰克福-004-1F
       - 🇩🇪 德国-法兰克福-001-1E
-      - 🇳🇱 NL AMS-02-1A
-      - 🇺🇸 美国 1-1B
-      - 🇯🇵 日本4号-0.1x
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇸🇬 新加坡三网专线2号-1A
-      - 🇧🇪 比利时 2
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 HK-A-1B
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
-      - 🇺🇸 美国 1-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 日本 4
-      - 🇳🇱 NL AMS-02 UDP-1B
-      - 🇭🇰 TTC9999 香港-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇹🇼 台湾高速节点
-      - 🇹🇷 土耳其 3
-      - 5x-1A
-      - 🇳🇱 NL AMS-01-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - CALIFORNIA2 SS-B GROUP-1A
-      - 🇯🇵 日本2号-0.1x-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇯🇵 日本 1
-      - 🇭🇰 中国香港 36-1B
-      - 🇳🇱 NL AMS-01-1A
-      - INCHEON SS-B GROUP
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1B
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇬🇧 英国伦敦 38-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1A
-      - 🇺🇸 美国 26-1A
-      - UDP EDGE-04-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - CALIFORNIA SS-B GROUP-1A
-      - 🇸🇬 新加坡三网专线2号-1C
-      - CALIFORNIA2 SS-B GROUP-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇳🇱 NL AMS-01 UDP-1B
-      - 🇯🇵 日本高速08|BGP|CTCU-1B
-      - 🇺🇸 美国 4
-      - 🇯🇵 日本-4号-0.1x
-      - 🇳🇱 NL AMS-02-1B
-      - 🇸🇬 新加坡三网专线1号-1A
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇹🇼 台湾高速节点2
-      - 🇰🇷 韩国 2
-      - SMART TURBO 01-1B
-      - 🇳🇱 NL AMS-01 UDP-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 亚太地区 2
-      - 🇯🇵 TOKYO SS-B GROUP
-      - CALIFORNIA SS-A GROUP
-      - 🇩🇪 德国 10
-      - 🇯🇵 日本高速02|CTCU|0.5x
-      - 2x-1C
-      - 🇺🇸 美国 1-1C
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇬🇧 英国伦敦 38-1A
-      - 5x-1B
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
-      - 🇸🇬 SINGAPORE2 SS-B GROUP
-      - 5x-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1A
-      - 🇸🇬 新加坡三网专线1号-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - UDP EDGE-03-1A
-      - 🇭🇰 HONGKONG V2-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇬🇧 英国伦敦 2
-      - 🇺🇸 美国 24
-      - 🇯🇵 日本-1号-0.1x
-      - 🇸🇬 美国新泽西 2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 HY-05| US
-      - 🇩🇪 德国-法兰克福-004-1I
-      - SMART TURBO 02-1B
-      - 🇭🇰 HK-A-1C
-      - 🇯🇵 日本高速04|BGP|CUCM
-      - CALIFORNIA2 SS-A GROUP
-      - 🇭🇰 HK-A-1A
-      - UDP EDGE-05-1B
-      - 🇯🇵 日本 3
-      - 🇭🇰 HONGKONG SS-C GROUP
-      - 🇰🇷 韩国节点-B-1B
-      - 🇺🇸 HY-03 | US
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-002-1E
-      - FV2026-7-7
-      - 🇯🇵 TOKYO SS-C GROUP
-      - 🇩🇪 德国-法兰克福-003-1C
-      - INCHEON SS-A GROUP
-      - CALIFORNIA2 SS-C GROUP
-      - CALIFORNIA SS-B GROUP-1B
-      - 🇭🇰 香港 18
-      - 🇩🇪 德国-法兰克福-003-1F
-      - YP-ASW
-      - UDP EDGE-04-1A
-      - 🇺🇸 美国3号-0.1x
-      - 🇸🇬 美国新泽西 2-1B
-      - 🇺🇸 HY-04 | US
-      - 🇺🇸 美国 26-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - G I C A B N H T H N
       - 🇩🇪 德国-法兰克福-003-1G
-      - SMART TURBO 01-1A
-      - UDP EDGE-05-1A
-      - SMART TURBO 02-1A
-      - FI HELSINKI UDP-1B
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1C
-      - MH-GMU
-      - AE-KTI
-      - 🇭🇰 HONGKONG SS-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇺🇸 HY-02 | US
-      - 🇭🇰 中国香港 37
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇯🇵 日本2号-0.1x-1B
-      - 2x-1B
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇬🇧 UK RELAY-1B
-      - 🇬🇧 UK RELAY-1A
-      - 🇯🇵 TOKYO2 SS-C GROUP
-      - 🇸🇬 新加坡 2
-      - UDP EDGE-03-1B
-      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 新加坡三网专线1号-1B
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇨🇳 中国联通节点1
+      - 🇳🇱 NL AMS-01 UDP-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1E
+      - 🇲🇾 MY-JGU
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1J
+      - UDP EDGE-05-1B
+      - 🇯🇵 日本高速08|BGP|CTCU
       - 🇩🇪 德国-法兰克福-001-1G
-      - FI HELSINKI UDP-1A
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇸🇪 瑞典 41
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
-      - 🇭🇰 中国香港 36-1A
-      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇫🇷 法国 1
+      - SMART TURBO 01-1A
+      - FI HELSINKI UDP-1B
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-001-1J
       - 🇭🇰 TTC9999 香港-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 2x-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - CALIFORNIA SS-A GROUP
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇳🇱 NL AMS-02-1A
+      - 🇩🇪 德国-法兰克福-001-1F
+      - UDP EDGE-05-1A
+      - 🇭🇰 TTC9999 香港-1A
+      - 🇳🇱 NL AMS-01-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1B
+      - 🇺🇸 HY-05| US
+      - 🇳🇱 NL AMS-01-1B
+      - 🇯🇵 日本高速02|CTCU|0.5x
       - 🇰🇷 韩国节点-B-1A
+      - 🇬🇧 UK RELAY-1A
+      - 🇺🇸 美国 1-1B
+      - 🇯🇵 日本高速05|BGP|CUCM
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇮🇩 印度尼西亚 1
+      - 🇺🇸 美国-VLESS-6
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本高速01|CTCU|0.5x-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇭🇰 香港 3
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 🇺🇸 美国 24
+      - FI HELSINKI UDP-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇳🇱 荷兰 11
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 美国 4
+      - FV2026-7-7-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1D
+      - G I C A B N H T H N
+      - UDP EDGE-03-1A
+      - SMART TURBO 02-1B
+      - 🇩🇪 德国 15
+      - FV2026-7-7-1A
+      - 🇸🇬 新加坡三网专线1号-1D
+      - 🇸🇬 新加坡三网专线2号-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - CALIFORNIA2 SS-B GROUP-1B
+      - 5x-1A
+      - 🇸🇬 新加坡三网专线1号-1A
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国 2
+      - 🇩🇪 德国-法兰克福-002-1E
       - 🇳🇱 NL AMS-02 UDP-1A
+      - 🇺🇸 美国 15
+      - 🇸🇬 新加坡三网专线2号-1E
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点3
+      - CALIFORNIA V2-C GROUP
+      - SMART TURBO 02-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - AR-GAF
+      - 2x-1B
+      - 🇭🇰 HK-A-1C
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1F
+      - 🇬🇧 英国伦敦 33
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇯🇵 日本-1号-0.1x
+      - 🇬🇧 UK RELAY-1B
+      - 🇳🇱 NL AMS-02 UDP-1B
+      - 🇺🇸 美国 26-1A
+      - UDP EDGE-03-1B
+      - 🇩🇪 德国-法兰克福-004-1I
+      - CALIFORNIA2 SS-B GROUP-1A
+      - 🇸🇬 新加坡三网专线2号-1A
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
+      - 🇰🇷 韩国节点-B-1B
+      - 🇯🇵 日本2号-0.1x
+      - 🇺🇸 美国-VLESS-13
+      - 9Y-EVK
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
+      - 🇯🇵 TOKYO SS-C GROUP
+      - UDP EDGE-04-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-02 | US
+      - 🇯🇵 日本高速01|CTCU|0.5x-1C
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇸🇬 新加坡三网专线2号-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 新加坡三网专线2号-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 26-1B
+      - 🇺🇸 HY-03 | US
+      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-4号-0.1x
+      - 🇺🇸 美国 27
+      - 2x-1A
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇭🇰 HK-A-1A
+      - UDP EDGE-04-1A
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国 3
+      - SMART TURBO 01-1B
+      - LG-PNH
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1A
+      - 🇺🇸 美国 1-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇯🇵 日本4号-0.1x-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇺🇸 美国1号-0.1x
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇸🇬 新加坡三网专线2号-1D
+      - 🇳🇱 NL AMS-02-1B
+      - 🇸🇬 新加坡三网专线1号-1C
+      - 🇺🇸 美国 28
+      - 🇺🇸 美国 1-1A
+      - 🇯🇵 日本4号-0.1x-1A
+      - 🇭🇰 HONGKONG SS-B GROUP
+      - 🇹🇷 土耳其 1
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇺🇸 美国高速节点1
+      - 🇳🇱 NL AMS-01 UDP-1A
+      - 🇯🇵 日本高速01|CTCU|0.5x-1A
+      - 5x-1B
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -656,653 +652,645 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇹🇼 台湾
-      - 🇨🇳 中国联通节点1
-      - 🇮🇳 印度马哈拉施特拉孟买 38
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-004-1G
-      - PR-ZTC
-      - INCHEON2 SS-A GROUP
-      - CALIFORNIA V2-C GROUP
-      - 🇩🇪 德国-法兰克福-004-1F
       - 🇩🇪 德国-法兰克福-001-1E
-      - 🇳🇱 NL AMS-02-1A
-      - 🇺🇸 美国 1-1B
-      - 🇯🇵 日本4号-0.1x
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇸🇬 新加坡三网专线2号-1A
-      - 🇧🇪 比利时 2
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 HK-A-1B
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
-      - 🇺🇸 美国 1-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 日本 4
-      - 🇳🇱 NL AMS-02 UDP-1B
-      - 🇭🇰 TTC9999 香港-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇹🇼 台湾高速节点
-      - 🇹🇷 土耳其 3
-      - 5x-1A
-      - 🇳🇱 NL AMS-01-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - CALIFORNIA2 SS-B GROUP-1A
-      - 🇯🇵 日本2号-0.1x-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇯🇵 日本 1
-      - 🇭🇰 中国香港 36-1B
-      - 🇳🇱 NL AMS-01-1A
-      - INCHEON SS-B GROUP
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1B
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇬🇧 英国伦敦 38-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1A
-      - 🇺🇸 美国 26-1A
-      - UDP EDGE-04-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - CALIFORNIA SS-B GROUP-1A
-      - 🇸🇬 新加坡三网专线2号-1C
-      - CALIFORNIA2 SS-B GROUP-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇳🇱 NL AMS-01 UDP-1B
-      - 🇯🇵 日本高速08|BGP|CTCU-1B
-      - 🇺🇸 美国 4
-      - 🇯🇵 日本-4号-0.1x
-      - 🇳🇱 NL AMS-02-1B
-      - 🇸🇬 新加坡三网专线1号-1A
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇹🇼 台湾高速节点2
-      - 🇰🇷 韩国 2
-      - SMART TURBO 01-1B
-      - 🇳🇱 NL AMS-01 UDP-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 亚太地区 2
-      - 🇯🇵 TOKYO SS-B GROUP
-      - CALIFORNIA SS-A GROUP
-      - 🇩🇪 德国 10
-      - 🇯🇵 日本高速02|CTCU|0.5x
-      - 2x-1C
-      - 🇺🇸 美国 1-1C
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇬🇧 英国伦敦 38-1A
-      - 5x-1B
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
-      - 🇸🇬 SINGAPORE2 SS-B GROUP
-      - 5x-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1A
-      - 🇸🇬 新加坡三网专线1号-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - UDP EDGE-03-1A
-      - 🇭🇰 HONGKONG V2-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇬🇧 英国伦敦 2
-      - 🇺🇸 美国 24
-      - 🇯🇵 日本-1号-0.1x
-      - 🇸🇬 美国新泽西 2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 HY-05| US
-      - 🇩🇪 德国-法兰克福-004-1I
-      - SMART TURBO 02-1B
-      - 🇭🇰 HK-A-1C
-      - 🇯🇵 日本高速04|BGP|CUCM
-      - CALIFORNIA2 SS-A GROUP
-      - 🇭🇰 HK-A-1A
-      - UDP EDGE-05-1B
-      - 🇯🇵 日本 3
-      - 🇭🇰 HONGKONG SS-C GROUP
-      - 🇰🇷 韩国节点-B-1B
-      - 🇺🇸 HY-03 | US
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-002-1E
-      - FV2026-7-7
-      - 🇯🇵 TOKYO SS-C GROUP
-      - 🇩🇪 德国-法兰克福-003-1C
-      - INCHEON SS-A GROUP
-      - CALIFORNIA2 SS-C GROUP
-      - CALIFORNIA SS-B GROUP-1B
-      - 🇭🇰 香港 18
-      - 🇩🇪 德国-法兰克福-003-1F
-      - YP-ASW
-      - UDP EDGE-04-1A
-      - 🇺🇸 美国3号-0.1x
-      - 🇸🇬 美国新泽西 2-1B
-      - 🇺🇸 HY-04 | US
-      - 🇺🇸 美国 26-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - G I C A B N H T H N
       - 🇩🇪 德国-法兰克福-003-1G
-      - SMART TURBO 01-1A
-      - UDP EDGE-05-1A
-      - SMART TURBO 02-1A
-      - FI HELSINKI UDP-1B
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1C
-      - MH-GMU
-      - AE-KTI
-      - 🇭🇰 HONGKONG SS-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇺🇸 HY-02 | US
-      - 🇭🇰 中国香港 37
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇯🇵 日本2号-0.1x-1B
-      - 2x-1B
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇬🇧 UK RELAY-1B
-      - 🇬🇧 UK RELAY-1A
-      - 🇯🇵 TOKYO2 SS-C GROUP
-      - 🇸🇬 新加坡 2
-      - UDP EDGE-03-1B
-      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 新加坡三网专线1号-1B
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇨🇳 中国联通节点1
+      - 🇳🇱 NL AMS-01 UDP-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1E
+      - 🇲🇾 MY-JGU
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1J
+      - UDP EDGE-05-1B
+      - 🇯🇵 日本高速08|BGP|CTCU
       - 🇩🇪 德国-法兰克福-001-1G
-      - FI HELSINKI UDP-1A
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇸🇪 瑞典 41
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
-      - 🇭🇰 中国香港 36-1A
-      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇫🇷 法国 1
+      - SMART TURBO 01-1A
+      - FI HELSINKI UDP-1B
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-001-1J
       - 🇭🇰 TTC9999 香港-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 2x-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - CALIFORNIA SS-A GROUP
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇳🇱 NL AMS-02-1A
+      - 🇩🇪 德国-法兰克福-001-1F
+      - UDP EDGE-05-1A
+      - 🇭🇰 TTC9999 香港-1A
+      - 🇳🇱 NL AMS-01-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1B
+      - 🇺🇸 HY-05| US
+      - 🇳🇱 NL AMS-01-1B
+      - 🇯🇵 日本高速02|CTCU|0.5x
       - 🇰🇷 韩国节点-B-1A
+      - 🇬🇧 UK RELAY-1A
+      - 🇺🇸 美国 1-1B
+      - 🇯🇵 日本高速05|BGP|CUCM
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇮🇩 印度尼西亚 1
+      - 🇺🇸 美国-VLESS-6
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本高速01|CTCU|0.5x-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇭🇰 香港 3
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 🇺🇸 美国 24
+      - FI HELSINKI UDP-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇳🇱 荷兰 11
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 美国 4
+      - FV2026-7-7-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1D
+      - G I C A B N H T H N
+      - UDP EDGE-03-1A
+      - SMART TURBO 02-1B
+      - 🇩🇪 德国 15
+      - FV2026-7-7-1A
+      - 🇸🇬 新加坡三网专线1号-1D
+      - 🇸🇬 新加坡三网专线2号-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - CALIFORNIA2 SS-B GROUP-1B
+      - 5x-1A
+      - 🇸🇬 新加坡三网专线1号-1A
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国 2
+      - 🇩🇪 德国-法兰克福-002-1E
       - 🇳🇱 NL AMS-02 UDP-1A
+      - 🇺🇸 美国 15
+      - 🇸🇬 新加坡三网专线2号-1E
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点3
+      - CALIFORNIA V2-C GROUP
+      - SMART TURBO 02-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - AR-GAF
+      - 2x-1B
+      - 🇭🇰 HK-A-1C
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1F
+      - 🇬🇧 英国伦敦 33
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇯🇵 日本-1号-0.1x
+      - 🇬🇧 UK RELAY-1B
+      - 🇳🇱 NL AMS-02 UDP-1B
+      - 🇺🇸 美国 26-1A
+      - UDP EDGE-03-1B
+      - 🇩🇪 德国-法兰克福-004-1I
+      - CALIFORNIA2 SS-B GROUP-1A
+      - 🇸🇬 新加坡三网专线2号-1A
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
+      - 🇰🇷 韩国节点-B-1B
+      - 🇯🇵 日本2号-0.1x
+      - 🇺🇸 美国-VLESS-13
+      - 9Y-EVK
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
+      - 🇯🇵 TOKYO SS-C GROUP
+      - UDP EDGE-04-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-02 | US
+      - 🇯🇵 日本高速01|CTCU|0.5x-1C
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇸🇬 新加坡三网专线2号-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 新加坡三网专线2号-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 26-1B
+      - 🇺🇸 HY-03 | US
+      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-4号-0.1x
+      - 🇺🇸 美国 27
+      - 2x-1A
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇭🇰 HK-A-1A
+      - UDP EDGE-04-1A
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国 3
+      - SMART TURBO 01-1B
+      - LG-PNH
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1A
+      - 🇺🇸 美国 1-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇯🇵 日本4号-0.1x-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇺🇸 美国1号-0.1x
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇸🇬 新加坡三网专线2号-1D
+      - 🇳🇱 NL AMS-02-1B
+      - 🇸🇬 新加坡三网专线1号-1C
+      - 🇺🇸 美国 28
+      - 🇺🇸 美国 1-1A
+      - 🇯🇵 日本4号-0.1x-1A
+      - 🇭🇰 HONGKONG SS-B GROUP
+      - 🇹🇷 土耳其 1
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇺🇸 美国高速节点1
+      - 🇳🇱 NL AMS-01 UDP-1A
+      - 🇯🇵 日本高速01|CTCU|0.5x-1A
+      - 5x-1B
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇹🇼 台湾
-      - 🇭🇰 TTC9999 香港-1A
       - 🇹🇼 台湾高速节点
-      - 🇭🇰 中国香港 36-1B
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 香港 18
-      - 🇭🇰 中国香港 37
-      - 🇹🇼 台湾高速节点3
-      - 🇭🇰 中国香港 36-1A
       - 🇭🇰 TTC9999 香港-1B
+      - 🇭🇰 TTC9999 香港-1A
+      - 🇹🇼 台湾高速节点2
+      - 🇭🇰 香港 3
+      - 🇹🇼 台湾高速节点3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇹🇼 台湾
-      - 🇨🇳 中国联通节点1
-      - 🇮🇳 印度马哈拉施特拉孟买 38
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-004-1G
-      - PR-ZTC
-      - INCHEON2 SS-A GROUP
-      - CALIFORNIA V2-C GROUP
-      - 🇩🇪 德国-法兰克福-004-1F
       - 🇩🇪 德国-法兰克福-001-1E
-      - 🇳🇱 NL AMS-02-1A
-      - 🇺🇸 美国 1-1B
-      - 🇯🇵 日本4号-0.1x
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇸🇬 新加坡三网专线2号-1A
-      - 🇧🇪 比利时 2
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 HK-A-1B
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
-      - 🇺🇸 美国 1-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 日本 4
-      - 🇳🇱 NL AMS-02 UDP-1B
-      - 🇭🇰 TTC9999 香港-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇹🇼 台湾高速节点
-      - 🇹🇷 土耳其 3
-      - 5x-1A
-      - 🇳🇱 NL AMS-01-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - CALIFORNIA2 SS-B GROUP-1A
-      - 🇯🇵 日本2号-0.1x-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇯🇵 日本 1
-      - 🇭🇰 中国香港 36-1B
-      - 🇳🇱 NL AMS-01-1A
-      - INCHEON SS-B GROUP
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1B
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇬🇧 英国伦敦 38-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1A
-      - 🇺🇸 美国 26-1A
-      - UDP EDGE-04-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - CALIFORNIA SS-B GROUP-1A
-      - 🇸🇬 新加坡三网专线2号-1C
-      - CALIFORNIA2 SS-B GROUP-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇳🇱 NL AMS-01 UDP-1B
-      - 🇯🇵 日本高速08|BGP|CTCU-1B
-      - 🇺🇸 美国 4
-      - 🇯🇵 日本-4号-0.1x
-      - 🇳🇱 NL AMS-02-1B
-      - 🇸🇬 新加坡三网专线1号-1A
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇹🇼 台湾高速节点2
-      - 🇰🇷 韩国 2
-      - SMART TURBO 01-1B
-      - 🇳🇱 NL AMS-01 UDP-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 亚太地区 2
-      - 🇯🇵 TOKYO SS-B GROUP
-      - CALIFORNIA SS-A GROUP
-      - 🇩🇪 德国 10
-      - 🇯🇵 日本高速02|CTCU|0.5x
-      - 2x-1C
-      - 🇺🇸 美国 1-1C
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇬🇧 英国伦敦 38-1A
-      - 5x-1B
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
-      - 🇸🇬 SINGAPORE2 SS-B GROUP
-      - 5x-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1A
-      - 🇸🇬 新加坡三网专线1号-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - UDP EDGE-03-1A
-      - 🇭🇰 HONGKONG V2-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇬🇧 英国伦敦 2
-      - 🇺🇸 美国 24
-      - 🇯🇵 日本-1号-0.1x
-      - 🇸🇬 美国新泽西 2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 HY-05| US
-      - 🇩🇪 德国-法兰克福-004-1I
-      - SMART TURBO 02-1B
-      - 🇭🇰 HK-A-1C
-      - 🇯🇵 日本高速04|BGP|CUCM
-      - CALIFORNIA2 SS-A GROUP
-      - 🇭🇰 HK-A-1A
-      - UDP EDGE-05-1B
-      - 🇯🇵 日本 3
-      - 🇭🇰 HONGKONG SS-C GROUP
-      - 🇰🇷 韩国节点-B-1B
-      - 🇺🇸 HY-03 | US
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-002-1E
-      - FV2026-7-7
-      - 🇯🇵 TOKYO SS-C GROUP
-      - 🇩🇪 德国-法兰克福-003-1C
-      - INCHEON SS-A GROUP
-      - CALIFORNIA2 SS-C GROUP
-      - CALIFORNIA SS-B GROUP-1B
-      - 🇭🇰 香港 18
-      - 🇩🇪 德国-法兰克福-003-1F
-      - YP-ASW
-      - UDP EDGE-04-1A
-      - 🇺🇸 美国3号-0.1x
-      - 🇸🇬 美国新泽西 2-1B
-      - 🇺🇸 HY-04 | US
-      - 🇺🇸 美国 26-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - G I C A B N H T H N
       - 🇩🇪 德国-法兰克福-003-1G
-      - SMART TURBO 01-1A
-      - UDP EDGE-05-1A
-      - SMART TURBO 02-1A
-      - FI HELSINKI UDP-1B
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1C
-      - MH-GMU
-      - AE-KTI
-      - 🇭🇰 HONGKONG SS-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇺🇸 HY-02 | US
-      - 🇭🇰 中国香港 37
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇯🇵 日本2号-0.1x-1B
-      - 2x-1B
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇬🇧 UK RELAY-1B
-      - 🇬🇧 UK RELAY-1A
-      - 🇯🇵 TOKYO2 SS-C GROUP
-      - 🇸🇬 新加坡 2
-      - UDP EDGE-03-1B
-      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 新加坡三网专线1号-1B
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇨🇳 中国联通节点1
+      - 🇳🇱 NL AMS-01 UDP-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1E
+      - 🇲🇾 MY-JGU
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1J
+      - UDP EDGE-05-1B
+      - 🇯🇵 日本高速08|BGP|CTCU
       - 🇩🇪 德国-法兰克福-001-1G
-      - FI HELSINKI UDP-1A
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇸🇪 瑞典 41
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
-      - 🇭🇰 中国香港 36-1A
-      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇫🇷 法国 1
+      - SMART TURBO 01-1A
+      - FI HELSINKI UDP-1B
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-001-1J
       - 🇭🇰 TTC9999 香港-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 2x-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - CALIFORNIA SS-A GROUP
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇳🇱 NL AMS-02-1A
+      - 🇩🇪 德国-法兰克福-001-1F
+      - UDP EDGE-05-1A
+      - 🇭🇰 TTC9999 香港-1A
+      - 🇳🇱 NL AMS-01-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1B
+      - 🇺🇸 HY-05| US
+      - 🇳🇱 NL AMS-01-1B
+      - 🇯🇵 日本高速02|CTCU|0.5x
       - 🇰🇷 韩国节点-B-1A
+      - 🇬🇧 UK RELAY-1A
+      - 🇺🇸 美国 1-1B
+      - 🇯🇵 日本高速05|BGP|CUCM
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇮🇩 印度尼西亚 1
+      - 🇺🇸 美国-VLESS-6
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本高速01|CTCU|0.5x-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇭🇰 香港 3
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 🇺🇸 美国 24
+      - FI HELSINKI UDP-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇳🇱 荷兰 11
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 美国 4
+      - FV2026-7-7-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1D
+      - G I C A B N H T H N
+      - UDP EDGE-03-1A
+      - SMART TURBO 02-1B
+      - 🇩🇪 德国 15
+      - FV2026-7-7-1A
+      - 🇸🇬 新加坡三网专线1号-1D
+      - 🇸🇬 新加坡三网专线2号-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - CALIFORNIA2 SS-B GROUP-1B
+      - 5x-1A
+      - 🇸🇬 新加坡三网专线1号-1A
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国 2
+      - 🇩🇪 德国-法兰克福-002-1E
       - 🇳🇱 NL AMS-02 UDP-1A
+      - 🇺🇸 美国 15
+      - 🇸🇬 新加坡三网专线2号-1E
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点3
+      - CALIFORNIA V2-C GROUP
+      - SMART TURBO 02-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - AR-GAF
+      - 2x-1B
+      - 🇭🇰 HK-A-1C
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1F
+      - 🇬🇧 英国伦敦 33
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇯🇵 日本-1号-0.1x
+      - 🇬🇧 UK RELAY-1B
+      - 🇳🇱 NL AMS-02 UDP-1B
+      - 🇺🇸 美国 26-1A
+      - UDP EDGE-03-1B
+      - 🇩🇪 德国-法兰克福-004-1I
+      - CALIFORNIA2 SS-B GROUP-1A
+      - 🇸🇬 新加坡三网专线2号-1A
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
+      - 🇰🇷 韩国节点-B-1B
+      - 🇯🇵 日本2号-0.1x
+      - 🇺🇸 美国-VLESS-13
+      - 9Y-EVK
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
+      - 🇯🇵 TOKYO SS-C GROUP
+      - UDP EDGE-04-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-02 | US
+      - 🇯🇵 日本高速01|CTCU|0.5x-1C
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇸🇬 新加坡三网专线2号-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 新加坡三网专线2号-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 26-1B
+      - 🇺🇸 HY-03 | US
+      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-4号-0.1x
+      - 🇺🇸 美国 27
+      - 2x-1A
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇭🇰 HK-A-1A
+      - UDP EDGE-04-1A
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国 3
+      - SMART TURBO 01-1B
+      - LG-PNH
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1A
+      - 🇺🇸 美国 1-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇯🇵 日本4号-0.1x-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇺🇸 美国1号-0.1x
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇸🇬 新加坡三网专线2号-1D
+      - 🇳🇱 NL AMS-02-1B
+      - 🇸🇬 新加坡三网专线1号-1C
+      - 🇺🇸 美国 28
+      - 🇺🇸 美国 1-1A
+      - 🇯🇵 日本4号-0.1x-1A
+      - 🇭🇰 HONGKONG SS-B GROUP
+      - 🇹🇷 土耳其 1
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇺🇸 美国高速节点1
+      - 🇳🇱 NL AMS-01 UDP-1A
+      - 🇯🇵 日本高速01|CTCU|0.5x-1A
+      - 5x-1B
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇹🇼 台湾
-      - 🇨🇳 中国联通节点1
-      - 🇮🇳 印度马哈拉施特拉孟买 38
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-004-1G
-      - PR-ZTC
-      - INCHEON2 SS-A GROUP
-      - CALIFORNIA V2-C GROUP
-      - 🇩🇪 德国-法兰克福-004-1F
       - 🇩🇪 德国-法兰克福-001-1E
-      - 🇳🇱 NL AMS-02-1A
-      - 🇺🇸 美国 1-1B
-      - 🇯🇵 日本4号-0.1x
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇸🇬 新加坡三网专线2号-1A
-      - 🇧🇪 比利时 2
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 HK-A-1B
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
-      - 🇺🇸 美国 1-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 日本 4
-      - 🇳🇱 NL AMS-02 UDP-1B
-      - 🇭🇰 TTC9999 香港-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇹🇼 台湾高速节点
-      - 🇹🇷 土耳其 3
-      - 5x-1A
-      - 🇳🇱 NL AMS-01-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - CALIFORNIA2 SS-B GROUP-1A
-      - 🇯🇵 日本2号-0.1x-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇯🇵 日本 1
-      - 🇭🇰 中国香港 36-1B
-      - 🇳🇱 NL AMS-01-1A
-      - INCHEON SS-B GROUP
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1B
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇬🇧 英国伦敦 38-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1A
-      - 🇺🇸 美国 26-1A
-      - UDP EDGE-04-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - CALIFORNIA SS-B GROUP-1A
-      - 🇸🇬 新加坡三网专线2号-1C
-      - CALIFORNIA2 SS-B GROUP-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇳🇱 NL AMS-01 UDP-1B
-      - 🇯🇵 日本高速08|BGP|CTCU-1B
-      - 🇺🇸 美国 4
-      - 🇯🇵 日本-4号-0.1x
-      - 🇳🇱 NL AMS-02-1B
-      - 🇸🇬 新加坡三网专线1号-1A
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇹🇼 台湾高速节点2
-      - 🇰🇷 韩国 2
-      - SMART TURBO 01-1B
-      - 🇳🇱 NL AMS-01 UDP-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 亚太地区 2
-      - 🇯🇵 TOKYO SS-B GROUP
-      - CALIFORNIA SS-A GROUP
-      - 🇩🇪 德国 10
-      - 🇯🇵 日本高速02|CTCU|0.5x
-      - 2x-1C
-      - 🇺🇸 美国 1-1C
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇬🇧 英国伦敦 38-1A
-      - 5x-1B
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
-      - 🇸🇬 SINGAPORE2 SS-B GROUP
-      - 5x-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1A
-      - 🇸🇬 新加坡三网专线1号-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - UDP EDGE-03-1A
-      - 🇭🇰 HONGKONG V2-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇬🇧 英国伦敦 2
-      - 🇺🇸 美国 24
-      - 🇯🇵 日本-1号-0.1x
-      - 🇸🇬 美国新泽西 2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 HY-05| US
-      - 🇩🇪 德国-法兰克福-004-1I
-      - SMART TURBO 02-1B
-      - 🇭🇰 HK-A-1C
-      - 🇯🇵 日本高速04|BGP|CUCM
-      - CALIFORNIA2 SS-A GROUP
-      - 🇭🇰 HK-A-1A
-      - UDP EDGE-05-1B
-      - 🇯🇵 日本 3
-      - 🇭🇰 HONGKONG SS-C GROUP
-      - 🇰🇷 韩国节点-B-1B
-      - 🇺🇸 HY-03 | US
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-002-1E
-      - FV2026-7-7
-      - 🇯🇵 TOKYO SS-C GROUP
-      - 🇩🇪 德国-法兰克福-003-1C
-      - INCHEON SS-A GROUP
-      - CALIFORNIA2 SS-C GROUP
-      - CALIFORNIA SS-B GROUP-1B
-      - 🇭🇰 香港 18
-      - 🇩🇪 德国-法兰克福-003-1F
-      - YP-ASW
-      - UDP EDGE-04-1A
-      - 🇺🇸 美国3号-0.1x
-      - 🇸🇬 美国新泽西 2-1B
-      - 🇺🇸 HY-04 | US
-      - 🇺🇸 美国 26-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - G I C A B N H T H N
       - 🇩🇪 德国-法兰克福-003-1G
-      - SMART TURBO 01-1A
-      - UDP EDGE-05-1A
-      - SMART TURBO 02-1A
-      - FI HELSINKI UDP-1B
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1C
-      - MH-GMU
-      - AE-KTI
-      - 🇭🇰 HONGKONG SS-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇺🇸 HY-02 | US
-      - 🇭🇰 中国香港 37
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇯🇵 日本2号-0.1x-1B
-      - 2x-1B
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇬🇧 UK RELAY-1B
-      - 🇬🇧 UK RELAY-1A
-      - 🇯🇵 TOKYO2 SS-C GROUP
-      - 🇸🇬 新加坡 2
-      - UDP EDGE-03-1B
-      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 新加坡三网专线1号-1B
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇨🇳 中国联通节点1
+      - 🇳🇱 NL AMS-01 UDP-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1E
+      - 🇲🇾 MY-JGU
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1J
+      - UDP EDGE-05-1B
+      - 🇯🇵 日本高速08|BGP|CTCU
       - 🇩🇪 德国-法兰克福-001-1G
-      - FI HELSINKI UDP-1A
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇸🇪 瑞典 41
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
-      - 🇭🇰 中国香港 36-1A
-      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇫🇷 法国 1
+      - SMART TURBO 01-1A
+      - FI HELSINKI UDP-1B
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-001-1J
       - 🇭🇰 TTC9999 香港-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 2x-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - CALIFORNIA SS-A GROUP
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇳🇱 NL AMS-02-1A
+      - 🇩🇪 德国-法兰克福-001-1F
+      - UDP EDGE-05-1A
+      - 🇭🇰 TTC9999 香港-1A
+      - 🇳🇱 NL AMS-01-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1B
+      - 🇺🇸 HY-05| US
+      - 🇳🇱 NL AMS-01-1B
+      - 🇯🇵 日本高速02|CTCU|0.5x
       - 🇰🇷 韩国节点-B-1A
+      - 🇬🇧 UK RELAY-1A
+      - 🇺🇸 美国 1-1B
+      - 🇯🇵 日本高速05|BGP|CUCM
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇮🇩 印度尼西亚 1
+      - 🇺🇸 美国-VLESS-6
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本高速01|CTCU|0.5x-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇭🇰 香港 3
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 🇺🇸 美国 24
+      - FI HELSINKI UDP-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇳🇱 荷兰 11
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 美国 4
+      - FV2026-7-7-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1D
+      - G I C A B N H T H N
+      - UDP EDGE-03-1A
+      - SMART TURBO 02-1B
+      - 🇩🇪 德国 15
+      - FV2026-7-7-1A
+      - 🇸🇬 新加坡三网专线1号-1D
+      - 🇸🇬 新加坡三网专线2号-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - CALIFORNIA2 SS-B GROUP-1B
+      - 5x-1A
+      - 🇸🇬 新加坡三网专线1号-1A
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国 2
+      - 🇩🇪 德国-法兰克福-002-1E
       - 🇳🇱 NL AMS-02 UDP-1A
+      - 🇺🇸 美国 15
+      - 🇸🇬 新加坡三网专线2号-1E
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点3
+      - CALIFORNIA V2-C GROUP
+      - SMART TURBO 02-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - AR-GAF
+      - 2x-1B
+      - 🇭🇰 HK-A-1C
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1F
+      - 🇬🇧 英国伦敦 33
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇯🇵 日本-1号-0.1x
+      - 🇬🇧 UK RELAY-1B
+      - 🇳🇱 NL AMS-02 UDP-1B
+      - 🇺🇸 美国 26-1A
+      - UDP EDGE-03-1B
+      - 🇩🇪 德国-法兰克福-004-1I
+      - CALIFORNIA2 SS-B GROUP-1A
+      - 🇸🇬 新加坡三网专线2号-1A
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
+      - 🇰🇷 韩国节点-B-1B
+      - 🇯🇵 日本2号-0.1x
+      - 🇺🇸 美国-VLESS-13
+      - 9Y-EVK
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
+      - 🇯🇵 TOKYO SS-C GROUP
+      - UDP EDGE-04-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-02 | US
+      - 🇯🇵 日本高速01|CTCU|0.5x-1C
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇸🇬 新加坡三网专线2号-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 新加坡三网专线2号-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 26-1B
+      - 🇺🇸 HY-03 | US
+      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-4号-0.1x
+      - 🇺🇸 美国 27
+      - 2x-1A
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇭🇰 HK-A-1A
+      - UDP EDGE-04-1A
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国 3
+      - SMART TURBO 01-1B
+      - LG-PNH
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1A
+      - 🇺🇸 美国 1-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇯🇵 日本4号-0.1x-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇺🇸 美国1号-0.1x
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇸🇬 新加坡三网专线2号-1D
+      - 🇳🇱 NL AMS-02-1B
+      - 🇸🇬 新加坡三网专线1号-1C
+      - 🇺🇸 美国 28
+      - 🇺🇸 美国 1-1A
+      - 🇯🇵 日本4号-0.1x-1A
+      - 🇭🇰 HONGKONG SS-B GROUP
+      - 🇹🇷 土耳其 1
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇺🇸 美国高速节点1
+      - 🇳🇱 NL AMS-01 UDP-1A
+      - 🇯🇵 日本高速01|CTCU|0.5x-1A
+      - 5x-1B
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇼 台湾
-      - 🇨🇳 中国联通节点1
-      - 🇮🇳 印度马哈拉施特拉孟买 38
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-004-1G
-      - PR-ZTC
-      - INCHEON2 SS-A GROUP
-      - CALIFORNIA V2-C GROUP
-      - 🇩🇪 德国-法兰克福-004-1F
       - 🇩🇪 德国-法兰克福-001-1E
-      - 🇳🇱 NL AMS-02-1A
-      - 🇺🇸 美国 1-1B
-      - 🇯🇵 日本4号-0.1x
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇸🇬 新加坡三网专线2号-1A
-      - 🇧🇪 比利时 2
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 HK-A-1B
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
-      - 🇺🇸 美国 1-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 日本 4
-      - 🇳🇱 NL AMS-02 UDP-1B
-      - 🇭🇰 TTC9999 香港-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇹🇼 台湾高速节点
-      - 🇹🇷 土耳其 3
-      - 5x-1A
-      - 🇳🇱 NL AMS-01-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - CALIFORNIA2 SS-B GROUP-1A
-      - 🇯🇵 日本2号-0.1x-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇯🇵 日本 1
-      - 🇭🇰 中国香港 36-1B
-      - 🇳🇱 NL AMS-01-1A
-      - INCHEON SS-B GROUP
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1B
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇬🇧 英国伦敦 38-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1A
-      - 🇺🇸 美国 26-1A
-      - UDP EDGE-04-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - CALIFORNIA SS-B GROUP-1A
-      - 🇸🇬 新加坡三网专线2号-1C
-      - CALIFORNIA2 SS-B GROUP-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇳🇱 NL AMS-01 UDP-1B
-      - 🇯🇵 日本高速08|BGP|CTCU-1B
-      - 🇺🇸 美国 4
-      - 🇯🇵 日本-4号-0.1x
-      - 🇳🇱 NL AMS-02-1B
-      - 🇸🇬 新加坡三网专线1号-1A
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇹🇼 台湾高速节点2
-      - 🇰🇷 韩国 2
-      - SMART TURBO 01-1B
-      - 🇳🇱 NL AMS-01 UDP-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 亚太地区 2
-      - 🇯🇵 TOKYO SS-B GROUP
-      - CALIFORNIA SS-A GROUP
-      - 🇩🇪 德国 10
-      - 🇯🇵 日本高速02|CTCU|0.5x
-      - 2x-1C
-      - 🇺🇸 美国 1-1C
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇬🇧 英国伦敦 38-1A
-      - 5x-1B
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
-      - 🇸🇬 SINGAPORE2 SS-B GROUP
-      - 5x-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1A
-      - 🇸🇬 新加坡三网专线1号-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - UDP EDGE-03-1A
-      - 🇭🇰 HONGKONG V2-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇬🇧 英国伦敦 2
-      - 🇺🇸 美国 24
-      - 🇯🇵 日本-1号-0.1x
-      - 🇸🇬 美国新泽西 2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 HY-05| US
-      - 🇩🇪 德国-法兰克福-004-1I
-      - SMART TURBO 02-1B
-      - 🇭🇰 HK-A-1C
-      - 🇯🇵 日本高速04|BGP|CUCM
-      - CALIFORNIA2 SS-A GROUP
-      - 🇭🇰 HK-A-1A
-      - UDP EDGE-05-1B
-      - 🇯🇵 日本 3
-      - 🇭🇰 HONGKONG SS-C GROUP
-      - 🇰🇷 韩国节点-B-1B
-      - 🇺🇸 HY-03 | US
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-002-1E
-      - FV2026-7-7
-      - 🇯🇵 TOKYO SS-C GROUP
-      - 🇩🇪 德国-法兰克福-003-1C
-      - INCHEON SS-A GROUP
-      - CALIFORNIA2 SS-C GROUP
-      - CALIFORNIA SS-B GROUP-1B
-      - 🇭🇰 香港 18
-      - 🇩🇪 德国-法兰克福-003-1F
-      - YP-ASW
-      - UDP EDGE-04-1A
-      - 🇺🇸 美国3号-0.1x
-      - 🇸🇬 美国新泽西 2-1B
-      - 🇺🇸 HY-04 | US
-      - 🇺🇸 美国 26-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - G I C A B N H T H N
       - 🇩🇪 德国-法兰克福-003-1G
-      - SMART TURBO 01-1A
-      - UDP EDGE-05-1A
-      - SMART TURBO 02-1A
-      - FI HELSINKI UDP-1B
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1C
-      - MH-GMU
-      - AE-KTI
-      - 🇭🇰 HONGKONG SS-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇺🇸 HY-02 | US
-      - 🇭🇰 中国香港 37
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇯🇵 日本2号-0.1x-1B
-      - 2x-1B
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇬🇧 UK RELAY-1B
-      - 🇬🇧 UK RELAY-1A
-      - 🇯🇵 TOKYO2 SS-C GROUP
-      - 🇸🇬 新加坡 2
-      - UDP EDGE-03-1B
-      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 新加坡三网专线1号-1B
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇨🇳 中国联通节点1
+      - 🇳🇱 NL AMS-01 UDP-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1E
+      - 🇲🇾 MY-JGU
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1J
+      - UDP EDGE-05-1B
+      - 🇯🇵 日本高速08|BGP|CTCU
       - 🇩🇪 德国-法兰克福-001-1G
-      - FI HELSINKI UDP-1A
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇸🇪 瑞典 41
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
-      - 🇭🇰 中国香港 36-1A
-      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇫🇷 法国 1
+      - SMART TURBO 01-1A
+      - FI HELSINKI UDP-1B
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-001-1J
       - 🇭🇰 TTC9999 香港-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 2x-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - CALIFORNIA SS-A GROUP
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇳🇱 NL AMS-02-1A
+      - 🇩🇪 德国-法兰克福-001-1F
+      - UDP EDGE-05-1A
+      - 🇭🇰 TTC9999 香港-1A
+      - 🇳🇱 NL AMS-01-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1B
+      - 🇺🇸 HY-05| US
+      - 🇳🇱 NL AMS-01-1B
+      - 🇯🇵 日本高速02|CTCU|0.5x
       - 🇰🇷 韩国节点-B-1A
+      - 🇬🇧 UK RELAY-1A
+      - 🇺🇸 美国 1-1B
+      - 🇯🇵 日本高速05|BGP|CUCM
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇮🇩 印度尼西亚 1
+      - 🇺🇸 美国-VLESS-6
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本高速01|CTCU|0.5x-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇭🇰 香港 3
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 🇺🇸 美国 24
+      - FI HELSINKI UDP-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇳🇱 荷兰 11
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 美国 4
+      - FV2026-7-7-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1D
+      - G I C A B N H T H N
+      - UDP EDGE-03-1A
+      - SMART TURBO 02-1B
+      - 🇩🇪 德国 15
+      - FV2026-7-7-1A
+      - 🇸🇬 新加坡三网专线1号-1D
+      - 🇸🇬 新加坡三网专线2号-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - CALIFORNIA2 SS-B GROUP-1B
+      - 5x-1A
+      - 🇸🇬 新加坡三网专线1号-1A
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国 2
+      - 🇩🇪 德国-法兰克福-002-1E
       - 🇳🇱 NL AMS-02 UDP-1A
+      - 🇺🇸 美国 15
+      - 🇸🇬 新加坡三网专线2号-1E
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点3
+      - CALIFORNIA V2-C GROUP
+      - SMART TURBO 02-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - AR-GAF
+      - 2x-1B
+      - 🇭🇰 HK-A-1C
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1F
+      - 🇬🇧 英国伦敦 33
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇯🇵 日本-1号-0.1x
+      - 🇬🇧 UK RELAY-1B
+      - 🇳🇱 NL AMS-02 UDP-1B
+      - 🇺🇸 美国 26-1A
+      - UDP EDGE-03-1B
+      - 🇩🇪 德国-法兰克福-004-1I
+      - CALIFORNIA2 SS-B GROUP-1A
+      - 🇸🇬 新加坡三网专线2号-1A
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
+      - 🇰🇷 韩国节点-B-1B
+      - 🇯🇵 日本2号-0.1x
+      - 🇺🇸 美国-VLESS-13
+      - 9Y-EVK
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
+      - 🇯🇵 TOKYO SS-C GROUP
+      - UDP EDGE-04-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-02 | US
+      - 🇯🇵 日本高速01|CTCU|0.5x-1C
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇸🇬 新加坡三网专线2号-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 新加坡三网专线2号-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 26-1B
+      - 🇺🇸 HY-03 | US
+      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-4号-0.1x
+      - 🇺🇸 美国 27
+      - 2x-1A
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇭🇰 HK-A-1A
+      - UDP EDGE-04-1A
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国 3
+      - SMART TURBO 01-1B
+      - LG-PNH
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1A
+      - 🇺🇸 美国 1-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇯🇵 日本4号-0.1x-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇺🇸 美国1号-0.1x
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇸🇬 新加坡三网专线2号-1D
+      - 🇳🇱 NL AMS-02-1B
+      - 🇸🇬 新加坡三网专线1号-1C
+      - 🇺🇸 美国 28
+      - 🇺🇸 美国 1-1A
+      - 🇯🇵 日本4号-0.1x-1A
+      - 🇭🇰 HONGKONG SS-B GROUP
+      - 🇹🇷 土耳其 1
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇺🇸 美国高速节点1
+      - 🇳🇱 NL AMS-01 UDP-1A
+      - 🇯🇵 日本高速01|CTCU|0.5x-1A
+      - 5x-1B
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1318,160 +1306,159 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇹🇼 台湾
-      - 🇨🇳 中国联通节点1
-      - 🇮🇳 印度马哈拉施特拉孟买 38
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇩🇪 德国-法兰克福-004-1G
-      - PR-ZTC
-      - INCHEON2 SS-A GROUP
-      - CALIFORNIA V2-C GROUP
-      - 🇩🇪 德国-法兰克福-004-1F
       - 🇩🇪 德国-法兰克福-001-1E
-      - 🇳🇱 NL AMS-02-1A
-      - 🇺🇸 美国 1-1B
-      - 🇯🇵 日本4号-0.1x
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇸🇬 新加坡三网专线2号-1A
-      - 🇧🇪 比利时 2
-      - 🇩🇪 德国-法兰克福-002-1D
-      - 🇭🇰 HK-A-1B
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
-      - 🇺🇸 美国 1-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇯🇵 日本 4
-      - 🇳🇱 NL AMS-02 UDP-1B
-      - 🇭🇰 TTC9999 香港-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇹🇼 台湾高速节点
-      - 🇹🇷 土耳其 3
-      - 5x-1A
-      - 🇳🇱 NL AMS-01-1B
-      - 🇩🇪 德国-法兰克福-004-1A
-      - CALIFORNIA2 SS-B GROUP-1A
-      - 🇯🇵 日本2号-0.1x-1A
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇯🇵 日本 1
-      - 🇭🇰 中国香港 36-1B
-      - 🇳🇱 NL AMS-01-1A
-      - INCHEON SS-B GROUP
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1B
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇬🇧 英国伦敦 38-1B
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONGKONG2 SS-C GROUP-1A
-      - 🇺🇸 美国 26-1A
-      - UDP EDGE-04-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - CALIFORNIA SS-B GROUP-1A
-      - 🇸🇬 新加坡三网专线2号-1C
-      - CALIFORNIA2 SS-B GROUP-1B
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇳🇱 NL AMS-01 UDP-1B
-      - 🇯🇵 日本高速08|BGP|CTCU-1B
-      - 🇺🇸 美国 4
-      - 🇯🇵 日本-4号-0.1x
-      - 🇳🇱 NL AMS-02-1B
-      - 🇸🇬 新加坡三网专线1号-1A
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇹🇼 台湾高速节点2
-      - 🇰🇷 韩国 2
-      - SMART TURBO 01-1B
-      - 🇳🇱 NL AMS-01 UDP-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 亚太地区 2
-      - 🇯🇵 TOKYO SS-B GROUP
-      - CALIFORNIA SS-A GROUP
-      - 🇩🇪 德国 10
-      - 🇯🇵 日本高速02|CTCU|0.5x
-      - 2x-1C
-      - 🇺🇸 美国 1-1C
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇬🇧 英国伦敦 38-1A
-      - 5x-1B
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
-      - 🇸🇬 SINGAPORE2 SS-B GROUP
-      - 5x-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1A
-      - 🇸🇬 新加坡三网专线1号-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - UDP EDGE-03-1A
-      - 🇭🇰 HONGKONG V2-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇬🇧 英国伦敦 2
-      - 🇺🇸 美国 24
-      - 🇯🇵 日本-1号-0.1x
-      - 🇸🇬 美国新泽西 2-1A
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇺🇸 HY-05| US
-      - 🇩🇪 德国-法兰克福-004-1I
-      - SMART TURBO 02-1B
-      - 🇭🇰 HK-A-1C
-      - 🇯🇵 日本高速04|BGP|CUCM
-      - CALIFORNIA2 SS-A GROUP
-      - 🇭🇰 HK-A-1A
-      - UDP EDGE-05-1B
-      - 🇯🇵 日本 3
-      - 🇭🇰 HONGKONG SS-C GROUP
-      - 🇰🇷 韩国节点-B-1B
-      - 🇺🇸 HY-03 | US
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-002-1E
-      - FV2026-7-7
-      - 🇯🇵 TOKYO SS-C GROUP
-      - 🇩🇪 德国-法兰克福-003-1C
-      - INCHEON SS-A GROUP
-      - CALIFORNIA2 SS-C GROUP
-      - CALIFORNIA SS-B GROUP-1B
-      - 🇭🇰 香港 18
-      - 🇩🇪 德国-法兰克福-003-1F
-      - YP-ASW
-      - UDP EDGE-04-1A
-      - 🇺🇸 美国3号-0.1x
-      - 🇸🇬 美国新泽西 2-1B
-      - 🇺🇸 HY-04 | US
-      - 🇺🇸 美国 26-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - G I C A B N H T H N
       - 🇩🇪 德国-法兰克福-003-1G
-      - SMART TURBO 01-1A
-      - UDP EDGE-05-1A
-      - SMART TURBO 02-1A
-      - FI HELSINKI UDP-1B
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇯🇵 日本高速08|BGP|CTCU-1C
-      - MH-GMU
-      - AE-KTI
-      - 🇭🇰 HONGKONG SS-B GROUP
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇺🇸 HY-02 | US
-      - 🇭🇰 中国香港 37
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇯🇵 日本2号-0.1x-1B
-      - 2x-1B
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇬🇧 UK RELAY-1B
-      - 🇬🇧 UK RELAY-1A
-      - 🇯🇵 TOKYO2 SS-C GROUP
-      - 🇸🇬 新加坡 2
-      - UDP EDGE-03-1B
-      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 新加坡三网专线1号-1B
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇨🇳 中国联通节点1
+      - 🇳🇱 NL AMS-01 UDP-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1E
+      - 🇲🇾 MY-JGU
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-003-1J
+      - UDP EDGE-05-1B
+      - 🇯🇵 日本高速08|BGP|CTCU
       - 🇩🇪 德国-法兰克福-001-1G
-      - FI HELSINKI UDP-1A
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇸🇪 瑞典 41
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
-      - 🇭🇰 中国香港 36-1A
-      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇫🇷 法国 1
+      - SMART TURBO 01-1A
+      - FI HELSINKI UDP-1B
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-001-1J
       - 🇭🇰 TTC9999 香港-1B
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 2x-1A
+      - 🇩🇪 德国-法兰克福-002-1C
+      - CALIFORNIA SS-A GROUP
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇳🇱 NL AMS-02-1A
+      - 🇩🇪 德国-法兰克福-001-1F
+      - UDP EDGE-05-1A
+      - 🇭🇰 TTC9999 香港-1A
+      - 🇳🇱 NL AMS-01-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1B
+      - 🇺🇸 HY-05| US
+      - 🇳🇱 NL AMS-01-1B
+      - 🇯🇵 日本高速02|CTCU|0.5x
       - 🇰🇷 韩国节点-B-1A
+      - 🇬🇧 UK RELAY-1A
+      - 🇺🇸 美国 1-1B
+      - 🇯🇵 日本高速05|BGP|CUCM
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇮🇩 印度尼西亚 1
+      - 🇺🇸 美国-VLESS-6
+      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 日本高速01|CTCU|0.5x-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇭🇰 香港 3
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 🇺🇸 美国 24
+      - FI HELSINKI UDP-1A
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇳🇱 荷兰 11
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇺🇸 美国 4
+      - FV2026-7-7-1B
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1D
+      - G I C A B N H T H N
+      - UDP EDGE-03-1A
+      - SMART TURBO 02-1B
+      - 🇩🇪 德国 15
+      - FV2026-7-7-1A
+      - 🇸🇬 新加坡三网专线1号-1D
+      - 🇸🇬 新加坡三网专线2号-1C
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇩🇪 德国-法兰克福-003-1C
+      - CALIFORNIA2 SS-B GROUP-1B
+      - 5x-1A
+      - 🇸🇬 新加坡三网专线1号-1A
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国 2
+      - 🇩🇪 德国-法兰克福-002-1E
       - 🇳🇱 NL AMS-02 UDP-1A
+      - 🇺🇸 美国 15
+      - 🇸🇬 新加坡三网专线2号-1E
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇹🇼 台湾高速节点3
+      - CALIFORNIA V2-C GROUP
+      - SMART TURBO 02-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - AR-GAF
+      - 2x-1B
+      - 🇭🇰 HK-A-1C
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1F
+      - 🇬🇧 英国伦敦 33
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇯🇵 日本-1号-0.1x
+      - 🇬🇧 UK RELAY-1B
+      - 🇳🇱 NL AMS-02 UDP-1B
+      - 🇺🇸 美国 26-1A
+      - UDP EDGE-03-1B
+      - 🇩🇪 德国-法兰克福-004-1I
+      - CALIFORNIA2 SS-B GROUP-1A
+      - 🇸🇬 新加坡三网专线2号-1A
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1C
+      - 🇰🇷 韩国节点-B-1B
+      - 🇯🇵 日本2号-0.1x
+      - 🇺🇸 美国-VLESS-13
+      - 9Y-EVK
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1A
+      - 🇯🇵 TOKYO SS-C GROUP
+      - UDP EDGE-04-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-02 | US
+      - 🇯🇵 日本高速01|CTCU|0.5x-1C
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇸🇬 新加坡三网专线2号-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇸🇬 新加坡三网专线2号-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 26-1B
+      - 🇺🇸 HY-03 | US
+      - 🇸🇬 新加坡三网专线2号-1B
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇯🇵 日本-4号-0.1x
+      - 🇺🇸 美国 27
+      - 2x-1A
+      - 🇺🇸 美国-洛杉矶-PRO
+      - 🇭🇰 HK-A-1A
+      - UDP EDGE-04-1A
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国 3
+      - SMART TURBO 01-1B
+      - LG-PNH
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 新加坡高速06|BGP|CTCU-1B
+      - 🇸🇬 SINGAPORE2 SS-B GROUP-1A
+      - 🇺🇸 美国 1-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇯🇵 日本4号-0.1x-1B
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇺🇸 美国1号-0.1x
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇸🇬 新加坡三网专线2号-1D
+      - 🇳🇱 NL AMS-02-1B
+      - 🇸🇬 新加坡三网专线1号-1C
+      - 🇺🇸 美国 28
+      - 🇺🇸 美国 1-1A
+      - 🇯🇵 日本4号-0.1x-1A
+      - 🇭🇰 HONGKONG SS-B GROUP
+      - 🇹🇷 土耳其 1
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇺🇸 美国高速节点1
+      - 🇳🇱 NL AMS-01 UDP-1A
+      - 🇯🇵 日本高速01|CTCU|0.5x-1A
+      - 5x-1B
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
