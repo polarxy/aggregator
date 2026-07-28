@@ -5,531 +5,571 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: d9fb4ed0-cc00-4171-97a8-0a8afe14fe69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 新加坡公益-02, server: free77-sg2.node2.top, port: 443, type: vless, uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇺🇸 洛杉矶-直连-1B, server: sg.dickaws.top, port: 23405, type: hysteria2, password: a23a00cb-685e-4a44-bd21-1b3debaea9ea, auth: a23a00cb-685e-4a44-bd21-1b3debaea9ea, sni: caltech.edu, up: 600, down: 600, skip-cert-verify: true, obfs: salamander, obfs-password: Ml0mynbAAQFLiEHW, udp: true}
-  - {name: FV-YAK, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: e0f8c652-fa60-4c6b-9146-b3b40a9c196c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡-中转2区-1A, server: sg.dickaws.top, port: 34520, type: hysteria2, password: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, auth: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, sni: sg.xinjiapo.fifafa.vip, up: 600, down: 600, skip-cert-verify: false, obfs: salamander, obfs-password: SUkzQojZTehSMtgv, udp: true}
-  - {name: 🇬🇧 英国, server: ly.gaaaa015.top, port: 55880, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: BibMDEe05xV7nGF6eUhylxgry-JoWCCwrGdyAasOuyU, short-id: "69b0ac6c" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国公益-01, server: free73-us1.node2.top, port: 443, type: vless, uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 备用线路 A-1B, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 7f8804a7-8842-48f9-ac0c-b210101324cc, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
-  - {name: 🇧🇷 巴西, server: ly.gaaaa015.top, port: 55870, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: axMnGKqTYNAacJW5Xz8n9XBD2gS9OCmGefiIZo6xlz8, short-id: "11a01dc1" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: d44ec983-f861-4577-89b8-c61997fcc652, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 新加坡公益-01, server: free77-sg1.node2.top, port: 443, type: vless, uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 31da11e8-7baa-4f87-ab91-5d0f8173e069, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇻🇳 越南, server: ly.gaaaa015.top, port: 55900, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: BibMDEe05xV7nGF6eUhylxgry-JoWCCwrGdyAasOuyU, short-id: "69b0ac6c" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: LR-AYG, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: b58059ec-d8ca-4a89-9618-b8c5f4d25f93, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港丨推荐01丨X1, server: hkaws01.gaaaa014.top, port: 58722, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Qe6Xgz5a5wSOeCw7FfT_DQM9f-YSmTDI3Ix8hJJ3mEg, short-id: "4f41a36a" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡-中转2区-1B, server: sg.dickaws.top, port: 34520, type: hysteria2, password: a23a00cb-685e-4a44-bd21-1b3debaea9ea, auth: a23a00cb-685e-4a44-bd21-1b3debaea9ea, sni: sg.xinjiapo.fifafa.vip, up: 600, down: 600, skip-cert-verify: false, obfs: salamander, obfs-password: SUkzQojZTehSMtgv, udp: true}
-  - {name: 🇺🇸 HY-03 | US, server: usflare1.cloudaddy.top, port: 30004, type: hysteria2, password: b0aa1600-86a7-4287-8f1e-95a4efd17995, auth: b0aa1600-86a7-4287-8f1e-95a4efd17995, sni: us1.cloudsegl1.ccwu.cc, up: 5000, down: 5000, skip-cert-verify: false, udp: true}
-  - {name: AZ-SGR, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 7b7fe921-24e0-44c8-a697-2041e3fa8c07, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: ZQ-IMD, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: dab853a1-44a1-4694-af47-6e200f3de6b0, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: d44ec983-f861-4577-89b8-c61997fcc652, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 香港公益-01, server: free723-hk1.node2.top, port: 443, type: vless, uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 97c10b93-a1e1-426c-8bbc-405e94a717a7, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 31da11e8-7baa-4f87-ab91-5d0f8173e069, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 洛杉矶-直连-1A, server: sg.dickaws.top, port: 23405, type: hysteria2, password: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, auth: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, sni: caltech.edu, up: 600, down: 600, skip-cert-verify: true, obfs: salamander, obfs-password: Ml0mynbAAQFLiEHW, udp: true}
-  - {name: FV2026-7-7-1I, server: fv2026.node2.top, port: 21001, type: vless, uuid: e2b90562-a6ce-4d93-b7c6-7525eb4f4798, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: EC-DWO, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 646bdd79-c6b8-4f96-91a0-f34368199fad, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡5, server: ly.gaaaa015.top, port: 55830, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: hsLPTul4P6ckya6Nbb_OiZnIL0EKIY4AoX6fowxlejY, short-id: "0ccd43a4" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: CL-AOJ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 064d8ec6-a980-4cc8-aa62-931764fa1fca, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: AR-VRD, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 9bfd3564-6d5d-47c6-9f67-12e7776bf274, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 移动推荐-1B, server: 45.192.194.154, port: 40448, type: vless, uuid: 7f8804a7-8842-48f9-ac0c-b210101324cc, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 67v1Rs5o9uH_a4OSpEEThybR2pQbjWTRTfkOMiRp9hU, short-id: "d5e8b1a4" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: e8fb1e8d-6b52-437c-8792-32012674a1c0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: FV2026-7-7-1N, server: fv2026.node2.top, port: 21001, type: vless, uuid: ef426863-ae34-4fcd-aa59-88ec3fdd1f57, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1S, server: fv2026.node2.top, port: 21001, type: vless, uuid: dab853a1-44a1-4694-af47-6e200f3de6b0, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FG-GSC, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 560eda33-4671-4ba3-827d-cd13e9a10a73, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: OY-RGE, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: f16db289-b721-4c1b-b759-d5a7e69e7125, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1D, server: fv2026.node2.top, port: 21001, type: vless, uuid: 646bdd79-c6b8-4f96-91a0-f34368199fad, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 119fa4d0-bdb8-414f-ac42-85a52b1f7f92, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: BY-BAE, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 39275300-f07b-414a-9866-685088bfbc63, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: d44ec983-f861-4577-89b8-c61997fcc652, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: d9fb4ed0-cc00-4171-97a8-0a8afe14fe69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 优选 通用-1A, server: cdn.caihongmao.org, port: 443, type: vless, uuid: b9c7ff18-1ad3-4a69-a161-a8f49e9beb41, tls: true, servername: cdn.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn.caihongmao.org}}, udp: true}
-  - {name: 🇸🇬 新加坡1, server: ly.gaaaa015.top, port: 55820, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: P99AZTuu2iMX7IcuYa_FPwJJnzKzf5lJkTxEx3TSp1Q, short-id: "e62dd33f" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: KA-GJD, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 3895729f-d4d6-42d4-8b6c-416afa41128e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1J, server: fv2026.node2.top, port: 21001, type: vless, uuid: d7a7f1ce-5fba-4a22-a8fa-3b5aafd9f984, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: d44ec983-f861-4577-89b8-c61997fcc652, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 备用线路 B-1B, server: cdn3.caihongmao.org, port: 443, type: vless, uuid: 7f8804a7-8842-48f9-ac0c-b210101324cc, tls: true, servername: cdn3.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn3.caihongmao.org}}, udp: true}
-  - {name: 🇺🇸 HY-05| US, server: usflare1.cloudaddy.top, port: 30006, type: hysteria2, password: b0aa1600-86a7-4287-8f1e-95a4efd17995, auth: b0aa1600-86a7-4287-8f1e-95a4efd17995, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
-  - {name: GM-FJM, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 3a44238a-12f6-4ec9-a2f5-50de63358cfb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HK-A-1A, server: 207.57.128.27, port: 8081, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 119fa4d0-bdb8-414f-ac42-85a52b1f7f92, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇰🇷 韩国01, server: ly.gaaaa015.top, port: 55850, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 40XkiG_OlV_bttf5wQgRKJhb6yex1c7f97EfVegKISc, short-id: "75732f23" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1H, server: fv2026.node2.top, port: 21001, type: vless, uuid: 57e88070-5fb3-473f-bdfe-181f208f0dab, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: PN-MAX, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 89bca12c-9805-4b6e-94c8-9c3aac2bcfae, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1V, server: fv2026.node2.top, port: 21001, type: vless, uuid: 247cc7ba-0a9d-4aea-b84d-c869a011a539, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇹🇼 TW台湾1, server: ly.gaaaa015.top, port: 55860, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: luzv28gIP33SPXQo2aXFx-9bFq8GtF7Km6ncEOdnBBU, short-id: "33398237" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1Q, server: fv2026.node2.top, port: 21001, type: vless, uuid: 89bca12c-9805-4b6e-94c8-9c3aac2bcfae, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FG-ECM, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: e2b90562-a6ce-4d93-b7c6-7525eb4f4798, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 97c10b93-a1e1-426c-8bbc-405e94a717a7, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: MA-GAL, server: empty.node, port: 443, type: trojan, password: 693125cf-6a71-4ec6-95e6-bd785290b17f, sni: empty.node, skip-cert-verify: false, udp: true}
-  - {name: FV2026-7-7-1U, server: fv2026.node2.top, port: 21001, type: vless, uuid: 064d8ec6-a980-4cc8-aa62-931764fa1fca, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1M, server: fv2026.node2.top, port: 21001, type: vless, uuid: b7aa4ae6-aad2-4bd6-9e29-2ddbf20afa2b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: aea768ce-7464-4f72-833d-52b560e3d2e1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 31da11e8-7baa-4f87-ab91-5d0f8173e069, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: aea768ce-7464-4f72-833d-52b560e3d2e1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 31da11e8-7baa-4f87-ab91-5d0f8173e069, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-A-1B, server: 207.57.128.27, port: 8081, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1A, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: e8fb1e8d-6b52-437c-8792-32012674a1c0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 优选 通用-1B, server: cdn.caihongmao.org, port: 443, type: vless, uuid: 7f8804a7-8842-48f9-ac0c-b210101324cc, tls: true, servername: cdn.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn.caihongmao.org}}, udp: true}
-  - {name: 🇺🇸 纽约 备选-1A, server: 192.3.95.149, port: 40447, type: vless, uuid: b9c7ff18-1ad3-4a69-a161-a8f49e9beb41, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 5kxlT9upElYXjE0zA9fkDj1_YF0pjgy542jRDAoDHRc, short-id: "c1d4e7f0" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇵🇭 菲律宾, server: ly.gaaaa015.top, port: 55930, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 7Y8q9E8LYgUroVCecJn4PB0lYuSfxtBUvAXbNxnlH08, short-id: "8685c9f6" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 日本03丨JP丨X1, server: ly.gaaaa015.top, port: 55790, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: eRb1RgkRLOxldDs-Yk01LITbCNr6qsy5dsW_svm2PDk, short-id: "a0650ba2" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: aea768ce-7464-4f72-833d-52b560e3d2e1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: W7-TEJ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: ec55b723-602f-4a2e-9dd5-95709540f90c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FV2026-7-7-1S, server: fv2026.node2.top, port: 21001, type: vless, uuid: f16db289-b721-4c1b-b759-d5a7e69e7125, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1G, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: d447cccf-6f9b-4399-8f29-788634327140, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1R, server: fv2026.node2.top, port: 21001, type: vless, uuid: 560eda33-4671-4ba3-827d-cd13e9a10a73, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: e8fb1e8d-6b52-437c-8792-32012674a1c0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: d44ec983-f861-4577-89b8-c61997fcc652, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 31da11e8-7baa-4f87-ab91-5d0f8173e069, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 优选 通用-1B, server: cdn.caihongmao.org, port: 443, type: vless, uuid: 3957cc72-fce2-40d6-acf0-9adc8c1b4906, tls: true, servername: cdn.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn.caihongmao.org}}, udp: true}
   - {name: 🇸🇬 新加坡3, server: ly.gaaaa015.top, port: 55800, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: rSPI3JPZZzglA7O6j7S46HtUFExLN_x71LUAY4OJj2w, short-id: "54462e21" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1C, server: fv2026.node2.top, port: 21001, type: vless, uuid: f16db289-b721-4c1b-b759-d5a7e69e7125, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1B, server: fv2026.node2.top, port: 21001, type: vless, uuid: 4fb1f786-2370-4718-9eae-a932bd38d4d5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1O, server: fv2026.node2.top, port: 21001, type: vless, uuid: 560eda33-4671-4ba3-827d-cd13e9a10a73, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: d9fb4ed0-cc00-4171-97a8-0a8afe14fe69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: YS-VLZ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 34d6dc51-646a-4f77-99e0-6e986b6cf91a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港3丨HK03丨X1, server: ly.gaaaa015.top, port: 55723, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: LCwJbn_WUDTXNgTnvGnveuBpkaLsNj1LT5zMZ_I2_Vc, short-id: "e655758e" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇦 LT-UAQ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 247cc7ba-0a9d-4aea-b84d-c869a011a539, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: aea768ce-7464-4f72-833d-52b560e3d2e1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: FV2026-7-7-1G, server: fv2026.node2.top, port: 21001, type: vless, uuid: 34d6dc51-646a-4f77-99e0-6e986b6cf91a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 HY-04 | US, server: usflare1.cloudaddy.top, port: 30005, type: hysteria2, password: b0aa1600-86a7-4287-8f1e-95a4efd17995, auth: b0aa1600-86a7-4287-8f1e-95a4efd17995, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: d9fb4ed0-cc00-4171-97a8-0a8afe14fe69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: FV2026-7-7-1A, server: fv2026.node2.top, port: 21001, type: vless, uuid: e0f8c652-fa60-4c6b-9146-b3b40a9c196c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1P, server: fv2026.node2.top, port: 21001, type: vless, uuid: ec55b723-602f-4a2e-9dd5-95709540f90c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 纽约 备选-1B, server: 192.3.95.149, port: 40447, type: vless, uuid: 7f8804a7-8842-48f9-ac0c-b210101324cc, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 5kxlT9upElYXjE0zA9fkDj1_YF0pjgy542jRDAoDHRc, short-id: "c1d4e7f0" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: L7-XUH, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: d7a7f1ce-5fba-4a22-a8fa-3b5aafd9f984, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 97c10b93-a1e1-426c-8bbc-405e94a717a7, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 法国, server: ly.gaaaa015.top, port: 55920, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: WwZdjjDBW_0FkgYleC1NqASCkMHt-7D9Lm-CXUMl-TQ, short-id: "946cdae0" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国公益-02, server: free73-us2.node2.top, port: 443, type: vless, uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
-  - {name: 备用线路 A-1A, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: b9c7ff18-1ad3-4a69-a161-a8f49e9beb41, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
-  - {name: UO-TNU, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: b7aa4ae6-aad2-4bd6-9e29-2ddbf20afa2b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 3V-YLJ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: ef426863-ae34-4fcd-aa59-88ec3fdd1f57, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 97c10b93-a1e1-426c-8bbc-405e94a717a7, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 97c10b93-a1e1-426c-8bbc-405e94a717a7, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE徳国, server: ly.gaaaa015.top, port: 55890, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: BibMDEe05xV7nGF6eUhylxgry-JoWCCwrGdyAasOuyU, short-id: "69b0ac6c" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1C, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: safari, network: tcp, udp: true}
+  - {name: SW-VYQ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 064d8ec6-a980-4cc8-aa62-931764fa1fca, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FV2026-7-7-1E, server: fv2026.node2.top, port: 21001, type: vless, uuid: e2b90562-a6ce-4d93-b7c6-7525eb4f4798, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇺🇸 美国01, server: ly.gaaaa015.top, port: 55840, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: NJVcrE2ngztG0sAbKnKzn1RS6Zo1MQzh6_sS__HjLXk, short-id: "ee5b20df" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇰🇭 柬埔寨, server: ly.gaaaa015.top, port: 55910, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: sCleOhRhfwCc_nsWmXFzsmo5NJXBcQPPzJvKP_nSakI, short-id: "801dcf88" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1L, server: fv2026.node2.top, port: 21001, type: vless, uuid: 3895729f-d4d6-42d4-8b6c-416afa41128e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: e8fb1e8d-6b52-437c-8792-32012674a1c0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 香港1丨HK01丨X1, server: ly.gaaaa015.top, port: 58723, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: jWb-MplPdthSzVBmUp09mBmPXaywyZGH3cRXS41jEjM, short-id: "301edec6" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港原生丨直连01丨X1, server: hkt.gaaaa014.top, port: 58761, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: zMqciILSKxYps4BaxKZoviAvr1J0Hb_tekUbmhB18EM, short-id: "1eb0ae87" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1H, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 28c38b1e-8f2c-42bb-b469-816742d18d19, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: e8fb1e8d-6b52-437c-8792-32012674a1c0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡公益-02, server: free77-sg2.node2.top, port: 443, type: vless, uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 119fa4d0-bdb8-414f-ac42-85a52b1f7f92, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 洛杉矶-直连-1A, server: sg.dickaws.top, port: 23405, type: hysteria2, password: a23a00cb-685e-4a44-bd21-1b3debaea9ea, auth: a23a00cb-685e-4a44-bd21-1b3debaea9ea, sni: caltech.edu, up: 600, down: 600, skip-cert-verify: true, obfs: salamander, obfs-password: Ml0mynbAAQFLiEHW, udp: true}
+  - {name: 🇸🇬 新加坡-中转2区-1A, server: sg.dickaws.top, port: 34520, type: hysteria2, password: a23a00cb-685e-4a44-bd21-1b3debaea9ea, auth: a23a00cb-685e-4a44-bd21-1b3debaea9ea, sni: sg.xinjiapo.fifafa.vip, up: 600, down: 600, skip-cert-verify: false, obfs: salamander, obfs-password: SUkzQojZTehSMtgv, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: d9fb4ed0-cc00-4171-97a8-0a8afe14fe69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1U, server: fv2026.node2.top, port: 21001, type: vless, uuid: ef426863-ae34-4fcd-aa59-88ec3fdd1f57, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡5, server: ly.gaaaa015.top, port: 55830, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: hsLPTul4P6ckya6Nbb_OiZnIL0EKIY4AoX6fowxlejY, short-id: "0ccd43a4" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇯🇵 日本05, server: ly.gaaaa015.top, port: 55810, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HRJZb6we2VTWa3ueJKR8RBQjYzSwtlYZs-5DOuTjyBk, short-id: "bc8f2d6c" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: d8d2267e-7c36-4c72-8b37-2a961db9022d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
-  - {name: FV2026-7-7-1K, server: fv2026.node2.top, port: 21001, type: vless, uuid: 3a44238a-12f6-4ec9-a2f5-50de63358cfb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1T, server: fv2026.node2.top, port: 21001, type: vless, uuid: 9262fb3e-a327-49df-b755-5b83a99cac9b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1F, server: fv2026.node2.top, port: 21001, type: vless, uuid: b58059ec-d8ca-4a89-9618-b8c5f4d25f93, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 香港 移动推荐-1A, server: 45.192.194.154, port: 40448, type: vless, uuid: b9c7ff18-1ad3-4a69-a161-a8f49e9beb41, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 67v1Rs5o9uH_a4OSpEEThybR2pQbjWTRTfkOMiRp9hU, short-id: "d5e8b1a4" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 119fa4d0-bdb8-414f-ac42-85a52b1f7f92, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 119fa4d0-bdb8-414f-ac42-85a52b1f7f92, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: FV2026-7-7-1W, server: fv2026.node2.top, port: 21001, type: vless, uuid: 9bfd3564-6d5d-47c6-9f67-12e7776bf274, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 2O-OWL, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: ec55b723-602f-4a2e-9dd5-95709540f90c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HK-A-1C, server: 207.57.128.27, port: 8081, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 8N-NPI, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 57e88070-5fb3-473f-bdfe-181f208f0dab, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: CY-ECX, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 9262fb3e-a327-49df-b755-5b83a99cac9b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇸🇬 新加坡公益-03, server: free77-sg3.node2.top, port: 443, type: vless, uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 31da11e8-7baa-4f87-ab91-5d0f8173e069, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 洛杉矶-直连-1B, server: sg.dickaws.top, port: 23405, type: hysteria2, password: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, auth: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, sni: caltech.edu, up: 600, down: 600, skip-cert-verify: true, obfs: salamander, obfs-password: Ml0mynbAAQFLiEHW, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1A, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: edge, network: tcp, udp: true}
+  - {name: FV2026-7-7-1H, server: fv2026.node2.top, port: 21001, type: vless, uuid: 7b7fe921-24e0-44c8-a697-2041e3fa8c07, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1G, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: d447cccf-6f9b-4399-8f29-788634327140, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇬🇧 英国, server: ly.gaaaa015.top, port: 55880, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: BibMDEe05xV7nGF6eUhylxgry-JoWCCwrGdyAasOuyU, short-id: "69b0ac6c" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 119fa4d0-bdb8-414f-ac42-85a52b1f7f92, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇫🇷 法国, server: ly.gaaaa015.top, port: 55920, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: WwZdjjDBW_0FkgYleC1NqASCkMHt-7D9Lm-CXUMl-TQ, short-id: "946cdae0" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GV-LEU, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 247cc7ba-0a9d-4aea-b84d-c869a011a539, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇰🇭 柬埔寨, server: ly.gaaaa015.top, port: 55910, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: sCleOhRhfwCc_nsWmXFzsmo5NJXBcQPPzJvKP_nSakI, short-id: "801dcf88" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FV2026-7-7-1T, server: fv2026.node2.top, port: 21001, type: vless, uuid: b58059ec-d8ca-4a89-9618-b8c5f4d25f93, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FV2026-7-7-1L, server: fv2026.node2.top, port: 21001, type: vless, uuid: b7aa4ae6-aad2-4bd6-9e29-2ddbf20afa2b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: d44ec983-f861-4577-89b8-c61997fcc652, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: RK-UCP, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: ef426863-ae34-4fcd-aa59-88ec3fdd1f57, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: L0-UDJ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 4fb1f786-2370-4718-9eae-a932bd38d4d5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: aea768ce-7464-4f72-833d-52b560e3d2e1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇧🇷 巴西, server: ly.gaaaa015.top, port: 55870, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: axMnGKqTYNAacJW5Xz8n9XBD2gS9OCmGefiIZo6xlz8, short-id: "11a01dc1" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IL-XDA, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 89bca12c-9805-4b6e-94c8-9c3aac2bcfae, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: WF-VKJ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: e0f8c652-fa60-4c6b-9146-b3b40a9c196c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1H, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 28c38b1e-8f2c-42bb-b469-816742d18d19, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1K, server: fv2026.node2.top, port: 21001, type: vless, uuid: 4fb1f786-2370-4718-9eae-a932bd38d4d5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: d44ec983-f861-4577-89b8-c61997fcc652, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 优选 通用-1A, server: cdn.caihongmao.org, port: 443, type: vless, uuid: b9c7ff18-1ad3-4a69-a161-a8f49e9beb41, tls: true, servername: cdn.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn.caihongmao.org}}, udp: true}
+  - {name: 🇺🇸 纽约 备选-1A, server: 192.3.95.149, port: 40447, type: vless, uuid: b9c7ff18-1ad3-4a69-a161-a8f49e9beb41, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 5kxlT9upElYXjE0zA9fkDj1_YF0pjgy542jRDAoDHRc, short-id: "c1d4e7f0" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇻🇳 越南, server: ly.gaaaa015.top, port: 55900, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: BibMDEe05xV7nGF6eUhylxgry-JoWCCwrGdyAasOuyU, short-id: "69b0ac6c" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: d9fb4ed0-cc00-4171-97a8-0a8afe14fe69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡公益-01, server: free77-sg1.node2.top, port: 443, type: vless, uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: MK-AZS, server: empty.node, port: 443, type: trojan, password: cc4361c8-d998-4869-98d6-0eba0265acb2, sni: empty.node, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 31da11e8-7baa-4f87-ab91-5d0f8173e069, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇭🇰 香港公益-01, server: free723-hk1.node2.top, port: 443, type: vless, uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇵🇭 菲律宾, server: ly.gaaaa015.top, port: 55930, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 7Y8q9E8LYgUroVCecJn4PB0lYuSfxtBUvAXbNxnlH08, short-id: "8685c9f6" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡1, server: ly.gaaaa015.top, port: 55820, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: P99AZTuu2iMX7IcuYa_FPwJJnzKzf5lJkTxEx3TSp1Q, short-id: "e62dd33f" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: d9fb4ed0-cc00-4171-97a8-0a8afe14fe69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1O, server: fv2026.node2.top, port: 21001, type: vless, uuid: 39275300-f07b-414a-9866-685088bfbc63, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 备用线路 B-1A, server: cdn3.caihongmao.org, port: 443, type: vless, uuid: b9c7ff18-1ad3-4a69-a161-a8f49e9beb41, tls: true, servername: cdn3.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn3.caihongmao.org}}, udp: true}
-  - {name: FV2026-7-7-1R, server: fv2026.node2.top, port: 21001, type: vless, uuid: 7b7fe921-24e0-44c8-a697-2041e3fa8c07, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: VH-LNJ, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 4fb1f786-2370-4718-9eae-a932bd38d4d5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FV2026-7-7-1E, server: fv2026.node2.top, port: 21001, type: vless, uuid: 39275300-f07b-414a-9866-685088bfbc63, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: aea768ce-7464-4f72-833d-52b560e3d2e1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡-中转2区-1B, server: sg.dickaws.top, port: 34520, type: hysteria2, password: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, auth: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, sni: sg.xinjiapo.fifafa.vip, up: 600, down: 600, skip-cert-verify: false, obfs: salamander, obfs-password: SUkzQojZTehSMtgv, udp: true}
   - {name: 🇯🇵 日本01丨推荐丨X1, server: jpaws01.gaaaa014.top, port: 55788, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: hjL595O01taAp3uGdAFIk2yTAROaDl3f3fekvzynDBk, short-id: "24deb1a6" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: e8fb1e8d-6b52-437c-8792-32012674a1c0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 HY-02 | US, server: usflare1.cloudaddy.top, port: 30003, type: hysteria2, password: b0aa1600-86a7-4287-8f1e-95a4efd17995, auth: b0aa1600-86a7-4287-8f1e-95a4efd17995, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: af7aa9d2-df31-48f8-8dd5-2ce32207a305, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
+  - {name: BA-XJV, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 9bfd3564-6d5d-47c6-9f67-12e7776bf274, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 纽约 备选-1B, server: 192.3.95.149, port: 40447, type: vless, uuid: 3957cc72-fce2-40d6-acf0-9adc8c1b4906, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 5kxlT9upElYXjE0zA9fkDj1_YF0pjgy542jRDAoDHRc, short-id: "c1d4e7f0" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 新加坡公益-03, server: free77-sg3.node2.top, port: 443, type: vless, uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: e8fb1e8d-6b52-437c-8792-32012674a1c0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国公益-01, server: free73-us1.node2.top, port: 443, type: vless, uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: FV2026-7-7-1C, server: fv2026.node2.top, port: 21001, type: vless, uuid: 3a44238a-12f6-4ec9-a2f5-50de63358cfb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 119fa4d0-bdb8-414f-ac42-85a52b1f7f92, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: aea768ce-7464-4f72-833d-52b560e3d2e1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1N, server: fv2026.node2.top, port: 21001, type: vless, uuid: 89bca12c-9805-4b6e-94c8-9c3aac2bcfae, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 备用线路 B-1B, server: cdn3.caihongmao.org, port: 443, type: vless, uuid: 3957cc72-fce2-40d6-acf0-9adc8c1b4906, tls: true, servername: cdn3.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn3.caihongmao.org}}, udp: true}
+  - {name: 🇭🇰 香港 移动推荐-1B, server: 45.192.194.154, port: 40448, type: vless, uuid: 3957cc72-fce2-40d6-acf0-9adc8c1b4906, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 67v1Rs5o9uH_a4OSpEEThybR2pQbjWTRTfkOMiRp9hU, short-id: "d5e8b1a4" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: d79a3a0f-e683-4bdb-b7af-12d63d1eb362, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
+  - {name: PR-BCH, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 34d6dc51-646a-4f77-99e0-6e986b6cf91a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 15-DQL, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 3895729f-d4d6-42d4-8b6c-416afa41128e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 备用线路 A-1A, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: b9c7ff18-1ad3-4a69-a161-a8f49e9beb41, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: d79a3a0f-e683-4bdb-b7af-12d63d1eb362, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: PQ-SJU, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: b7aa4ae6-aad2-4bd6-9e29-2ddbf20afa2b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国公益-02, server: free73-us2.node2.top, port: 443, type: vless, uuid: 30235bbe-f791-4e53-89f9-5d9363af9b0a, tls: true, servername: sie704.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /XFJVPN, headers: {Host: sie704.pages.dev}}, udp: true}
+  - {name: FV2026-7-7-1F, server: fv2026.node2.top, port: 21001, type: vless, uuid: 247cc7ba-0a9d-4aea-b84d-c869a011a539, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 2H-BEN, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 646bdd79-c6b8-4f96-91a0-f34368199fad, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 HY-05| US, server: usflare1.cloudaddy.top, port: 30006, type: hysteria2, password: 6eea693c-39f6-452e-8695-d9e93afaba06, auth: 6eea693c-39f6-452e-8695-d9e93afaba06, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: CK-BUI, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 560eda33-4671-4ba3-827d-cd13e9a10a73, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FV2026-7-7-1G, server: fv2026.node2.top, port: 21001, type: vless, uuid: 9bfd3564-6d5d-47c6-9f67-12e7776bf274, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 日本03丨JP丨X1, server: ly.gaaaa015.top, port: 55790, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: eRb1RgkRLOxldDs-Yk01LITbCNr6qsy5dsW_svm2PDk, short-id: "a0650ba2" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: aea768ce-7464-4f72-833d-52b560e3d2e1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 HY-04 | US, server: usflare1.cloudaddy.top, port: 30005, type: hysteria2, password: 6eea693c-39f6-452e-8695-d9e93afaba06, auth: 6eea693c-39f6-452e-8695-d9e93afaba06, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 HY-03 | US, server: usflare1.cloudaddy.top, port: 30004, type: hysteria2, password: 6eea693c-39f6-452e-8695-d9e93afaba06, auth: 6eea693c-39f6-452e-8695-d9e93afaba06, sni: us1.cloudsegl1.ccwu.cc, up: 5000, down: 5000, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 119fa4d0-bdb8-414f-ac42-85a52b1f7f92, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: UI-IPU, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: dab853a1-44a1-4694-af47-6e200f3de6b0, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇹🇼 TW台湾1, server: ly.gaaaa015.top, port: 55860, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: luzv28gIP33SPXQo2aXFx-9bFq8GtF7Km6ncEOdnBBU, short-id: "33398237" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-A-1A, server: 207.57.128.27, port: 8081, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: d79a3a0f-e683-4bdb-b7af-12d63d1eb362, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: d79a3a0f-e683-4bdb-b7af-12d63d1eb362, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1H, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 28c38b1e-8f2c-42bb-b469-816742d18d19, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1W, server: fv2026.node2.top, port: 21001, type: vless, uuid: 3895729f-d4d6-42d4-8b6c-416afa41128e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: TR-VJE, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 7b7fe921-24e0-44c8-a697-2041e3fa8c07, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港 移动推荐-1A, server: 45.192.194.154, port: 40448, type: vless, uuid: b9c7ff18-1ad3-4a69-a161-a8f49e9beb41, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 67v1Rs5o9uH_a4OSpEEThybR2pQbjWTRTfkOMiRp9hU, short-id: "d5e8b1a4" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: AE-PMG, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 483da3a5-bf37-4793-8636-906e73eb3477, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1G, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: d447cccf-6f9b-4399-8f29-788634327140, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1H, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 28c38b1e-8f2c-42bb-b469-816742d18d19, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1x, server: fv2026.node2.top, port: 21001, type: vless, uuid: 483da3a5-bf37-4793-8636-906e73eb3477, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-A-1B, server: 207.57.128.27, port: 8081, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: d44ec983-f861-4577-89b8-c61997fcc652, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1B, server: fv2026.node2.top, port: 21001, type: vless, uuid: 34d6dc51-646a-4f77-99e0-6e986b6cf91a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FV2026-7-7-1A, server: fv2026.node2.top, port: 21001, type: vless, uuid: dab853a1-44a1-4694-af47-6e200f3de6b0, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港丨推荐01丨X1, server: hkaws01.gaaaa014.top, port: 58722, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: Qe6Xgz5a5wSOeCw7FfT_DQM9f-YSmTDI3Ix8hJJ3mEg, short-id: "4f41a36a" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-A-1C, server: 207.57.128.27, port: 8081, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: DH-KXW, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: b58059ec-d8ca-4a89-9618-b8c5f4d25f93, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: d79a3a0f-e683-4bdb-b7af-12d63d1eb362, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 HY-02 | US, server: usflare1.cloudaddy.top, port: 30003, type: hysteria2, password: 6eea693c-39f6-452e-8695-d9e93afaba06, auth: 6eea693c-39f6-452e-8695-d9e93afaba06, sni: www.iq.com, up: 5000, down: 5000, skip-cert-verify: true, udp: true}
+  - {name: FV2026-7-7-1M, server: fv2026.node2.top, port: 21001, type: vless, uuid: e0f8c652-fa60-4c6b-9146-b3b40a9c196c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: EP-OCI, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: d7a7f1ce-5fba-4a22-a8fa-3b5aafd9f984, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FV2026-7-7-1J, server: fv2026.node2.top, port: 21001, type: vless, uuid: ec55b723-602f-4a2e-9dd5-95709540f90c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港3丨HK03丨X1, server: ly.gaaaa015.top, port: 55723, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: LCwJbn_WUDTXNgTnvGnveuBpkaLsNj1LT5zMZ_I2_Vc, short-id: "e655758e" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: d9fb4ed0-cc00-4171-97a8-0a8afe14fe69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇰🇷 韩国01, server: ly.gaaaa015.top, port: 55850, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 40XkiG_OlV_bttf5wQgRKJhb6yex1c7f97EfVegKISc, short-id: "75732f23" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 DE徳国, server: ly.gaaaa015.top, port: 55890, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: BibMDEe05xV7nGF6eUhylxgry-JoWCCwrGdyAasOuyU, short-id: "69b0ac6c" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 31da11e8-7baa-4f87-ab91-5d0f8173e069, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: Y2-HDO, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: f16db289-b721-4c1b-b759-d5a7e69e7125, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: X0-QFU, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: e2b90562-a6ce-4d93-b7c6-7525eb4f4798, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港原生丨直连01丨X1, server: hkt.gaaaa014.top, port: 58761, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: zMqciILSKxYps4BaxKZoviAvr1J0Hb_tekUbmhB18EM, short-id: "1eb0ae87" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: e8fb1e8d-6b52-437c-8792-32012674a1c0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1G, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: d447cccf-6f9b-4399-8f29-788634327140, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: FV2026-7-7-1I, server: fv2026.node2.top, port: 21001, type: vless, uuid: 57e88070-5fb3-473f-bdfe-181f208f0dab, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FV2026-7-7-1D, server: fv2026.node2.top, port: 21001, type: vless, uuid: 064d8ec6-a980-4cc8-aa62-931764fa1fca, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇲🇾 MY-ITD, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 9262fb3e-a327-49df-b755-5b83a99cac9b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 香港1丨HK01丨X1, server: ly.gaaaa015.top, port: 58723, type: vless, uuid: 4d8c9ba4-668d-42fa-aee0-760b3f793222, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: jWb-MplPdthSzVBmUp09mBmPXaywyZGH3cRXS41jEjM, short-id: "301edec6" }, servername: www.bilibili.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: XQ-MFC, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 39275300-f07b-414a-9866-685088bfbc63, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FV2026-7-7-1Q, server: fv2026.node2.top, port: 21001, type: vless, uuid: 646bdd79-c6b8-4f96-91a0-f34368199fad, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: SZ-UTM, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 3a44238a-12f6-4ec9-a2f5-50de63358cfb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 备用线路 A-1B, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 3957cc72-fce2-40d6-acf0-9adc8c1b4906, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
+  - {name: Y4-UDR, server: vpn2.cc.node2.top, port: 22001, type: vless, uuid: 57e88070-5fb3-473f-bdfe-181f208f0dab, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FV2026-7-7-1V, server: fv2026.node2.top, port: 21001, type: vless, uuid: d7a7f1ce-5fba-4a22-a8fa-3b5aafd9f984, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1C, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: FV2026-7-7-1P, server: fv2026.node2.top, port: 21001, type: vless, uuid: 9262fb3e-a327-49df-b755-5b83a99cac9b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: HWUNFHoOryJHQXKF-ZOm6wMYZdVJwH5aHGa5I9_HDGA, short-id: "dfa28122" }, servername: itunes.apple.com, client-fingerprint: chrome, network: tcp, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇩🇪 德国-法兰克福-004-1B
+      - W7-TEJ
+      - FV2026-7-7-1S
+      - 🇩🇪 德国-法兰克福-004-1G
+      - FV2026-7-7-1R
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 优选 通用-1B
+      - 🇸🇬 新加坡3
+      - SW-VYQ
+      - FV2026-7-7-1E
+      - 🇺🇸 美国01
+      - 🇩🇪 德国-法兰克福-002-1H
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇸🇬 新加坡公益-02
-      - 🇺🇸 洛杉矶-直连-1B
-      - FV-YAK
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国公益-01
-      - 备用线路 A-1B
-      - 🇧🇷 巴西
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 新加坡公益-01
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇻🇳 越南
-      - LR-AYG
-      - 🇭🇰 香港丨推荐01丨X1
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇺🇸 HY-03 | US
-      - AZ-SGR
-      - ZQ-IMD
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 香港公益-01
-      - 🇹🇼 台湾高速节点2
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 洛杉矶-直连-1A
-      - FV2026-7-7-1I
-      - EC-DWO
-      - 🇸🇬 新加坡5
-      - CL-AOJ
-      - AR-VRD
-      - 🇭🇰 香港 移动推荐-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - FV2026-7-7-1N
-      - FV2026-7-7-1S
-      - FG-GSC
-      - OY-RGE
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-001-1C
-      - BY-BAE
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 优选 通用-1A
-      - 🇸🇬 新加坡1
-      - KA-GJD
-      - FV2026-7-7-1J
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 B-1B
-      - 🇺🇸 HY-05| US
-      - GM-FJM
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇰🇷 韩国01
-      - FV2026-7-7-1H
-      - PN-MAX
-      - FV2026-7-7-1V
-      - 🇹🇼 TW台湾1
-      - FV2026-7-7-1Q
-      - FG-ECM
-      - 🇹🇼 台湾高速节点3
-      - MA-GAL
-      - FV2026-7-7-1U
-      - FV2026-7-7-1M
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇭🇰 HK-A-1B
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 优选 通用-1B
-      - 🇺🇸 纽约 备选-1A
-      - 🇵🇭 菲律宾
-      - 🇯🇵 日本03丨JP丨X1
-      - 🇸🇬 新加坡3
-      - FV2026-7-7-1C
-      - FV2026-7-7-1B
-      - FV2026-7-7-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - YS-VLZ
-      - 🇭🇰 香港3丨HK03丨X1
-      - 🇺🇦 LT-UAQ
       - 🇩🇪 德国-法兰克福-002-1D
-      - FV2026-7-7-1G
-      - 🇺🇸 HY-04 | US
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1A
-      - FV2026-7-7-1P
-      - 🇺🇸 纽约 备选-1B
-      - L7-XUH
-      - 🇨🇳 中国联通节点1
-      - 🇫🇷 法国
-      - 🇺🇸 美国公益-02
-      - 备用线路 A-1A
-      - UO-TNU
-      - 3V-YLJ
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 DE徳国
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国01
-      - 🇰🇭 柬埔寨
-      - FV2026-7-7-1L
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 香港1丨HK01丨X1
-      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - FV2026-7-7-1U
+      - 🇸🇬 新加坡5
       - 🇯🇵 日本05
-      - G I C A B N H T H N
-      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇬🇧 英国
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇫🇷 法国
+      - GV-LEU
+      - 🇰🇭 柬埔寨
       - FV2026-7-7-1T
-      - FV2026-7-7-1F
-      - 🇭🇰 香港 移动推荐-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - FV2026-7-7-1W
-      - 2O-OWL
-      - 🇭🇰 HK-A-1C
+      - FV2026-7-7-1L
+      - 🇩🇪 德国-法兰克福-001-1F
+      - RK-UCP
+      - L0-UDJ
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇧🇷 巴西
+      - IL-XDA
+      - WF-VKJ
+      - 🇩🇪 德国-法兰克福-004-1H
+      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 通用-1A
+      - 🇺🇸 纽约 备选-1A
+      - 🇻🇳 越南
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇸🇬 新加坡公益-01
+      - MK-AZS
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇰🇷 韩国节点-B-1B
-      - 8N-NPI
-      - CY-ECX
-      - 🇸🇬 新加坡公益-03
+      - 🇭🇰 香港公益-01
+      - 🇵🇭 菲律宾
+      - 🇸🇬 新加坡1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - FV2026-7-7-1O
       - 备用线路 B-1A
-      - FV2026-7-7-1R
-      - VH-LNJ
-      - FV2026-7-7-1E
-      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇸🇬 新加坡-中转2区-1B
       - 🇯🇵 日本01丨推荐丨X1
-      - 🇩🇪 德国-法兰克福-004-1B
+      - G I C A B N H T H N
+      - BA-XJV
+      - 🇺🇸 纽约 备选-1B
+      - 🇸🇬 新加坡公益-03
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 美国公益-01
+      - FV2026-7-7-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-001-1B
+      - FV2026-7-7-1N
+      - 备用线路 B-1B
+      - 🇭🇰 香港 移动推荐-1B
+      - 🇨🇳 中国联通节点1
+      - PR-BCH
+      - 15-DQL
+      - 备用线路 A-1A
+      - 🇹🇼 台湾高速节点3
+      - PQ-SJU
+      - 🇺🇸 美国公益-02
+      - FV2026-7-7-1F
+      - 2H-BEN
+      - 🇺🇸 HY-05| US
+      - CK-BUI
+      - FV2026-7-7-1G
+      - 🇯🇵 日本03丨JP丨X1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-003-1D
+      - UI-IPU
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1H
+      - FV2026-7-7-1W
+      - TR-VJE
+      - 🇭🇰 香港 移动推荐-1A
+      - AE-PMG
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-003-1H
+      - FV2026-7-7-1x
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - FV2026-7-7-1B
+      - FV2026-7-7-1A
+      - 🇭🇰 香港丨推荐01丨X1
+      - 🇭🇰 HK-A-1C
+      - DH-KXW
+      - 🇹🇼 台湾高速节点
       - 🇺🇸 HY-02 | US
+      - FV2026-7-7-1M
+      - EP-OCI
+      - FV2026-7-7-1J
+      - 🇭🇰 香港3丨HK03丨X1
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 韩国01
+      - 🇩🇪 DE徳国
+      - 🇩🇪 德国-法兰克福-003-1A
+      - Y2-HDO
+      - X0-QFU
+      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1G
+      - FV2026-7-7-1I
+      - FV2026-7-7-1D
+      - 🇲🇾 MY-ITD
+      - 🇭🇰 香港1丨HK01丨X1
+      - XQ-MFC
+      - FV2026-7-7-1Q
+      - SZ-UTM
+      - 备用线路 A-1B
+      - Y4-UDR
+      - FV2026-7-7-1V
+      - 🇰🇷 韩国节点-B-1C
+      - FV2026-7-7-1P
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 🇩🇪 德国-法兰克福-004-1B
+      - W7-TEJ
+      - FV2026-7-7-1S
+      - 🇩🇪 德国-法兰克福-004-1G
+      - FV2026-7-7-1R
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 优选 通用-1B
+      - 🇸🇬 新加坡3
+      - SW-VYQ
+      - FV2026-7-7-1E
+      - 🇺🇸 美国01
+      - 🇩🇪 德国-法兰克福-002-1H
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇸🇬 新加坡公益-02
-      - 🇺🇸 洛杉矶-直连-1B
-      - FV-YAK
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国公益-01
-      - 备用线路 A-1B
-      - 🇧🇷 巴西
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 新加坡公益-01
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇻🇳 越南
-      - LR-AYG
-      - 🇭🇰 香港丨推荐01丨X1
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇺🇸 HY-03 | US
-      - AZ-SGR
-      - ZQ-IMD
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 香港公益-01
-      - 🇹🇼 台湾高速节点2
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 洛杉矶-直连-1A
-      - FV2026-7-7-1I
-      - EC-DWO
-      - 🇸🇬 新加坡5
-      - CL-AOJ
-      - AR-VRD
-      - 🇭🇰 香港 移动推荐-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - FV2026-7-7-1N
-      - FV2026-7-7-1S
-      - FG-GSC
-      - OY-RGE
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-001-1C
-      - BY-BAE
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 优选 通用-1A
-      - 🇸🇬 新加坡1
-      - KA-GJD
-      - FV2026-7-7-1J
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 B-1B
-      - 🇺🇸 HY-05| US
-      - GM-FJM
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇰🇷 韩国01
-      - FV2026-7-7-1H
-      - PN-MAX
-      - FV2026-7-7-1V
-      - 🇹🇼 TW台湾1
-      - FV2026-7-7-1Q
-      - FG-ECM
-      - 🇹🇼 台湾高速节点3
-      - MA-GAL
-      - FV2026-7-7-1U
-      - FV2026-7-7-1M
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇭🇰 HK-A-1B
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 优选 通用-1B
-      - 🇺🇸 纽约 备选-1A
-      - 🇵🇭 菲律宾
-      - 🇯🇵 日本03丨JP丨X1
-      - 🇸🇬 新加坡3
-      - FV2026-7-7-1C
-      - FV2026-7-7-1B
-      - FV2026-7-7-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - YS-VLZ
-      - 🇭🇰 香港3丨HK03丨X1
-      - 🇺🇦 LT-UAQ
       - 🇩🇪 德国-法兰克福-002-1D
-      - FV2026-7-7-1G
-      - 🇺🇸 HY-04 | US
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1A
-      - FV2026-7-7-1P
-      - 🇺🇸 纽约 备选-1B
-      - L7-XUH
-      - 🇨🇳 中国联通节点1
-      - 🇫🇷 法国
-      - 🇺🇸 美国公益-02
-      - 备用线路 A-1A
-      - UO-TNU
-      - 3V-YLJ
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 DE徳国
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国01
-      - 🇰🇭 柬埔寨
-      - FV2026-7-7-1L
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 香港1丨HK01丨X1
-      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - FV2026-7-7-1U
+      - 🇸🇬 新加坡5
       - 🇯🇵 日本05
-      - G I C A B N H T H N
-      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇬🇧 英国
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇫🇷 法国
+      - GV-LEU
+      - 🇰🇭 柬埔寨
       - FV2026-7-7-1T
-      - FV2026-7-7-1F
-      - 🇭🇰 香港 移动推荐-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - FV2026-7-7-1W
-      - 2O-OWL
-      - 🇭🇰 HK-A-1C
+      - FV2026-7-7-1L
+      - 🇩🇪 德国-法兰克福-001-1F
+      - RK-UCP
+      - L0-UDJ
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇧🇷 巴西
+      - IL-XDA
+      - WF-VKJ
+      - 🇩🇪 德国-法兰克福-004-1H
+      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 通用-1A
+      - 🇺🇸 纽约 备选-1A
+      - 🇻🇳 越南
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇸🇬 新加坡公益-01
+      - MK-AZS
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇰🇷 韩国节点-B-1B
-      - 8N-NPI
-      - CY-ECX
-      - 🇸🇬 新加坡公益-03
+      - 🇭🇰 香港公益-01
+      - 🇵🇭 菲律宾
+      - 🇸🇬 新加坡1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - FV2026-7-7-1O
       - 备用线路 B-1A
-      - FV2026-7-7-1R
-      - VH-LNJ
-      - FV2026-7-7-1E
-      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇸🇬 新加坡-中转2区-1B
       - 🇯🇵 日本01丨推荐丨X1
-      - 🇩🇪 德国-法兰克福-004-1B
+      - G I C A B N H T H N
+      - BA-XJV
+      - 🇺🇸 纽约 备选-1B
+      - 🇸🇬 新加坡公益-03
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 美国公益-01
+      - FV2026-7-7-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-001-1B
+      - FV2026-7-7-1N
+      - 备用线路 B-1B
+      - 🇭🇰 香港 移动推荐-1B
+      - 🇨🇳 中国联通节点1
+      - PR-BCH
+      - 15-DQL
+      - 备用线路 A-1A
+      - 🇹🇼 台湾高速节点3
+      - PQ-SJU
+      - 🇺🇸 美国公益-02
+      - FV2026-7-7-1F
+      - 2H-BEN
+      - 🇺🇸 HY-05| US
+      - CK-BUI
+      - FV2026-7-7-1G
+      - 🇯🇵 日本03丨JP丨X1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-003-1D
+      - UI-IPU
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1H
+      - FV2026-7-7-1W
+      - TR-VJE
+      - 🇭🇰 香港 移动推荐-1A
+      - AE-PMG
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-003-1H
+      - FV2026-7-7-1x
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - FV2026-7-7-1B
+      - FV2026-7-7-1A
+      - 🇭🇰 香港丨推荐01丨X1
+      - 🇭🇰 HK-A-1C
+      - DH-KXW
+      - 🇹🇼 台湾高速节点
       - 🇺🇸 HY-02 | US
+      - FV2026-7-7-1M
+      - EP-OCI
+      - FV2026-7-7-1J
+      - 🇭🇰 香港3丨HK03丨X1
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 韩国01
+      - 🇩🇪 DE徳国
+      - 🇩🇪 德国-法兰克福-003-1A
+      - Y2-HDO
+      - X0-QFU
+      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1G
+      - FV2026-7-7-1I
+      - FV2026-7-7-1D
+      - 🇲🇾 MY-ITD
+      - 🇭🇰 香港1丨HK01丨X1
+      - XQ-MFC
+      - FV2026-7-7-1Q
+      - SZ-UTM
+      - 备用线路 A-1B
+      - Y4-UDR
+      - FV2026-7-7-1V
+      - 🇰🇷 韩国节点-B-1C
+      - FV2026-7-7-1P
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇩🇪 德国-法兰克福-004-1B
+      - W7-TEJ
+      - FV2026-7-7-1S
+      - 🇩🇪 德国-法兰克福-004-1G
+      - FV2026-7-7-1R
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 优选 通用-1B
+      - 🇸🇬 新加坡3
+      - SW-VYQ
+      - FV2026-7-7-1E
+      - 🇺🇸 美国01
+      - 🇩🇪 德国-法兰克福-002-1H
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇸🇬 新加坡公益-02
-      - 🇺🇸 洛杉矶-直连-1B
-      - FV-YAK
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国公益-01
-      - 备用线路 A-1B
-      - 🇧🇷 巴西
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 新加坡公益-01
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇻🇳 越南
-      - LR-AYG
-      - 🇭🇰 香港丨推荐01丨X1
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇺🇸 HY-03 | US
-      - AZ-SGR
-      - ZQ-IMD
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 香港公益-01
-      - 🇹🇼 台湾高速节点2
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 洛杉矶-直连-1A
-      - FV2026-7-7-1I
-      - EC-DWO
-      - 🇸🇬 新加坡5
-      - CL-AOJ
-      - AR-VRD
-      - 🇭🇰 香港 移动推荐-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - FV2026-7-7-1N
-      - FV2026-7-7-1S
-      - FG-GSC
-      - OY-RGE
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-001-1C
-      - BY-BAE
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 优选 通用-1A
-      - 🇸🇬 新加坡1
-      - KA-GJD
-      - FV2026-7-7-1J
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 B-1B
-      - 🇺🇸 HY-05| US
-      - GM-FJM
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇰🇷 韩国01
-      - FV2026-7-7-1H
-      - PN-MAX
-      - FV2026-7-7-1V
-      - 🇹🇼 TW台湾1
-      - FV2026-7-7-1Q
-      - FG-ECM
-      - 🇹🇼 台湾高速节点3
-      - MA-GAL
-      - FV2026-7-7-1U
-      - FV2026-7-7-1M
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇭🇰 HK-A-1B
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 优选 通用-1B
-      - 🇺🇸 纽约 备选-1A
-      - 🇵🇭 菲律宾
-      - 🇯🇵 日本03丨JP丨X1
-      - 🇸🇬 新加坡3
-      - FV2026-7-7-1C
-      - FV2026-7-7-1B
-      - FV2026-7-7-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - YS-VLZ
-      - 🇭🇰 香港3丨HK03丨X1
-      - 🇺🇦 LT-UAQ
       - 🇩🇪 德国-法兰克福-002-1D
-      - FV2026-7-7-1G
-      - 🇺🇸 HY-04 | US
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1A
-      - FV2026-7-7-1P
-      - 🇺🇸 纽约 备选-1B
-      - L7-XUH
-      - 🇨🇳 中国联通节点1
-      - 🇫🇷 法国
-      - 🇺🇸 美国公益-02
-      - 备用线路 A-1A
-      - UO-TNU
-      - 3V-YLJ
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 DE徳国
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国01
-      - 🇰🇭 柬埔寨
-      - FV2026-7-7-1L
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 香港1丨HK01丨X1
-      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - FV2026-7-7-1U
+      - 🇸🇬 新加坡5
       - 🇯🇵 日本05
-      - G I C A B N H T H N
-      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇬🇧 英国
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇫🇷 法国
+      - GV-LEU
+      - 🇰🇭 柬埔寨
       - FV2026-7-7-1T
-      - FV2026-7-7-1F
-      - 🇭🇰 香港 移动推荐-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - FV2026-7-7-1W
-      - 2O-OWL
-      - 🇭🇰 HK-A-1C
+      - FV2026-7-7-1L
+      - 🇩🇪 德国-法兰克福-001-1F
+      - RK-UCP
+      - L0-UDJ
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇧🇷 巴西
+      - IL-XDA
+      - WF-VKJ
+      - 🇩🇪 德国-法兰克福-004-1H
+      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 通用-1A
+      - 🇺🇸 纽约 备选-1A
+      - 🇻🇳 越南
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇸🇬 新加坡公益-01
+      - MK-AZS
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇰🇷 韩国节点-B-1B
-      - 8N-NPI
-      - CY-ECX
-      - 🇸🇬 新加坡公益-03
+      - 🇭🇰 香港公益-01
+      - 🇵🇭 菲律宾
+      - 🇸🇬 新加坡1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - FV2026-7-7-1O
       - 备用线路 B-1A
-      - FV2026-7-7-1R
-      - VH-LNJ
-      - FV2026-7-7-1E
-      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇸🇬 新加坡-中转2区-1B
       - 🇯🇵 日本01丨推荐丨X1
-      - 🇩🇪 德国-法兰克福-004-1B
+      - G I C A B N H T H N
+      - BA-XJV
+      - 🇺🇸 纽约 备选-1B
+      - 🇸🇬 新加坡公益-03
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 美国公益-01
+      - FV2026-7-7-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-001-1B
+      - FV2026-7-7-1N
+      - 备用线路 B-1B
+      - 🇭🇰 香港 移动推荐-1B
+      - 🇨🇳 中国联通节点1
+      - PR-BCH
+      - 15-DQL
+      - 备用线路 A-1A
+      - 🇹🇼 台湾高速节点3
+      - PQ-SJU
+      - 🇺🇸 美国公益-02
+      - FV2026-7-7-1F
+      - 2H-BEN
+      - 🇺🇸 HY-05| US
+      - CK-BUI
+      - FV2026-7-7-1G
+      - 🇯🇵 日本03丨JP丨X1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-003-1D
+      - UI-IPU
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1H
+      - FV2026-7-7-1W
+      - TR-VJE
+      - 🇭🇰 香港 移动推荐-1A
+      - AE-PMG
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-003-1H
+      - FV2026-7-7-1x
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - FV2026-7-7-1B
+      - FV2026-7-7-1A
+      - 🇭🇰 香港丨推荐01丨X1
+      - 🇭🇰 HK-A-1C
+      - DH-KXW
+      - 🇹🇼 台湾高速节点
       - 🇺🇸 HY-02 | US
+      - FV2026-7-7-1M
+      - EP-OCI
+      - FV2026-7-7-1J
+      - 🇭🇰 香港3丨HK03丨X1
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 韩国01
+      - 🇩🇪 DE徳国
+      - 🇩🇪 德国-法兰克福-003-1A
+      - Y2-HDO
+      - X0-QFU
+      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1G
+      - FV2026-7-7-1I
+      - FV2026-7-7-1D
+      - 🇲🇾 MY-ITD
+      - 🇭🇰 香港1丨HK01丨X1
+      - XQ-MFC
+      - FV2026-7-7-1Q
+      - SZ-UTM
+      - 备用线路 A-1B
+      - Y4-UDR
+      - FV2026-7-7-1V
+      - 🇰🇷 韩国节点-B-1C
+      - FV2026-7-7-1P
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -548,546 +588,586 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇩🇪 德国-法兰克福-004-1B
+      - W7-TEJ
+      - FV2026-7-7-1S
+      - 🇩🇪 德国-法兰克福-004-1G
+      - FV2026-7-7-1R
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 优选 通用-1B
+      - 🇸🇬 新加坡3
+      - SW-VYQ
+      - FV2026-7-7-1E
+      - 🇺🇸 美国01
+      - 🇩🇪 德国-法兰克福-002-1H
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇸🇬 新加坡公益-02
-      - 🇺🇸 洛杉矶-直连-1B
-      - FV-YAK
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国公益-01
-      - 备用线路 A-1B
-      - 🇧🇷 巴西
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 新加坡公益-01
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇻🇳 越南
-      - LR-AYG
-      - 🇭🇰 香港丨推荐01丨X1
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇺🇸 HY-03 | US
-      - AZ-SGR
-      - ZQ-IMD
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 香港公益-01
-      - 🇹🇼 台湾高速节点2
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 洛杉矶-直连-1A
-      - FV2026-7-7-1I
-      - EC-DWO
-      - 🇸🇬 新加坡5
-      - CL-AOJ
-      - AR-VRD
-      - 🇭🇰 香港 移动推荐-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - FV2026-7-7-1N
-      - FV2026-7-7-1S
-      - FG-GSC
-      - OY-RGE
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-001-1C
-      - BY-BAE
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 优选 通用-1A
-      - 🇸🇬 新加坡1
-      - KA-GJD
-      - FV2026-7-7-1J
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 B-1B
-      - 🇺🇸 HY-05| US
-      - GM-FJM
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇰🇷 韩国01
-      - FV2026-7-7-1H
-      - PN-MAX
-      - FV2026-7-7-1V
-      - 🇹🇼 TW台湾1
-      - FV2026-7-7-1Q
-      - FG-ECM
-      - 🇹🇼 台湾高速节点3
-      - MA-GAL
-      - FV2026-7-7-1U
-      - FV2026-7-7-1M
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇭🇰 HK-A-1B
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 优选 通用-1B
-      - 🇺🇸 纽约 备选-1A
-      - 🇵🇭 菲律宾
-      - 🇯🇵 日本03丨JP丨X1
-      - 🇸🇬 新加坡3
-      - FV2026-7-7-1C
-      - FV2026-7-7-1B
-      - FV2026-7-7-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - YS-VLZ
-      - 🇭🇰 香港3丨HK03丨X1
-      - 🇺🇦 LT-UAQ
       - 🇩🇪 德国-法兰克福-002-1D
-      - FV2026-7-7-1G
-      - 🇺🇸 HY-04 | US
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1A
-      - FV2026-7-7-1P
-      - 🇺🇸 纽约 备选-1B
-      - L7-XUH
-      - 🇨🇳 中国联通节点1
-      - 🇫🇷 法国
-      - 🇺🇸 美国公益-02
-      - 备用线路 A-1A
-      - UO-TNU
-      - 3V-YLJ
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 DE徳国
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国01
-      - 🇰🇭 柬埔寨
-      - FV2026-7-7-1L
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 香港1丨HK01丨X1
-      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - FV2026-7-7-1U
+      - 🇸🇬 新加坡5
       - 🇯🇵 日本05
-      - G I C A B N H T H N
-      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇬🇧 英国
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇫🇷 法国
+      - GV-LEU
+      - 🇰🇭 柬埔寨
       - FV2026-7-7-1T
-      - FV2026-7-7-1F
-      - 🇭🇰 香港 移动推荐-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - FV2026-7-7-1W
-      - 2O-OWL
-      - 🇭🇰 HK-A-1C
+      - FV2026-7-7-1L
+      - 🇩🇪 德国-法兰克福-001-1F
+      - RK-UCP
+      - L0-UDJ
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇧🇷 巴西
+      - IL-XDA
+      - WF-VKJ
+      - 🇩🇪 德国-法兰克福-004-1H
+      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 通用-1A
+      - 🇺🇸 纽约 备选-1A
+      - 🇻🇳 越南
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇸🇬 新加坡公益-01
+      - MK-AZS
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇰🇷 韩国节点-B-1B
-      - 8N-NPI
-      - CY-ECX
-      - 🇸🇬 新加坡公益-03
+      - 🇭🇰 香港公益-01
+      - 🇵🇭 菲律宾
+      - 🇸🇬 新加坡1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - FV2026-7-7-1O
       - 备用线路 B-1A
-      - FV2026-7-7-1R
-      - VH-LNJ
-      - FV2026-7-7-1E
-      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇸🇬 新加坡-中转2区-1B
       - 🇯🇵 日本01丨推荐丨X1
-      - 🇩🇪 德国-法兰克福-004-1B
+      - G I C A B N H T H N
+      - BA-XJV
+      - 🇺🇸 纽约 备选-1B
+      - 🇸🇬 新加坡公益-03
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 美国公益-01
+      - FV2026-7-7-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-001-1B
+      - FV2026-7-7-1N
+      - 备用线路 B-1B
+      - 🇭🇰 香港 移动推荐-1B
+      - 🇨🇳 中国联通节点1
+      - PR-BCH
+      - 15-DQL
+      - 备用线路 A-1A
+      - 🇹🇼 台湾高速节点3
+      - PQ-SJU
+      - 🇺🇸 美国公益-02
+      - FV2026-7-7-1F
+      - 2H-BEN
+      - 🇺🇸 HY-05| US
+      - CK-BUI
+      - FV2026-7-7-1G
+      - 🇯🇵 日本03丨JP丨X1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-003-1D
+      - UI-IPU
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1H
+      - FV2026-7-7-1W
+      - TR-VJE
+      - 🇭🇰 香港 移动推荐-1A
+      - AE-PMG
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-003-1H
+      - FV2026-7-7-1x
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - FV2026-7-7-1B
+      - FV2026-7-7-1A
+      - 🇭🇰 香港丨推荐01丨X1
+      - 🇭🇰 HK-A-1C
+      - DH-KXW
+      - 🇹🇼 台湾高速节点
       - 🇺🇸 HY-02 | US
+      - FV2026-7-7-1M
+      - EP-OCI
+      - FV2026-7-7-1J
+      - 🇭🇰 香港3丨HK03丨X1
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 韩国01
+      - 🇩🇪 DE徳国
+      - 🇩🇪 德国-法兰克福-003-1A
+      - Y2-HDO
+      - X0-QFU
+      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1G
+      - FV2026-7-7-1I
+      - FV2026-7-7-1D
+      - 🇲🇾 MY-ITD
+      - 🇭🇰 香港1丨HK01丨X1
+      - XQ-MFC
+      - FV2026-7-7-1Q
+      - SZ-UTM
+      - 备用线路 A-1B
+      - Y4-UDR
+      - FV2026-7-7-1V
+      - 🇰🇷 韩国节点-B-1C
+      - FV2026-7-7-1P
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港丨推荐01丨X1
       - 🇭🇰 香港公益-01
-      - 🇹🇼 台湾高速节点2
       - 🇭🇰 香港 移动推荐-1B
-      - 🇹🇼 TW台湾1
       - 🇹🇼 台湾高速节点3
-      - 🇭🇰 香港3丨HK03丨X1
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 香港1丨HK01丨X1
-      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇹🇼 TW台湾1
+      - 🇹🇼 台湾高速节点2
       - 🇭🇰 香港 移动推荐-1A
+      - 🇭🇰 香港丨推荐01丨X1
+      - 🇹🇼 台湾高速节点
+      - 🇭🇰 香港3丨HK03丨X1
+      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇭🇰 香港1丨HK01丨X1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 🇩🇪 德国-法兰克福-004-1B
+      - W7-TEJ
+      - FV2026-7-7-1S
+      - 🇩🇪 德国-法兰克福-004-1G
+      - FV2026-7-7-1R
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 优选 通用-1B
+      - 🇸🇬 新加坡3
+      - SW-VYQ
+      - FV2026-7-7-1E
+      - 🇺🇸 美国01
+      - 🇩🇪 德国-法兰克福-002-1H
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇸🇬 新加坡公益-02
-      - 🇺🇸 洛杉矶-直连-1B
-      - FV-YAK
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国公益-01
-      - 备用线路 A-1B
-      - 🇧🇷 巴西
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 新加坡公益-01
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇻🇳 越南
-      - LR-AYG
-      - 🇭🇰 香港丨推荐01丨X1
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇺🇸 HY-03 | US
-      - AZ-SGR
-      - ZQ-IMD
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 香港公益-01
-      - 🇹🇼 台湾高速节点2
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 洛杉矶-直连-1A
-      - FV2026-7-7-1I
-      - EC-DWO
-      - 🇸🇬 新加坡5
-      - CL-AOJ
-      - AR-VRD
-      - 🇭🇰 香港 移动推荐-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - FV2026-7-7-1N
-      - FV2026-7-7-1S
-      - FG-GSC
-      - OY-RGE
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-001-1C
-      - BY-BAE
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 优选 通用-1A
-      - 🇸🇬 新加坡1
-      - KA-GJD
-      - FV2026-7-7-1J
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 B-1B
-      - 🇺🇸 HY-05| US
-      - GM-FJM
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇰🇷 韩国01
-      - FV2026-7-7-1H
-      - PN-MAX
-      - FV2026-7-7-1V
-      - 🇹🇼 TW台湾1
-      - FV2026-7-7-1Q
-      - FG-ECM
-      - 🇹🇼 台湾高速节点3
-      - MA-GAL
-      - FV2026-7-7-1U
-      - FV2026-7-7-1M
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇭🇰 HK-A-1B
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 优选 通用-1B
-      - 🇺🇸 纽约 备选-1A
-      - 🇵🇭 菲律宾
-      - 🇯🇵 日本03丨JP丨X1
-      - 🇸🇬 新加坡3
-      - FV2026-7-7-1C
-      - FV2026-7-7-1B
-      - FV2026-7-7-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - YS-VLZ
-      - 🇭🇰 香港3丨HK03丨X1
-      - 🇺🇦 LT-UAQ
       - 🇩🇪 德国-法兰克福-002-1D
-      - FV2026-7-7-1G
-      - 🇺🇸 HY-04 | US
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1A
-      - FV2026-7-7-1P
-      - 🇺🇸 纽约 备选-1B
-      - L7-XUH
-      - 🇨🇳 中国联通节点1
-      - 🇫🇷 法国
-      - 🇺🇸 美国公益-02
-      - 备用线路 A-1A
-      - UO-TNU
-      - 3V-YLJ
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 DE徳国
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国01
-      - 🇰🇭 柬埔寨
-      - FV2026-7-7-1L
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 香港1丨HK01丨X1
-      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - FV2026-7-7-1U
+      - 🇸🇬 新加坡5
       - 🇯🇵 日本05
-      - G I C A B N H T H N
-      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇬🇧 英国
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇫🇷 法国
+      - GV-LEU
+      - 🇰🇭 柬埔寨
       - FV2026-7-7-1T
-      - FV2026-7-7-1F
-      - 🇭🇰 香港 移动推荐-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - FV2026-7-7-1W
-      - 2O-OWL
-      - 🇭🇰 HK-A-1C
+      - FV2026-7-7-1L
+      - 🇩🇪 德国-法兰克福-001-1F
+      - RK-UCP
+      - L0-UDJ
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇧🇷 巴西
+      - IL-XDA
+      - WF-VKJ
+      - 🇩🇪 德国-法兰克福-004-1H
+      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 通用-1A
+      - 🇺🇸 纽约 备选-1A
+      - 🇻🇳 越南
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇸🇬 新加坡公益-01
+      - MK-AZS
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇰🇷 韩国节点-B-1B
-      - 8N-NPI
-      - CY-ECX
-      - 🇸🇬 新加坡公益-03
+      - 🇭🇰 香港公益-01
+      - 🇵🇭 菲律宾
+      - 🇸🇬 新加坡1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - FV2026-7-7-1O
       - 备用线路 B-1A
-      - FV2026-7-7-1R
-      - VH-LNJ
-      - FV2026-7-7-1E
-      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇸🇬 新加坡-中转2区-1B
       - 🇯🇵 日本01丨推荐丨X1
-      - 🇩🇪 德国-法兰克福-004-1B
+      - G I C A B N H T H N
+      - BA-XJV
+      - 🇺🇸 纽约 备选-1B
+      - 🇸🇬 新加坡公益-03
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 美国公益-01
+      - FV2026-7-7-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-001-1B
+      - FV2026-7-7-1N
+      - 备用线路 B-1B
+      - 🇭🇰 香港 移动推荐-1B
+      - 🇨🇳 中国联通节点1
+      - PR-BCH
+      - 15-DQL
+      - 备用线路 A-1A
+      - 🇹🇼 台湾高速节点3
+      - PQ-SJU
+      - 🇺🇸 美国公益-02
+      - FV2026-7-7-1F
+      - 2H-BEN
+      - 🇺🇸 HY-05| US
+      - CK-BUI
+      - FV2026-7-7-1G
+      - 🇯🇵 日本03丨JP丨X1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-003-1D
+      - UI-IPU
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1H
+      - FV2026-7-7-1W
+      - TR-VJE
+      - 🇭🇰 香港 移动推荐-1A
+      - AE-PMG
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-003-1H
+      - FV2026-7-7-1x
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - FV2026-7-7-1B
+      - FV2026-7-7-1A
+      - 🇭🇰 香港丨推荐01丨X1
+      - 🇭🇰 HK-A-1C
+      - DH-KXW
+      - 🇹🇼 台湾高速节点
       - 🇺🇸 HY-02 | US
+      - FV2026-7-7-1M
+      - EP-OCI
+      - FV2026-7-7-1J
+      - 🇭🇰 香港3丨HK03丨X1
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 韩国01
+      - 🇩🇪 DE徳国
+      - 🇩🇪 德国-法兰克福-003-1A
+      - Y2-HDO
+      - X0-QFU
+      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1G
+      - FV2026-7-7-1I
+      - FV2026-7-7-1D
+      - 🇲🇾 MY-ITD
+      - 🇭🇰 香港1丨HK01丨X1
+      - XQ-MFC
+      - FV2026-7-7-1Q
+      - SZ-UTM
+      - 备用线路 A-1B
+      - Y4-UDR
+      - FV2026-7-7-1V
+      - 🇰🇷 韩国节点-B-1C
+      - FV2026-7-7-1P
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 🇩🇪 德国-法兰克福-004-1B
+      - W7-TEJ
+      - FV2026-7-7-1S
+      - 🇩🇪 德国-法兰克福-004-1G
+      - FV2026-7-7-1R
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 优选 通用-1B
+      - 🇸🇬 新加坡3
+      - SW-VYQ
+      - FV2026-7-7-1E
+      - 🇺🇸 美国01
+      - 🇩🇪 德国-法兰克福-002-1H
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇸🇬 新加坡公益-02
-      - 🇺🇸 洛杉矶-直连-1B
-      - FV-YAK
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国公益-01
-      - 备用线路 A-1B
-      - 🇧🇷 巴西
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 新加坡公益-01
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇻🇳 越南
-      - LR-AYG
-      - 🇭🇰 香港丨推荐01丨X1
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇺🇸 HY-03 | US
-      - AZ-SGR
-      - ZQ-IMD
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 香港公益-01
-      - 🇹🇼 台湾高速节点2
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 洛杉矶-直连-1A
-      - FV2026-7-7-1I
-      - EC-DWO
-      - 🇸🇬 新加坡5
-      - CL-AOJ
-      - AR-VRD
-      - 🇭🇰 香港 移动推荐-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - FV2026-7-7-1N
-      - FV2026-7-7-1S
-      - FG-GSC
-      - OY-RGE
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-001-1C
-      - BY-BAE
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 优选 通用-1A
-      - 🇸🇬 新加坡1
-      - KA-GJD
-      - FV2026-7-7-1J
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 B-1B
-      - 🇺🇸 HY-05| US
-      - GM-FJM
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇰🇷 韩国01
-      - FV2026-7-7-1H
-      - PN-MAX
-      - FV2026-7-7-1V
-      - 🇹🇼 TW台湾1
-      - FV2026-7-7-1Q
-      - FG-ECM
-      - 🇹🇼 台湾高速节点3
-      - MA-GAL
-      - FV2026-7-7-1U
-      - FV2026-7-7-1M
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇭🇰 HK-A-1B
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 优选 通用-1B
-      - 🇺🇸 纽约 备选-1A
-      - 🇵🇭 菲律宾
-      - 🇯🇵 日本03丨JP丨X1
-      - 🇸🇬 新加坡3
-      - FV2026-7-7-1C
-      - FV2026-7-7-1B
-      - FV2026-7-7-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - YS-VLZ
-      - 🇭🇰 香港3丨HK03丨X1
-      - 🇺🇦 LT-UAQ
       - 🇩🇪 德国-法兰克福-002-1D
-      - FV2026-7-7-1G
-      - 🇺🇸 HY-04 | US
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1A
-      - FV2026-7-7-1P
-      - 🇺🇸 纽约 备选-1B
-      - L7-XUH
-      - 🇨🇳 中国联通节点1
-      - 🇫🇷 法国
-      - 🇺🇸 美国公益-02
-      - 备用线路 A-1A
-      - UO-TNU
-      - 3V-YLJ
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 DE徳国
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国01
-      - 🇰🇭 柬埔寨
-      - FV2026-7-7-1L
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 香港1丨HK01丨X1
-      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - FV2026-7-7-1U
+      - 🇸🇬 新加坡5
       - 🇯🇵 日本05
-      - G I C A B N H T H N
-      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇬🇧 英国
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇫🇷 法国
+      - GV-LEU
+      - 🇰🇭 柬埔寨
       - FV2026-7-7-1T
-      - FV2026-7-7-1F
-      - 🇭🇰 香港 移动推荐-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - FV2026-7-7-1W
-      - 2O-OWL
-      - 🇭🇰 HK-A-1C
+      - FV2026-7-7-1L
+      - 🇩🇪 德国-法兰克福-001-1F
+      - RK-UCP
+      - L0-UDJ
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇧🇷 巴西
+      - IL-XDA
+      - WF-VKJ
+      - 🇩🇪 德国-法兰克福-004-1H
+      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 通用-1A
+      - 🇺🇸 纽约 备选-1A
+      - 🇻🇳 越南
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇸🇬 新加坡公益-01
+      - MK-AZS
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇰🇷 韩国节点-B-1B
-      - 8N-NPI
-      - CY-ECX
-      - 🇸🇬 新加坡公益-03
+      - 🇭🇰 香港公益-01
+      - 🇵🇭 菲律宾
+      - 🇸🇬 新加坡1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - FV2026-7-7-1O
       - 备用线路 B-1A
-      - FV2026-7-7-1R
-      - VH-LNJ
-      - FV2026-7-7-1E
-      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇸🇬 新加坡-中转2区-1B
       - 🇯🇵 日本01丨推荐丨X1
-      - 🇩🇪 德国-法兰克福-004-1B
+      - G I C A B N H T H N
+      - BA-XJV
+      - 🇺🇸 纽约 备选-1B
+      - 🇸🇬 新加坡公益-03
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 美国公益-01
+      - FV2026-7-7-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-001-1B
+      - FV2026-7-7-1N
+      - 备用线路 B-1B
+      - 🇭🇰 香港 移动推荐-1B
+      - 🇨🇳 中国联通节点1
+      - PR-BCH
+      - 15-DQL
+      - 备用线路 A-1A
+      - 🇹🇼 台湾高速节点3
+      - PQ-SJU
+      - 🇺🇸 美国公益-02
+      - FV2026-7-7-1F
+      - 2H-BEN
+      - 🇺🇸 HY-05| US
+      - CK-BUI
+      - FV2026-7-7-1G
+      - 🇯🇵 日本03丨JP丨X1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-003-1D
+      - UI-IPU
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1H
+      - FV2026-7-7-1W
+      - TR-VJE
+      - 🇭🇰 香港 移动推荐-1A
+      - AE-PMG
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-003-1H
+      - FV2026-7-7-1x
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - FV2026-7-7-1B
+      - FV2026-7-7-1A
+      - 🇭🇰 香港丨推荐01丨X1
+      - 🇭🇰 HK-A-1C
+      - DH-KXW
+      - 🇹🇼 台湾高速节点
       - 🇺🇸 HY-02 | US
+      - FV2026-7-7-1M
+      - EP-OCI
+      - FV2026-7-7-1J
+      - 🇭🇰 香港3丨HK03丨X1
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 韩国01
+      - 🇩🇪 DE徳国
+      - 🇩🇪 德国-法兰克福-003-1A
+      - Y2-HDO
+      - X0-QFU
+      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1G
+      - FV2026-7-7-1I
+      - FV2026-7-7-1D
+      - 🇲🇾 MY-ITD
+      - 🇭🇰 香港1丨HK01丨X1
+      - XQ-MFC
+      - FV2026-7-7-1Q
+      - SZ-UTM
+      - 备用线路 A-1B
+      - Y4-UDR
+      - FV2026-7-7-1V
+      - 🇰🇷 韩国节点-B-1C
+      - FV2026-7-7-1P
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇩🇪 德国-法兰克福-004-1B
+      - W7-TEJ
+      - FV2026-7-7-1S
+      - 🇩🇪 德国-法兰克福-004-1G
+      - FV2026-7-7-1R
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 优选 通用-1B
+      - 🇸🇬 新加坡3
+      - SW-VYQ
+      - FV2026-7-7-1E
+      - 🇺🇸 美国01
+      - 🇩🇪 德国-法兰克福-002-1H
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇸🇬 新加坡公益-02
-      - 🇺🇸 洛杉矶-直连-1B
-      - FV-YAK
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国公益-01
-      - 备用线路 A-1B
-      - 🇧🇷 巴西
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 新加坡公益-01
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇻🇳 越南
-      - LR-AYG
-      - 🇭🇰 香港丨推荐01丨X1
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇺🇸 HY-03 | US
-      - AZ-SGR
-      - ZQ-IMD
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 香港公益-01
-      - 🇹🇼 台湾高速节点2
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 洛杉矶-直连-1A
-      - FV2026-7-7-1I
-      - EC-DWO
-      - 🇸🇬 新加坡5
-      - CL-AOJ
-      - AR-VRD
-      - 🇭🇰 香港 移动推荐-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - FV2026-7-7-1N
-      - FV2026-7-7-1S
-      - FG-GSC
-      - OY-RGE
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-001-1C
-      - BY-BAE
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 优选 通用-1A
-      - 🇸🇬 新加坡1
-      - KA-GJD
-      - FV2026-7-7-1J
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 B-1B
-      - 🇺🇸 HY-05| US
-      - GM-FJM
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇰🇷 韩国01
-      - FV2026-7-7-1H
-      - PN-MAX
-      - FV2026-7-7-1V
-      - 🇹🇼 TW台湾1
-      - FV2026-7-7-1Q
-      - FG-ECM
-      - 🇹🇼 台湾高速节点3
-      - MA-GAL
-      - FV2026-7-7-1U
-      - FV2026-7-7-1M
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇭🇰 HK-A-1B
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 优选 通用-1B
-      - 🇺🇸 纽约 备选-1A
-      - 🇵🇭 菲律宾
-      - 🇯🇵 日本03丨JP丨X1
-      - 🇸🇬 新加坡3
-      - FV2026-7-7-1C
-      - FV2026-7-7-1B
-      - FV2026-7-7-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - YS-VLZ
-      - 🇭🇰 香港3丨HK03丨X1
-      - 🇺🇦 LT-UAQ
       - 🇩🇪 德国-法兰克福-002-1D
-      - FV2026-7-7-1G
-      - 🇺🇸 HY-04 | US
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1A
-      - FV2026-7-7-1P
-      - 🇺🇸 纽约 备选-1B
-      - L7-XUH
-      - 🇨🇳 中国联通节点1
-      - 🇫🇷 法国
-      - 🇺🇸 美国公益-02
-      - 备用线路 A-1A
-      - UO-TNU
-      - 3V-YLJ
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 DE徳国
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国01
-      - 🇰🇭 柬埔寨
-      - FV2026-7-7-1L
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 香港1丨HK01丨X1
-      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - FV2026-7-7-1U
+      - 🇸🇬 新加坡5
       - 🇯🇵 日本05
-      - G I C A B N H T H N
-      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇬🇧 英国
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇫🇷 法国
+      - GV-LEU
+      - 🇰🇭 柬埔寨
       - FV2026-7-7-1T
-      - FV2026-7-7-1F
-      - 🇭🇰 香港 移动推荐-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - FV2026-7-7-1W
-      - 2O-OWL
-      - 🇭🇰 HK-A-1C
+      - FV2026-7-7-1L
+      - 🇩🇪 德国-法兰克福-001-1F
+      - RK-UCP
+      - L0-UDJ
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇧🇷 巴西
+      - IL-XDA
+      - WF-VKJ
+      - 🇩🇪 德国-法兰克福-004-1H
+      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 通用-1A
+      - 🇺🇸 纽约 备选-1A
+      - 🇻🇳 越南
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇸🇬 新加坡公益-01
+      - MK-AZS
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇰🇷 韩国节点-B-1B
-      - 8N-NPI
-      - CY-ECX
-      - 🇸🇬 新加坡公益-03
+      - 🇭🇰 香港公益-01
+      - 🇵🇭 菲律宾
+      - 🇸🇬 新加坡1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - FV2026-7-7-1O
       - 备用线路 B-1A
-      - FV2026-7-7-1R
-      - VH-LNJ
-      - FV2026-7-7-1E
-      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇸🇬 新加坡-中转2区-1B
       - 🇯🇵 日本01丨推荐丨X1
-      - 🇩🇪 德国-法兰克福-004-1B
+      - G I C A B N H T H N
+      - BA-XJV
+      - 🇺🇸 纽约 备选-1B
+      - 🇸🇬 新加坡公益-03
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 美国公益-01
+      - FV2026-7-7-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-001-1B
+      - FV2026-7-7-1N
+      - 备用线路 B-1B
+      - 🇭🇰 香港 移动推荐-1B
+      - 🇨🇳 中国联通节点1
+      - PR-BCH
+      - 15-DQL
+      - 备用线路 A-1A
+      - 🇹🇼 台湾高速节点3
+      - PQ-SJU
+      - 🇺🇸 美国公益-02
+      - FV2026-7-7-1F
+      - 2H-BEN
+      - 🇺🇸 HY-05| US
+      - CK-BUI
+      - FV2026-7-7-1G
+      - 🇯🇵 日本03丨JP丨X1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-003-1D
+      - UI-IPU
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1H
+      - FV2026-7-7-1W
+      - TR-VJE
+      - 🇭🇰 香港 移动推荐-1A
+      - AE-PMG
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-003-1H
+      - FV2026-7-7-1x
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - FV2026-7-7-1B
+      - FV2026-7-7-1A
+      - 🇭🇰 香港丨推荐01丨X1
+      - 🇭🇰 HK-A-1C
+      - DH-KXW
+      - 🇹🇼 台湾高速节点
       - 🇺🇸 HY-02 | US
+      - FV2026-7-7-1M
+      - EP-OCI
+      - FV2026-7-7-1J
+      - 🇭🇰 香港3丨HK03丨X1
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 韩国01
+      - 🇩🇪 DE徳国
+      - 🇩🇪 德国-法兰克福-003-1A
+      - Y2-HDO
+      - X0-QFU
+      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1G
+      - FV2026-7-7-1I
+      - FV2026-7-7-1D
+      - 🇲🇾 MY-ITD
+      - 🇭🇰 香港1丨HK01丨X1
+      - XQ-MFC
+      - FV2026-7-7-1Q
+      - SZ-UTM
+      - 备用线路 A-1B
+      - Y4-UDR
+      - FV2026-7-7-1V
+      - 🇰🇷 韩国节点-B-1C
+      - FV2026-7-7-1P
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1103,133 +1183,143 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇩🇪 德国-法兰克福-004-1B
+      - W7-TEJ
+      - FV2026-7-7-1S
+      - 🇩🇪 德国-法兰克福-004-1G
+      - FV2026-7-7-1R
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 优选 通用-1B
+      - 🇸🇬 新加坡3
+      - SW-VYQ
+      - FV2026-7-7-1E
+      - 🇺🇸 美国01
+      - 🇩🇪 德国-法兰克福-002-1H
       - 🇩🇪 德国-法兰克福-003-1E
       - 🇸🇬 新加坡公益-02
-      - 🇺🇸 洛杉矶-直连-1B
-      - FV-YAK
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇬🇧 英国
-      - 🇺🇸 美国公益-01
-      - 备用线路 A-1B
-      - 🇧🇷 巴西
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 新加坡公益-01
-      - 🇩🇪 德国-法兰克福-001-1F
-      - 🇻🇳 越南
-      - LR-AYG
-      - 🇭🇰 香港丨推荐01丨X1
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇺🇸 HY-03 | US
-      - AZ-SGR
-      - ZQ-IMD
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇭🇰 香港公益-01
-      - 🇹🇼 台湾高速节点2
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇺🇸 洛杉矶-直连-1A
-      - FV2026-7-7-1I
-      - EC-DWO
-      - 🇸🇬 新加坡5
-      - CL-AOJ
-      - AR-VRD
-      - 🇭🇰 香港 移动推荐-1B
-      - 🇩🇪 德国-法兰克福-003-1B
-      - FV2026-7-7-1N
-      - FV2026-7-7-1S
-      - FG-GSC
-      - OY-RGE
-      - FV2026-7-7-1D
-      - 🇩🇪 德国-法兰克福-001-1C
-      - BY-BAE
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 优选 通用-1A
-      - 🇸🇬 新加坡1
-      - KA-GJD
-      - FV2026-7-7-1J
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 B-1B
-      - 🇺🇸 HY-05| US
-      - GM-FJM
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇰🇷 韩国01
-      - FV2026-7-7-1H
-      - PN-MAX
-      - FV2026-7-7-1V
-      - 🇹🇼 TW台湾1
-      - FV2026-7-7-1Q
-      - FG-ECM
-      - 🇹🇼 台湾高速节点3
-      - MA-GAL
-      - FV2026-7-7-1U
-      - FV2026-7-7-1M
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇭🇰 HK-A-1B
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 优选 通用-1B
-      - 🇺🇸 纽约 备选-1A
-      - 🇵🇭 菲律宾
-      - 🇯🇵 日本03丨JP丨X1
-      - 🇸🇬 新加坡3
-      - FV2026-7-7-1C
-      - FV2026-7-7-1B
-      - FV2026-7-7-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - YS-VLZ
-      - 🇭🇰 香港3丨HK03丨X1
-      - 🇺🇦 LT-UAQ
       - 🇩🇪 德国-法兰克福-002-1D
-      - FV2026-7-7-1G
-      - 🇺🇸 HY-04 | US
-      - 🇩🇪 德国-法兰克福-004-1E
-      - FV2026-7-7-1A
-      - FV2026-7-7-1P
-      - 🇺🇸 纽约 备选-1B
-      - L7-XUH
-      - 🇨🇳 中国联通节点1
-      - 🇫🇷 法国
-      - 🇺🇸 美国公益-02
-      - 备用线路 A-1A
-      - UO-TNU
-      - 3V-YLJ
-      - 🇺🇸 美国高速节点1
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 DE徳国
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国01
-      - 🇰🇭 柬埔寨
-      - FV2026-7-7-1L
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 香港1丨HK01丨X1
-      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - FV2026-7-7-1U
+      - 🇸🇬 新加坡5
       - 🇯🇵 日本05
-      - G I C A B N H T H N
-      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇰🇷 韩国节点-B-1A
+      - FV2026-7-7-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇬🇧 英国
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇫🇷 法国
+      - GV-LEU
+      - 🇰🇭 柬埔寨
       - FV2026-7-7-1T
-      - FV2026-7-7-1F
-      - 🇭🇰 香港 移动推荐-1A
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - FV2026-7-7-1W
-      - 2O-OWL
-      - 🇭🇰 HK-A-1C
+      - FV2026-7-7-1L
+      - 🇩🇪 德国-法兰克福-001-1F
+      - RK-UCP
+      - L0-UDJ
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇧🇷 巴西
+      - IL-XDA
+      - WF-VKJ
+      - 🇩🇪 德国-法兰克福-004-1H
+      - FV2026-7-7-1K
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 优选 通用-1A
+      - 🇺🇸 纽约 备选-1A
+      - 🇻🇳 越南
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇸🇬 新加坡公益-01
+      - MK-AZS
+      - 🇩🇪 德国-法兰克福-001-1A
       - 🇰🇷 韩国节点-B-1B
-      - 8N-NPI
-      - CY-ECX
-      - 🇸🇬 新加坡公益-03
+      - 🇭🇰 香港公益-01
+      - 🇵🇭 菲律宾
+      - 🇸🇬 新加坡1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - FV2026-7-7-1O
       - 备用线路 B-1A
-      - FV2026-7-7-1R
-      - VH-LNJ
-      - FV2026-7-7-1E
-      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇸🇬 新加坡-中转2区-1B
       - 🇯🇵 日本01丨推荐丨X1
-      - 🇩🇪 德国-法兰克福-004-1B
+      - G I C A B N H T H N
+      - BA-XJV
+      - 🇺🇸 纽约 备选-1B
+      - 🇸🇬 新加坡公益-03
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇺🇸 美国公益-01
+      - FV2026-7-7-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇩🇪 德国-法兰克福-001-1B
+      - FV2026-7-7-1N
+      - 备用线路 B-1B
+      - 🇭🇰 香港 移动推荐-1B
+      - 🇨🇳 中国联通节点1
+      - PR-BCH
+      - 15-DQL
+      - 备用线路 A-1A
+      - 🇹🇼 台湾高速节点3
+      - PQ-SJU
+      - 🇺🇸 美国公益-02
+      - FV2026-7-7-1F
+      - 2H-BEN
+      - 🇺🇸 HY-05| US
+      - CK-BUI
+      - FV2026-7-7-1G
+      - 🇯🇵 日本03丨JP丨X1
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇺🇸 HY-04 | US
+      - 🇺🇸 HY-03 | US
+      - 🇩🇪 德国-法兰克福-003-1D
+      - UI-IPU
+      - 🇹🇼 TW台湾1
+      - 🇭🇰 HK-A-1A
+      - 🇺🇸 美国高速节点1
+      - 🇹🇼 台湾高速节点2
+      - 🇩🇪 德国-法兰克福-001-1H
+      - FV2026-7-7-1W
+      - TR-VJE
+      - 🇭🇰 香港 移动推荐-1A
+      - AE-PMG
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-003-1H
+      - FV2026-7-7-1x
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - FV2026-7-7-1B
+      - FV2026-7-7-1A
+      - 🇭🇰 香港丨推荐01丨X1
+      - 🇭🇰 HK-A-1C
+      - DH-KXW
+      - 🇹🇼 台湾高速节点
       - 🇺🇸 HY-02 | US
+      - FV2026-7-7-1M
+      - EP-OCI
+      - FV2026-7-7-1J
+      - 🇭🇰 香港3丨HK03丨X1
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇰🇷 韩国01
+      - 🇩🇪 DE徳国
+      - 🇩🇪 德国-法兰克福-003-1A
+      - Y2-HDO
+      - X0-QFU
+      - 🇭🇰 香港原生丨直连01丨X1
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-002-1G
+      - FV2026-7-7-1I
+      - FV2026-7-7-1D
+      - 🇲🇾 MY-ITD
+      - 🇭🇰 香港1丨HK01丨X1
+      - XQ-MFC
+      - FV2026-7-7-1Q
+      - SZ-UTM
+      - 备用线路 A-1B
+      - Y4-UDR
+      - FV2026-7-7-1V
+      - 🇰🇷 韩国节点-B-1C
+      - FV2026-7-7-1P
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
