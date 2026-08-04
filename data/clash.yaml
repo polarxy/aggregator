@@ -5,407 +5,355 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 HONG KONG 01-1A, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 475c2db7-fde0-4c19-95be-018a5aac75e9, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1C, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 8fd3337c-c518-4bb6-928d-a0f89dee6dc5, udp: true}
-  - {name: 🇸🇬 优选新线 C-1D, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: 95a2d546-1b17-42c1-9e9d-59f0460299ff, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
-  - {name: 🇸🇬 优选新线 A-1A, server: cdn4.caihongmao.org, port: 443, type: vless, uuid: c02f8fde-86e6-4fd7-a555-d101c2afd7c2, tls: true, servername: cdn4.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn4.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1J, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 115b81b4-6894-4898-bb35-97e1a7a07db4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 优选新线 A-1C, server: cdn4.caihongmao.org, port: 443, type: vless, uuid: 3d0b8b48-0874-4941-bb59-b75e563c0e7b, tls: true, servername: cdn4.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn4.caihongmao.org}}, udp: true}
-  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 7f075b8c-2c51-4327-95db-407d30614da3, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 备用线路 A-1C, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 3d0b8b48-0874-4941-bb59-b75e563c0e7b, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 542736b7-a9c1-43af-a71f-2d2b8eed0da7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 75f21b2e-f693-4a91-941a-39d977ddcb9b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 542736b7-a9c1-43af-a71f-2d2b8eed0da7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 优选新线 C-1B, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: 0419e6b5-ff2f-411d-861a-4cf40820c9bc, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1H, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: d8ee4b20-4592-4002-a51b-f0f780ed0883, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-A-1A, server: 207.57.128.27, port: 8081, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1J, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 115b81b4-6894-4898-bb35-97e1a7a07db4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1G, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 4ef1855d-7d8d-4b68-9083-79845efc7a4b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 优选新线 B-1B, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: 0419e6b5-ff2f-411d-861a-4cf40820c9bc, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
-  - {name: 🇸🇬 优选新线 D-1D, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: 95a2d546-1b17-42c1-9e9d-59f0460299ff, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1G, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 4ef1855d-7d8d-4b68-9083-79845efc7a4b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1K, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: fb8a5510-8903-4775-9b7f-5240c24c4919, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 1649e935-b837-4ce6-8fb0-0d2fbcb24c09, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1L, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 280e5f56-8330-46cd-9f61-7a52ab3e90ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1H, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: d8ee4b20-4592-4002-a51b-f0f780ed0883, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 优选新线 D-1B, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: 0419e6b5-ff2f-411d-861a-4cf40820c9bc, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 1649e935-b837-4ce6-8fb0-0d2fbcb24c09, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: a77821b5-ca43-4884-98aa-2f2cf09cca75, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1L, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 280e5f56-8330-46cd-9f61-7a52ab3e90ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1H, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: a935c637-48d8-4222-bb82-41290bfbe06f, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1H, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: d8ee4b20-4592-4002-a51b-f0f780ed0883, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 718df76c-820d-4cbc-a463-2e0b7eca4f91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1J, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 115b81b4-6894-4898-bb35-97e1a7a07db4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1D, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 35760f3d-542b-41a2-bde0-3be331f61096, udp: true}
-  - {name: 🇸🇬 优选新线 B-1C, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: 3d0b8b48-0874-4941-bb59-b75e563c0e7b, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
-  - {name: 🇺🇸 美国-洛杉矶-PRO-1B, server: 5.253.38.67, port: 40444, type: vless, uuid: d4e5bd1c-23d9-4dca-8988-24c32fc8a293, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 75f21b2e-f693-4a91-941a-39d977ddcb9b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 备用线路 A-1A, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: c02f8fde-86e6-4fd7-a555-d101c2afd7c2, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 628089b3-cdfd-4051-97bf-8f28d28a56d3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 718df76c-820d-4cbc-a463-2e0b7eca4f91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 新加坡-中转2区-1A, server: sg.dickaws.top, port: 34520, type: hysteria2, password: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, auth: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, sni: sg.xinjiapo.fifafa.vip, up: 600, down: 600, skip-cert-verify: false, obfs: salamander, obfs-password: SUkzQojZTehSMtgv, udp: true}
-  - {name: 🇸🇬 优选新线 D-1A, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: c02f8fde-86e6-4fd7-a555-d101c2afd7c2, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1G, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 27c6fe40-e8aa-4a2d-954d-be45562871c1, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1I, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 95d4d67d-5581-4af1-b624-e817b1e83c88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 628089b3-cdfd-4051-97bf-8f28d28a56d3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 优选新线 B-1A, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: c02f8fde-86e6-4fd7-a555-d101c2afd7c2, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1K, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: fb8a5510-8903-4775-9b7f-5240c24c4919, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 7f075b8c-2c51-4327-95db-407d30614da3, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1H, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: d8ee4b20-4592-4002-a51b-f0f780ed0883, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1I, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: f5fa4d1c-70fa-4c2e-b407-397d7eb5eac5, udp: true}
-  - {name: 🇸🇬 新加坡-中转2区-1B, server: sg.dickaws.top, port: 34520, type: hysteria2, password: a23a00cb-685e-4a44-bd21-1b3debaea9ea, auth: a23a00cb-685e-4a44-bd21-1b3debaea9ea, sni: sg.xinjiapo.fifafa.vip, up: 600, down: 600, skip-cert-verify: false, obfs: salamander, obfs-password: SUkzQojZTehSMtgv, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1I, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 95d4d67d-5581-4af1-b624-e817b1e83c88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 优选新线 B-1D, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: 95a2d546-1b17-42c1-9e9d-59f0460299ff, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 1649e935-b837-4ce6-8fb0-0d2fbcb24c09, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: 24660150-6e22-491c-a3c7-fbed3e7e2cc6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1A, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1G, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 4ef1855d-7d8d-4b68-9083-79845efc7a4b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1J, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 115b81b4-6894-4898-bb35-97e1a7a07db4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 7f075b8c-2c51-4327-95db-407d30614da3, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 优选新线 D-1C, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: 3d0b8b48-0874-4941-bb59-b75e563c0e7b, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: a77821b5-ca43-4884-98aa-2f2cf09cca75, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1I, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 95d4d67d-5581-4af1-b624-e817b1e83c88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 1649e935-b837-4ce6-8fb0-0d2fbcb24c09, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1G, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 4ef1855d-7d8d-4b68-9083-79845efc7a4b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 628089b3-cdfd-4051-97bf-8f28d28a56d3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 备用线路 A-1B, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 0419e6b5-ff2f-411d-861a-4cf40820c9bc, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1L, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 280e5f56-8330-46cd-9f61-7a52ab3e90ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1C, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1E, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 550e6574-1be6-497c-ae0d-40a1d043d3d7, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1K, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: fb8a5510-8903-4775-9b7f-5240c24c4919, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1K, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: fb8a5510-8903-4775-9b7f-5240c24c4919, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-A-1C, server: 207.57.128.27, port: 8081, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1L, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 280e5f56-8330-46cd-9f61-7a52ab3e90ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 优选新线 C-1A, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: c02f8fde-86e6-4fd7-a555-d101c2afd7c2, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1I, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 95d4d67d-5581-4af1-b624-e817b1e83c88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1B, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: dd7f4825-88bc-4a90-8483-46c5b5901d77, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 542736b7-a9c1-43af-a71f-2d2b8eed0da7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: a77821b5-ca43-4884-98aa-2f2cf09cca75, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1F, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 87ab341f-55eb-415f-adb1-e31a8a8be75f, udp: true}
-  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 7f075b8c-2c51-4327-95db-407d30614da3, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 628089b3-cdfd-4051-97bf-8f28d28a56d3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: MZ-BSI, server: empty.node, port: 443, type: trojan, password: bc047bb7-fc92-4c33-993a-2837e988331b, sni: empty.node, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 542736b7-a9c1-43af-a71f-2d2b8eed0da7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: a77821b5-ca43-4884-98aa-2f2cf09cca75, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 洛杉矶-直连-1B, server: sg.dickaws.top, port: 23405, type: hysteria2, password: a23a00cb-685e-4a44-bd21-1b3debaea9ea, auth: a23a00cb-685e-4a44-bd21-1b3debaea9ea, sni: caltech.edu, up: 600, down: 600, skip-cert-verify: true, obfs: salamander, obfs-password: Ml0mynbAAQFLiEHW, udp: true}
-  - {name: 备用线路 A-1D, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 95a2d546-1b17-42c1-9e9d-59f0460299ff, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
-  - {name: 🇸🇬 优选新线 A-1D, server: cdn4.caihongmao.org, port: 443, type: vless, uuid: 95a2d546-1b17-42c1-9e9d-59f0460299ff, tls: true, servername: cdn4.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn4.caihongmao.org}}, udp: true}
-  - {name: 🇸🇬 优选新线 C-1C, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: 3d0b8b48-0874-4941-bb59-b75e563c0e7b, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 718df76c-820d-4cbc-a463-2e0b7eca4f91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 75f21b2e-f693-4a91-941a-39d977ddcb9b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 4ef1855d-7d8d-4b68-9083-79845efc7a4b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: a77821b5-ca43-4884-98aa-2f2cf09cca75, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
   - {name: 🇺🇸 洛杉矶-直连-1A, server: sg.dickaws.top, port: 23405, type: hysteria2, password: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, auth: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, sni: caltech.edu, up: 600, down: 600, skip-cert-verify: true, obfs: salamander, obfs-password: Ml0mynbAAQFLiEHW, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 75f21b2e-f693-4a91-941a-39d977ddcb9b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-A-1B, server: 207.57.128.27, port: 8081, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: edge, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 718df76c-820d-4cbc-a463-2e0b7eca4f91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 优选新线 A-1B, server: cdn4.caihongmao.org, port: 443, type: vless, uuid: 0419e6b5-ff2f-411d-861a-4cf40820c9bc, tls: true, servername: cdn4.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn4.caihongmao.org}}, udp: true}
-  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 7f075b8c-2c51-4327-95db-407d30614da3, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国-洛杉矶-PRO-1A, server: 5.253.38.67, port: 40444, type: vless, uuid: bab696aa-c99f-4bea-8609-33585a6a69d5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1K, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 542736b7-a9c1-43af-a71f-2d2b8eed0da7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 优选新线 A-1D, server: cdn4.caihongmao.org, port: 443, type: vless, uuid: 9d66283c-2d23-4ab7-bdec-37a843e9d05c, tls: true, servername: cdn4.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn4.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: a77821b5-ca43-4884-98aa-2f2cf09cca75, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 54d35215-7166-42fe-87f9-ead8eef4e2e6, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1G, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 95d4d67d-5581-4af1-b624-e817b1e83c88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1K, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 542736b7-a9c1-43af-a71f-2d2b8eed0da7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 新加坡-中转2区-1A, server: sg.dickaws.top, port: 34520, type: hysteria2, password: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, auth: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, sni: sg.xinjiapo.fifafa.vip, up: 600, down: 600, skip-cert-verify: false, obfs: salamander, obfs-password: SUkzQojZTehSMtgv, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 280e5f56-8330-46cd-9f61-7a52ab3e90ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 54d35215-7166-42fe-87f9-ead8eef4e2e6, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: MA-KFI, server: empty.node, port: 443, type: trojan, password: 71f43fbe-8117-4656-a0d2-afe19538790e, sni: empty.node, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1H, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 628089b3-cdfd-4051-97bf-8f28d28a56d3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 优选新线 D-1A, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: 0419e6b5-ff2f-411d-861a-4cf40820c9bc, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
+  - {name: 🇭🇰 HK-A-1A, server: 207.57.128.27, port: 8081, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 75f21b2e-f693-4a91-941a-39d977ddcb9b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1G, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 95d4d67d-5581-4af1-b624-e817b1e83c88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1K, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 542736b7-a9c1-43af-a71f-2d2b8eed0da7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1G, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 95d4d67d-5581-4af1-b624-e817b1e83c88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 280e5f56-8330-46cd-9f61-7a52ab3e90ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: d8ee4b20-4592-4002-a51b-f0f780ed0883, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 280e5f56-8330-46cd-9f61-7a52ab3e90ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1J, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 718df76c-820d-4cbc-a463-2e0b7eca4f91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 75f21b2e-f693-4a91-941a-39d977ddcb9b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: d8ee4b20-4592-4002-a51b-f0f780ed0883, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 优选新线 B-1A, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: 0419e6b5-ff2f-411d-861a-4cf40820c9bc, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1H, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 628089b3-cdfd-4051-97bf-8f28d28a56d3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1G, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 95d4d67d-5581-4af1-b624-e817b1e83c88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1I, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 115b81b4-6894-4898-bb35-97e1a7a07db4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 优选新线 B-1B, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: c02f8fde-86e6-4fd7-a555-d101c2afd7c2, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
+  - {name: 🇸🇬 优选新线 A-1B, server: cdn4.caihongmao.org, port: 443, type: vless, uuid: c02f8fde-86e6-4fd7-a555-d101c2afd7c2, tls: true, servername: cdn4.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn4.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: a77821b5-ca43-4884-98aa-2f2cf09cca75, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1H, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 628089b3-cdfd-4051-97bf-8f28d28a56d3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK-A-1C, server: 207.57.128.27, port: 8081, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇺🇸 美国-洛杉矶-PRO-1A, server: 5.253.38.67, port: 40444, type: vless, uuid: d4e5bd1c-23d9-4dca-8988-24c32fc8a293, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: fb8a5510-8903-4775-9b7f-5240c24c4919, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1I, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 115b81b4-6894-4898-bb35-97e1a7a07db4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: 39699885-1faa-4da5-b76d-1599f20aecf3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1I, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 115b81b4-6894-4898-bb35-97e1a7a07db4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 洛杉矶-直连-1B, server: sg.dickaws.top, port: 23405, type: hysteria2, password: a23a00cb-685e-4a44-bd21-1b3debaea9ea, auth: a23a00cb-685e-4a44-bd21-1b3debaea9ea, sni: caltech.edu, up: 600, down: 600, skip-cert-verify: true, obfs: salamander, obfs-password: Ml0mynbAAQFLiEHW, udp: true}
+  - {name: 备用线路 A-1A, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 0419e6b5-ff2f-411d-861a-4cf40820c9bc, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
+  - {name: 🇸🇬 优选新线 D-1C, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: 95a2d546-1b17-42c1-9e9d-59f0460299ff, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
+  - {name: 🇸🇬 新加坡-中转2区-1B, server: sg.dickaws.top, port: 34520, type: hysteria2, password: a23a00cb-685e-4a44-bd21-1b3debaea9ea, auth: a23a00cb-685e-4a44-bd21-1b3debaea9ea, sni: sg.xinjiapo.fifafa.vip, up: 600, down: 600, skip-cert-verify: false, obfs: salamander, obfs-password: SUkzQojZTehSMtgv, udp: true}
+  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 54d35215-7166-42fe-87f9-ead8eef4e2e6, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 4ef1855d-7d8d-4b68-9083-79845efc7a4b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 优选新线 C-1C, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: 95a2d546-1b17-42c1-9e9d-59f0460299ff, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1K, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 542736b7-a9c1-43af-a71f-2d2b8eed0da7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国-洛杉矶-PRO-1B, server: 5.253.38.67, port: 40444, type: vless, uuid: bab696aa-c99f-4bea-8609-33585a6a69d5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 优选新线 D-1D, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: 9d66283c-2d23-4ab7-bdec-37a843e9d05c, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
+  - {name: 🇸🇬 优选新线 C-1D, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: 9d66283c-2d23-4ab7-bdec-37a843e9d05c, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
+  - {name: 备用线路 A-1D, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 9d66283c-2d23-4ab7-bdec-37a843e9d05c, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1J, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 718df76c-820d-4cbc-a463-2e0b7eca4f91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 280e5f56-8330-46cd-9f61-7a52ab3e90ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 4ef1855d-7d8d-4b68-9083-79845efc7a4b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 优选新线 B-1C, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: 95a2d546-1b17-42c1-9e9d-59f0460299ff, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 75f21b2e-f693-4a91-941a-39d977ddcb9b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 优选新线 C-1A, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: 0419e6b5-ff2f-411d-861a-4cf40820c9bc, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1C, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1J, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 718df76c-820d-4cbc-a463-2e0b7eca4f91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1I, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 115b81b4-6894-4898-bb35-97e1a7a07db4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: fb8a5510-8903-4775-9b7f-5240c24c4919, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 4ef1855d-7d8d-4b68-9083-79845efc7a4b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1H, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 628089b3-cdfd-4051-97bf-8f28d28a56d3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 优选新线 B-1D, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: 9d66283c-2d23-4ab7-bdec-37a843e9d05c, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1J, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 718df76c-820d-4cbc-a463-2e0b7eca4f91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 备用线路 A-1B, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: c02f8fde-86e6-4fd7-a555-d101c2afd7c2, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: d8ee4b20-4592-4002-a51b-f0f780ed0883, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 54d35215-7166-42fe-87f9-ead8eef4e2e6, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: d8ee4b20-4592-4002-a51b-f0f780ed0883, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1A, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: safari, network: tcp, udp: true}
+  - {name: 🇸🇬 优选新线 C-1B, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: c02f8fde-86e6-4fd7-a555-d101c2afd7c2, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: fb8a5510-8903-4775-9b7f-5240c24c4919, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 备用线路 A-1C, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 95a2d546-1b17-42c1-9e9d-59f0460299ff, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
+  - {name: 🇭🇰 HK-A-1B, server: 207.57.128.27, port: 8081, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: fb8a5510-8903-4775-9b7f-5240c24c4919, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 75f21b2e-f693-4a91-941a-39d977ddcb9b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 优选新线 D-1B, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: c02f8fde-86e6-4fd7-a555-d101c2afd7c2, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
+  - {name: 🇸🇬 优选新线 A-1C, server: cdn4.caihongmao.org, port: 443, type: vless, uuid: 95a2d546-1b17-42c1-9e9d-59f0460299ff, tls: true, servername: cdn4.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn4.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: a77821b5-ca43-4884-98aa-2f2cf09cca75, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 54d35215-7166-42fe-87f9-ead8eef4e2e6, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 优选新线 A-1A, server: cdn4.caihongmao.org, port: 443, type: vless, uuid: 0419e6b5-ff2f-411d-861a-4cf40820c9bc, tls: true, servername: cdn4.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn4.caihongmao.org}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇸🇬 优选新线 C-1D
-      - 🇸🇬 优选新线 A-1A
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇸🇬 优选新线 A-1C
-      - 🇺🇸 美国高速节点1
-      - 备用线路 A-1C
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-001-1J
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇸🇬 优选新线 B-1B
-      - 🇸🇬 优选新线 D-1D
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇸🇬 优选新线 D-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇸🇬 优选新线 B-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇸🇬 优选新线 B-1A
-      - 🇩🇪 德国-法兰克福-004-1K
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇸🇬 优选新线 B-1D
-      - 🇩🇪 德国-法兰克福-002-1D
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-004-1J
-      - 🇹🇼 台湾高速节点2
-      - 🇸🇬 优选新线 D-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 备用线路 A-1B
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇰🇷 韩国节点-B-1C
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 韩国节点-B-1B
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-003-1K
-      - 🇭🇰 HK-A-1C
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇸🇬 优选新线 C-1A
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-001-1F
-      - MZ-BSI
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 洛杉矶-直连-1B
-      - 备用线路 A-1D
-      - 🇸🇬 优选新线 A-1D
-      - 🇸🇬 优选新线 C-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HK-A-1B
       - 🇩🇪 德国-法兰克福-001-1C
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 优选新线 A-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇰🇷 韩国节点-B-1B
+      - MA-KFI
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇸🇬 优选新线 D-1A
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇸🇬 优选新线 B-1A
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇸🇬 优选新线 B-1B
       - 🇸🇬 优选新线 A-1B
-      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-A-1C
       - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-001-1I
+      - G I C A B N H T H N
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇺🇸 洛杉矶-直连-1B
+      - 备用线路 A-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇸🇬 新加坡-中转2区-1B
+      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇸🇬 优选新线 C-1C
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇸🇬 优选新线 D-1D
+      - 🇸🇬 优选新线 C-1D
+      - 备用线路 A-1D
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 优选新线 B-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 优选新线 C-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-001-1J
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇸🇬 优选新线 B-1D
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 备用线路 A-1B
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1A
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 备用线路 A-1C
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇸🇬 优选新线 D-1B
+      - 🇸🇬 优选新线 A-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 A-1A
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇸🇬 优选新线 C-1D
-      - 🇸🇬 优选新线 A-1A
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇸🇬 优选新线 A-1C
-      - 🇺🇸 美国高速节点1
-      - 备用线路 A-1C
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-001-1J
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇸🇬 优选新线 B-1B
-      - 🇸🇬 优选新线 D-1D
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇸🇬 优选新线 D-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇸🇬 优选新线 B-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇸🇬 优选新线 B-1A
-      - 🇩🇪 德国-法兰克福-004-1K
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇸🇬 优选新线 B-1D
-      - 🇩🇪 德国-法兰克福-002-1D
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-004-1J
-      - 🇹🇼 台湾高速节点2
-      - 🇸🇬 优选新线 D-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 备用线路 A-1B
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇰🇷 韩国节点-B-1C
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 韩国节点-B-1B
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-003-1K
-      - 🇭🇰 HK-A-1C
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇸🇬 优选新线 C-1A
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-001-1F
-      - MZ-BSI
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 洛杉矶-直连-1B
-      - 备用线路 A-1D
-      - 🇸🇬 优选新线 A-1D
-      - 🇸🇬 优选新线 C-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HK-A-1B
       - 🇩🇪 德国-法兰克福-001-1C
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 优选新线 A-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇰🇷 韩国节点-B-1B
+      - MA-KFI
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇸🇬 优选新线 D-1A
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇸🇬 优选新线 B-1A
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇸🇬 优选新线 B-1B
       - 🇸🇬 优选新线 A-1B
-      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-A-1C
       - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-001-1I
+      - G I C A B N H T H N
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇺🇸 洛杉矶-直连-1B
+      - 备用线路 A-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇸🇬 新加坡-中转2区-1B
+      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇸🇬 优选新线 C-1C
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇸🇬 优选新线 D-1D
+      - 🇸🇬 优选新线 C-1D
+      - 备用线路 A-1D
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 优选新线 B-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 优选新线 C-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-001-1J
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇸🇬 优选新线 B-1D
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 备用线路 A-1B
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1A
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 备用线路 A-1C
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇸🇬 优选新线 D-1B
+      - 🇸🇬 优选新线 A-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 A-1A
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇸🇬 优选新线 C-1D
-      - 🇸🇬 优选新线 A-1A
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇸🇬 优选新线 A-1C
-      - 🇺🇸 美国高速节点1
-      - 备用线路 A-1C
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-001-1J
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇸🇬 优选新线 B-1B
-      - 🇸🇬 优选新线 D-1D
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇸🇬 优选新线 D-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇸🇬 优选新线 B-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇸🇬 优选新线 B-1A
-      - 🇩🇪 德国-法兰克福-004-1K
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇸🇬 优选新线 B-1D
-      - 🇩🇪 德国-法兰克福-002-1D
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-004-1J
-      - 🇹🇼 台湾高速节点2
-      - 🇸🇬 优选新线 D-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 备用线路 A-1B
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇰🇷 韩国节点-B-1C
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 韩国节点-B-1B
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-003-1K
-      - 🇭🇰 HK-A-1C
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇸🇬 优选新线 C-1A
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-001-1F
-      - MZ-BSI
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 洛杉矶-直连-1B
-      - 备用线路 A-1D
-      - 🇸🇬 优选新线 A-1D
-      - 🇸🇬 优选新线 C-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HK-A-1B
       - 🇩🇪 德国-法兰克福-001-1C
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 优选新线 A-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇰🇷 韩国节点-B-1B
+      - MA-KFI
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇸🇬 优选新线 D-1A
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇸🇬 优选新线 B-1A
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇸🇬 优选新线 B-1B
       - 🇸🇬 优选新线 A-1B
-      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-A-1C
       - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-001-1I
+      - G I C A B N H T H N
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇺🇸 洛杉矶-直连-1B
+      - 备用线路 A-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇸🇬 新加坡-中转2区-1B
+      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇸🇬 优选新线 C-1C
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇸🇬 优选新线 D-1D
+      - 🇸🇬 优选新线 C-1D
+      - 备用线路 A-1D
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 优选新线 B-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 优选新线 C-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-001-1J
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇸🇬 优选新线 B-1D
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 备用线路 A-1B
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1A
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 备用线路 A-1C
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇸🇬 优选新线 D-1B
+      - 🇸🇬 优选新线 A-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 A-1A
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -424,414 +372,362 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇸🇬 优选新线 C-1D
-      - 🇸🇬 优选新线 A-1A
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇸🇬 优选新线 A-1C
-      - 🇺🇸 美国高速节点1
-      - 备用线路 A-1C
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-001-1J
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇸🇬 优选新线 B-1B
-      - 🇸🇬 优选新线 D-1D
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇸🇬 优选新线 D-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇸🇬 优选新线 B-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇸🇬 优选新线 B-1A
-      - 🇩🇪 德国-法兰克福-004-1K
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇸🇬 优选新线 B-1D
-      - 🇩🇪 德国-法兰克福-002-1D
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-004-1J
-      - 🇹🇼 台湾高速节点2
-      - 🇸🇬 优选新线 D-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 备用线路 A-1B
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇰🇷 韩国节点-B-1C
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 韩国节点-B-1B
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-003-1K
-      - 🇭🇰 HK-A-1C
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇸🇬 优选新线 C-1A
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-001-1F
-      - MZ-BSI
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 洛杉矶-直连-1B
-      - 备用线路 A-1D
-      - 🇸🇬 优选新线 A-1D
-      - 🇸🇬 优选新线 C-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HK-A-1B
       - 🇩🇪 德国-法兰克福-001-1C
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 优选新线 A-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇰🇷 韩国节点-B-1B
+      - MA-KFI
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇸🇬 优选新线 D-1A
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇸🇬 优选新线 B-1A
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇸🇬 优选新线 B-1B
       - 🇸🇬 优选新线 A-1B
-      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-A-1C
       - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-001-1I
+      - G I C A B N H T H N
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇺🇸 洛杉矶-直连-1B
+      - 备用线路 A-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇸🇬 新加坡-中转2区-1B
+      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇸🇬 优选新线 C-1C
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇸🇬 优选新线 D-1D
+      - 🇸🇬 优选新线 C-1D
+      - 备用线路 A-1D
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 优选新线 B-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 优选新线 C-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-001-1J
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇸🇬 优选新线 B-1D
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 备用线路 A-1B
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1A
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 备用线路 A-1C
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇸🇬 优选新线 D-1B
+      - 🇸🇬 优选新线 A-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 A-1A
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🇹🇼 台湾高速节点3
-      - 🇹🇼 台湾高速节点2
       - 🇹🇼 台湾高速节点
+      - 🇹🇼 台湾高速节点2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇸🇬 优选新线 C-1D
-      - 🇸🇬 优选新线 A-1A
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇸🇬 优选新线 A-1C
-      - 🇺🇸 美国高速节点1
-      - 备用线路 A-1C
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-001-1J
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇸🇬 优选新线 B-1B
-      - 🇸🇬 优选新线 D-1D
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇸🇬 优选新线 D-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇸🇬 优选新线 B-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇸🇬 优选新线 B-1A
-      - 🇩🇪 德国-法兰克福-004-1K
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇸🇬 优选新线 B-1D
-      - 🇩🇪 德国-法兰克福-002-1D
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-004-1J
-      - 🇹🇼 台湾高速节点2
-      - 🇸🇬 优选新线 D-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 备用线路 A-1B
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇰🇷 韩国节点-B-1C
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 韩国节点-B-1B
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-003-1K
-      - 🇭🇰 HK-A-1C
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇸🇬 优选新线 C-1A
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-001-1F
-      - MZ-BSI
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 洛杉矶-直连-1B
-      - 备用线路 A-1D
-      - 🇸🇬 优选新线 A-1D
-      - 🇸🇬 优选新线 C-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HK-A-1B
       - 🇩🇪 德国-法兰克福-001-1C
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 优选新线 A-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇰🇷 韩国节点-B-1B
+      - MA-KFI
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇸🇬 优选新线 D-1A
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇸🇬 优选新线 B-1A
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇸🇬 优选新线 B-1B
       - 🇸🇬 优选新线 A-1B
-      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-A-1C
       - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-001-1I
+      - G I C A B N H T H N
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇺🇸 洛杉矶-直连-1B
+      - 备用线路 A-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇸🇬 新加坡-中转2区-1B
+      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇸🇬 优选新线 C-1C
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇸🇬 优选新线 D-1D
+      - 🇸🇬 优选新线 C-1D
+      - 备用线路 A-1D
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 优选新线 B-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 优选新线 C-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-001-1J
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇸🇬 优选新线 B-1D
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 备用线路 A-1B
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1A
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 备用线路 A-1C
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇸🇬 优选新线 D-1B
+      - 🇸🇬 优选新线 A-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 A-1A
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇸🇬 优选新线 C-1D
-      - 🇸🇬 优选新线 A-1A
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇸🇬 优选新线 A-1C
-      - 🇺🇸 美国高速节点1
-      - 备用线路 A-1C
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-001-1J
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇸🇬 优选新线 B-1B
-      - 🇸🇬 优选新线 D-1D
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇸🇬 优选新线 D-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇸🇬 优选新线 B-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇸🇬 优选新线 B-1A
-      - 🇩🇪 德国-法兰克福-004-1K
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇸🇬 优选新线 B-1D
-      - 🇩🇪 德国-法兰克福-002-1D
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-004-1J
-      - 🇹🇼 台湾高速节点2
-      - 🇸🇬 优选新线 D-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 备用线路 A-1B
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇰🇷 韩国节点-B-1C
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 韩国节点-B-1B
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-003-1K
-      - 🇭🇰 HK-A-1C
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇸🇬 优选新线 C-1A
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-001-1F
-      - MZ-BSI
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 洛杉矶-直连-1B
-      - 备用线路 A-1D
-      - 🇸🇬 优选新线 A-1D
-      - 🇸🇬 优选新线 C-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HK-A-1B
       - 🇩🇪 德国-法兰克福-001-1C
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 优选新线 A-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇰🇷 韩国节点-B-1B
+      - MA-KFI
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇸🇬 优选新线 D-1A
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇸🇬 优选新线 B-1A
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇸🇬 优选新线 B-1B
       - 🇸🇬 优选新线 A-1B
-      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-A-1C
       - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-001-1I
+      - G I C A B N H T H N
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇺🇸 洛杉矶-直连-1B
+      - 备用线路 A-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇸🇬 新加坡-中转2区-1B
+      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇸🇬 优选新线 C-1C
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇸🇬 优选新线 D-1D
+      - 🇸🇬 优选新线 C-1D
+      - 备用线路 A-1D
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 优选新线 B-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 优选新线 C-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-001-1J
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇸🇬 优选新线 B-1D
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 备用线路 A-1B
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1A
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 备用线路 A-1C
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇸🇬 优选新线 D-1B
+      - 🇸🇬 优选新线 A-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 A-1A
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇸🇬 优选新线 C-1D
-      - 🇸🇬 优选新线 A-1A
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇸🇬 优选新线 A-1C
-      - 🇺🇸 美国高速节点1
-      - 备用线路 A-1C
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-001-1J
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇸🇬 优选新线 B-1B
-      - 🇸🇬 优选新线 D-1D
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇸🇬 优选新线 D-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇸🇬 优选新线 B-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇸🇬 优选新线 B-1A
-      - 🇩🇪 德国-法兰克福-004-1K
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇸🇬 优选新线 B-1D
-      - 🇩🇪 德国-法兰克福-002-1D
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-004-1J
-      - 🇹🇼 台湾高速节点2
-      - 🇸🇬 优选新线 D-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 备用线路 A-1B
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇰🇷 韩国节点-B-1C
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 韩国节点-B-1B
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-003-1K
-      - 🇭🇰 HK-A-1C
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇸🇬 优选新线 C-1A
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-001-1F
-      - MZ-BSI
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 洛杉矶-直连-1B
-      - 备用线路 A-1D
-      - 🇸🇬 优选新线 A-1D
-      - 🇸🇬 优选新线 C-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HK-A-1B
       - 🇩🇪 德国-法兰克福-001-1C
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 优选新线 A-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇰🇷 韩国节点-B-1B
+      - MA-KFI
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇸🇬 优选新线 D-1A
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇸🇬 优选新线 B-1A
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇸🇬 优选新线 B-1B
       - 🇸🇬 优选新线 A-1B
-      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-A-1C
       - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-001-1I
+      - G I C A B N H T H N
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇺🇸 洛杉矶-直连-1B
+      - 备用线路 A-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇸🇬 新加坡-中转2区-1B
+      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇸🇬 优选新线 C-1C
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇸🇬 优选新线 D-1D
+      - 🇸🇬 优选新线 C-1D
+      - 备用线路 A-1D
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 优选新线 B-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 优选新线 C-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-001-1J
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇸🇬 优选新线 B-1D
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 备用线路 A-1B
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1A
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 备用线路 A-1C
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇸🇬 优选新线 D-1B
+      - 🇸🇬 优选新线 A-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 A-1A
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -847,102 +743,89 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇸🇬 优选新线 C-1D
-      - 🇸🇬 优选新线 A-1A
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇸🇬 优选新线 A-1C
-      - 🇺🇸 美国高速节点1
-      - 备用线路 A-1C
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇭🇰 HK-A-1A
-      - 🇩🇪 德国-法兰克福-001-1J
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇸🇬 优选新线 B-1B
-      - 🇸🇬 优选新线 D-1D
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1D
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇩🇪 德国-法兰克福-002-1H
-      - 🇸🇬 优选新线 D-1B
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇩🇪 德国-法兰克福-004-1H
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇸🇬 优选新线 B-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇸🇬 新加坡-中转2区-1A
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-002-1I
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇸🇬 优选新线 B-1A
-      - 🇩🇪 德国-法兰克福-004-1K
-      - 🇹🇼 台湾高速节点3
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇸🇬 新加坡-中转2区-1B
-      - 🇩🇪 德国-法兰克福-001-1I
-      - 🇸🇬 优选新线 B-1D
-      - 🇩🇪 德国-法兰克福-002-1D
-      - G I C A B N H T H N
-      - 🇰🇷 韩国节点-B-1A
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-004-1J
-      - 🇹🇼 台湾高速节点2
-      - 🇸🇬 优选新线 D-1C
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇩🇪 德国-法兰克福-003-1I
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇩🇪 德国-法兰克福-004-1G
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 备用线路 A-1B
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇰🇷 韩国节点-B-1C
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇰🇷 韩国节点-B-1B
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-003-1K
-      - 🇭🇰 HK-A-1C
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇸🇬 优选新线 C-1A
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇹🇼 台湾高速节点
-      - 🇩🇪 德国-法兰克福-001-1F
-      - MZ-BSI
-      - 🇩🇪 德国-法兰克福-004-1E
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇺🇸 洛杉矶-直连-1B
-      - 备用线路 A-1D
-      - 🇸🇬 优选新线 A-1D
-      - 🇸🇬 优选新线 C-1C
-      - 🇩🇪 德国-法兰克福-002-1C
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HK-A-1B
       - 🇩🇪 德国-法兰克福-001-1C
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇸🇬 优选新线 A-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - 🇺🇸 美国高速节点1
+      - 🇩🇪 德国-法兰克福-003-1G
+      - 🇩🇪 德国-法兰克福-004-1K
+      - 🇸🇬 新加坡-中转2区-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇹🇼 台湾高速节点3
+      - 🇰🇷 韩国节点-B-1B
+      - MA-KFI
+      - 🇩🇪 德国-法兰克福-001-1H
+      - 🇸🇬 优选新线 D-1A
+      - 🇭🇰 HK-A-1A
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇩🇪 德国-法兰克福-004-1G
+      - 🇩🇪 德国-法兰克福-002-1K
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇸🇬 优选新线 B-1A
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇸🇬 优选新线 B-1B
       - 🇸🇬 优选新线 A-1B
-      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-A-1C
       - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-001-1I
+      - G I C A B N H T H N
+      - 🇩🇪 德国-法兰克福-003-1I
+      - 🇺🇸 洛杉矶-直连-1B
+      - 备用线路 A-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇸🇬 新加坡-中转2区-1B
+      - 🇨🇳 中国联通节点1
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇸🇬 优选新线 C-1C
+      - 🇩🇪 德国-法兰克福-001-1K
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇸🇬 优选新线 D-1D
+      - 🇸🇬 优选新线 C-1D
+      - 备用线路 A-1D
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇸🇬 优选新线 B-1C
+      - 🇩🇪 德国-法兰克福-002-1F
+      - 🇸🇬 优选新线 C-1A
+      - 🇰🇷 韩国节点-B-1C
+      - 🇩🇪 德国-法兰克福-001-1J
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇩🇪 德国-法兰克福-003-1C
+      - 🇩🇪 德国-法兰克福-004-1H
+      - 🇸🇬 优选新线 B-1D
+      - 🇩🇪 德国-法兰克福-002-1J
+      - 备用线路 A-1B
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇹🇼 台湾高速节点
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇰🇷 韩国节点-B-1A
+      - 🇸🇬 优选新线 C-1B
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 备用线路 A-1C
+      - 🇭🇰 HK-A-1B
+      - 🇩🇪 德国-法兰克福-004-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇸🇬 优选新线 D-1B
+      - 🇸🇬 优选新线 A-1C
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 A-1A
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
