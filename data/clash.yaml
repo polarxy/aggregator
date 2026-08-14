@@ -5,467 +5,599 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 HK-01-1I, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 1eb33d57-1d1f-4c80-ba09-ac3567661738, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇺🇸 洛杉矶-直连-1B, server: sg.dickaws.top, port: 23405, type: hysteria2, password: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, auth: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, sni: caltech.edu, up: 600, down: 600, skip-cert-verify: true, obfs: salamander, obfs-password: Ml0mynbAAQFLiEHW, udp: true}
-  - {name: 🇺🇸 洛杉矶-新VPS-02-1C, server: 107.174.201.177, port: 443, type: ss, cipher: aes-128-gcm, password: 0c6af4bb-7bcc-4c0c-b7c6-c079db66484a, udp: true}
-  - {name: 🇭🇰 HK-01-1H, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 086591d7-79b8-48e5-a96f-a4ab70d6e259, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 48f05c4c-0bce-432d-a042-5312aaf47298, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇸🇬 优选新线 C-1A, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1C, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 01 联通电信推荐-1D, server: www.shopify.com, port: 2053, type: vless, uuid: ea407f12-da85-4022-9d3c-504c4c52fce5, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
-  - {name: 🇭🇰 HK-01-1C, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 38a2efd0-3159-4541-b395-596ac188482f, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇺🇸 洛杉矶-新VPS-02-1B, server: 107.174.201.177, port: 443, type: ss, cipher: aes-128-gcm, password: 477346fb-cd81-4ffd-82f1-b92dac24d056, udp: true}
-  - {name: 🇺🇸 美国 02 联通电信推荐-1B, server: www.visa.cn, port: 2053, type: vless, uuid: b1c7da23-1f01-4810-9c4e-8d7d2b0ff73a, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
-  - {name: 🇭🇰 HK-A-1B, server: 207.57.128.27, port: 8081, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇺🇸 洛杉矶-新VPS-03-1C, server: node.chuofankeji.top, port: 443, type: vless, uuid: 0c6af4bb-7bcc-4c0c-b7c6-c079db66484a, tls: true, servername: node.chuofankeji.top, network: tcp, udp: true}
-  - {name: 🇸🇬 优选新线 D-1B, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
-  - {name: 🇭🇰 FREE-HK-IN-TH-1C, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 8bd385f7-c440-4844-9b6f-315256d575b3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1F, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 902ecff0-1849-4a25-9bcf-dd7f94441d93, udp: true}
-  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 144161fa-7012-4e8e-b591-66bf03944342, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 洛杉矶-新VPS-01-1B, server: 107.174.201.177, port: 30001, type: ss, cipher: aes-128-gcm, password: 477346fb-cd81-4ffd-82f1-b92dac24d056, udp: true}
-  - {name: 🇭🇰 HK-01-1R, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 23f1298e-c7f4-473b-bf3c-9518e6261892, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1H, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 3439139e-acf3-4d0f-9e7d-93cd3ca8e028, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1O, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 4013d8f0-3d75-45fb-bf5d-6fa71044eda3, udp: true}
-  - {name: 🇭🇰 HK-01-1E, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 1f91ba29-a535-44a7-a0ba-96a4e7580fcc, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: 15f2e62f-7570-409e-b34f-42c3b7b965f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
+  - {name: 🇺🇸 洛杉矶-新VPS-01-1A, server: 107.174.201.177, port: 30001, type: ss, cipher: aes-128-gcm, password: 0c6af4bb-7bcc-4c0c-b7c6-c079db66484a, udp: true}
+  - {name: 🇭🇰 HK-01-1Q, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 5235dd8a-db4a-4e28-a9a1-c7b4d402669f, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 新域抗封线 C-1A, server: w3.lianjieni.com, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: w3.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w3.lianjieni.com}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 6e7d0df2-d80c-42ce-817b-e5ff920e4851, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 优选新线 G-1B, server: cdn11.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn11.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn11.caihongmao.org}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 83c43ce6-c713-42a3-8fd5-fbd25591b662, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 优选新线 E-1A, server: cdn9.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn9.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn9.caihongmao.org}}, udp: true}
+  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 83c43ce6-c713-42a3-8fd5-fbd25591b662, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK-01-1V, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 4b1d1e77-07e6-4677-9023-d7c10763f8a2, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1Q, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 902ecff0-1849-4a25-9bcf-dd7f94441d93, udp: true}
   - {name: 🇭🇰 HK-01-1T, server: m.cqwer.xyz, port: 443, type: vmess, uuid: d0793d44-d4c7-4ddd-a1a8-7b6aeb70895d, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1Q, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: ec9d8d8a-adf5-4ba6-8eac-d20e72bd146c, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1G, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 6d5505dd-d59d-42c0-bfa9-f5a074f736e5, udp: true}
-  - {name: 🇭🇰 HK-01-1P, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 9126e6ff-b467-4569-aab0-777f20284f8a, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇺🇸 洛杉矶-新VPS-01-1C, server: 107.174.201.177, port: 30001, type: ss, cipher: aes-128-gcm, password: 0c6af4bb-7bcc-4c0c-b7c6-c079db66484a, udp: true}
-  - {name: 🇭🇰 HK-A-1A, server: 207.57.128.27, port: 8081, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: safari, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 02 联通电信推荐-1A, server: www.visa.cn, port: 2053, type: vless, uuid: a4f2aafb-827a-42d1-85a8-a63b1a2787f7, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 48f05c4c-0bce-432d-a042-5312aaf47298, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 洛杉矶-新VPS-01-1A, server: 107.174.201.177, port: 30001, type: ss, cipher: aes-128-gcm, password: 898c384c-a94b-46fe-b967-b19e2ba1865e, udp: true}
-  - {name: 🇭🇰 FREE-HK-IN-TH-1G, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 73e545b2-2da7-4ce4-8978-9bb7c668ff72, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 01 联通电信推荐-1C, server: www.shopify.com, port: 2053, type: vless, uuid: 83ba0b9a-0fba-434b-85cc-4dc9d9d9c8f5, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
-  - {name: 🇭🇰 HK-01-1K, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 21a7a70c-3443-4038-9c1d-04a8790b1b02, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 备用线路 A-1B, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
-  - {name: 🇭🇰 HK-01-1U, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 64c9b960-db98-48fa-9b8b-36482f9d7503, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 02 联通电信推荐-1D, server: www.visa.cn, port: 2053, type: vless, uuid: ea407f12-da85-4022-9d3c-504c4c52fce5, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1A, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
-  - {name: 备用线路 A-1A, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 99e04480-60e1-4d16-a155-363624804a5a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1E, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: ec9a3c59-625e-4dae-9306-9972c94ce58e, udp: true}
-  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 144161fa-7012-4e8e-b591-66bf03944342, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 FREE-HK-IN-TH-1H, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: f05d1bc9-e20d-4dc4-9b5b-c14e24c07f0a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 洛杉矶-新VPS-02-1A, server: 107.174.201.177, port: 443, type: ss, cipher: aes-128-gcm, password: 898c384c-a94b-46fe-b967-b19e2ba1865e, udp: true}
-  - {name: 🇸🇬 优选新线 E-1A, server: cdn9.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn9.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn9.caihongmao.org}}, udp: true}
-  - {name: 🇭🇰 FREE-HK-IN-TH-1D, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: abbce4f6-44cf-40c1-a757-d42e072b5350, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1N, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 76e09585-edf1-4715-a95e-37bcd1bf4f8b, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1S, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 3f25be87-248c-456e-965c-a88306528044, udp: true}
-  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 144161fa-7012-4e8e-b591-66bf03944342, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK-01-1B, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 38ef50eb-a16a-453a-be88-80466343cda6, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 01 联通电信推荐-1B, server: www.shopify.com, port: 2053, type: vless, uuid: b1c7da23-1f01-4810-9c4e-8d7d2b0ff73a, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
-  - {name: 🇸🇬 优选新线 D-1A, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
-  - {name: 🇭🇰 HK-01-1M, server: m.cqwer.xyz, port: 443, type: vmess, uuid: e11cbd5f-be19-44f1-b800-c3c6567be629, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇸🇬 优选新线 E-1B, server: cdn9.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn9.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn9.caihongmao.org}}, udp: true}
-  - {name: 🇺🇸 洛杉矶-移动-TUIC-01-1A, server: node.chuofankeji.top, port: 24443, type: tuic, password: 898c384c-a94b-46fe-b967-b19e2ba1865e, uuid: 898c384c-a94b-46fe-b967-b19e2ba1865e, sni: node.chuofankeji.top, skip-cert-verify: false, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
-  - {name: 🇺🇸 洛杉矶-移动-TUIC-01-1B, server: node.chuofankeji.top, port: 24443, type: tuic, password: 477346fb-cd81-4ffd-82f1-b92dac24d056, uuid: 477346fb-cd81-4ffd-82f1-b92dac24d056, sni: node.chuofankeji.top, skip-cert-verify: false, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
-  - {name: 🇸🇬 优选新线 F-1A, server: cdn10.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn10.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn10.caihongmao.org}}, udp: true}
-  - {name: 🇭🇰 HK-01-1F, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 13cf2113-5ac6-4f40-8549-7c8174ebf72f, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇭🇰 HK-01-1J, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 1fe8e853-9195-42b8-b27a-17ea329b7b3b, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇸🇬 优选新线 F-1B, server: cdn10.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn10.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn10.caihongmao.org}}, udp: true}
-  - {name: 🇰🇷 韩国节点-B-1B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1I, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 4ab43cfc-987e-43b4-9d7e-b88ad5ad00b2, udp: true}
-  - {name: 🇺🇸 洛杉矶-新VPS-03-1D, server: node.chuofankeji.top, port: 443, type: vless, uuid: 7430ee84-c0da-4617-9cf7-5f64436e12ab, tls: true, servername: node.chuofankeji.top, network: tcp, udp: true}
+  - {name: 🇭🇰 FREE-HK-IN-TH-1A, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 1c0c372c-7432-4fd1-97a3-9404fbc08ff3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1J, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 622ae01b-dd8d-45df-9d88-fcc5bf84e23f, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1T, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 4ab43cfc-987e-43b4-9d7e-b88ad5ad00b2, udp: true}
+  - {name: 🇭🇰 FREE-HK-IN-TH-1D, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 9c5f9a86-dccb-40fd-bef3-eddd0d4db5b9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 新域抗封线 C-1C, server: w3.lianjieni.com, port: 443, type: vless, uuid: ce8ce382-33ca-4e8c-a753-d53d987a4fe0, tls: true, servername: w3.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w3.lianjieni.com}}, udp: true}
+  - {name: 🇸🇬 优选新线 B-1A, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
+  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: 945ad3a4-cadc-4778-bc70-a7114e52afac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
+  - {name: 🇭🇰 HK-01-1K, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 1fe8e853-9195-42b8-b27a-17ea329b7b3b, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇭🇰 FREE-HK-IN-TH-1I, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: e16139d6-6dbe-4632-b5b9-e79c0175f09e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 新域抗封线 D-1B, server: w4.lianjieni.com, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: w4.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w4.lianjieni.com}}, udp: true}
+  - {name: 🇭🇰 HK-01-1N, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 38ef50eb-a16a-453a-be88-80466343cda6, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 新域抗封线 B-1B, server: w2.lianjieni.com, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: w2.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w2.lianjieni.com}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1F, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: ec9a3c59-625e-4dae-9306-9972c94ce58e, udp: true}
+  - {name: 🇭🇰 HK-01-1F, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 1f91ba29-a535-44a7-a0ba-96a4e7580fcc, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇺🇸 洛杉矶-直连-1B, server: sg.dickaws.top, port: 23405, type: hysteria2, password: a23a00cb-685e-4a44-bd21-1b3debaea9ea, auth: a23a00cb-685e-4a44-bd21-1b3debaea9ea, sni: caltech.edu, up: 600, down: 600, skip-cert-verify: true, obfs: salamander, obfs-password: Ml0mynbAAQFLiEHW, udp: true}
+  - {name: 🇭🇰 HK-01-1P, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 0e4677bf-9470-4271-91ad-5038bc183a18, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇸🇬 优选新线 B-1C, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: ce8ce382-33ca-4e8c-a753-d53d987a4fe0, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
+  - {name: 🇭🇰 FREE-HK-IN-TH-1B, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: f05d1bc9-e20d-4dc4-9b5b-c14e24c07f0a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-01-1B, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 13cf2113-5ac6-4f40-8549-7c8174ebf72f, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
   - {name: 🇺🇸 洛杉矶-新VPS-02-1D, server: 107.174.201.177, port: 443, type: ss, cipher: aes-128-gcm, password: 7430ee84-c0da-4617-9cf7-5f64436e12ab, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1T, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 880f53d3-d4ba-4c85-83fb-b918a76ae19b, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 48f05c4c-0bce-432d-a042-5312aaf47298, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 99e04480-60e1-4d16-a155-363624804a5a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1M, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 7a14bc93-05cd-4ec8-b269-0dbf570a1f7f, udp: true}
-  - {name: 🇺🇸 美国-洛杉矶-PRO-1B, server: 5.253.38.67, port: 40444, type: vless, uuid: 6c528dcc-a201-4061-8303-35d371d85d63, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 FREE-HK-IN-TH-1B, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 9c5f9a86-dccb-40fd-bef3-eddd0d4db5b9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 99e04480-60e1-4d16-a155-363624804a5a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-01-1D, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 23b2202a-d7d7-48aa-a040-cfaee7623ffb, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇸🇬 优选新线 B-1B, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
+  - {name: 新域抗封线 A-1A, server: w1.lianjieni.com, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: w1.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w1.lianjieni.com}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 83c43ce6-c713-42a3-8fd5-fbd25591b662, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 01 联通电信推荐-1B, server: www.shopify.com, port: 2053, type: vless, uuid: a4f2aafb-827a-42d1-85a8-a63b1a2787f7, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
+  - {name: 新域抗封线 A-1C, server: w1.lianjieni.com, port: 443, type: vless, uuid: ce8ce382-33ca-4e8c-a753-d53d987a4fe0, tls: true, servername: w1.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w1.lianjieni.com}}, udp: true}
+  - {name: 🇸🇬 优选新线 D-1B, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
+  - {name: 🇭🇰 HK-01-1H, server: m.cqwer.xyz, port: 443, type: vmess, uuid: f596d0b3-5fcf-424e-8149-e62e8dcc13b7, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1D, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 6d5505dd-d59d-42c0-bfa9-f5a074f736e5, udp: true}
+  - {name: 🇭🇰 FREE-HK-IN-TH-1J, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 10952be7-d4e6-4c2f-a8a5-621772f304aa, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-01-1S, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 747f5292-580e-4317-803f-51c2c11f3ceb, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇸🇬 优选新线 C-1B, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
   - {name: 🇺🇸 洛杉矶-新VPS-03-1B, server: node.chuofankeji.top, port: 443, type: vless, uuid: 477346fb-cd81-4ffd-82f1-b92dac24d056, tls: true, servername: node.chuofankeji.top, network: tcp, udp: true}
-  - {name: 🇺🇸 洛杉矶-新VPS-03-1A, server: node.chuofankeji.top, port: 443, type: vless, uuid: 898c384c-a94b-46fe-b967-b19e2ba1865e, tls: true, servername: node.chuofankeji.top, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 01 联通电信推荐-1A, server: www.shopify.com, port: 2053, type: vless, uuid: a4f2aafb-827a-42d1-85a8-a63b1a2787f7, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
-  - {name: 🇭🇰 HK-01-1N, server: m.cqwer.xyz, port: 443, type: vmess, uuid: f596d0b3-5fcf-424e-8149-e62e8dcc13b7, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇺🇸 洛杉矶-移动-TUIC-01-1D, server: node.chuofankeji.top, port: 24443, type: tuic, password: 7430ee84-c0da-4617-9cf7-5f64436e12ab, uuid: 7430ee84-c0da-4617-9cf7-5f64436e12ab, sni: node.chuofankeji.top, skip-cert-verify: false, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
-  - {name: 🇭🇰 HONG KONG 01-1K, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: ad6d21fa-68e9-4af6-9a91-52f08b6685e5, udp: true}
-  - {name: M5-NCB, server: empty.node, port: 443, type: trojan, password: e8c28717-7257-4ae5-b763-04d0a9e4dfc6, sni: empty.node, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HK-01-1Q, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 0e4677bf-9470-4271-91ad-5038bc183a18, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇭🇰 FREE-HK-IN-TH-1A, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 5933a71e-b6df-41bd-9c2d-56e6f29f5a7b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 洛杉矶-新VPS-01-1D, server: 107.174.201.177, port: 30001, type: ss, cipher: aes-128-gcm, password: 7430ee84-c0da-4617-9cf7-5f64436e12ab, udp: true}
-  - {name: 🇭🇰 FREE-HK-IN-TH-1I, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 1c0c372c-7432-4fd1-97a3-9404fbc08ff3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1L, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 35cf94ce-0f2c-4e97-b1aa-ff9d4e8ff951, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1D, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: b425e5fa-8240-40cd-8a03-46748ea75b08, udp: true}
-  - {name: 🇺🇸 洛杉矶-移动-TUIC-01-1C, server: node.chuofankeji.top, port: 24443, type: tuic, password: 0c6af4bb-7bcc-4c0c-b7c6-c079db66484a, uuid: 0c6af4bb-7bcc-4c0c-b7c6-c079db66484a, sni: node.chuofankeji.top, skip-cert-verify: false, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
-  - {name: 🇭🇰 HK-01-1G, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 5235dd8a-db4a-4e28-a9a1-c7b4d402669f, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 48f05c4c-0bce-432d-a042-5312aaf47298, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1P, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: f7681d12-8765-4e5b-8d0c-abbed48e3544, udp: true}
+  - {name: 🇸🇬 优选新线 C-1C, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: ce8ce382-33ca-4e8c-a753-d53d987a4fe0, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
+  - {name: 新域抗封线 B-1C, server: w2.lianjieni.com, port: 443, type: vless, uuid: ce8ce382-33ca-4e8c-a753-d53d987a4fe0, tls: true, servername: w2.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w2.lianjieni.com}}, udp: true}
+  - {name: 🇭🇰 FREE-HK-IN-TH-1K, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: d73231e9-e9a2-4e46-a996-217dcb635fab, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 FREE-HK-IN-TH-1H, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: abbce4f6-44cf-40c1-a757-d42e072b5350, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-01-1M, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 1eb33d57-1d1f-4c80-ba09-ac3567661738, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1K, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 51e88ee5-8be2-416e-aafb-486ccf0d60c7, udp: true}
+  - {name: 新域抗封线 A-1B, server: w1.lianjieni.com, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: w1.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w1.lianjieni.com}}, udp: true}
+  - {name: 新域抗封线 C-1B, server: w3.lianjieni.com, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: w3.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w3.lianjieni.com}}, udp: true}
+  - {name: 🇭🇰 HK-A-1B, server: 207.57.128.27, port: 8081, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: firefox, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-01-1E, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 23f1298e-c7f4-473b-bf3c-9518e6261892, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 01 联通电信推荐-1C, server: www.shopify.com, port: 2053, type: vless, uuid: 83ba0b9a-0fba-434b-85cc-4dc9d9d9c8f5, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
+  - {name: 🇸🇬 优选新线 H-1B, server: cdn12.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn12.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn12.caihongmao.org}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1P, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: ad6d21fa-68e9-4af6-9a91-52f08b6685e5, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1N, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 7a14bc93-05cd-4ec8-b269-0dbf570a1f7f, udp: true}
+  - {name: 🇺🇸 美国 02 联通电信推荐-1A, server: www.visa.cn, port: 2053, type: vless, uuid: b1c7da23-1f01-4810-9c4e-8d7d2b0ff73a, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 01 联通电信推荐-1A, server: www.shopify.com, port: 2053, type: vless, uuid: b1c7da23-1f01-4810-9c4e-8d7d2b0ff73a, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
   - {name: 🇺🇸 美国 02 联通电信推荐-1C, server: www.visa.cn, port: 2053, type: vless, uuid: 83ba0b9a-0fba-434b-85cc-4dc9d9d9c8f5, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
-  - {name: 🇸🇬 优选新线 C-1B, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 99e04480-60e1-4d16-a155-363624804a5a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1R, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 622ae01b-dd8d-45df-9d88-fcc5bf84e23f, udp: true}
-  - {name: 🇭🇰 FREE-HK-IN-TH-1E, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: e16139d6-6dbe-4632-b5b9-e79c0175f09e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HK-01-1A, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 747f5292-580e-4317-803f-51c2c11f3ceb, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1B, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 31b148ab-0184-469e-bd68-9250d28fe72c, udp: true}
+  - {name: 🇭🇰 FREE-HK-IN-TH-1F, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 73e545b2-2da7-4ce4-8978-9bb7c668ff72, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1C, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 优选新线 F-1C, server: cdn10.caihongmao.org, port: 443, type: vless, uuid: ce8ce382-33ca-4e8c-a753-d53d987a4fe0, tls: true, servername: cdn10.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn10.caihongmao.org}}, udp: true}
+  - {name: 🇸🇬 优选新线 E-1B, server: cdn9.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn9.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn9.caihongmao.org}}, udp: true}
+  - {name: 🇭🇰 HK-A-1A, server: 207.57.128.27, port: 8081, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 新域抗封线 D-1A, server: w4.lianjieni.com, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: w4.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w4.lianjieni.com}}, udp: true}
+  - {name: 🇸🇬 优选新线 G-1C, server: cdn11.caihongmao.org, port: 443, type: vless, uuid: ce8ce382-33ca-4e8c-a753-d53d987a4fe0, tls: true, servername: cdn11.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn11.caihongmao.org}}, udp: true}
+  - {name: 🇺🇸 洛杉矶-新VPS-01-1D, server: 107.174.201.177, port: 30001, type: ss, cipher: aes-128-gcm, password: 7430ee84-c0da-4617-9cf7-5f64436e12ab, udp: true}
+  - {name: 🇭🇰 HK-01-1L, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 21a7a70c-3443-4038-9c1d-04a8790b1b02, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 备用线路 A-1A, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
+  - {name: 新域抗封线 D-1C, server: w4.lianjieni.com, port: 443, type: vless, uuid: ce8ce382-33ca-4e8c-a753-d53d987a4fe0, tls: true, servername: w4.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w4.lianjieni.com}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 6e7d0df2-d80c-42ce-817b-e5ff920e4851, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1E, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: cac8ea72-8869-401d-98e5-7ae87209bee8, udp: true}
+  - {name: 🇭🇰 HK-A-1C, server: 207.57.128.27, port: 8081, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇸🇬 优选新线 F-1B, server: cdn10.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn10.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn10.caihongmao.org}}, udp: true}
+  - {name: 新域抗封线 B-1A, server: w2.lianjieni.com, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: w2.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w2.lianjieni.com}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1C, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 3f25be87-248c-456e-965c-a88306528044, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1O, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: ec9d8d8a-adf5-4ba6-8eac-d20e72bd146c, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1B, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: a2045e3b-004c-465d-a857-cd31e5102000, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: ios, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-01-1J, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 64c9b960-db98-48fa-9b8b-36482f9d7503, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇸🇬 优选新线 F-1A, server: cdn10.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn10.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn10.caihongmao.org}}, udp: true}
+  - {name: 🇸🇬 优选新线 H-1A, server: cdn12.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn12.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn12.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 64facc31-97f3-4fc8-9efc-e17099b39eac, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国 02 联通电信推荐-1D, server: www.visa.cn, port: 2053, type: vless, uuid: ea407f12-da85-4022-9d3c-504c4c52fce5, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1I, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: b425e5fa-8240-40cd-8a03-46748ea75b08, udp: true}
+  - {name: 🇺🇸 洛杉矶-新VPS-02-1A, server: 107.174.201.177, port: 443, type: ss, cipher: aes-128-gcm, password: 0c6af4bb-7bcc-4c0c-b7c6-c079db66484a, udp: true}
+  - {name: 🇺🇸 美国 01 联通电信推荐-1D, server: www.shopify.com, port: 2053, type: vless, uuid: ea407f12-da85-4022-9d3c-504c4c52fce5, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
+  - {name: 🇺🇸 洛杉矶-直连-1A, server: sg.dickaws.top, port: 23405, type: hysteria2, password: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, auth: 48bbb266-d56f-4a79-aa5c-67e3c3920d1a, sni: caltech.edu, up: 600, down: 600, skip-cert-verify: true, obfs: salamander, obfs-password: Ml0mynbAAQFLiEHW, udp: true}
+  - {name: 🇭🇰 HK-01-1G, server: m.cqwer.xyz, port: 443, type: vmess, uuid: e11cbd5f-be19-44f1-b800-c3c6567be629, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 64facc31-97f3-4fc8-9efc-e17099b39eac, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK-01-1A, server: m.cqwer.xyz, port: 443, type: vmess, uuid: a6f39e28-ec2b-4942-96a0-d36bb63a12d5, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇸🇬 优选新线 D-1C, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: ce8ce382-33ca-4e8c-a753-d53d987a4fe0, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
+  - {name: 🇺🇸 美国-洛杉矶-PRO-1A, server: 5.253.38.67, port: 40444, type: vless, uuid: 6c528dcc-a201-4061-8303-35d371d85d63, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 6e7d0df2-d80c-42ce-817b-e5ff920e4851, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1L, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 880f53d3-d4ba-4c85-83fb-b918a76ae19b, udp: true}
+  - {name: 🇭🇰 FREE-HK-IN-TH-1C, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 8bd385f7-c440-4844-9b6f-315256d575b3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1H, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 31b148ab-0184-469e-bd68-9250d28fe72c, udp: true}
+  - {name: 🇺🇸 洛杉矶-移动-TUIC-01-1D, server: node.chuofankeji.top, port: 24443, type: tuic, password: 7430ee84-c0da-4617-9cf7-5f64436e12ab, uuid: 7430ee84-c0da-4617-9cf7-5f64436e12ab, sni: node.chuofankeji.top, skip-cert-verify: false, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
+  - {name: 🇺🇸 美国 02 联通电信推荐-1E, server: www.visa.cn, port: 2053, type: vless, uuid: 601e6cf9-3f2e-49d8-a0ee-49db1cb21c57, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
+  - {name: 🇺🇸 洛杉矶-移动-TUIC-01-1B, server: node.chuofankeji.top, port: 24443, type: tuic, password: 477346fb-cd81-4ffd-82f1-b92dac24d056, uuid: 477346fb-cd81-4ffd-82f1-b92dac24d056, sni: node.chuofankeji.top, skip-cert-verify: false, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
   - {name: 🇭🇰 HONG KONG 01-1A, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 44b9c4ad-3de3-4632-9208-1b9f752e9ed0, udp: true}
-  - {name: 🇸🇬 优选新线 B-1A, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
-  - {name: 🇭🇰 FREE-HK-IN-TH-1F, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 8d36580f-bae5-4f00-88a6-12615817472d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HK-A-1C, server: 207.57.128.27, port: 8081, type: vless, uuid: 1bfe65ca-290e-4f3b-b11f-dd617c5a9cb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: bilDohzULHmvZE7BP9ym6URVT6R1DM06v2LLqNo7lh0, short-id: "a1b2c3d4" }, servername: aws.amazon.com, client-fingerprint: qq, network: tcp, udp: true}
-  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 144161fa-7012-4e8e-b591-66bf03944342, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 优选新线 B-1B, server: cdn5.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn5.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn5.caihongmao.org}}, udp: true}
-  - {name: 🇭🇰 HK-01-1L, server: m.cqwer.xyz, port: 443, type: vmess, uuid: df29902c-8dce-4486-98f4-d87964a62bf1, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇭🇰 HK-01-1O, server: m.cqwer.xyz, port: 443, type: vmess, uuid: a6f39e28-ec2b-4942-96a0-d36bb63a12d5, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇺🇸 洛杉矶-直连-1A, server: sg.dickaws.top, port: 23405, type: hysteria2, password: a23a00cb-685e-4a44-bd21-1b3debaea9ea, auth: a23a00cb-685e-4a44-bd21-1b3debaea9ea, sni: caltech.edu, up: 600, down: 600, skip-cert-verify: true, obfs: salamander, obfs-password: Ml0mynbAAQFLiEHW, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1C, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 51e88ee5-8be2-416e-aafb-486ccf0d60c7, udp: true}
-  - {name: 🇺🇸 美国-洛杉矶-PRO-1A, server: 5.253.38.67, port: 40444, type: vless, uuid: 85000d2d-a1f4-4183-beb1-9c714d47726d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HK-01-1S, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 20de9e26-28cf-4b5e-b298-912f3f855f62, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
-  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 144161fa-7012-4e8e-b591-66bf03944342, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1J, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: cac8ea72-8869-401d-98e5-7ae87209bee8, udp: true}
+  - {name: 🇺🇸 美国-洛杉矶-PRO-1C, server: 5.253.38.67, port: 40444, type: vless, uuid: 78aa481a-b794-4c13-926e-68f78d729ffa, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-01-1I, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 20de9e26-28cf-4b5e-b298-912f3f855f62, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇺🇸 美国-洛杉矶-PRO-1B, server: 5.253.38.67, port: 40444, type: vless, uuid: 85000d2d-a1f4-4183-beb1-9c714d47726d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 83c43ce6-c713-42a3-8fd5-fbd25591b662, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 01 联通电信推荐-1E, server: www.shopify.com, port: 2053, type: vless, uuid: 601e6cf9-3f2e-49d8-a0ee-49db1cb21c57, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
+  - {name: 中国-北京-线路1, server: 113.47.161.119, port: 59443, type: vless, uuid: f296ef74-cf5c-4fc8-baf1-90f416cadc85, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: yo0xMr9K2dSChs8g5J3KM4xSlm4IJhFPqhGD41OMDDo, short-id: "1e4bb2d9" }, servername: www.nvidia.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: MZ-VBP, server: empty.node, port: 443, type: trojan, password: bbab7fe0-08c8-40f6-a17a-1679ae7df356, sni: empty.node, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1S, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 35cf94ce-0f2c-4e97-b1aa-ff9d4e8ff951, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1M, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 76e09585-edf1-4715-a95e-37bcd1bf4f8b, udp: true}
+  - {name: 🇺🇸 洛杉矶-移动-TUIC-01-1C, server: node.chuofankeji.top, port: 24443, type: tuic, password: 898c384c-a94b-46fe-b967-b19e2ba1865e, uuid: 898c384c-a94b-46fe-b967-b19e2ba1865e, sni: node.chuofankeji.top, skip-cert-verify: false, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
+  - {name: 🇺🇸 洛杉矶-新VPS-01-1C, server: 107.174.201.177, port: 30001, type: ss, cipher: aes-128-gcm, password: 898c384c-a94b-46fe-b967-b19e2ba1865e, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1G, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 3439139e-acf3-4d0f-9e7d-93cd3ca8e028, udp: true}
+  - {name: 🇭🇰 FREE-HK-IN-TH-1E, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 8d36580f-bae5-4f00-88a6-12615817472d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-01-1C, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 38a2efd0-3159-4541-b395-596ac188482f, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇭🇰 HK-01-1D, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 9126e6ff-b467-4569-aab0-777f20284f8a, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇸🇬 优选新线 E-1C, server: cdn9.caihongmao.org, port: 443, type: vless, uuid: ce8ce382-33ca-4e8c-a753-d53d987a4fe0, tls: true, servername: cdn9.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn9.caihongmao.org}}, udp: true}
+  - {name: 🇭🇰 FREE-HK-IN-TH-1L, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 9eb3f04e-2a7f-4260-876e-8e54b1c20a08, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 备用线路 A-1C, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: ce8ce382-33ca-4e8c-a753-d53d987a4fe0, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1R, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 4013d8f0-3d75-45fb-bf5d-6fa71044eda3, udp: true}
+  - {name: 🇭🇰 HK-01-1R, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 23b2202a-d7d7-48aa-a040-cfaee7623ffb, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 64facc31-97f3-4fc8-9efc-e17099b39eac, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 洛杉矶-新VPS-02-1C, server: 107.174.201.177, port: 443, type: ss, cipher: aes-128-gcm, password: 898c384c-a94b-46fe-b967-b19e2ba1865e, udp: true}
+  - {name: 🇭🇰 FREE-HK-IN-TH-1G, server: f-hk-th.mtnode.top, port: 443, type: vless, uuid: 5933a71e-b6df-41bd-9c2d-56e6f29f5a7b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: J7UWzNxuI6XRzTWTIU1h8Gw-ReNKqTXcXVOhJNsEji8, short-id: "67c8cb79" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1U, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 14b1e089-06a0-41bc-aa18-f4fceb830e0d, udp: true}
+  - {name: 🇺🇸 洛杉矶-新VPS-01-1B, server: 107.174.201.177, port: 30001, type: ss, cipher: aes-128-gcm, password: 477346fb-cd81-4ffd-82f1-b92dac24d056, udp: true}
+  - {name: 🇺🇸 美国 02 联通电信推荐-1B, server: www.visa.cn, port: 2053, type: vless, uuid: a4f2aafb-827a-42d1-85a8-a63b1a2787f7, tls: true, servername: ccsus11-cdn-cdn.nekohub.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws?ed=4096", headers: {Host: ccsus11-cdn.nekohub.xyz}}, udp: true}
+  - {name: 🇺🇸 洛杉矶-新VPS-03-1C, server: node.chuofankeji.top, port: 443, type: vless, uuid: 898c384c-a94b-46fe-b967-b19e2ba1865e, tls: true, servername: node.chuofankeji.top, network: tcp, udp: true}
+  - {name: 🇺🇸 洛杉矶-新VPS-03-1A, server: node.chuofankeji.top, port: 443, type: vless, uuid: 0c6af4bb-7bcc-4c0c-b7c6-c079db66484a, tls: true, servername: node.chuofankeji.top, network: tcp, udp: true}
+  - {name: 🇺🇸 洛杉矶-新VPS-03-1D, server: node.chuofankeji.top, port: 443, type: vless, uuid: 7430ee84-c0da-4617-9cf7-5f64436e12ab, tls: true, servername: node.chuofankeji.top, network: tcp, udp: true}
+  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 83c43ce6-c713-42a3-8fd5-fbd25591b662, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 优选新线 G-1A, server: cdn11.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn11.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn11.caihongmao.org}}, udp: true}
+  - {name: 🇺🇸 洛杉矶-新VPS-02-1B, server: 107.174.201.177, port: 443, type: ss, cipher: aes-128-gcm, password: 477346fb-cd81-4ffd-82f1-b92dac24d056, udp: true}
+  - {name: 🇭🇰 HK-01-1O, server: m.cqwer.xyz, port: 443, type: vmess, uuid: 086591d7-79b8-48e5-a96f-a4ab70d6e259, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇰🇷 韩国节点-B-1A, server: kr-b.bnsss.cc, port: 8080, type: vless, uuid: 5ca5f8d2-4270-4872-80d3-98b4bc169769, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GP-JgvD9yK2QmWphYepITYbwqecHp1XeqHcCB-wlaC4, short-id: "1e92c68e" }, servername: aws.amazon.com, client-fingerprint: qq, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 64facc31-97f3-4fc8-9efc-e17099b39eac, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇸🇬 优选新线 C-1A, server: cdn6.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn6.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn6.caihongmao.org}}, udp: true}
+  - {name: 🇸🇬 优选新线 H-1C, server: cdn12.caihongmao.org, port: 443, type: vless, uuid: ce8ce382-33ca-4e8c-a753-d53d987a4fe0, tls: true, servername: cdn12.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn12.caihongmao.org}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 6e7d0df2-d80c-42ce-817b-e5ff920e4851, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1B, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: f7681d12-8765-4e5b-8d0c-abbed48e3544, udp: true}
+  - {name: 备用线路 A-1B, server: cdn2.caihongmao.org, port: 443, type: vless, uuid: 6c36e65e-54c7-4255-8827-bc7b4c6cff63, tls: true, servername: cdn2.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn2.caihongmao.org}}, udp: true}
+  - {name: 🇭🇰 HK-01-1U, server: m.cqwer.xyz, port: 443, type: vmess, uuid: df29902c-8dce-4486-98f4-d87964a62bf1, alterId: 0, cipher: auto, tls: true, servername: m.cqwer.xyz, network: ws, ws-opts: {path: /b3f8a2c1, headers: {Host: m.cqwer.xyz}}, udp: true}
+  - {name: 🇺🇸 洛杉矶-移动-TUIC-01-1A, server: node.chuofankeji.top, port: 24443, type: tuic, password: 0c6af4bb-7bcc-4c0c-b7c6-c079db66484a, uuid: 0c6af4bb-7bcc-4c0c-b7c6-c079db66484a, sni: node.chuofankeji.top, skip-cert-verify: false, alpn: [h3], disable-sni: false, reduce-rtt: false, request-timeout: 0, udp-relay-mode: native, congestion-controller: bbr}
+  - {name: 🇸🇬 优选新线 D-1A, server: cdn7.caihongmao.org, port: 443, type: vless, uuid: 540d2aff-022c-4e8d-8c38-a393ba29f359, tls: true, servername: cdn7.caihongmao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: cdn7.caihongmao.org}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 HK-01-1I
-      - 🇺🇸 洛杉矶-直连-1B
-      - 🇺🇸 洛杉矶-新VPS-02-1C
-      - 🇭🇰 HK-01-1H
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 优选新线 C-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国 01 联通电信推荐-1D
-      - 🇭🇰 HK-01-1C
-      - 🇺🇸 洛杉矶-新VPS-02-1B
-      - 🇺🇸 美国 02 联通电信推荐-1B
-      - 🇭🇰 HK-A-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1C
-      - 🇸🇬 优选新线 D-1B
-      - 🇭🇰 FREE-HK-IN-TH-1C
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇨🇳 中国联通节点1
-      - 🇺🇸 洛杉矶-新VPS-01-1B
-      - 🇭🇰 HK-01-1R
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HONG KONG 01-1O
-      - 🇭🇰 HK-01-1E
-      - G I C A B N H T H N
-      - 🇭🇰 HK-01-1T
-      - 🇭🇰 HONG KONG 01-1Q
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇭🇰 HK-01-1P
-      - 🇺🇸 洛杉矶-新VPS-01-1C
-      - 🇭🇰 HK-A-1A
-      - 🇺🇸 美国 02 联通电信推荐-1A
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇺🇸 洛杉矶-新VPS-01-1A
-      - 🇭🇰 FREE-HK-IN-TH-1G
-      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇭🇰 HK-01-1Q
+      - 新域抗封线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 G-1B
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 E-1A
+      - 🇨🇳 中国联通节点1
+      - 🇭🇰 HK-01-1V
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇭🇰 HK-01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1A
+      - 🇭🇰 HONG KONG 01-1J
+      - 🇭🇰 HONG KONG 01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1D
+      - 新域抗封线 C-1C
+      - 🇸🇬 优选新线 B-1A
+      - G I C A B N H T H N
       - 🇭🇰 HK-01-1K
+      - 🇭🇰 FREE-HK-IN-TH-1I
+      - 新域抗封线 D-1B
+      - 🇭🇰 HK-01-1N
+      - 新域抗封线 B-1B
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇭🇰 HK-01-1F
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇭🇰 HK-01-1P
+      - 🇸🇬 优选新线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1B
+      - 🇭🇰 HK-01-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1D
+      - 🇸🇬 优选新线 B-1B
+      - 新域抗封线 A-1A
+      - 🇹🇼 台湾高速节点
+      - 🇺🇸 美国 01 联通电信推荐-1B
+      - 新域抗封线 A-1C
+      - 🇸🇬 优选新线 D-1B
+      - 🇭🇰 HK-01-1H
+      - 🇭🇰 HONG KONG 01-1D
+      - 🇭🇰 FREE-HK-IN-TH-1J
+      - 🇭🇰 HK-01-1S
+      - 🇸🇬 优选新线 C-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1B
+      - 🇸🇬 优选新线 C-1C
+      - 新域抗封线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1K
+      - 🇭🇰 FREE-HK-IN-TH-1H
+      - 🇭🇰 HK-01-1M
+      - 🇭🇰 HONG KONG 01-1K
+      - 新域抗封线 A-1B
+      - 新域抗封线 C-1B
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HK-01-1E
+      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇸🇬 优选新线 H-1B
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇺🇸 美国 02 联通电信推荐-1A
+      - 🇺🇸 美国 01 联通电信推荐-1A
+      - 🇺🇸 美国 02 联通电信推荐-1C
+      - 🇭🇰 FREE-HK-IN-TH-1F
+      - 🇰🇷 韩国节点-B-1C
+      - 🇸🇬 优选新线 F-1C
+      - 🇸🇬 优选新线 E-1B
+      - 🇭🇰 HK-A-1A
+      - 新域抗封线 D-1A
+      - 🇸🇬 优选新线 G-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1D
+      - 🇭🇰 HK-01-1L
+      - 备用线路 A-1A
+      - 新域抗封线 D-1C
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇭🇰 HK-A-1C
+      - 🇸🇬 优选新线 F-1B
+      - 新域抗封线 B-1A
+      - 🇭🇰 HONG KONG 01-1C
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇰🇷 韩国节点-B-1B
+      - 🇭🇰 HK-01-1J
+      - 🇸🇬 优选新线 F-1A
+      - 🇸🇬 优选新线 H-1A
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 02 联通电信推荐-1D
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇺🇸 洛杉矶-新VPS-02-1A
+      - 🇺🇸 美国 01 联通电信推荐-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇭🇰 HK-01-1G
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HK-01-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇭🇰 FREE-HK-IN-TH-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
+      - 🇺🇸 美国 02 联通电信推荐-1E
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇺🇸 美国-洛杉矶-PRO-1C
+      - 🇭🇰 HK-01-1I
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 01 联通电信推荐-1E
+      - 中国-北京-线路1
+      - MZ-VBP
+      - 🇭🇰 HONG KONG 01-1S
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1C
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 FREE-HK-IN-TH-1E
+      - 🇭🇰 HK-01-1C
+      - 🇭🇰 HK-01-1D
+      - 🇸🇬 优选新线 E-1C
+      - 🇭🇰 FREE-HK-IN-TH-1L
+      - 备用线路 A-1C
+      - 🇭🇰 HONG KONG 01-1R
+      - 🇭🇰 HK-01-1R
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1C
+      - 🇭🇰 FREE-HK-IN-TH-1G
+      - 🇭🇰 HONG KONG 01-1U
+      - 🇺🇸 洛杉矶-新VPS-01-1B
+      - 🇺🇸 美国 02 联通电信推荐-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1C
+      - 🇺🇸 洛杉矶-新VPS-03-1A
+      - 🇺🇸 洛杉矶-新VPS-03-1D
+      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 优选新线 G-1A
+      - 🇺🇸 洛杉矶-新VPS-02-1B
+      - 🇭🇰 HK-01-1O
+      - 🇰🇷 韩国节点-B-1A
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇸🇬 优选新线 H-1C
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇭🇰 HONG KONG 01-1B
       - 备用线路 A-1B
       - 🇭🇰 HK-01-1U
-      - 🇺🇸 美国 02 联通电信推荐-1D
-      - 🇰🇷 韩国节点-B-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 FREE-HK-IN-TH-1H
-      - 🇺🇸 洛杉矶-新VPS-02-1A
-      - 🇸🇬 优选新线 E-1A
-      - 🇭🇰 FREE-HK-IN-TH-1D
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇭🇰 HONG KONG 01-1S
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 HK-01-1B
-      - 🇺🇸 美国 01 联通电信推荐-1B
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HK-01-1M
-      - 🇸🇬 优选新线 E-1B
       - 🇺🇸 洛杉矶-移动-TUIC-01-1A
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
-      - 🇸🇬 优选新线 F-1A
-      - 🇭🇰 HK-01-1F
-      - 🇭🇰 HK-01-1J
-      - 🇸🇬 优选新线 F-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇺🇸 洛杉矶-新VPS-03-1D
-      - 🇺🇸 洛杉矶-新VPS-02-1D
-      - 🇭🇰 HONG KONG 01-1T
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇭🇰 FREE-HK-IN-TH-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 HK-01-1D
-      - 🇺🇸 洛杉矶-新VPS-03-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1A
-      - 🇺🇸 美国 01 联通电信推荐-1A
-      - 🇭🇰 HK-01-1N
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
-      - 🇭🇰 HONG KONG 01-1K
-      - M5-NCB
-      - 🇭🇰 HK-01-1Q
-      - 🇭🇰 FREE-HK-IN-TH-1A
-      - 🇺🇸 洛杉矶-新VPS-01-1D
-      - 🇭🇰 FREE-HK-IN-TH-1I
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
-      - 🇭🇰 HK-01-1G
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇺🇸 美国 02 联通电信推荐-1C
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇭🇰 HONG KONG 01-1R
-      - 🇭🇰 FREE-HK-IN-TH-1E
-      - 🇭🇰 HK-01-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇸🇬 优选新线 B-1A
-      - 🇭🇰 FREE-HK-IN-TH-1F
-      - 🇭🇰 HK-A-1C
-      - 🇹🇼 台湾高速节点3
-      - 🇸🇬 优选新线 B-1B
-      - 🇭🇰 HK-01-1L
-      - 🇭🇰 HK-01-1O
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1A
-      - 🇭🇰 HK-01-1S
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HONG KONG 01-1J
+      - 🇸🇬 优选新线 D-1A
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 HK-01-1I
-      - 🇺🇸 洛杉矶-直连-1B
-      - 🇺🇸 洛杉矶-新VPS-02-1C
-      - 🇭🇰 HK-01-1H
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 优选新线 C-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国 01 联通电信推荐-1D
-      - 🇭🇰 HK-01-1C
-      - 🇺🇸 洛杉矶-新VPS-02-1B
-      - 🇺🇸 美国 02 联通电信推荐-1B
-      - 🇭🇰 HK-A-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1C
-      - 🇸🇬 优选新线 D-1B
-      - 🇭🇰 FREE-HK-IN-TH-1C
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇨🇳 中国联通节点1
-      - 🇺🇸 洛杉矶-新VPS-01-1B
-      - 🇭🇰 HK-01-1R
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HONG KONG 01-1O
-      - 🇭🇰 HK-01-1E
-      - G I C A B N H T H N
-      - 🇭🇰 HK-01-1T
-      - 🇭🇰 HONG KONG 01-1Q
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇭🇰 HK-01-1P
-      - 🇺🇸 洛杉矶-新VPS-01-1C
-      - 🇭🇰 HK-A-1A
-      - 🇺🇸 美国 02 联通电信推荐-1A
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇺🇸 洛杉矶-新VPS-01-1A
-      - 🇭🇰 FREE-HK-IN-TH-1G
-      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇭🇰 HK-01-1Q
+      - 新域抗封线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 G-1B
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 E-1A
+      - 🇨🇳 中国联通节点1
+      - 🇭🇰 HK-01-1V
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇭🇰 HK-01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1A
+      - 🇭🇰 HONG KONG 01-1J
+      - 🇭🇰 HONG KONG 01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1D
+      - 新域抗封线 C-1C
+      - 🇸🇬 优选新线 B-1A
+      - G I C A B N H T H N
       - 🇭🇰 HK-01-1K
+      - 🇭🇰 FREE-HK-IN-TH-1I
+      - 新域抗封线 D-1B
+      - 🇭🇰 HK-01-1N
+      - 新域抗封线 B-1B
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇭🇰 HK-01-1F
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇭🇰 HK-01-1P
+      - 🇸🇬 优选新线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1B
+      - 🇭🇰 HK-01-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1D
+      - 🇸🇬 优选新线 B-1B
+      - 新域抗封线 A-1A
+      - 🇹🇼 台湾高速节点
+      - 🇺🇸 美国 01 联通电信推荐-1B
+      - 新域抗封线 A-1C
+      - 🇸🇬 优选新线 D-1B
+      - 🇭🇰 HK-01-1H
+      - 🇭🇰 HONG KONG 01-1D
+      - 🇭🇰 FREE-HK-IN-TH-1J
+      - 🇭🇰 HK-01-1S
+      - 🇸🇬 优选新线 C-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1B
+      - 🇸🇬 优选新线 C-1C
+      - 新域抗封线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1K
+      - 🇭🇰 FREE-HK-IN-TH-1H
+      - 🇭🇰 HK-01-1M
+      - 🇭🇰 HONG KONG 01-1K
+      - 新域抗封线 A-1B
+      - 新域抗封线 C-1B
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HK-01-1E
+      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇸🇬 优选新线 H-1B
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇺🇸 美国 02 联通电信推荐-1A
+      - 🇺🇸 美国 01 联通电信推荐-1A
+      - 🇺🇸 美国 02 联通电信推荐-1C
+      - 🇭🇰 FREE-HK-IN-TH-1F
+      - 🇰🇷 韩国节点-B-1C
+      - 🇸🇬 优选新线 F-1C
+      - 🇸🇬 优选新线 E-1B
+      - 🇭🇰 HK-A-1A
+      - 新域抗封线 D-1A
+      - 🇸🇬 优选新线 G-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1D
+      - 🇭🇰 HK-01-1L
+      - 备用线路 A-1A
+      - 新域抗封线 D-1C
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇭🇰 HK-A-1C
+      - 🇸🇬 优选新线 F-1B
+      - 新域抗封线 B-1A
+      - 🇭🇰 HONG KONG 01-1C
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇰🇷 韩国节点-B-1B
+      - 🇭🇰 HK-01-1J
+      - 🇸🇬 优选新线 F-1A
+      - 🇸🇬 优选新线 H-1A
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 02 联通电信推荐-1D
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇺🇸 洛杉矶-新VPS-02-1A
+      - 🇺🇸 美国 01 联通电信推荐-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇭🇰 HK-01-1G
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HK-01-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇭🇰 FREE-HK-IN-TH-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
+      - 🇺🇸 美国 02 联通电信推荐-1E
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇺🇸 美国-洛杉矶-PRO-1C
+      - 🇭🇰 HK-01-1I
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 01 联通电信推荐-1E
+      - 中国-北京-线路1
+      - MZ-VBP
+      - 🇭🇰 HONG KONG 01-1S
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1C
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 FREE-HK-IN-TH-1E
+      - 🇭🇰 HK-01-1C
+      - 🇭🇰 HK-01-1D
+      - 🇸🇬 优选新线 E-1C
+      - 🇭🇰 FREE-HK-IN-TH-1L
+      - 备用线路 A-1C
+      - 🇭🇰 HONG KONG 01-1R
+      - 🇭🇰 HK-01-1R
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1C
+      - 🇭🇰 FREE-HK-IN-TH-1G
+      - 🇭🇰 HONG KONG 01-1U
+      - 🇺🇸 洛杉矶-新VPS-01-1B
+      - 🇺🇸 美国 02 联通电信推荐-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1C
+      - 🇺🇸 洛杉矶-新VPS-03-1A
+      - 🇺🇸 洛杉矶-新VPS-03-1D
+      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 优选新线 G-1A
+      - 🇺🇸 洛杉矶-新VPS-02-1B
+      - 🇭🇰 HK-01-1O
+      - 🇰🇷 韩国节点-B-1A
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇸🇬 优选新线 H-1C
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇭🇰 HONG KONG 01-1B
       - 备用线路 A-1B
       - 🇭🇰 HK-01-1U
-      - 🇺🇸 美国 02 联通电信推荐-1D
-      - 🇰🇷 韩国节点-B-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 FREE-HK-IN-TH-1H
-      - 🇺🇸 洛杉矶-新VPS-02-1A
-      - 🇸🇬 优选新线 E-1A
-      - 🇭🇰 FREE-HK-IN-TH-1D
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇭🇰 HONG KONG 01-1S
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 HK-01-1B
-      - 🇺🇸 美国 01 联通电信推荐-1B
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HK-01-1M
-      - 🇸🇬 优选新线 E-1B
       - 🇺🇸 洛杉矶-移动-TUIC-01-1A
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
-      - 🇸🇬 优选新线 F-1A
-      - 🇭🇰 HK-01-1F
-      - 🇭🇰 HK-01-1J
-      - 🇸🇬 优选新线 F-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇺🇸 洛杉矶-新VPS-03-1D
-      - 🇺🇸 洛杉矶-新VPS-02-1D
-      - 🇭🇰 HONG KONG 01-1T
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇭🇰 FREE-HK-IN-TH-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 HK-01-1D
-      - 🇺🇸 洛杉矶-新VPS-03-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1A
-      - 🇺🇸 美国 01 联通电信推荐-1A
-      - 🇭🇰 HK-01-1N
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
-      - 🇭🇰 HONG KONG 01-1K
-      - M5-NCB
-      - 🇭🇰 HK-01-1Q
-      - 🇭🇰 FREE-HK-IN-TH-1A
-      - 🇺🇸 洛杉矶-新VPS-01-1D
-      - 🇭🇰 FREE-HK-IN-TH-1I
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
-      - 🇭🇰 HK-01-1G
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇺🇸 美国 02 联通电信推荐-1C
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇭🇰 HONG KONG 01-1R
-      - 🇭🇰 FREE-HK-IN-TH-1E
-      - 🇭🇰 HK-01-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇸🇬 优选新线 B-1A
-      - 🇭🇰 FREE-HK-IN-TH-1F
-      - 🇭🇰 HK-A-1C
-      - 🇹🇼 台湾高速节点3
-      - 🇸🇬 优选新线 B-1B
-      - 🇭🇰 HK-01-1L
-      - 🇭🇰 HK-01-1O
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1A
-      - 🇭🇰 HK-01-1S
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HONG KONG 01-1J
+      - 🇸🇬 优选新线 D-1A
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 HK-01-1I
-      - 🇺🇸 洛杉矶-直连-1B
-      - 🇺🇸 洛杉矶-新VPS-02-1C
-      - 🇭🇰 HK-01-1H
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 优选新线 C-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国 01 联通电信推荐-1D
-      - 🇭🇰 HK-01-1C
-      - 🇺🇸 洛杉矶-新VPS-02-1B
-      - 🇺🇸 美国 02 联通电信推荐-1B
-      - 🇭🇰 HK-A-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1C
-      - 🇸🇬 优选新线 D-1B
-      - 🇭🇰 FREE-HK-IN-TH-1C
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇨🇳 中国联通节点1
-      - 🇺🇸 洛杉矶-新VPS-01-1B
-      - 🇭🇰 HK-01-1R
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HONG KONG 01-1O
-      - 🇭🇰 HK-01-1E
-      - G I C A B N H T H N
-      - 🇭🇰 HK-01-1T
-      - 🇭🇰 HONG KONG 01-1Q
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇭🇰 HK-01-1P
-      - 🇺🇸 洛杉矶-新VPS-01-1C
-      - 🇭🇰 HK-A-1A
-      - 🇺🇸 美国 02 联通电信推荐-1A
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇺🇸 洛杉矶-新VPS-01-1A
-      - 🇭🇰 FREE-HK-IN-TH-1G
-      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇭🇰 HK-01-1Q
+      - 新域抗封线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 G-1B
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 E-1A
+      - 🇨🇳 中国联通节点1
+      - 🇭🇰 HK-01-1V
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇭🇰 HK-01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1A
+      - 🇭🇰 HONG KONG 01-1J
+      - 🇭🇰 HONG KONG 01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1D
+      - 新域抗封线 C-1C
+      - 🇸🇬 优选新线 B-1A
+      - G I C A B N H T H N
       - 🇭🇰 HK-01-1K
+      - 🇭🇰 FREE-HK-IN-TH-1I
+      - 新域抗封线 D-1B
+      - 🇭🇰 HK-01-1N
+      - 新域抗封线 B-1B
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇭🇰 HK-01-1F
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇭🇰 HK-01-1P
+      - 🇸🇬 优选新线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1B
+      - 🇭🇰 HK-01-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1D
+      - 🇸🇬 优选新线 B-1B
+      - 新域抗封线 A-1A
+      - 🇹🇼 台湾高速节点
+      - 🇺🇸 美国 01 联通电信推荐-1B
+      - 新域抗封线 A-1C
+      - 🇸🇬 优选新线 D-1B
+      - 🇭🇰 HK-01-1H
+      - 🇭🇰 HONG KONG 01-1D
+      - 🇭🇰 FREE-HK-IN-TH-1J
+      - 🇭🇰 HK-01-1S
+      - 🇸🇬 优选新线 C-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1B
+      - 🇸🇬 优选新线 C-1C
+      - 新域抗封线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1K
+      - 🇭🇰 FREE-HK-IN-TH-1H
+      - 🇭🇰 HK-01-1M
+      - 🇭🇰 HONG KONG 01-1K
+      - 新域抗封线 A-1B
+      - 新域抗封线 C-1B
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HK-01-1E
+      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇸🇬 优选新线 H-1B
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇺🇸 美国 02 联通电信推荐-1A
+      - 🇺🇸 美国 01 联通电信推荐-1A
+      - 🇺🇸 美国 02 联通电信推荐-1C
+      - 🇭🇰 FREE-HK-IN-TH-1F
+      - 🇰🇷 韩国节点-B-1C
+      - 🇸🇬 优选新线 F-1C
+      - 🇸🇬 优选新线 E-1B
+      - 🇭🇰 HK-A-1A
+      - 新域抗封线 D-1A
+      - 🇸🇬 优选新线 G-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1D
+      - 🇭🇰 HK-01-1L
+      - 备用线路 A-1A
+      - 新域抗封线 D-1C
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇭🇰 HK-A-1C
+      - 🇸🇬 优选新线 F-1B
+      - 新域抗封线 B-1A
+      - 🇭🇰 HONG KONG 01-1C
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇰🇷 韩国节点-B-1B
+      - 🇭🇰 HK-01-1J
+      - 🇸🇬 优选新线 F-1A
+      - 🇸🇬 优选新线 H-1A
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 02 联通电信推荐-1D
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇺🇸 洛杉矶-新VPS-02-1A
+      - 🇺🇸 美国 01 联通电信推荐-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇭🇰 HK-01-1G
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HK-01-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇭🇰 FREE-HK-IN-TH-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
+      - 🇺🇸 美国 02 联通电信推荐-1E
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇺🇸 美国-洛杉矶-PRO-1C
+      - 🇭🇰 HK-01-1I
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 01 联通电信推荐-1E
+      - 中国-北京-线路1
+      - MZ-VBP
+      - 🇭🇰 HONG KONG 01-1S
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1C
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 FREE-HK-IN-TH-1E
+      - 🇭🇰 HK-01-1C
+      - 🇭🇰 HK-01-1D
+      - 🇸🇬 优选新线 E-1C
+      - 🇭🇰 FREE-HK-IN-TH-1L
+      - 备用线路 A-1C
+      - 🇭🇰 HONG KONG 01-1R
+      - 🇭🇰 HK-01-1R
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1C
+      - 🇭🇰 FREE-HK-IN-TH-1G
+      - 🇭🇰 HONG KONG 01-1U
+      - 🇺🇸 洛杉矶-新VPS-01-1B
+      - 🇺🇸 美国 02 联通电信推荐-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1C
+      - 🇺🇸 洛杉矶-新VPS-03-1A
+      - 🇺🇸 洛杉矶-新VPS-03-1D
+      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 优选新线 G-1A
+      - 🇺🇸 洛杉矶-新VPS-02-1B
+      - 🇭🇰 HK-01-1O
+      - 🇰🇷 韩国节点-B-1A
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇸🇬 优选新线 H-1C
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇭🇰 HONG KONG 01-1B
       - 备用线路 A-1B
       - 🇭🇰 HK-01-1U
-      - 🇺🇸 美国 02 联通电信推荐-1D
-      - 🇰🇷 韩国节点-B-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 FREE-HK-IN-TH-1H
-      - 🇺🇸 洛杉矶-新VPS-02-1A
-      - 🇸🇬 优选新线 E-1A
-      - 🇭🇰 FREE-HK-IN-TH-1D
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇭🇰 HONG KONG 01-1S
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 HK-01-1B
-      - 🇺🇸 美国 01 联通电信推荐-1B
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HK-01-1M
-      - 🇸🇬 优选新线 E-1B
       - 🇺🇸 洛杉矶-移动-TUIC-01-1A
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
-      - 🇸🇬 优选新线 F-1A
-      - 🇭🇰 HK-01-1F
-      - 🇭🇰 HK-01-1J
-      - 🇸🇬 优选新线 F-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇺🇸 洛杉矶-新VPS-03-1D
-      - 🇺🇸 洛杉矶-新VPS-02-1D
-      - 🇭🇰 HONG KONG 01-1T
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇭🇰 FREE-HK-IN-TH-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 HK-01-1D
-      - 🇺🇸 洛杉矶-新VPS-03-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1A
-      - 🇺🇸 美国 01 联通电信推荐-1A
-      - 🇭🇰 HK-01-1N
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
-      - 🇭🇰 HONG KONG 01-1K
-      - M5-NCB
-      - 🇭🇰 HK-01-1Q
-      - 🇭🇰 FREE-HK-IN-TH-1A
-      - 🇺🇸 洛杉矶-新VPS-01-1D
-      - 🇭🇰 FREE-HK-IN-TH-1I
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
-      - 🇭🇰 HK-01-1G
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇺🇸 美国 02 联通电信推荐-1C
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇭🇰 HONG KONG 01-1R
-      - 🇭🇰 FREE-HK-IN-TH-1E
-      - 🇭🇰 HK-01-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇸🇬 优选新线 B-1A
-      - 🇭🇰 FREE-HK-IN-TH-1F
-      - 🇭🇰 HK-A-1C
-      - 🇹🇼 台湾高速节点3
-      - 🇸🇬 优选新线 B-1B
-      - 🇭🇰 HK-01-1L
-      - 🇭🇰 HK-01-1O
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1A
-      - 🇭🇰 HK-01-1S
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HONG KONG 01-1J
+      - 🇸🇬 优选新线 D-1A
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -484,474 +616,606 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 HK-01-1I
-      - 🇺🇸 洛杉矶-直连-1B
-      - 🇺🇸 洛杉矶-新VPS-02-1C
-      - 🇭🇰 HK-01-1H
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 优选新线 C-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国 01 联通电信推荐-1D
-      - 🇭🇰 HK-01-1C
-      - 🇺🇸 洛杉矶-新VPS-02-1B
-      - 🇺🇸 美国 02 联通电信推荐-1B
-      - 🇭🇰 HK-A-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1C
-      - 🇸🇬 优选新线 D-1B
-      - 🇭🇰 FREE-HK-IN-TH-1C
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇨🇳 中国联通节点1
-      - 🇺🇸 洛杉矶-新VPS-01-1B
-      - 🇭🇰 HK-01-1R
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HONG KONG 01-1O
-      - 🇭🇰 HK-01-1E
-      - G I C A B N H T H N
-      - 🇭🇰 HK-01-1T
-      - 🇭🇰 HONG KONG 01-1Q
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇭🇰 HK-01-1P
-      - 🇺🇸 洛杉矶-新VPS-01-1C
-      - 🇭🇰 HK-A-1A
-      - 🇺🇸 美国 02 联通电信推荐-1A
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇺🇸 洛杉矶-新VPS-01-1A
-      - 🇭🇰 FREE-HK-IN-TH-1G
-      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇭🇰 HK-01-1Q
+      - 新域抗封线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 G-1B
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 E-1A
+      - 🇨🇳 中国联通节点1
+      - 🇭🇰 HK-01-1V
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇭🇰 HK-01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1A
+      - 🇭🇰 HONG KONG 01-1J
+      - 🇭🇰 HONG KONG 01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1D
+      - 新域抗封线 C-1C
+      - 🇸🇬 优选新线 B-1A
+      - G I C A B N H T H N
       - 🇭🇰 HK-01-1K
+      - 🇭🇰 FREE-HK-IN-TH-1I
+      - 新域抗封线 D-1B
+      - 🇭🇰 HK-01-1N
+      - 新域抗封线 B-1B
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇭🇰 HK-01-1F
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇭🇰 HK-01-1P
+      - 🇸🇬 优选新线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1B
+      - 🇭🇰 HK-01-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1D
+      - 🇸🇬 优选新线 B-1B
+      - 新域抗封线 A-1A
+      - 🇹🇼 台湾高速节点
+      - 🇺🇸 美国 01 联通电信推荐-1B
+      - 新域抗封线 A-1C
+      - 🇸🇬 优选新线 D-1B
+      - 🇭🇰 HK-01-1H
+      - 🇭🇰 HONG KONG 01-1D
+      - 🇭🇰 FREE-HK-IN-TH-1J
+      - 🇭🇰 HK-01-1S
+      - 🇸🇬 优选新线 C-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1B
+      - 🇸🇬 优选新线 C-1C
+      - 新域抗封线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1K
+      - 🇭🇰 FREE-HK-IN-TH-1H
+      - 🇭🇰 HK-01-1M
+      - 🇭🇰 HONG KONG 01-1K
+      - 新域抗封线 A-1B
+      - 新域抗封线 C-1B
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HK-01-1E
+      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇸🇬 优选新线 H-1B
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇺🇸 美国 02 联通电信推荐-1A
+      - 🇺🇸 美国 01 联通电信推荐-1A
+      - 🇺🇸 美国 02 联通电信推荐-1C
+      - 🇭🇰 FREE-HK-IN-TH-1F
+      - 🇰🇷 韩国节点-B-1C
+      - 🇸🇬 优选新线 F-1C
+      - 🇸🇬 优选新线 E-1B
+      - 🇭🇰 HK-A-1A
+      - 新域抗封线 D-1A
+      - 🇸🇬 优选新线 G-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1D
+      - 🇭🇰 HK-01-1L
+      - 备用线路 A-1A
+      - 新域抗封线 D-1C
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇭🇰 HK-A-1C
+      - 🇸🇬 优选新线 F-1B
+      - 新域抗封线 B-1A
+      - 🇭🇰 HONG KONG 01-1C
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇰🇷 韩国节点-B-1B
+      - 🇭🇰 HK-01-1J
+      - 🇸🇬 优选新线 F-1A
+      - 🇸🇬 优选新线 H-1A
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 02 联通电信推荐-1D
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇺🇸 洛杉矶-新VPS-02-1A
+      - 🇺🇸 美国 01 联通电信推荐-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇭🇰 HK-01-1G
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HK-01-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇭🇰 FREE-HK-IN-TH-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
+      - 🇺🇸 美国 02 联通电信推荐-1E
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇺🇸 美国-洛杉矶-PRO-1C
+      - 🇭🇰 HK-01-1I
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 01 联通电信推荐-1E
+      - 中国-北京-线路1
+      - MZ-VBP
+      - 🇭🇰 HONG KONG 01-1S
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1C
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 FREE-HK-IN-TH-1E
+      - 🇭🇰 HK-01-1C
+      - 🇭🇰 HK-01-1D
+      - 🇸🇬 优选新线 E-1C
+      - 🇭🇰 FREE-HK-IN-TH-1L
+      - 备用线路 A-1C
+      - 🇭🇰 HONG KONG 01-1R
+      - 🇭🇰 HK-01-1R
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1C
+      - 🇭🇰 FREE-HK-IN-TH-1G
+      - 🇭🇰 HONG KONG 01-1U
+      - 🇺🇸 洛杉矶-新VPS-01-1B
+      - 🇺🇸 美国 02 联通电信推荐-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1C
+      - 🇺🇸 洛杉矶-新VPS-03-1A
+      - 🇺🇸 洛杉矶-新VPS-03-1D
+      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 优选新线 G-1A
+      - 🇺🇸 洛杉矶-新VPS-02-1B
+      - 🇭🇰 HK-01-1O
+      - 🇰🇷 韩国节点-B-1A
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇸🇬 优选新线 H-1C
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇭🇰 HONG KONG 01-1B
       - 备用线路 A-1B
       - 🇭🇰 HK-01-1U
-      - 🇺🇸 美国 02 联通电信推荐-1D
-      - 🇰🇷 韩国节点-B-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 FREE-HK-IN-TH-1H
-      - 🇺🇸 洛杉矶-新VPS-02-1A
-      - 🇸🇬 优选新线 E-1A
-      - 🇭🇰 FREE-HK-IN-TH-1D
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇭🇰 HONG KONG 01-1S
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 HK-01-1B
-      - 🇺🇸 美国 01 联通电信推荐-1B
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HK-01-1M
-      - 🇸🇬 优选新线 E-1B
       - 🇺🇸 洛杉矶-移动-TUIC-01-1A
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
-      - 🇸🇬 优选新线 F-1A
-      - 🇭🇰 HK-01-1F
-      - 🇭🇰 HK-01-1J
-      - 🇸🇬 优选新线 F-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇺🇸 洛杉矶-新VPS-03-1D
-      - 🇺🇸 洛杉矶-新VPS-02-1D
-      - 🇭🇰 HONG KONG 01-1T
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇭🇰 FREE-HK-IN-TH-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 HK-01-1D
-      - 🇺🇸 洛杉矶-新VPS-03-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1A
-      - 🇺🇸 美国 01 联通电信推荐-1A
-      - 🇭🇰 HK-01-1N
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
-      - 🇭🇰 HONG KONG 01-1K
-      - M5-NCB
-      - 🇭🇰 HK-01-1Q
-      - 🇭🇰 FREE-HK-IN-TH-1A
-      - 🇺🇸 洛杉矶-新VPS-01-1D
-      - 🇭🇰 FREE-HK-IN-TH-1I
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
-      - 🇭🇰 HK-01-1G
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇺🇸 美国 02 联通电信推荐-1C
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇭🇰 HONG KONG 01-1R
-      - 🇭🇰 FREE-HK-IN-TH-1E
-      - 🇭🇰 HK-01-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇸🇬 优选新线 B-1A
-      - 🇭🇰 FREE-HK-IN-TH-1F
-      - 🇭🇰 HK-A-1C
-      - 🇹🇼 台湾高速节点3
-      - 🇸🇬 优选新线 B-1B
-      - 🇭🇰 HK-01-1L
-      - 🇭🇰 HK-01-1O
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1A
-      - 🇭🇰 HK-01-1S
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HONG KONG 01-1J
+      - 🇸🇬 优选新线 D-1A
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🇹🇼 台湾高速节点2
-      - 🇹🇼 台湾高速节点3
       - 🇹🇼 台湾高速节点
+      - 🇹🇼 台湾高速节点3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇭🇰 HK-01-1I
-      - 🇺🇸 洛杉矶-直连-1B
-      - 🇺🇸 洛杉矶-新VPS-02-1C
-      - 🇭🇰 HK-01-1H
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 优选新线 C-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国 01 联通电信推荐-1D
-      - 🇭🇰 HK-01-1C
-      - 🇺🇸 洛杉矶-新VPS-02-1B
-      - 🇺🇸 美国 02 联通电信推荐-1B
-      - 🇭🇰 HK-A-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1C
-      - 🇸🇬 优选新线 D-1B
-      - 🇭🇰 FREE-HK-IN-TH-1C
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇨🇳 中国联通节点1
-      - 🇺🇸 洛杉矶-新VPS-01-1B
-      - 🇭🇰 HK-01-1R
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HONG KONG 01-1O
-      - 🇭🇰 HK-01-1E
-      - G I C A B N H T H N
-      - 🇭🇰 HK-01-1T
-      - 🇭🇰 HONG KONG 01-1Q
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇭🇰 HK-01-1P
-      - 🇺🇸 洛杉矶-新VPS-01-1C
-      - 🇭🇰 HK-A-1A
-      - 🇺🇸 美国 02 联通电信推荐-1A
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇺🇸 洛杉矶-新VPS-01-1A
-      - 🇭🇰 FREE-HK-IN-TH-1G
-      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇭🇰 HK-01-1Q
+      - 新域抗封线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 G-1B
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 E-1A
+      - 🇨🇳 中国联通节点1
+      - 🇭🇰 HK-01-1V
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇭🇰 HK-01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1A
+      - 🇭🇰 HONG KONG 01-1J
+      - 🇭🇰 HONG KONG 01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1D
+      - 新域抗封线 C-1C
+      - 🇸🇬 优选新线 B-1A
+      - G I C A B N H T H N
       - 🇭🇰 HK-01-1K
+      - 🇭🇰 FREE-HK-IN-TH-1I
+      - 新域抗封线 D-1B
+      - 🇭🇰 HK-01-1N
+      - 新域抗封线 B-1B
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇭🇰 HK-01-1F
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇭🇰 HK-01-1P
+      - 🇸🇬 优选新线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1B
+      - 🇭🇰 HK-01-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1D
+      - 🇸🇬 优选新线 B-1B
+      - 新域抗封线 A-1A
+      - 🇹🇼 台湾高速节点
+      - 🇺🇸 美国 01 联通电信推荐-1B
+      - 新域抗封线 A-1C
+      - 🇸🇬 优选新线 D-1B
+      - 🇭🇰 HK-01-1H
+      - 🇭🇰 HONG KONG 01-1D
+      - 🇭🇰 FREE-HK-IN-TH-1J
+      - 🇭🇰 HK-01-1S
+      - 🇸🇬 优选新线 C-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1B
+      - 🇸🇬 优选新线 C-1C
+      - 新域抗封线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1K
+      - 🇭🇰 FREE-HK-IN-TH-1H
+      - 🇭🇰 HK-01-1M
+      - 🇭🇰 HONG KONG 01-1K
+      - 新域抗封线 A-1B
+      - 新域抗封线 C-1B
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HK-01-1E
+      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇸🇬 优选新线 H-1B
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇺🇸 美国 02 联通电信推荐-1A
+      - 🇺🇸 美国 01 联通电信推荐-1A
+      - 🇺🇸 美国 02 联通电信推荐-1C
+      - 🇭🇰 FREE-HK-IN-TH-1F
+      - 🇰🇷 韩国节点-B-1C
+      - 🇸🇬 优选新线 F-1C
+      - 🇸🇬 优选新线 E-1B
+      - 🇭🇰 HK-A-1A
+      - 新域抗封线 D-1A
+      - 🇸🇬 优选新线 G-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1D
+      - 🇭🇰 HK-01-1L
+      - 备用线路 A-1A
+      - 新域抗封线 D-1C
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇭🇰 HK-A-1C
+      - 🇸🇬 优选新线 F-1B
+      - 新域抗封线 B-1A
+      - 🇭🇰 HONG KONG 01-1C
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇰🇷 韩国节点-B-1B
+      - 🇭🇰 HK-01-1J
+      - 🇸🇬 优选新线 F-1A
+      - 🇸🇬 优选新线 H-1A
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 02 联通电信推荐-1D
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇺🇸 洛杉矶-新VPS-02-1A
+      - 🇺🇸 美国 01 联通电信推荐-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇭🇰 HK-01-1G
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HK-01-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇭🇰 FREE-HK-IN-TH-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
+      - 🇺🇸 美国 02 联通电信推荐-1E
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇺🇸 美国-洛杉矶-PRO-1C
+      - 🇭🇰 HK-01-1I
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 01 联通电信推荐-1E
+      - 中国-北京-线路1
+      - MZ-VBP
+      - 🇭🇰 HONG KONG 01-1S
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1C
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 FREE-HK-IN-TH-1E
+      - 🇭🇰 HK-01-1C
+      - 🇭🇰 HK-01-1D
+      - 🇸🇬 优选新线 E-1C
+      - 🇭🇰 FREE-HK-IN-TH-1L
+      - 备用线路 A-1C
+      - 🇭🇰 HONG KONG 01-1R
+      - 🇭🇰 HK-01-1R
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1C
+      - 🇭🇰 FREE-HK-IN-TH-1G
+      - 🇭🇰 HONG KONG 01-1U
+      - 🇺🇸 洛杉矶-新VPS-01-1B
+      - 🇺🇸 美国 02 联通电信推荐-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1C
+      - 🇺🇸 洛杉矶-新VPS-03-1A
+      - 🇺🇸 洛杉矶-新VPS-03-1D
+      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 优选新线 G-1A
+      - 🇺🇸 洛杉矶-新VPS-02-1B
+      - 🇭🇰 HK-01-1O
+      - 🇰🇷 韩国节点-B-1A
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇸🇬 优选新线 H-1C
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇭🇰 HONG KONG 01-1B
       - 备用线路 A-1B
       - 🇭🇰 HK-01-1U
-      - 🇺🇸 美国 02 联通电信推荐-1D
-      - 🇰🇷 韩国节点-B-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 FREE-HK-IN-TH-1H
-      - 🇺🇸 洛杉矶-新VPS-02-1A
-      - 🇸🇬 优选新线 E-1A
-      - 🇭🇰 FREE-HK-IN-TH-1D
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇭🇰 HONG KONG 01-1S
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 HK-01-1B
-      - 🇺🇸 美国 01 联通电信推荐-1B
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HK-01-1M
-      - 🇸🇬 优选新线 E-1B
       - 🇺🇸 洛杉矶-移动-TUIC-01-1A
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
-      - 🇸🇬 优选新线 F-1A
-      - 🇭🇰 HK-01-1F
-      - 🇭🇰 HK-01-1J
-      - 🇸🇬 优选新线 F-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇺🇸 洛杉矶-新VPS-03-1D
-      - 🇺🇸 洛杉矶-新VPS-02-1D
-      - 🇭🇰 HONG KONG 01-1T
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇭🇰 FREE-HK-IN-TH-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 HK-01-1D
-      - 🇺🇸 洛杉矶-新VPS-03-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1A
-      - 🇺🇸 美国 01 联通电信推荐-1A
-      - 🇭🇰 HK-01-1N
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
-      - 🇭🇰 HONG KONG 01-1K
-      - M5-NCB
-      - 🇭🇰 HK-01-1Q
-      - 🇭🇰 FREE-HK-IN-TH-1A
-      - 🇺🇸 洛杉矶-新VPS-01-1D
-      - 🇭🇰 FREE-HK-IN-TH-1I
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
-      - 🇭🇰 HK-01-1G
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇺🇸 美国 02 联通电信推荐-1C
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇭🇰 HONG KONG 01-1R
-      - 🇭🇰 FREE-HK-IN-TH-1E
-      - 🇭🇰 HK-01-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇸🇬 优选新线 B-1A
-      - 🇭🇰 FREE-HK-IN-TH-1F
-      - 🇭🇰 HK-A-1C
-      - 🇹🇼 台湾高速节点3
-      - 🇸🇬 优选新线 B-1B
-      - 🇭🇰 HK-01-1L
-      - 🇭🇰 HK-01-1O
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1A
-      - 🇭🇰 HK-01-1S
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HONG KONG 01-1J
+      - 🇸🇬 优选新线 D-1A
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇭🇰 HK-01-1I
-      - 🇺🇸 洛杉矶-直连-1B
-      - 🇺🇸 洛杉矶-新VPS-02-1C
-      - 🇭🇰 HK-01-1H
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 优选新线 C-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国 01 联通电信推荐-1D
-      - 🇭🇰 HK-01-1C
-      - 🇺🇸 洛杉矶-新VPS-02-1B
-      - 🇺🇸 美国 02 联通电信推荐-1B
-      - 🇭🇰 HK-A-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1C
-      - 🇸🇬 优选新线 D-1B
-      - 🇭🇰 FREE-HK-IN-TH-1C
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇨🇳 中国联通节点1
-      - 🇺🇸 洛杉矶-新VPS-01-1B
-      - 🇭🇰 HK-01-1R
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HONG KONG 01-1O
-      - 🇭🇰 HK-01-1E
-      - G I C A B N H T H N
-      - 🇭🇰 HK-01-1T
-      - 🇭🇰 HONG KONG 01-1Q
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇭🇰 HK-01-1P
-      - 🇺🇸 洛杉矶-新VPS-01-1C
-      - 🇭🇰 HK-A-1A
-      - 🇺🇸 美国 02 联通电信推荐-1A
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇺🇸 洛杉矶-新VPS-01-1A
-      - 🇭🇰 FREE-HK-IN-TH-1G
-      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇭🇰 HK-01-1Q
+      - 新域抗封线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 G-1B
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 E-1A
+      - 🇨🇳 中国联通节点1
+      - 🇭🇰 HK-01-1V
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇭🇰 HK-01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1A
+      - 🇭🇰 HONG KONG 01-1J
+      - 🇭🇰 HONG KONG 01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1D
+      - 新域抗封线 C-1C
+      - 🇸🇬 优选新线 B-1A
+      - G I C A B N H T H N
       - 🇭🇰 HK-01-1K
+      - 🇭🇰 FREE-HK-IN-TH-1I
+      - 新域抗封线 D-1B
+      - 🇭🇰 HK-01-1N
+      - 新域抗封线 B-1B
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇭🇰 HK-01-1F
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇭🇰 HK-01-1P
+      - 🇸🇬 优选新线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1B
+      - 🇭🇰 HK-01-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1D
+      - 🇸🇬 优选新线 B-1B
+      - 新域抗封线 A-1A
+      - 🇹🇼 台湾高速节点
+      - 🇺🇸 美国 01 联通电信推荐-1B
+      - 新域抗封线 A-1C
+      - 🇸🇬 优选新线 D-1B
+      - 🇭🇰 HK-01-1H
+      - 🇭🇰 HONG KONG 01-1D
+      - 🇭🇰 FREE-HK-IN-TH-1J
+      - 🇭🇰 HK-01-1S
+      - 🇸🇬 优选新线 C-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1B
+      - 🇸🇬 优选新线 C-1C
+      - 新域抗封线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1K
+      - 🇭🇰 FREE-HK-IN-TH-1H
+      - 🇭🇰 HK-01-1M
+      - 🇭🇰 HONG KONG 01-1K
+      - 新域抗封线 A-1B
+      - 新域抗封线 C-1B
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HK-01-1E
+      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇸🇬 优选新线 H-1B
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇺🇸 美国 02 联通电信推荐-1A
+      - 🇺🇸 美国 01 联通电信推荐-1A
+      - 🇺🇸 美国 02 联通电信推荐-1C
+      - 🇭🇰 FREE-HK-IN-TH-1F
+      - 🇰🇷 韩国节点-B-1C
+      - 🇸🇬 优选新线 F-1C
+      - 🇸🇬 优选新线 E-1B
+      - 🇭🇰 HK-A-1A
+      - 新域抗封线 D-1A
+      - 🇸🇬 优选新线 G-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1D
+      - 🇭🇰 HK-01-1L
+      - 备用线路 A-1A
+      - 新域抗封线 D-1C
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇭🇰 HK-A-1C
+      - 🇸🇬 优选新线 F-1B
+      - 新域抗封线 B-1A
+      - 🇭🇰 HONG KONG 01-1C
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇰🇷 韩国节点-B-1B
+      - 🇭🇰 HK-01-1J
+      - 🇸🇬 优选新线 F-1A
+      - 🇸🇬 优选新线 H-1A
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 02 联通电信推荐-1D
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇺🇸 洛杉矶-新VPS-02-1A
+      - 🇺🇸 美国 01 联通电信推荐-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇭🇰 HK-01-1G
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HK-01-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇭🇰 FREE-HK-IN-TH-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
+      - 🇺🇸 美国 02 联通电信推荐-1E
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇺🇸 美国-洛杉矶-PRO-1C
+      - 🇭🇰 HK-01-1I
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 01 联通电信推荐-1E
+      - 中国-北京-线路1
+      - MZ-VBP
+      - 🇭🇰 HONG KONG 01-1S
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1C
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 FREE-HK-IN-TH-1E
+      - 🇭🇰 HK-01-1C
+      - 🇭🇰 HK-01-1D
+      - 🇸🇬 优选新线 E-1C
+      - 🇭🇰 FREE-HK-IN-TH-1L
+      - 备用线路 A-1C
+      - 🇭🇰 HONG KONG 01-1R
+      - 🇭🇰 HK-01-1R
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1C
+      - 🇭🇰 FREE-HK-IN-TH-1G
+      - 🇭🇰 HONG KONG 01-1U
+      - 🇺🇸 洛杉矶-新VPS-01-1B
+      - 🇺🇸 美国 02 联通电信推荐-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1C
+      - 🇺🇸 洛杉矶-新VPS-03-1A
+      - 🇺🇸 洛杉矶-新VPS-03-1D
+      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 优选新线 G-1A
+      - 🇺🇸 洛杉矶-新VPS-02-1B
+      - 🇭🇰 HK-01-1O
+      - 🇰🇷 韩国节点-B-1A
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇸🇬 优选新线 H-1C
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇭🇰 HONG KONG 01-1B
       - 备用线路 A-1B
       - 🇭🇰 HK-01-1U
-      - 🇺🇸 美国 02 联通电信推荐-1D
-      - 🇰🇷 韩国节点-B-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 FREE-HK-IN-TH-1H
-      - 🇺🇸 洛杉矶-新VPS-02-1A
-      - 🇸🇬 优选新线 E-1A
-      - 🇭🇰 FREE-HK-IN-TH-1D
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇭🇰 HONG KONG 01-1S
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 HK-01-1B
-      - 🇺🇸 美国 01 联通电信推荐-1B
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HK-01-1M
-      - 🇸🇬 优选新线 E-1B
       - 🇺🇸 洛杉矶-移动-TUIC-01-1A
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
-      - 🇸🇬 优选新线 F-1A
-      - 🇭🇰 HK-01-1F
-      - 🇭🇰 HK-01-1J
-      - 🇸🇬 优选新线 F-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇺🇸 洛杉矶-新VPS-03-1D
-      - 🇺🇸 洛杉矶-新VPS-02-1D
-      - 🇭🇰 HONG KONG 01-1T
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇭🇰 FREE-HK-IN-TH-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 HK-01-1D
-      - 🇺🇸 洛杉矶-新VPS-03-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1A
-      - 🇺🇸 美国 01 联通电信推荐-1A
-      - 🇭🇰 HK-01-1N
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
-      - 🇭🇰 HONG KONG 01-1K
-      - M5-NCB
-      - 🇭🇰 HK-01-1Q
-      - 🇭🇰 FREE-HK-IN-TH-1A
-      - 🇺🇸 洛杉矶-新VPS-01-1D
-      - 🇭🇰 FREE-HK-IN-TH-1I
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
-      - 🇭🇰 HK-01-1G
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇺🇸 美国 02 联通电信推荐-1C
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇭🇰 HONG KONG 01-1R
-      - 🇭🇰 FREE-HK-IN-TH-1E
-      - 🇭🇰 HK-01-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇸🇬 优选新线 B-1A
-      - 🇭🇰 FREE-HK-IN-TH-1F
-      - 🇭🇰 HK-A-1C
-      - 🇹🇼 台湾高速节点3
-      - 🇸🇬 优选新线 B-1B
-      - 🇭🇰 HK-01-1L
-      - 🇭🇰 HK-01-1O
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1A
-      - 🇭🇰 HK-01-1S
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HONG KONG 01-1J
+      - 🇸🇬 优选新线 D-1A
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 HK-01-1I
-      - 🇺🇸 洛杉矶-直连-1B
-      - 🇺🇸 洛杉矶-新VPS-02-1C
-      - 🇭🇰 HK-01-1H
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 优选新线 C-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国 01 联通电信推荐-1D
-      - 🇭🇰 HK-01-1C
-      - 🇺🇸 洛杉矶-新VPS-02-1B
-      - 🇺🇸 美国 02 联通电信推荐-1B
-      - 🇭🇰 HK-A-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1C
-      - 🇸🇬 优选新线 D-1B
-      - 🇭🇰 FREE-HK-IN-TH-1C
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇨🇳 中国联通节点1
-      - 🇺🇸 洛杉矶-新VPS-01-1B
-      - 🇭🇰 HK-01-1R
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HONG KONG 01-1O
-      - 🇭🇰 HK-01-1E
-      - G I C A B N H T H N
-      - 🇭🇰 HK-01-1T
-      - 🇭🇰 HONG KONG 01-1Q
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇭🇰 HK-01-1P
-      - 🇺🇸 洛杉矶-新VPS-01-1C
-      - 🇭🇰 HK-A-1A
-      - 🇺🇸 美国 02 联通电信推荐-1A
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇺🇸 洛杉矶-新VPS-01-1A
-      - 🇭🇰 FREE-HK-IN-TH-1G
-      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇭🇰 HK-01-1Q
+      - 新域抗封线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 G-1B
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 E-1A
+      - 🇨🇳 中国联通节点1
+      - 🇭🇰 HK-01-1V
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇭🇰 HK-01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1A
+      - 🇭🇰 HONG KONG 01-1J
+      - 🇭🇰 HONG KONG 01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1D
+      - 新域抗封线 C-1C
+      - 🇸🇬 优选新线 B-1A
+      - G I C A B N H T H N
       - 🇭🇰 HK-01-1K
+      - 🇭🇰 FREE-HK-IN-TH-1I
+      - 新域抗封线 D-1B
+      - 🇭🇰 HK-01-1N
+      - 新域抗封线 B-1B
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇭🇰 HK-01-1F
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇭🇰 HK-01-1P
+      - 🇸🇬 优选新线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1B
+      - 🇭🇰 HK-01-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1D
+      - 🇸🇬 优选新线 B-1B
+      - 新域抗封线 A-1A
+      - 🇹🇼 台湾高速节点
+      - 🇺🇸 美国 01 联通电信推荐-1B
+      - 新域抗封线 A-1C
+      - 🇸🇬 优选新线 D-1B
+      - 🇭🇰 HK-01-1H
+      - 🇭🇰 HONG KONG 01-1D
+      - 🇭🇰 FREE-HK-IN-TH-1J
+      - 🇭🇰 HK-01-1S
+      - 🇸🇬 优选新线 C-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1B
+      - 🇸🇬 优选新线 C-1C
+      - 新域抗封线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1K
+      - 🇭🇰 FREE-HK-IN-TH-1H
+      - 🇭🇰 HK-01-1M
+      - 🇭🇰 HONG KONG 01-1K
+      - 新域抗封线 A-1B
+      - 新域抗封线 C-1B
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HK-01-1E
+      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇸🇬 优选新线 H-1B
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇺🇸 美国 02 联通电信推荐-1A
+      - 🇺🇸 美国 01 联通电信推荐-1A
+      - 🇺🇸 美国 02 联通电信推荐-1C
+      - 🇭🇰 FREE-HK-IN-TH-1F
+      - 🇰🇷 韩国节点-B-1C
+      - 🇸🇬 优选新线 F-1C
+      - 🇸🇬 优选新线 E-1B
+      - 🇭🇰 HK-A-1A
+      - 新域抗封线 D-1A
+      - 🇸🇬 优选新线 G-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1D
+      - 🇭🇰 HK-01-1L
+      - 备用线路 A-1A
+      - 新域抗封线 D-1C
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇭🇰 HK-A-1C
+      - 🇸🇬 优选新线 F-1B
+      - 新域抗封线 B-1A
+      - 🇭🇰 HONG KONG 01-1C
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇰🇷 韩国节点-B-1B
+      - 🇭🇰 HK-01-1J
+      - 🇸🇬 优选新线 F-1A
+      - 🇸🇬 优选新线 H-1A
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 02 联通电信推荐-1D
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇺🇸 洛杉矶-新VPS-02-1A
+      - 🇺🇸 美国 01 联通电信推荐-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇭🇰 HK-01-1G
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HK-01-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇭🇰 FREE-HK-IN-TH-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
+      - 🇺🇸 美国 02 联通电信推荐-1E
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇺🇸 美国-洛杉矶-PRO-1C
+      - 🇭🇰 HK-01-1I
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 01 联通电信推荐-1E
+      - 中国-北京-线路1
+      - MZ-VBP
+      - 🇭🇰 HONG KONG 01-1S
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1C
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 FREE-HK-IN-TH-1E
+      - 🇭🇰 HK-01-1C
+      - 🇭🇰 HK-01-1D
+      - 🇸🇬 优选新线 E-1C
+      - 🇭🇰 FREE-HK-IN-TH-1L
+      - 备用线路 A-1C
+      - 🇭🇰 HONG KONG 01-1R
+      - 🇭🇰 HK-01-1R
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1C
+      - 🇭🇰 FREE-HK-IN-TH-1G
+      - 🇭🇰 HONG KONG 01-1U
+      - 🇺🇸 洛杉矶-新VPS-01-1B
+      - 🇺🇸 美国 02 联通电信推荐-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1C
+      - 🇺🇸 洛杉矶-新VPS-03-1A
+      - 🇺🇸 洛杉矶-新VPS-03-1D
+      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 优选新线 G-1A
+      - 🇺🇸 洛杉矶-新VPS-02-1B
+      - 🇭🇰 HK-01-1O
+      - 🇰🇷 韩国节点-B-1A
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇸🇬 优选新线 H-1C
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇭🇰 HONG KONG 01-1B
       - 备用线路 A-1B
       - 🇭🇰 HK-01-1U
-      - 🇺🇸 美国 02 联通电信推荐-1D
-      - 🇰🇷 韩国节点-B-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 FREE-HK-IN-TH-1H
-      - 🇺🇸 洛杉矶-新VPS-02-1A
-      - 🇸🇬 优选新线 E-1A
-      - 🇭🇰 FREE-HK-IN-TH-1D
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇭🇰 HONG KONG 01-1S
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 HK-01-1B
-      - 🇺🇸 美国 01 联通电信推荐-1B
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HK-01-1M
-      - 🇸🇬 优选新线 E-1B
       - 🇺🇸 洛杉矶-移动-TUIC-01-1A
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
-      - 🇸🇬 优选新线 F-1A
-      - 🇭🇰 HK-01-1F
-      - 🇭🇰 HK-01-1J
-      - 🇸🇬 优选新线 F-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇺🇸 洛杉矶-新VPS-03-1D
-      - 🇺🇸 洛杉矶-新VPS-02-1D
-      - 🇭🇰 HONG KONG 01-1T
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇭🇰 FREE-HK-IN-TH-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 HK-01-1D
-      - 🇺🇸 洛杉矶-新VPS-03-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1A
-      - 🇺🇸 美国 01 联通电信推荐-1A
-      - 🇭🇰 HK-01-1N
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
-      - 🇭🇰 HONG KONG 01-1K
-      - M5-NCB
-      - 🇭🇰 HK-01-1Q
-      - 🇭🇰 FREE-HK-IN-TH-1A
-      - 🇺🇸 洛杉矶-新VPS-01-1D
-      - 🇭🇰 FREE-HK-IN-TH-1I
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
-      - 🇭🇰 HK-01-1G
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇺🇸 美国 02 联通电信推荐-1C
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇭🇰 HONG KONG 01-1R
-      - 🇭🇰 FREE-HK-IN-TH-1E
-      - 🇭🇰 HK-01-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇸🇬 优选新线 B-1A
-      - 🇭🇰 FREE-HK-IN-TH-1F
-      - 🇭🇰 HK-A-1C
-      - 🇹🇼 台湾高速节点3
-      - 🇸🇬 优选新线 B-1B
-      - 🇭🇰 HK-01-1L
-      - 🇭🇰 HK-01-1O
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1A
-      - 🇭🇰 HK-01-1S
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HONG KONG 01-1J
+      - 🇸🇬 优选新线 D-1A
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -967,117 +1231,150 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 HK-01-1I
-      - 🇺🇸 洛杉矶-直连-1B
-      - 🇺🇸 洛杉矶-新VPS-02-1C
-      - 🇭🇰 HK-01-1H
-      - 🇩🇪 德国-法兰克福-003-1A
-      - 🇸🇬 优选新线 C-1A
-      - 🇰🇷 韩国节点-B-1C
-      - 🇺🇸 美国 01 联通电信推荐-1D
-      - 🇭🇰 HK-01-1C
-      - 🇺🇸 洛杉矶-新VPS-02-1B
-      - 🇺🇸 美国 02 联通电信推荐-1B
-      - 🇭🇰 HK-A-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1C
-      - 🇸🇬 优选新线 D-1B
-      - 🇭🇰 FREE-HK-IN-TH-1C
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇨🇳 中国联通节点1
-      - 🇺🇸 洛杉矶-新VPS-01-1B
-      - 🇭🇰 HK-01-1R
-      - 🇭🇰 HONG KONG 01-1H
-      - 🇭🇰 HONG KONG 01-1O
-      - 🇭🇰 HK-01-1E
-      - G I C A B N H T H N
-      - 🇭🇰 HK-01-1T
-      - 🇭🇰 HONG KONG 01-1Q
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇭🇰 HK-01-1P
-      - 🇺🇸 洛杉矶-新VPS-01-1C
-      - 🇭🇰 HK-A-1A
-      - 🇺🇸 美国 02 联通电信推荐-1A
-      - 🇩🇪 德国-法兰克福-004-1A
       - 🇺🇸 洛杉矶-新VPS-01-1A
-      - 🇭🇰 FREE-HK-IN-TH-1G
-      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇭🇰 HK-01-1Q
+      - 新域抗封线 C-1A
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇸🇬 优选新线 G-1B
+      - 🇹🇼 台湾高速节点2
+      - 🇸🇬 优选新线 E-1A
+      - 🇨🇳 中国联通节点1
+      - 🇭🇰 HK-01-1V
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇭🇰 HK-01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1A
+      - 🇭🇰 HONG KONG 01-1J
+      - 🇭🇰 HONG KONG 01-1T
+      - 🇭🇰 FREE-HK-IN-TH-1D
+      - 新域抗封线 C-1C
+      - 🇸🇬 优选新线 B-1A
+      - G I C A B N H T H N
       - 🇭🇰 HK-01-1K
+      - 🇭🇰 FREE-HK-IN-TH-1I
+      - 新域抗封线 D-1B
+      - 🇭🇰 HK-01-1N
+      - 新域抗封线 B-1B
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇭🇰 HK-01-1F
+      - 🇺🇸 洛杉矶-直连-1B
+      - 🇭🇰 HK-01-1P
+      - 🇸🇬 优选新线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1B
+      - 🇭🇰 HK-01-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1D
+      - 🇸🇬 优选新线 B-1B
+      - 新域抗封线 A-1A
+      - 🇹🇼 台湾高速节点
+      - 🇺🇸 美国 01 联通电信推荐-1B
+      - 新域抗封线 A-1C
+      - 🇸🇬 优选新线 D-1B
+      - 🇭🇰 HK-01-1H
+      - 🇭🇰 HONG KONG 01-1D
+      - 🇭🇰 FREE-HK-IN-TH-1J
+      - 🇭🇰 HK-01-1S
+      - 🇸🇬 优选新线 C-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1B
+      - 🇸🇬 优选新线 C-1C
+      - 新域抗封线 B-1C
+      - 🇭🇰 FREE-HK-IN-TH-1K
+      - 🇭🇰 FREE-HK-IN-TH-1H
+      - 🇭🇰 HK-01-1M
+      - 🇭🇰 HONG KONG 01-1K
+      - 新域抗封线 A-1B
+      - 新域抗封线 C-1B
+      - 🇭🇰 HK-A-1B
+      - 🇭🇰 HK-01-1E
+      - 🇺🇸 美国 01 联通电信推荐-1C
+      - 🇸🇬 优选新线 H-1B
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇺🇸 美国 02 联通电信推荐-1A
+      - 🇺🇸 美国 01 联通电信推荐-1A
+      - 🇺🇸 美国 02 联通电信推荐-1C
+      - 🇭🇰 FREE-HK-IN-TH-1F
+      - 🇰🇷 韩国节点-B-1C
+      - 🇸🇬 优选新线 F-1C
+      - 🇸🇬 优选新线 E-1B
+      - 🇭🇰 HK-A-1A
+      - 新域抗封线 D-1A
+      - 🇸🇬 优选新线 G-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1D
+      - 🇭🇰 HK-01-1L
+      - 备用线路 A-1A
+      - 新域抗封线 D-1C
+      - 🇩🇪 德国-法兰克福-001-1A
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇭🇰 HK-A-1C
+      - 🇸🇬 优选新线 F-1B
+      - 新域抗封线 B-1A
+      - 🇭🇰 HONG KONG 01-1C
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇰🇷 韩国节点-B-1B
+      - 🇭🇰 HK-01-1J
+      - 🇸🇬 优选新线 F-1A
+      - 🇸🇬 优选新线 H-1A
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇺🇸 美国 02 联通电信推荐-1D
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇺🇸 洛杉矶-新VPS-02-1A
+      - 🇺🇸 美国 01 联通电信推荐-1D
+      - 🇺🇸 洛杉矶-直连-1A
+      - 🇭🇰 HK-01-1G
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HK-01-1A
+      - 🇸🇬 优选新线 D-1C
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇭🇰 FREE-HK-IN-TH-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
+      - 🇺🇸 美国 02 联通电信推荐-1E
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
+      - 🇭🇰 HONG KONG 01-1A
+      - 🇺🇸 美国-洛杉矶-PRO-1C
+      - 🇭🇰 HK-01-1I
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 01 联通电信推荐-1E
+      - 中国-北京-线路1
+      - MZ-VBP
+      - 🇭🇰 HONG KONG 01-1S
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
+      - 🇺🇸 洛杉矶-新VPS-01-1C
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇭🇰 FREE-HK-IN-TH-1E
+      - 🇭🇰 HK-01-1C
+      - 🇭🇰 HK-01-1D
+      - 🇸🇬 优选新线 E-1C
+      - 🇭🇰 FREE-HK-IN-TH-1L
+      - 备用线路 A-1C
+      - 🇭🇰 HONG KONG 01-1R
+      - 🇭🇰 HK-01-1R
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇺🇸 洛杉矶-新VPS-02-1C
+      - 🇭🇰 FREE-HK-IN-TH-1G
+      - 🇭🇰 HONG KONG 01-1U
+      - 🇺🇸 洛杉矶-新VPS-01-1B
+      - 🇺🇸 美国 02 联通电信推荐-1B
+      - 🇺🇸 洛杉矶-新VPS-03-1C
+      - 🇺🇸 洛杉矶-新VPS-03-1A
+      - 🇺🇸 洛杉矶-新VPS-03-1D
+      - 🇹🇼 台湾高速节点3
+      - 🇸🇬 优选新线 G-1A
+      - 🇺🇸 洛杉矶-新VPS-02-1B
+      - 🇭🇰 HK-01-1O
+      - 🇰🇷 韩国节点-B-1A
+      - 🇩🇪 德国-法兰克福-001-1B
+      - 🇸🇬 优选新线 C-1A
+      - 🇸🇬 优选新线 H-1C
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇭🇰 HONG KONG 01-1B
       - 备用线路 A-1B
       - 🇭🇰 HK-01-1U
-      - 🇺🇸 美国 02 联通电信推荐-1D
-      - 🇰🇷 韩国节点-B-1A
-      - 备用线路 A-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - 🇭🇰 HONG KONG 01-1E
-      - 🇹🇼 台湾高速节点2
-      - 🇭🇰 FREE-HK-IN-TH-1H
-      - 🇺🇸 洛杉矶-新VPS-02-1A
-      - 🇸🇬 优选新线 E-1A
-      - 🇭🇰 FREE-HK-IN-TH-1D
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇭🇰 HONG KONG 01-1S
-      - 🇺🇸 美国高速节点1
-      - 🇭🇰 HK-01-1B
-      - 🇺🇸 美国 01 联通电信推荐-1B
-      - 🇸🇬 优选新线 D-1A
-      - 🇭🇰 HK-01-1M
-      - 🇸🇬 优选新线 E-1B
       - 🇺🇸 洛杉矶-移动-TUIC-01-1A
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1B
-      - 🇸🇬 优选新线 F-1A
-      - 🇭🇰 HK-01-1F
-      - 🇭🇰 HK-01-1J
-      - 🇸🇬 优选新线 F-1B
-      - 🇰🇷 韩国节点-B-1B
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇺🇸 洛杉矶-新VPS-03-1D
-      - 🇺🇸 洛杉矶-新VPS-02-1D
-      - 🇭🇰 HONG KONG 01-1T
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1B
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇺🇸 美国-洛杉矶-PRO-1B
-      - 🇭🇰 FREE-HK-IN-TH-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇭🇰 HK-01-1D
-      - 🇺🇸 洛杉矶-新VPS-03-1B
-      - 🇺🇸 洛杉矶-新VPS-03-1A
-      - 🇺🇸 美国 01 联通电信推荐-1A
-      - 🇭🇰 HK-01-1N
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1D
-      - 🇭🇰 HONG KONG 01-1K
-      - M5-NCB
-      - 🇭🇰 HK-01-1Q
-      - 🇭🇰 FREE-HK-IN-TH-1A
-      - 🇺🇸 洛杉矶-新VPS-01-1D
-      - 🇭🇰 FREE-HK-IN-TH-1I
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇭🇰 HONG KONG 01-1D
-      - 🇺🇸 洛杉矶-移动-TUIC-01-1C
-      - 🇭🇰 HK-01-1G
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇺🇸 美国 02 联通电信推荐-1C
-      - 🇸🇬 优选新线 C-1B
-      - 🇩🇪 德国-法兰克福-004-1B
-      - 🇭🇰 HONG KONG 01-1R
-      - 🇭🇰 FREE-HK-IN-TH-1E
-      - 🇭🇰 HK-01-1A
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇭🇰 HONG KONG 01-1A
-      - 🇸🇬 优选新线 B-1A
-      - 🇭🇰 FREE-HK-IN-TH-1F
-      - 🇭🇰 HK-A-1C
-      - 🇹🇼 台湾高速节点3
-      - 🇸🇬 优选新线 B-1B
-      - 🇭🇰 HK-01-1L
-      - 🇭🇰 HK-01-1O
-      - 🇺🇸 洛杉矶-直连-1A
-      - 🇭🇰 HONG KONG 01-1C
-      - 🇺🇸 美国-洛杉矶-PRO-1A
-      - 🇭🇰 HK-01-1S
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HONG KONG 01-1J
+      - 🇸🇬 优选新线 D-1A
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
