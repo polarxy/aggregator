@@ -5,671 +5,655 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: VLESS-1W, server: 199.255.96.108, port: 8443, type: vless, uuid: 58d8b51e-9bdb-4f07-bd08-7d567afddd12, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: MH-BRW, server: empty.node, port: 443, type: trojan, password: 0055fd4f-4bf8-460a-8747-b6117e897948, sni: empty.node, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: cd491b17-c7a3-4ef8-b9ab-69c06e305bf4, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK-1D, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 2125206b-00bd-4ed2-99e3-469bb2295b87, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1M, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 44d4b45c-1efd-423b-beeb-a42bd6463b80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1N, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: dc30eae7-8f84-4264-9eda-15f604832f32, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: VLESS-2H, server: 199.255.96.108, port: 8443, type: vless, uuid: 157a354e-33c2-4a5c-890b-9d43c93975b8, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HK-1G, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 10c5e6eb-9248-4063-b31c-bdf0a1a663df, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 抗封线-1F, server: w2.lianjieni.com, port: 443, type: vless, uuid: c5d15473-60cd-4680-84d0-5b7d6235096f, tls: true, servername: w2.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w2.lianjieni.com}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1J, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 7901da29-9633-4930-ba32-6325d0ed21c8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 JP-1H, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 9d185895-1496-4012-a32c-42bb0720b2d8, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: VLESS-1I, server: 199.255.96.108, port: 8443, type: vless, uuid: 5653d30c-ed8b-41b9-b323-62e7075ac3f7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1H, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: cd0ec6b3-bb5c-47da-a5d7-806ad4b52347, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: e51b097d-c9e1-42bf-af57-59967835b629, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 JP-1C, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 25bd1a9d-27a1-4089-adb1-a48f51364c3e, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US-1F, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 515f0818-63f0-42b3-8096-04c8e51278bb, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1L, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 30160c36-0553-4c9f-bc6a-8bde76d536b0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1H, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 20987e84-3bf6-46ea-abaf-cf346a6ed967, udp: true}
-  - {name: B5-GHN, server: jl-fny.tk7890.top, port: 56952, type: hysteria2, password: 814622f5-3061-4021-aa0b-4d45ccd68dc0, auth: 814622f5-3061-4021-aa0b-4d45ccd68dc0, sni: jl-fny.tk7890.top, up: 500, down: 500, skip-cert-verify: true, obfs: salamander, obfs-password: NWNlOGUwN2Q3MzAyMTY4NQ==, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1O, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: cc08d7fb-02a0-4ffb-b4f5-bf7e844eddf2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 美国 抗封线-1D, server: w4.lianjieni.com, port: 443, type: vless, uuid: 6dd6a60b-a763-46ba-9a60-6acb96213a53, tls: true, servername: w4.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w4.lianjieni.com}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: e184b8ea-5002-49af-a0a9-11c6379006c9, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: VLESS-1R, server: 199.255.96.108, port: 8443, type: vless, uuid: f50c0813-ec6f-468a-ae47-44cfc5c35129, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HK-1H, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 9d185895-1496-4012-a32c-42bb0720b2d8, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: VLESS-2F, server: 199.255.96.108, port: 8443, type: vless, uuid: 23fb233d-a7a1-4bd1-92be-bb8ca452371d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1A, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 4ca7a4d7-b5f1-4445-88e3-6c005ea523af, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: e184b8ea-5002-49af-a0a9-11c6379006c9, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇮🇳 印度-中转2区2x, server: sgaws.fffo.cc, port: 34509, type: hysteria2, password: 665d22a4-e69b-4235-9747-0bf5bfde33c2, auth: 665d22a4-e69b-4235-9747-0bf5bfde33c2, sni: yindu.pooo.cc, up: 1000, down: 1000, skip-cert-verify: false, obfs: salamander, obfs-password: pFtJOns91naGv8MD, udp: true}
-  - {name: VLESS-2A, server: 199.255.96.108, port: 8443, type: vless, uuid: 6b8358a9-0e6c-4a84-bfa7-690d0f485e26, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: VLESS-1O, server: 199.255.96.108, port: 8443, type: vless, uuid: 05addb1b-69d1-4ac7-a995-06405f012fa7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: VLESS-1L, server: 199.255.96.108, port: 8443, type: vless, uuid: 1c15cd7e-b89e-43d2-8d20-f39fc484b46e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1K, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: a3a25683-64a4-4c6e-9035-d2b316ce1c3e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: cd491b17-c7a3-4ef8-b9ab-69c06e305bf4, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1O, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: cc08d7fb-02a0-4ffb-b4f5-bf7e844eddf2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1K, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: c03b9398-e22c-49c0-af3c-2748893bad21, udp: true}
-  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: cd491b17-c7a3-4ef8-b9ab-69c06e305bf4, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: VLESS-1A, server: 199.255.96.108, port: 8443, type: vless, uuid: dff217a1-1288-428e-b427-9dfa606c69b8, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: VLESS-2L, server: 199.255.96.108, port: 8443, type: vless, uuid: 9972172f-8e99-4164-a9b5-5c023f1550da, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: VLESS-1Q, server: 199.255.96.108, port: 8443, type: vless, uuid: f9adc398-4ff0-4b13-b46d-c35b8ae53b1a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 JP-1E, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 33b1c839-a8a0-4dce-9001-d671a073917d, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HK-1I, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: b107d8ef-f587-41a8-9c89-6e217ce61104, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: e51b097d-c9e1-42bf-af57-59967835b629, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 US-1I, server: us200m.jiasu.asia, port: 50000, type: trojan, password: b107d8ef-f587-41a8-9c89-6e217ce61104, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: a0d542d1-351f-4fe2-a66e-9b16dcd0614a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1K, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: a3a25683-64a4-4c6e-9035-d2b316ce1c3e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1L, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 30160c36-0553-4c9f-bc6a-8bde76d536b0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1P, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 94c951b4-bb81-4d9b-8401-f84d31c73cfb, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1J, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: d6803811-7165-432d-8dc6-ca9a63c78836, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 507e2389-3e9c-40a5-bc69-6f2868d77569, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1J, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 7901da29-9633-4930-ba32-6325d0ed21c8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: a0d542d1-351f-4fe2-a66e-9b16dcd0614a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 JP-1I, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: b107d8ef-f587-41a8-9c89-6e217ce61104, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: VLESS-1P, server: 199.255.96.108, port: 8443, type: vless, uuid: b772add4-1cd0-444d-93c7-fcae5dfd4882, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1G, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 140b754a-fdff-44e2-b295-a51abe0dacf6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 美国 抗封线-1E, server: w1.lianjieni.com, port: 443, type: vless, uuid: c5d15473-60cd-4680-84d0-5b7d6235096f, tls: true, servername: w1.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w1.lianjieni.com}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1F, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 23adf44a-3559-439c-b3cd-46f8d7a2f0fc, udp: true}
-  - {name: 🇺🇸 US-1A, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 487a6f6c-43c4-4b64-9b4d-bd790f9ccf99, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US-1C, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 25bd1a9d-27a1-4089-adb1-a48f51364c3e, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1J, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 7901da29-9633-4930-ba32-6325d0ed21c8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1G, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 140b754a-fdff-44e2-b295-a51abe0dacf6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: VLESS-1Y, server: 199.255.96.108, port: 8443, type: vless, uuid: cf967d7d-9836-494d-84d3-13eef628a586, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: VLESS-1V, server: 199.255.96.108, port: 8443, type: vless, uuid: f0127858-3513-4d54-90ae-a3bd7be1a64f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: VLESS-2J, server: 199.255.96.108, port: 8443, type: vless, uuid: fae5d4fa-8859-4f02-a69d-506bd4779414, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1G, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 140b754a-fdff-44e2-b295-a51abe0dacf6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1O, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: cc08d7fb-02a0-4ffb-b4f5-bf7e844eddf2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: e184b8ea-5002-49af-a0a9-11c6379006c9, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1L, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 30160c36-0553-4c9f-bc6a-8bde76d536b0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 JP-1F, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 515f0818-63f0-42b3-8096-04c8e51278bb, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JP-1B, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: e87bd13a-52bd-4498-a6ef-8e51cdc8869d, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1N, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: dc30eae7-8f84-4264-9eda-15f604832f32, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1K, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: a3a25683-64a4-4c6e-9035-d2b316ce1c3e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: bcf8f365-909b-4504-8b7c-b77a7b04861d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: f0deb1ef-e159-497f-b254-84ef8288d2b8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: VLESS-1U, server: 199.255.96.108, port: 8443, type: vless, uuid: eebcff5d-3374-493f-b082-9b26f1f88eea, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HK-1C, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 25bd1a9d-27a1-4089-adb1-a48f51364c3e, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HK-1A, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 487a6f6c-43c4-4b64-9b4d-bd790f9ccf99, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US-1G, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 10c5e6eb-9248-4063-b31c-bdf0a1a663df, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1H, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: cd0ec6b3-bb5c-47da-a5d7-806ad4b52347, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: VLESS-1x, server: 199.255.96.108, port: 8443, type: vless, uuid: e96a1f60-80a8-4652-bab9-045ceb90d75b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: VLESS-2I, server: 199.255.96.108, port: 8443, type: vless, uuid: 503feedd-4289-4690-8b84-dcbb7047ded7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: VLESS-1B, server: 199.255.96.108, port: 8443, type: vless, uuid: 1f9bd0e2-57a0-4c69-86e5-b534bfc12708, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 抗封线-1H, server: w4.lianjieni.com, port: 443, type: vless, uuid: c5d15473-60cd-4680-84d0-5b7d6235096f, tls: true, servername: w4.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w4.lianjieni.com}}, udp: true}
-  - {name: 🇭🇰 HK-1B, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: e87bd13a-52bd-4498-a6ef-8e51cdc8869d, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1H, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: cd0ec6b3-bb5c-47da-a5d7-806ad4b52347, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: VLESS-1C, server: 199.255.96.108, port: 8443, type: vless, uuid: 5ee1be2b-83e0-4d04-879e-441ba423f0b3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: f0deb1ef-e159-497f-b254-84ef8288d2b8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: VLESS-1M, server: 199.255.96.108, port: 8443, type: vless, uuid: 000ac95e-3e6e-4275-b187-3bfa2300466c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: cd491b17-c7a3-4ef8-b9ab-69c06e305bf4, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK-1E, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 33b1c839-a8a0-4dce-9001-d671a073917d, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US-1E, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 33b1c839-a8a0-4dce-9001-d671a073917d, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: e51b097d-c9e1-42bf-af57-59967835b629, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: VLESS-1Z, server: 199.255.96.108, port: 8443, type: vless, uuid: 76fc8f1d-7c40-453d-b21a-5cff28bcf8cd, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: bcf8f365-909b-4504-8b7c-b77a7b04861d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1M, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 44d4b45c-1efd-423b-beeb-a42bd6463b80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇯🇵 JP-1G, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 10c5e6eb-9248-4063-b31c-bdf0a1a663df, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1G, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 140b754a-fdff-44e2-b295-a51abe0dacf6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1O, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: cc08d7fb-02a0-4ffb-b4f5-bf7e844eddf2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 US-1D, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 2125206b-00bd-4ed2-99e3-469bb2295b87, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: VLESS-2D, server: 199.255.96.108, port: 8443, type: vless, uuid: 59bf0361-2da9-4c4d-9acb-9338a2d128c2, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇯🇵 JP-1A, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 487a6f6c-43c4-4b64-9b4d-bd790f9ccf99, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: f0deb1ef-e159-497f-b254-84ef8288d2b8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: VLESS-2E, server: 199.255.96.108, port: 8443, type: vless, uuid: 38217800-d4fd-4a7f-946e-c41ead11df47, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1I, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 2b218981-5bec-4184-a7e1-62ab8cf3ed16, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 507e2389-3e9c-40a5-bc69-6f2868d77569, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1N, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: dc30eae7-8f84-4264-9eda-15f604832f32, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: VLESS-1E, server: 199.255.96.108, port: 8443, type: vless, uuid: 40475604-824e-4bce-87b1-e67ef098b780, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1I, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: df6ba805-f59d-4ec7-a878-cc76c3525f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: VLESS-2K, server: 199.255.96.108, port: 8443, type: vless, uuid: 256e15f3-dd81-48ce-860f-f3906a35fec5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1H, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: cd0ec6b3-bb5c-47da-a5d7-806ad4b52347, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HK-1F, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 515f0818-63f0-42b3-8096-04c8e51278bb, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JP-1D, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 2125206b-00bd-4ed2-99e3-469bb2295b87, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1O, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 74c3ac36-5c4e-46b8-a52d-f8487c6a4c8c, udp: true}
-  - {name: VLESS-2B, server: 199.255.96.108, port: 8443, type: vless, uuid: 55c2cef9-faf9-403a-972e-10d50d2314fb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: a0d542d1-351f-4fe2-a66e-9b16dcd0614a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: VLESS-2C, server: 199.255.96.108, port: 8443, type: vless, uuid: ba11149a-297d-4636-b294-971d3c7f1cf4, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1G, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 866b65c6-8066-4d85-8adb-f3ea35f921e6, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1M, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 44d4b45c-1efd-423b-beeb-a42bd6463b80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1E, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: bfeeb43a-6521-4d4c-9c7e-d29fc34e7493, udp: true}
-  - {name: VLESS-1T, server: 199.255.96.108, port: 8443, type: vless, uuid: 429237e3-6ffc-4221-a9eb-7488d150be33, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: VLESS-2O, server: 199.255.96.108, port: 8443, type: vless, uuid: 1cf830e2-5c3d-429a-a194-e23c90345333, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: a0d542d1-351f-4fe2-a66e-9b16dcd0614a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: VLESS-1N, server: 199.255.96.108, port: 8443, type: vless, uuid: 25978169-f9e9-411c-b717-7be034252e10, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: VLESS-2G, server: 199.255.96.108, port: 8443, type: vless, uuid: 7f1ad6dd-f24d-4f0e-a5d4-6adc59a05abd, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1M, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 5769ee4f-aa27-4c38-9bfe-4cb284c53936, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1D, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 01b188a7-2c5a-4251-ab7e-5641d4fc7e44, udp: true}
-  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: 662b504e-016f-4c26-9cd2-5d4f84839e77, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1M, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 44d4b45c-1efd-423b-beeb-a42bd6463b80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: e51b097d-c9e1-42bf-af57-59967835b629, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1C, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 9bc6a8c4-8b40-40ba-871e-a88603524313, udp: true}
-  - {name: VLESS-1S, server: 199.255.96.108, port: 8443, type: vless, uuid: 811d0377-e4f4-4e3c-8620-4c8ca75fc952, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1I, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: df6ba805-f59d-4ec7-a878-cc76c3525f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: VLESS-1D, server: 199.255.96.108, port: 8443, type: vless, uuid: 8d7f6aba-ea7e-42a9-ac37-7b7c7054ece3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 507e2389-3e9c-40a5-bc69-6f2868d77569, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 美国 抗封线-1B, server: w2.lianjieni.com, port: 443, type: vless, uuid: 6dd6a60b-a763-46ba-9a60-6acb96213a53, tls: true, servername: w2.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w2.lianjieni.com}}, udp: true}
-  - {name: VLESS-1G, server: 199.255.96.108, port: 8443, type: vless, uuid: 520f6863-9214-4951-aeb6-21b10972dca6, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: VLESS-1F, server: 199.255.96.108, port: 8443, type: vless, uuid: bd19de5c-f586-4b1b-a37c-efa1acf2ceb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: VLESS-2N, server: 199.255.96.108, port: 8443, type: vless, uuid: 9d5e61b9-a712-45c7-809f-44946e8bb133, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1L, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 973bbfc8-d622-4983-a359-75a6e6801d00, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1L, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 30160c36-0553-4c9f-bc6a-8bde76d536b0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 美国 抗封线-1G, server: w3.lianjieni.com, port: 443, type: vless, uuid: c5d15473-60cd-4680-84d0-5b7d6235096f, tls: true, servername: w3.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w3.lianjieni.com}}, udp: true}
-  - {name: VLESS-1K, server: 199.255.96.108, port: 8443, type: vless, uuid: 6d1f1ecc-14f3-472d-baa6-fb47d80121de, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 507e2389-3e9c-40a5-bc69-6f2868d77569, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: VLESS-2M, server: 199.255.96.108, port: 8443, type: vless, uuid: 98b8e97d-14e4-4f93-bfaf-816473f96497, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1N, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: c2b2ba82-7a3f-4300-bcad-535898e29bda, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-004-1I, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: df6ba805-f59d-4ec7-a878-cc76c3525f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1E, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 44d4b45c-1efd-423b-beeb-a42bd6463b80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: VLESS-1Y, server: 199.255.96.108, port: 8443, type: vless, uuid: 5ee1be2b-83e0-4d04-879e-441ba423f0b3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: VLESS-1B, server: 199.255.96.108, port: 8443, type: vless, uuid: e96a1f60-80a8-4652-bab9-045ceb90d75b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 中国-北京-线路1, server: 113.47.161.119, port: 59443, type: vless, uuid: f296ef74-cf5c-4fc8-baf1-90f416cadc85, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: yo0xMr9K2dSChs8g5J3KM4xSlm4IJhFPqhGD41OMDDo, short-id: "1e4bb2d9" }, servername: www.nvidia.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-1B, server: us200m.jiasu.asia, port: 50000, type: trojan, password: e87bd13a-52bd-4498-a6ef-8e51cdc8869d, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: e184b8ea-5002-49af-a0a9-11c6379006c9, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: bcf8f365-909b-4504-8b7c-b77a7b04861d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1K, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: a3a25683-64a4-4c6e-9035-d2b316ce1c3e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1J, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 7901da29-9633-4930-ba32-6325d0ed21c8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: VLESS-2B, server: 199.255.96.108, port: 8443, type: vless, uuid: f50c0813-ec6f-468a-ae47-44cfc5c35129, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1A, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: bfeeb43a-6521-4d4c-9c7e-d29fc34e7493, udp: true}
+  - {name: VLESS-1K, server: 199.255.96.108, port: 8443, type: vless, uuid: 1f9bd0e2-57a0-4c69-86e5-b534bfc12708, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-1C, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 2125206b-00bd-4ed2-99e3-469bb2295b87, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1M, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 9bc6a8c4-8b40-40ba-871e-a88603524313, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1H, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: e51b097d-c9e1-42bf-af57-59967835b629, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1I, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 5769ee4f-aa27-4c38-9bfe-4cb284c53936, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1C, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 30160c36-0553-4c9f-bc6a-8bde76d536b0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国 抗封线-1H, server: w4.lianjieni.com, port: 443, type: vless, uuid: 95b8eb1e-2cb8-426a-8eb2-8b86fd2060c0, tls: true, servername: w4.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w4.lianjieni.com}}, udp: true}
+  - {name: VLESS-2F, server: 199.255.96.108, port: 8443, type: vless, uuid: 6b8358a9-0e6c-4a84-bfa7-690d0f485e26, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1G, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: f0deb1ef-e159-497f-b254-84ef8288d2b8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1D, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 20987e84-3bf6-46ea-abaf-cf346a6ed967, udp: true}
+  - {name: VLESS-2C, server: 199.255.96.108, port: 8443, type: vless, uuid: f9adc398-4ff0-4b13-b46d-c35b8ae53b1a, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US-1D, server: us200m.jiasu.asia, port: 50000, type: trojan, password: b107d8ef-f587-41a8-9c89-6e217ce61104, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: VLESS-1O, server: 199.255.96.108, port: 8443, type: vless, uuid: 429237e3-6ffc-4221-a9eb-7488d150be33, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: MJ-INZ, server: empty.node, port: 443, type: trojan, password: e80d2884-9601-4a7e-ae23-dfd1d9cf3785, sni: empty.node, skip-cert-verify: false, udp: true}
+  - {name: VLESS-1W, server: 199.255.96.108, port: 8443, type: vless, uuid: 40475604-824e-4bce-87b1-e67ef098b780, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1K, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: bf9e8db1-0ed0-499a-8114-bb2952ef8c76, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 JP-1B, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 487a6f6c-43c4-4b64-9b4d-bd790f9ccf99, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-1G, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 25bd1a9d-27a1-4089-adb1-a48f51364c3e, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 抗封线-1A, server: w1.lianjieni.com, port: 443, type: vless, uuid: b136eabc-7b3e-4f77-a144-65d34f3f8c2c, tls: true, servername: w1.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w1.lianjieni.com}}, udp: true}
+  - {name: 🇭🇰 HK-1F, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 515f0818-63f0-42b3-8096-04c8e51278bb, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1B, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: c2b2ba82-7a3f-4300-bcad-535898e29bda, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1A, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: a3a25683-64a4-4c6e-9035-d2b316ce1c3e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: VLESS-1A, server: 199.255.96.108, port: 8443, type: vless, uuid: 98b8e97d-14e4-4f93-bfaf-816473f96497, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1J, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 78fc00ed-b507-4558-9d8a-f8cc16b6fb9e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK-1E, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 9d185895-1496-4012-a32c-42bb0720b2d8, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1R, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: b6e3589c-45ea-4b20-9116-e3b374d50b4a, udp: true}
+  - {name: VLESS-1J, server: 199.255.96.108, port: 8443, type: vless, uuid: f0127858-3513-4d54-90ae-a3bd7be1a64f, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US-1C, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 2125206b-00bd-4ed2-99e3-469bb2295b87, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1F, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: df6ba805-f59d-4ec7-a878-cc76c3525f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇹🇼 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: 07dd5734-db6d-426d-8ee4-ca345bcea864, sni: node1.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1C, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 5363346d-4ec5-4c2f-9771-7e956ce23c55, udp: true}
+  - {name: VLESS-2K, server: 199.255.96.108, port: 8443, type: vless, uuid: 1cf830e2-5c3d-429a-a194-e23c90345333, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 美国 抗封线-1B, server: w2.lianjieni.com, port: 443, type: vless, uuid: b136eabc-7b3e-4f77-a144-65d34f3f8c2c, tls: true, servername: w2.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w2.lianjieni.com}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1C, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 30160c36-0553-4c9f-bc6a-8bde76d536b0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇮🇳 印度-中转2区2x, server: sgaws.fffo.cc, port: 34509, type: hysteria2, password: 665d22a4-e69b-4235-9747-0bf5bfde33c2, auth: 665d22a4-e69b-4235-9747-0bf5bfde33c2, sni: yindu.pooo.cc, up: 1000, down: 1000, skip-cert-verify: false, obfs: salamander, obfs-password: pFtJOns91naGv8MD, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1C, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 30160c36-0553-4c9f-bc6a-8bde76d536b0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1I, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 507e2389-3e9c-40a5-bc69-6f2868d77569, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK-1J, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 494f4679-f181-4a52-80fd-09f107e1e09f, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国-洛杉矶-PRO-1A, server: 5.253.38.67, port: 40444, type: vless, uuid: d438b1ce-2f8b-4129-910c-e600b9f52271, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1E, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 44d4b45c-1efd-423b-beeb-a42bd6463b80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: 07dd5734-db6d-426d-8ee4-ca345bcea864, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true, udp: true}
+  - {name: VLESS-1F, server: 199.255.96.108, port: 8443, type: vless, uuid: 8d7f6aba-ea7e-42a9-ac37-7b7c7054ece3, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP-1A, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 33b1c839-a8a0-4dce-9001-d671a073917d, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-1B, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 487a6f6c-43c4-4b64-9b4d-bd790f9ccf99, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: dc30eae7-8f84-4264-9eda-15f604832f32, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: VLESS-2A, server: 199.255.96.108, port: 8443, type: vless, uuid: 157a354e-33c2-4a5c-890b-9d43c93975b8, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: VLESS-1V, server: 199.255.96.108, port: 8443, type: vless, uuid: 811d0377-e4f4-4e3c-8620-4c8ca75fc952, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1J, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 4ca7a4d7-b5f1-4445-88e3-6c005ea523af, udp: true}
+  - {name: VLESS-1S, server: 199.255.96.108, port: 8443, type: vless, uuid: dff217a1-1288-428e-b427-9dfa606c69b8, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: 07dd5734-db6d-426d-8ee4-ca345bcea864, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: VLESS-2D, server: 199.255.96.108, port: 8443, type: vless, uuid: 25978169-f9e9-411c-b717-7be034252e10, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: VLESS-2E, server: 199.255.96.108, port: 8443, type: vless, uuid: 23fb233d-a7a1-4bd1-92be-bb8ca452371d, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: VLESS-1E, server: 199.255.96.108, port: 8443, type: vless, uuid: 76fc8f1d-7c40-453d-b21a-5cff28bcf8cd, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP-1J, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 494f4679-f181-4a52-80fd-09f107e1e09f, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HK-1B, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 487a6f6c-43c4-4b64-9b4d-bd790f9ccf99, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP-1F, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 515f0818-63f0-42b3-8096-04c8e51278bb, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: VLESS-1U, server: 199.255.96.108, port: 8443, type: vless, uuid: 3bf3f116-7191-4ba5-b5f0-7cca83cccbfb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP-1C, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 2125206b-00bd-4ed2-99e3-469bb2295b87, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: VLESS-1T, server: 199.255.96.108, port: 8443, type: vless, uuid: 9972172f-8e99-4164-a9b5-5c023f1550da, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1O, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 866b65c6-8066-4d85-8adb-f3ea35f921e6, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1H, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: e51b097d-c9e1-42bf-af57-59967835b629, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: VLESS-1G, server: 199.255.96.108, port: 8443, type: vless, uuid: cf967d7d-9836-494d-84d3-13eef628a586, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP-1H, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 10c5e6eb-9248-4063-b31c-bdf0a1a663df, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1D, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: a0d542d1-351f-4fe2-a66e-9b16dcd0614a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: 07dd5734-db6d-426d-8ee4-ca345bcea864, sni: node4.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 美国 抗封线-1D, server: w4.lianjieni.com, port: 443, type: vless, uuid: b136eabc-7b3e-4f77-a144-65d34f3f8c2c, tls: true, servername: w4.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w4.lianjieni.com}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1D, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: a0d542d1-351f-4fe2-a66e-9b16dcd0614a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: VLESS-1N, server: 199.255.96.108, port: 8443, type: vless, uuid: fae5d4fa-8859-4f02-a69d-506bd4779414, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HK-1H, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 10c5e6eb-9248-4063-b31c-bdf0a1a663df, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1H, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: e51b097d-c9e1-42bf-af57-59967835b629, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK-1G, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 25bd1a9d-27a1-4089-adb1-a48f51364c3e, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-1H, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 10c5e6eb-9248-4063-b31c-bdf0a1a663df, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1B, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: dc30eae7-8f84-4264-9eda-15f604832f32, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1L, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 01b188a7-2c5a-4251-ab7e-5641d4fc7e44, udp: true}
+  - {name: 🇹🇼 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: 07dd5734-db6d-426d-8ee4-ca345bcea864, sni: node2.yuntongclouds.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1N, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: c03b9398-e22c-49c0-af3c-2748893bad21, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1F, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: df6ba805-f59d-4ec7-a878-cc76c3525f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: VLESS-1D, server: 199.255.96.108, port: 8443, type: vless, uuid: bd19de5c-f586-4b1b-a37c-efa1acf2ceb9, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: VLESS-2M, server: 199.255.96.108, port: 8443, type: vless, uuid: 503feedd-4289-4690-8b84-dcbb7047ded7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇺🇸 US-1F, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 515f0818-63f0-42b3-8096-04c8e51278bb, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-1E, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 9d185895-1496-4012-a32c-42bb0720b2d8, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1G, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: f0deb1ef-e159-497f-b254-84ef8288d2b8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: VLESS-1Q, server: 199.255.96.108, port: 8443, type: vless, uuid: 5653d30c-ed8b-41b9-b323-62e7075ac3f7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1Q, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: bd114626-08e1-40b6-94a2-46a2a41f640f, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1D, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: a0d542d1-351f-4fe2-a66e-9b16dcd0614a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇯🇵 JP-1G, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 25bd1a9d-27a1-4089-adb1-a48f51364c3e, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1P, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 23adf44a-3559-439c-b3cd-46f8d7a2f0fc, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1H, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: e51b097d-c9e1-42bf-af57-59967835b629, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: VLESS-2J, server: 199.255.96.108, port: 8443, type: vless, uuid: b772add4-1cd0-444d-93c7-fcae5dfd4882, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1L, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 3b59c94f-d367-44a9-a230-4ebbc1607435, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1D, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: a0d542d1-351f-4fe2-a66e-9b16dcd0614a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1A, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: a3a25683-64a4-4c6e-9035-d2b316ce1c3e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HK-1D, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: b107d8ef-f587-41a8-9c89-6e217ce61104, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: VLESS-2L, server: 199.255.96.108, port: 8443, type: vless, uuid: eebcff5d-3374-493f-b082-9b26f1f88eea, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: VLESS-1L, server: 199.255.96.108, port: 8443, type: vless, uuid: 9d5e61b9-a712-45c7-809f-44946e8bb133, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: VLESS-2N, server: 199.255.96.108, port: 8443, type: vless, uuid: 38217800-d4fd-4a7f-946e-c41ead11df47, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1A, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: a3a25683-64a4-4c6e-9035-d2b316ce1c3e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: a3a25683-64a4-4c6e-9035-d2b316ce1c3e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1L, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 3b59c94f-d367-44a9-a230-4ebbc1607435, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国-洛杉矶-PRO-1B, server: 5.253.38.67, port: 40444, type: vless, uuid: 17240969-bf23-4465-abcb-8e14ca8bad6b, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ZZK_Oo5-iDDgoWzxIURTLWoKPbC8NFto3Mk7OvAZgRU, short-id: "b3f2a1c9" }, servername: www.lovelive-anime.jp, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1L, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 3b59c94f-d367-44a9-a230-4ebbc1607435, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: VLESS-2I, server: 199.255.96.108, port: 8443, type: vless, uuid: 7f1ad6dd-f24d-4f0e-a5d4-6adc59a05abd, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1E, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 2b218981-5bec-4184-a7e1-62ab8cf3ed16, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1F, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: df6ba805-f59d-4ec7-a878-cc76c3525f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1E, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 44d4b45c-1efd-423b-beeb-a42bd6463b80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US-1J, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 494f4679-f181-4a52-80fd-09f107e1e09f, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JP-1I, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: e87bd13a-52bd-4498-a6ef-8e51cdc8869d, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 抗封线-1G, server: w3.lianjieni.com, port: 443, type: vless, uuid: 95b8eb1e-2cb8-426a-8eb2-8b86fd2060c0, tls: true, servername: w3.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w3.lianjieni.com}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1B, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: dc30eae7-8f84-4264-9eda-15f604832f32, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1F, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: df6ba805-f59d-4ec7-a878-cc76c3525f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 美国 抗封线-1E, server: w1.lianjieni.com, port: 443, type: vless, uuid: 95b8eb1e-2cb8-426a-8eb2-8b86fd2060c0, tls: true, servername: w1.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w1.lianjieni.com}}, udp: true}
+  - {name: 🇯🇵 JP-1E, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: 9d185895-1496-4012-a32c-42bb0720b2d8, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 HK-1I, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: e87bd13a-52bd-4498-a6ef-8e51cdc8869d, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: VLESS-2P, server: 199.255.96.108, port: 8443, type: vless, uuid: 78ede865-440e-41e4-85e9-975ee955ad41, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1G, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: f0deb1ef-e159-497f-b254-84ef8288d2b8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: B1-PCA, server: jl-fny.tk7890.top, port: 56952, type: hysteria2, password: 217de0bb-aea9-471e-90fe-76ecf4db2df4, auth: 217de0bb-aea9-471e-90fe-76ecf4db2df4, sni: jl-fny.tk7890.top, up: 500, down: 500, skip-cert-verify: true, obfs: salamander, obfs-password: NWNlOGUwN2Q3MzAyMTY4NQ==, udp: true}
+  - {name: 🇺🇸 US-1I, server: us200m.jiasu.asia, port: 50000, type: trojan, password: e87bd13a-52bd-4498-a6ef-8e51cdc8869d, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1J, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 78fc00ed-b507-4558-9d8a-f8cc16b6fb9e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: VLESS-1M, server: 199.255.96.108, port: 8443, type: vless, uuid: ba11149a-297d-4636-b294-971d3c7f1cf4, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1J, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 78fc00ed-b507-4558-9d8a-f8cc16b6fb9e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: VLESS-1Z, server: 199.255.96.108, port: 8443, type: vless, uuid: 6d1f1ecc-14f3-472d-baa6-fb47d80121de, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1C, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 30160c36-0553-4c9f-bc6a-8bde76d536b0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: VLESS-1R, server: 199.255.96.108, port: 8443, type: vless, uuid: 05addb1b-69d1-4ac7-a995-06405f012fa7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: VLESS-1P, server: 199.255.96.108, port: 8443, type: vless, uuid: 55c2cef9-faf9-403a-972e-10d50d2314fb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1E, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: 44d4b45c-1efd-423b-beeb-a42bd6463b80, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1I, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: 507e2389-3e9c-40a5-bc69-6f2868d77569, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇺🇸 US-1A, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 33b1c839-a8a0-4dce-9001-d671a073917d, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: VLESS-1I, server: 199.255.96.108, port: 8443, type: vless, uuid: 256e15f3-dd81-48ce-860f-f3906a35fec5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: G I C A B N H T H N, server: expired.example.com, port: 80, type: vmess, uuid: df64de0b-be14-4138-b697-75500b37eeb6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /expired, headers: {Host: expired.example.com}}, udp: true}
+  - {name: 🇭🇰 HK-1A, server: hk200m.jiasu.asia, port: 50000, type: trojan, password: 33b1c839-a8a0-4dce-9001-d671a073917d, sni: hk200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: VLESS-2H, server: 199.255.96.108, port: 8443, type: vless, uuid: 000ac95e-3e6e-4275-b187-3bfa2300466c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: VLESS-2O, server: 199.255.96.108, port: 8443, type: vless, uuid: 1c15cd7e-b89e-43d2-8d20-f39fc484b46e, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1I, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 507e2389-3e9c-40a5-bc69-6f2868d77569, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1K, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: bf9e8db1-0ed0-499a-8114-bb2952ef8c76, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-004-1B, server: qvxbtx.uhomdex.shop, port: 443, type: vmess, uuid: dc30eae7-8f84-4264-9eda-15f604832f32, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: qvxbtx.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-003-1J, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: 78fc00ed-b507-4558-9d8a-f8cc16b6fb9e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1K, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: bf9e8db1-0ed0-499a-8114-bb2952ef8c76, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: VLESS-1x, server: 199.255.96.108, port: 8443, type: vless, uuid: 59bf0361-2da9-4c4d-9acb-9338a2d128c2, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1G, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: f0deb1ef-e159-497f-b254-84ef8288d2b8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1F, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: d6803811-7165-432d-8dc6-ca9a63c78836, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1L, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 3b59c94f-d367-44a9-a230-4ebbc1607435, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-001-1I, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: 507e2389-3e9c-40a5-bc69-6f2868d77569, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1G, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 94c951b4-bb81-4d9b-8401-f84d31c73cfb, udp: true}
+  - {name: 🇯🇵 JP-1D, server: jp200m.jiasu.asia, port: 50000, type: trojan, password: b107d8ef-f587-41a8-9c89-6e217ce61104, sni: jp200m.jiasu.asia, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国-法兰克福-002-1K, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: bf9e8db1-0ed0-499a-8114-bb2952ef8c76, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
+  - {name: VLESS-2G, server: 199.255.96.108, port: 8443, type: vless, uuid: 58d8b51e-9bdb-4f07-bd08-7d567afddd12, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1K, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 74c3ac36-5c4e-46b8-a52d-f8487c6a4c8c, udp: true}
+  - {name: 🇺🇸 美国 抗封线-1F, server: w2.lianjieni.com, port: 443, type: vless, uuid: 95b8eb1e-2cb8-426a-8eb2-8b86fd2060c0, tls: true, servername: w2.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w2.lianjieni.com}}, udp: true}
   - {name: VLESS-1H, server: 199.255.96.108, port: 8443, type: vless, uuid: f676bfd2-168a-4f96-891e-31e263849e13, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 美国 抗封线-1C, server: w3.lianjieni.com, port: 443, type: vless, uuid: 6dd6a60b-a763-46ba-9a60-6acb96213a53, tls: true, servername: w3.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w3.lianjieni.com}}, udp: true}
-  - {name: 🇭🇰 HONG KONG 01-1B, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 5363346d-4ec5-4c2f-9771-7e956ce23c55, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-001-1B, server: cxsfvn.uhomdex.shop, port: 443, type: vmess, uuid: f0deb1ef-e159-497f-b254-84ef8288d2b8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cxsfvn.uhomdex.shop}}, udp: true}
-  - {name: 🇹🇼 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: cd491b17-c7a3-4ef8-b9ab-69c06e305bf4, sni: node3.yuntongclouds.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 美国 抗封线-1A, server: w1.lianjieni.com, port: 443, type: vless, uuid: 6dd6a60b-a763-46ba-9a60-6acb96213a53, tls: true, servername: w1.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w1.lianjieni.com}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-002-1N, server: zzrt.uhomdex.shop, port: 8443, type: vmess, uuid: dc30eae7-8f84-4264-9eda-15f604832f32, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: zzrt.uhomdex.shop}}, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1I, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: df6ba805-f59d-4ec7-a878-cc76c3525f1b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
-  - {name: 🇺🇸 US-1H, server: us200m.jiasu.asia, port: 50000, type: trojan, password: 9d185895-1496-4012-a32c-42bb0720b2d8, sni: us200m.jiasu.asia, skip-cert-verify: false, udp: true}
-  - {name: VLESS-1J, server: 199.255.96.108, port: 8443, type: vless, uuid: 3bf3f116-7191-4ba5-b5f0-7cca83cccbfb, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 德国-法兰克福-003-1A, server: hwtqcp.uhomdex.shop, port: 8443, type: vmess, uuid: bcf8f365-909b-4504-8b7c-b77a7b04861d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hwtqcp.uhomdex.shop}}, udp: true}
+  - {name: VLESS-1C, server: 199.255.96.108, port: 8443, type: vless, uuid: 520f6863-9214-4951-aeb6-21b10972dca6, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ssxlbGPMFM_dJxqa7Nb6b0o6UnDj5D-r1k0AAX1_BHI, short-id: "abcd1234" }, servername: www.java.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇭🇰 HONG KONG 01-1H, server: 72.244.91.170, port: 20001, type: ss, cipher: aes-128-gcm, password: 973bbfc8-d622-4983-a359-75a6e6801d00, udp: true}
+  - {name: 🇺🇸 美国 抗封线-1C, server: w3.lianjieni.com, port: 443, type: vless, uuid: b136eabc-7b3e-4f77-a144-65d34f3f8c2c, tls: true, servername: w3.lianjieni.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /cdnws, headers: {Host: w3.lianjieni.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VLESS-1W
-      - MH-BRW
-      - 🇨🇳 中国联通节点1
-      - 🇭🇰 HK-1D
-      - 🇩🇪 德国-法兰克福-002-1M
-      - 🇩🇪 德国-法兰克福-001-1N
-      - VLESS-2H
-      - 🇭🇰 HK-1G
-      - 🇺🇸 美国 抗封线-1F
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇯🇵 JP-1H
-      - VLESS-1I
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JP-1C
-      - 🇺🇸 US-1F
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - B5-GHN
-      - 🇩🇪 德国-法兰克福-003-1O
-      - 🇺🇸 美国 抗封线-1D
       - 🇩🇪 德国-法兰克福-004-1E
-      - VLESS-1R
-      - 🇭🇰 HK-1H
-      - VLESS-2F
+      - VLESS-1Y
+      - VLESS-1B
+      - 中国-北京-线路1
+      - VLESS-2B
       - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇮🇳 印度-中转2区2x
-      - VLESS-2A
+      - VLESS-1K
+      - 🇭🇰 HK-1C
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国 抗封线-1H
+      - VLESS-2F
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇭🇰 HONG KONG 01-1D
+      - VLESS-2C
+      - 🇺🇸 US-1D
       - VLESS-1O
-      - VLESS-1L
+      - MJ-INZ
+      - VLESS-1W
       - 🇩🇪 德国-法兰克福-004-1K
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1O
-      - 🇭🇰 HONG KONG 01-1K
-      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 JP-1B
+      - 🇺🇸 US-1G
+      - 🇺🇸 美国 抗封线-1A
+      - 🇭🇰 HK-1F
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 德国-法兰克福-001-1A
       - VLESS-1A
-      - VLESS-2L
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇭🇰 HK-1E
+      - 🇭🇰 HONG KONG 01-1R
+      - VLESS-1J
+      - 🇺🇸 US-1C
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇭🇰 HONG KONG 01-1C
+      - VLESS-2K
+      - 🇺🇸 美国 抗封线-1B
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇮🇳 印度-中转2区2x
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇭🇰 HK-1J
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇨🇳 中国联通节点1
+      - VLESS-1F
+      - 🇯🇵 JP-1A
+      - 🇺🇸 US-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - VLESS-2A
+      - VLESS-1V
+      - 🇭🇰 HONG KONG 01-1J
+      - VLESS-1S
+      - 🇹🇼 台湾高速节点3
+      - VLESS-2D
+      - VLESS-2E
+      - VLESS-1E
+      - 🇯🇵 JP-1J
+      - 🇭🇰 HK-1B
+      - 🇯🇵 JP-1F
+      - VLESS-1U
+      - 🇯🇵 JP-1C
+      - VLESS-1T
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇩🇪 德国-法兰克福-001-1H
+      - VLESS-1G
+      - 🇯🇵 JP-1H
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 抗封线-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - VLESS-1N
+      - 🇭🇰 HK-1H
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-1G
+      - 🇺🇸 US-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇹🇼 台湾高速节点2
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇩🇪 德国-法兰克福-002-1F
+      - VLESS-1D
+      - VLESS-2M
+      - 🇺🇸 US-1F
+      - 🇺🇸 US-1E
+      - 🇩🇪 德国-法兰克福-003-1G
       - VLESS-1Q
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP-1G
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇩🇪 德国-法兰克福-004-1H
+      - VLESS-2J
+      - 🇩🇪 德国-法兰克福-002-1L
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HK-1D
+      - VLESS-2L
+      - VLESS-1L
+      - VLESS-2N
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1L
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇩🇪 德国-法兰克福-004-1L
+      - VLESS-2I
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 US-1J
+      - 🇯🇵 JP-1I
+      - 🇺🇸 美国 抗封线-1G
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇺🇸 美国 抗封线-1E
       - 🇯🇵 JP-1E
       - 🇭🇰 HK-1I
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 US-1I
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇭🇰 HONG KONG 01-1J
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JP-1I
-      - VLESS-1P
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇺🇸 美国 抗封线-1E
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇺🇸 US-1A
-      - 🇺🇸 US-1C
-      - 🇩🇪 德国-法兰克福-004-1J
+      - VLESS-2P
       - 🇩🇪 德国-法兰克福-004-1G
-      - VLESS-1Y
-      - VLESS-1V
-      - VLESS-2J
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-002-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇯🇵 JP-1F
-      - 🇯🇵 JP-1B
-      - 🇩🇪 德国-法兰克福-003-1N
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - VLESS-1U
-      - 🇭🇰 HK-1C
-      - 🇭🇰 HK-1A
-      - 🇺🇸 US-1G
-      - 🇩🇪 德国-法兰克福-002-1H
-      - VLESS-1x
-      - VLESS-2I
-      - VLESS-1B
-      - 🇺🇸 美国 抗封线-1H
-      - 🇭🇰 HK-1B
-      - 🇩🇪 德国-法兰克福-004-1H
-      - VLESS-1C
-      - 🇩🇪 德国-法兰克福-003-1B
+      - B1-PCA
+      - 🇺🇸 US-1I
+      - 🇩🇪 德国-法兰克福-002-1J
       - VLESS-1M
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HK-1E
-      - 🇺🇸 US-1E
-      - 🇩🇪 德国-法兰克福-002-1C
-      - VLESS-1Z
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1M
-      - 🇯🇵 JP-1G
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇩🇪 德国-法兰克福-001-1O
-      - 🇺🇸 US-1D
-      - VLESS-2D
-      - 🇯🇵 JP-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - VLESS-2E
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇩🇪 德国-法兰克福-004-1N
-      - VLESS-1E
-      - 🇩🇪 德国-法兰克福-001-1I
-      - VLESS-2K
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HK-1F
-      - 🇯🇵 JP-1D
-      - 🇭🇰 HONG KONG 01-1O
-      - VLESS-2B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - VLESS-2C
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-004-1M
-      - 🇭🇰 HONG KONG 01-1E
-      - VLESS-1T
-      - VLESS-2O
-      - 🇩🇪 德国-法兰克福-004-1D
-      - VLESS-1N
-      - VLESS-2G
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇭🇰 HONG KONG 01-1D
-      - G I C A B N H T H N
-      - 🇩🇪 德国-法兰克福-001-1M
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - VLESS-1S
-      - 🇩🇪 德国-法兰克福-002-1I
-      - VLESS-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇺🇸 美国 抗封线-1B
-      - VLESS-1G
-      - VLESS-1F
-      - VLESS-2N
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇺🇸 美国 抗封线-1G
-      - VLESS-1K
-      - 🇩🇪 德国-法兰克福-001-1F
-      - VLESS-2M
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 中国-北京-线路1
-      - 🇺🇸 US-1B
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-003-1K
       - 🇩🇪 德国-法兰克福-001-1J
-      - VLESS-1H
-      - 🇺🇸 美国 抗封线-1C
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国 抗封线-1A
-      - 🇩🇪 德国-法兰克福-002-1N
+      - VLESS-1Z
+      - 🇩🇪 德国-法兰克福-003-1C
+      - VLESS-1R
+      - VLESS-1P
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇺🇸 US-1A
+      - VLESS-1I
+      - G I C A B N H T H N
+      - 🇭🇰 HK-1A
+      - VLESS-2H
+      - VLESS-2O
       - 🇩🇪 德国-法兰克福-003-1I
-      - 🇺🇸 US-1H
-      - VLESS-1J
-      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-001-1K
+      - VLESS-1x
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 德国-法兰克福-001-1L
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇯🇵 JP-1D
+      - 🇩🇪 德国-法兰克福-002-1K
+      - VLESS-2G
+      - 🇭🇰 HONG KONG 01-1K
+      - 🇺🇸 美国 抗封线-1F
+      - VLESS-1H
+      - VLESS-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 美国 抗封线-1C
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - VLESS-1W
-      - MH-BRW
-      - 🇨🇳 中国联通节点1
-      - 🇭🇰 HK-1D
-      - 🇩🇪 德国-法兰克福-002-1M
-      - 🇩🇪 德国-法兰克福-001-1N
-      - VLESS-2H
-      - 🇭🇰 HK-1G
-      - 🇺🇸 美国 抗封线-1F
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇯🇵 JP-1H
-      - VLESS-1I
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JP-1C
-      - 🇺🇸 US-1F
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - B5-GHN
-      - 🇩🇪 德国-法兰克福-003-1O
-      - 🇺🇸 美国 抗封线-1D
       - 🇩🇪 德国-法兰克福-004-1E
-      - VLESS-1R
-      - 🇭🇰 HK-1H
-      - VLESS-2F
+      - VLESS-1Y
+      - VLESS-1B
+      - 中国-北京-线路1
+      - VLESS-2B
       - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇮🇳 印度-中转2区2x
-      - VLESS-2A
+      - VLESS-1K
+      - 🇭🇰 HK-1C
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国 抗封线-1H
+      - VLESS-2F
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇭🇰 HONG KONG 01-1D
+      - VLESS-2C
+      - 🇺🇸 US-1D
       - VLESS-1O
-      - VLESS-1L
+      - MJ-INZ
+      - VLESS-1W
       - 🇩🇪 德国-法兰克福-004-1K
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1O
-      - 🇭🇰 HONG KONG 01-1K
-      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 JP-1B
+      - 🇺🇸 US-1G
+      - 🇺🇸 美国 抗封线-1A
+      - 🇭🇰 HK-1F
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 德国-法兰克福-001-1A
       - VLESS-1A
-      - VLESS-2L
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇭🇰 HK-1E
+      - 🇭🇰 HONG KONG 01-1R
+      - VLESS-1J
+      - 🇺🇸 US-1C
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇭🇰 HONG KONG 01-1C
+      - VLESS-2K
+      - 🇺🇸 美国 抗封线-1B
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇮🇳 印度-中转2区2x
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇭🇰 HK-1J
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇨🇳 中国联通节点1
+      - VLESS-1F
+      - 🇯🇵 JP-1A
+      - 🇺🇸 US-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - VLESS-2A
+      - VLESS-1V
+      - 🇭🇰 HONG KONG 01-1J
+      - VLESS-1S
+      - 🇹🇼 台湾高速节点3
+      - VLESS-2D
+      - VLESS-2E
+      - VLESS-1E
+      - 🇯🇵 JP-1J
+      - 🇭🇰 HK-1B
+      - 🇯🇵 JP-1F
+      - VLESS-1U
+      - 🇯🇵 JP-1C
+      - VLESS-1T
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇩🇪 德国-法兰克福-001-1H
+      - VLESS-1G
+      - 🇯🇵 JP-1H
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 抗封线-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - VLESS-1N
+      - 🇭🇰 HK-1H
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-1G
+      - 🇺🇸 US-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇹🇼 台湾高速节点2
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇩🇪 德国-法兰克福-002-1F
+      - VLESS-1D
+      - VLESS-2M
+      - 🇺🇸 US-1F
+      - 🇺🇸 US-1E
+      - 🇩🇪 德国-法兰克福-003-1G
       - VLESS-1Q
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP-1G
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇩🇪 德国-法兰克福-004-1H
+      - VLESS-2J
+      - 🇩🇪 德国-法兰克福-002-1L
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HK-1D
+      - VLESS-2L
+      - VLESS-1L
+      - VLESS-2N
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1L
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇩🇪 德国-法兰克福-004-1L
+      - VLESS-2I
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 US-1J
+      - 🇯🇵 JP-1I
+      - 🇺🇸 美国 抗封线-1G
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇺🇸 美国 抗封线-1E
       - 🇯🇵 JP-1E
       - 🇭🇰 HK-1I
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 US-1I
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇭🇰 HONG KONG 01-1J
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JP-1I
-      - VLESS-1P
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇺🇸 美国 抗封线-1E
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇺🇸 US-1A
-      - 🇺🇸 US-1C
-      - 🇩🇪 德国-法兰克福-004-1J
+      - VLESS-2P
       - 🇩🇪 德国-法兰克福-004-1G
-      - VLESS-1Y
-      - VLESS-1V
-      - VLESS-2J
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-002-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇯🇵 JP-1F
-      - 🇯🇵 JP-1B
-      - 🇩🇪 德国-法兰克福-003-1N
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - VLESS-1U
-      - 🇭🇰 HK-1C
-      - 🇭🇰 HK-1A
-      - 🇺🇸 US-1G
-      - 🇩🇪 德国-法兰克福-002-1H
-      - VLESS-1x
-      - VLESS-2I
-      - VLESS-1B
-      - 🇺🇸 美国 抗封线-1H
-      - 🇭🇰 HK-1B
-      - 🇩🇪 德国-法兰克福-004-1H
-      - VLESS-1C
-      - 🇩🇪 德国-法兰克福-003-1B
+      - B1-PCA
+      - 🇺🇸 US-1I
+      - 🇩🇪 德国-法兰克福-002-1J
       - VLESS-1M
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HK-1E
-      - 🇺🇸 US-1E
-      - 🇩🇪 德国-法兰克福-002-1C
-      - VLESS-1Z
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1M
-      - 🇯🇵 JP-1G
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇩🇪 德国-法兰克福-001-1O
-      - 🇺🇸 US-1D
-      - VLESS-2D
-      - 🇯🇵 JP-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - VLESS-2E
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇩🇪 德国-法兰克福-004-1N
-      - VLESS-1E
-      - 🇩🇪 德国-法兰克福-001-1I
-      - VLESS-2K
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HK-1F
-      - 🇯🇵 JP-1D
-      - 🇭🇰 HONG KONG 01-1O
-      - VLESS-2B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - VLESS-2C
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-004-1M
-      - 🇭🇰 HONG KONG 01-1E
-      - VLESS-1T
-      - VLESS-2O
-      - 🇩🇪 德国-法兰克福-004-1D
-      - VLESS-1N
-      - VLESS-2G
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇭🇰 HONG KONG 01-1D
-      - G I C A B N H T H N
-      - 🇩🇪 德国-法兰克福-001-1M
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - VLESS-1S
-      - 🇩🇪 德国-法兰克福-002-1I
-      - VLESS-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇺🇸 美国 抗封线-1B
-      - VLESS-1G
-      - VLESS-1F
-      - VLESS-2N
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇺🇸 美国 抗封线-1G
-      - VLESS-1K
-      - 🇩🇪 德国-法兰克福-001-1F
-      - VLESS-2M
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 中国-北京-线路1
-      - 🇺🇸 US-1B
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-003-1K
       - 🇩🇪 德国-法兰克福-001-1J
-      - VLESS-1H
-      - 🇺🇸 美国 抗封线-1C
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国 抗封线-1A
-      - 🇩🇪 德国-法兰克福-002-1N
+      - VLESS-1Z
+      - 🇩🇪 德国-法兰克福-003-1C
+      - VLESS-1R
+      - VLESS-1P
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇺🇸 US-1A
+      - VLESS-1I
+      - G I C A B N H T H N
+      - 🇭🇰 HK-1A
+      - VLESS-2H
+      - VLESS-2O
       - 🇩🇪 德国-法兰克福-003-1I
-      - 🇺🇸 US-1H
-      - VLESS-1J
-      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-001-1K
+      - VLESS-1x
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 德国-法兰克福-001-1L
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇯🇵 JP-1D
+      - 🇩🇪 德国-法兰克福-002-1K
+      - VLESS-2G
+      - 🇭🇰 HONG KONG 01-1K
+      - 🇺🇸 美国 抗封线-1F
+      - VLESS-1H
+      - VLESS-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 美国 抗封线-1C
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VLESS-1W
-      - MH-BRW
-      - 🇨🇳 中国联通节点1
-      - 🇭🇰 HK-1D
-      - 🇩🇪 德国-法兰克福-002-1M
-      - 🇩🇪 德国-法兰克福-001-1N
-      - VLESS-2H
-      - 🇭🇰 HK-1G
-      - 🇺🇸 美国 抗封线-1F
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇯🇵 JP-1H
-      - VLESS-1I
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JP-1C
-      - 🇺🇸 US-1F
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - B5-GHN
-      - 🇩🇪 德国-法兰克福-003-1O
-      - 🇺🇸 美国 抗封线-1D
       - 🇩🇪 德国-法兰克福-004-1E
-      - VLESS-1R
-      - 🇭🇰 HK-1H
-      - VLESS-2F
+      - VLESS-1Y
+      - VLESS-1B
+      - 中国-北京-线路1
+      - VLESS-2B
       - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇮🇳 印度-中转2区2x
-      - VLESS-2A
+      - VLESS-1K
+      - 🇭🇰 HK-1C
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国 抗封线-1H
+      - VLESS-2F
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇭🇰 HONG KONG 01-1D
+      - VLESS-2C
+      - 🇺🇸 US-1D
       - VLESS-1O
-      - VLESS-1L
+      - MJ-INZ
+      - VLESS-1W
       - 🇩🇪 德国-法兰克福-004-1K
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1O
-      - 🇭🇰 HONG KONG 01-1K
-      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 JP-1B
+      - 🇺🇸 US-1G
+      - 🇺🇸 美国 抗封线-1A
+      - 🇭🇰 HK-1F
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 德国-法兰克福-001-1A
       - VLESS-1A
-      - VLESS-2L
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇭🇰 HK-1E
+      - 🇭🇰 HONG KONG 01-1R
+      - VLESS-1J
+      - 🇺🇸 US-1C
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇭🇰 HONG KONG 01-1C
+      - VLESS-2K
+      - 🇺🇸 美国 抗封线-1B
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇮🇳 印度-中转2区2x
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇭🇰 HK-1J
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇨🇳 中国联通节点1
+      - VLESS-1F
+      - 🇯🇵 JP-1A
+      - 🇺🇸 US-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - VLESS-2A
+      - VLESS-1V
+      - 🇭🇰 HONG KONG 01-1J
+      - VLESS-1S
+      - 🇹🇼 台湾高速节点3
+      - VLESS-2D
+      - VLESS-2E
+      - VLESS-1E
+      - 🇯🇵 JP-1J
+      - 🇭🇰 HK-1B
+      - 🇯🇵 JP-1F
+      - VLESS-1U
+      - 🇯🇵 JP-1C
+      - VLESS-1T
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇩🇪 德国-法兰克福-001-1H
+      - VLESS-1G
+      - 🇯🇵 JP-1H
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 抗封线-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - VLESS-1N
+      - 🇭🇰 HK-1H
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-1G
+      - 🇺🇸 US-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇹🇼 台湾高速节点2
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇩🇪 德国-法兰克福-002-1F
+      - VLESS-1D
+      - VLESS-2M
+      - 🇺🇸 US-1F
+      - 🇺🇸 US-1E
+      - 🇩🇪 德国-法兰克福-003-1G
       - VLESS-1Q
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP-1G
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇩🇪 德国-法兰克福-004-1H
+      - VLESS-2J
+      - 🇩🇪 德国-法兰克福-002-1L
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HK-1D
+      - VLESS-2L
+      - VLESS-1L
+      - VLESS-2N
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1L
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇩🇪 德国-法兰克福-004-1L
+      - VLESS-2I
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 US-1J
+      - 🇯🇵 JP-1I
+      - 🇺🇸 美国 抗封线-1G
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇺🇸 美国 抗封线-1E
       - 🇯🇵 JP-1E
       - 🇭🇰 HK-1I
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 US-1I
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇭🇰 HONG KONG 01-1J
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JP-1I
-      - VLESS-1P
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇺🇸 美国 抗封线-1E
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇺🇸 US-1A
-      - 🇺🇸 US-1C
-      - 🇩🇪 德国-法兰克福-004-1J
+      - VLESS-2P
       - 🇩🇪 德国-法兰克福-004-1G
-      - VLESS-1Y
-      - VLESS-1V
-      - VLESS-2J
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-002-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇯🇵 JP-1F
-      - 🇯🇵 JP-1B
-      - 🇩🇪 德国-法兰克福-003-1N
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - VLESS-1U
-      - 🇭🇰 HK-1C
-      - 🇭🇰 HK-1A
-      - 🇺🇸 US-1G
-      - 🇩🇪 德国-法兰克福-002-1H
-      - VLESS-1x
-      - VLESS-2I
-      - VLESS-1B
-      - 🇺🇸 美国 抗封线-1H
-      - 🇭🇰 HK-1B
-      - 🇩🇪 德国-法兰克福-004-1H
-      - VLESS-1C
-      - 🇩🇪 德国-法兰克福-003-1B
+      - B1-PCA
+      - 🇺🇸 US-1I
+      - 🇩🇪 德国-法兰克福-002-1J
       - VLESS-1M
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HK-1E
-      - 🇺🇸 US-1E
-      - 🇩🇪 德国-法兰克福-002-1C
-      - VLESS-1Z
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1M
-      - 🇯🇵 JP-1G
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇩🇪 德国-法兰克福-001-1O
-      - 🇺🇸 US-1D
-      - VLESS-2D
-      - 🇯🇵 JP-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - VLESS-2E
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇩🇪 德国-法兰克福-004-1N
-      - VLESS-1E
-      - 🇩🇪 德国-法兰克福-001-1I
-      - VLESS-2K
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HK-1F
-      - 🇯🇵 JP-1D
-      - 🇭🇰 HONG KONG 01-1O
-      - VLESS-2B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - VLESS-2C
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-004-1M
-      - 🇭🇰 HONG KONG 01-1E
-      - VLESS-1T
-      - VLESS-2O
-      - 🇩🇪 德国-法兰克福-004-1D
-      - VLESS-1N
-      - VLESS-2G
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇭🇰 HONG KONG 01-1D
-      - G I C A B N H T H N
-      - 🇩🇪 德国-法兰克福-001-1M
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - VLESS-1S
-      - 🇩🇪 德国-法兰克福-002-1I
-      - VLESS-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇺🇸 美国 抗封线-1B
-      - VLESS-1G
-      - VLESS-1F
-      - VLESS-2N
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇺🇸 美国 抗封线-1G
-      - VLESS-1K
-      - 🇩🇪 德国-法兰克福-001-1F
-      - VLESS-2M
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 中国-北京-线路1
-      - 🇺🇸 US-1B
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-003-1K
       - 🇩🇪 德国-法兰克福-001-1J
-      - VLESS-1H
-      - 🇺🇸 美国 抗封线-1C
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国 抗封线-1A
-      - 🇩🇪 德国-法兰克福-002-1N
+      - VLESS-1Z
+      - 🇩🇪 德国-法兰克福-003-1C
+      - VLESS-1R
+      - VLESS-1P
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇺🇸 US-1A
+      - VLESS-1I
+      - G I C A B N H T H N
+      - 🇭🇰 HK-1A
+      - VLESS-2H
+      - VLESS-2O
       - 🇩🇪 德国-法兰克福-003-1I
-      - 🇺🇸 US-1H
-      - VLESS-1J
-      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-001-1K
+      - VLESS-1x
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 德国-法兰克福-001-1L
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇯🇵 JP-1D
+      - 🇩🇪 德国-法兰克福-002-1K
+      - VLESS-2G
+      - 🇭🇰 HONG KONG 01-1K
+      - 🇺🇸 美国 抗封线-1F
+      - VLESS-1H
+      - VLESS-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 美国 抗封线-1C
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -688,678 +672,662 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - VLESS-1W
-      - MH-BRW
-      - 🇨🇳 中国联通节点1
-      - 🇭🇰 HK-1D
-      - 🇩🇪 德国-法兰克福-002-1M
-      - 🇩🇪 德国-法兰克福-001-1N
-      - VLESS-2H
-      - 🇭🇰 HK-1G
-      - 🇺🇸 美国 抗封线-1F
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇯🇵 JP-1H
-      - VLESS-1I
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JP-1C
-      - 🇺🇸 US-1F
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - B5-GHN
-      - 🇩🇪 德国-法兰克福-003-1O
-      - 🇺🇸 美国 抗封线-1D
       - 🇩🇪 德国-法兰克福-004-1E
-      - VLESS-1R
-      - 🇭🇰 HK-1H
-      - VLESS-2F
+      - VLESS-1Y
+      - VLESS-1B
+      - 中国-北京-线路1
+      - VLESS-2B
       - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇮🇳 印度-中转2区2x
-      - VLESS-2A
+      - VLESS-1K
+      - 🇭🇰 HK-1C
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国 抗封线-1H
+      - VLESS-2F
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇭🇰 HONG KONG 01-1D
+      - VLESS-2C
+      - 🇺🇸 US-1D
       - VLESS-1O
-      - VLESS-1L
+      - MJ-INZ
+      - VLESS-1W
       - 🇩🇪 德国-法兰克福-004-1K
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1O
-      - 🇭🇰 HONG KONG 01-1K
-      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 JP-1B
+      - 🇺🇸 US-1G
+      - 🇺🇸 美国 抗封线-1A
+      - 🇭🇰 HK-1F
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 德国-法兰克福-001-1A
       - VLESS-1A
-      - VLESS-2L
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇭🇰 HK-1E
+      - 🇭🇰 HONG KONG 01-1R
+      - VLESS-1J
+      - 🇺🇸 US-1C
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇭🇰 HONG KONG 01-1C
+      - VLESS-2K
+      - 🇺🇸 美国 抗封线-1B
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇮🇳 印度-中转2区2x
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇭🇰 HK-1J
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇨🇳 中国联通节点1
+      - VLESS-1F
+      - 🇯🇵 JP-1A
+      - 🇺🇸 US-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - VLESS-2A
+      - VLESS-1V
+      - 🇭🇰 HONG KONG 01-1J
+      - VLESS-1S
+      - 🇹🇼 台湾高速节点3
+      - VLESS-2D
+      - VLESS-2E
+      - VLESS-1E
+      - 🇯🇵 JP-1J
+      - 🇭🇰 HK-1B
+      - 🇯🇵 JP-1F
+      - VLESS-1U
+      - 🇯🇵 JP-1C
+      - VLESS-1T
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇩🇪 德国-法兰克福-001-1H
+      - VLESS-1G
+      - 🇯🇵 JP-1H
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 抗封线-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - VLESS-1N
+      - 🇭🇰 HK-1H
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-1G
+      - 🇺🇸 US-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇹🇼 台湾高速节点2
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇩🇪 德国-法兰克福-002-1F
+      - VLESS-1D
+      - VLESS-2M
+      - 🇺🇸 US-1F
+      - 🇺🇸 US-1E
+      - 🇩🇪 德国-法兰克福-003-1G
       - VLESS-1Q
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP-1G
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇩🇪 德国-法兰克福-004-1H
+      - VLESS-2J
+      - 🇩🇪 德国-法兰克福-002-1L
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HK-1D
+      - VLESS-2L
+      - VLESS-1L
+      - VLESS-2N
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1L
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇩🇪 德国-法兰克福-004-1L
+      - VLESS-2I
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 US-1J
+      - 🇯🇵 JP-1I
+      - 🇺🇸 美国 抗封线-1G
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇺🇸 美国 抗封线-1E
       - 🇯🇵 JP-1E
       - 🇭🇰 HK-1I
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 US-1I
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇭🇰 HONG KONG 01-1J
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JP-1I
-      - VLESS-1P
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇺🇸 美国 抗封线-1E
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇺🇸 US-1A
-      - 🇺🇸 US-1C
-      - 🇩🇪 德国-法兰克福-004-1J
+      - VLESS-2P
       - 🇩🇪 德国-法兰克福-004-1G
-      - VLESS-1Y
-      - VLESS-1V
-      - VLESS-2J
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-002-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇯🇵 JP-1F
-      - 🇯🇵 JP-1B
-      - 🇩🇪 德国-法兰克福-003-1N
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - VLESS-1U
-      - 🇭🇰 HK-1C
-      - 🇭🇰 HK-1A
-      - 🇺🇸 US-1G
-      - 🇩🇪 德国-法兰克福-002-1H
-      - VLESS-1x
-      - VLESS-2I
-      - VLESS-1B
-      - 🇺🇸 美国 抗封线-1H
-      - 🇭🇰 HK-1B
-      - 🇩🇪 德国-法兰克福-004-1H
-      - VLESS-1C
-      - 🇩🇪 德国-法兰克福-003-1B
+      - B1-PCA
+      - 🇺🇸 US-1I
+      - 🇩🇪 德国-法兰克福-002-1J
       - VLESS-1M
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HK-1E
-      - 🇺🇸 US-1E
-      - 🇩🇪 德国-法兰克福-002-1C
-      - VLESS-1Z
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1M
-      - 🇯🇵 JP-1G
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇩🇪 德国-法兰克福-001-1O
-      - 🇺🇸 US-1D
-      - VLESS-2D
-      - 🇯🇵 JP-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - VLESS-2E
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇩🇪 德国-法兰克福-004-1N
-      - VLESS-1E
-      - 🇩🇪 德国-法兰克福-001-1I
-      - VLESS-2K
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HK-1F
-      - 🇯🇵 JP-1D
-      - 🇭🇰 HONG KONG 01-1O
-      - VLESS-2B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - VLESS-2C
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-004-1M
-      - 🇭🇰 HONG KONG 01-1E
-      - VLESS-1T
-      - VLESS-2O
-      - 🇩🇪 德国-法兰克福-004-1D
-      - VLESS-1N
-      - VLESS-2G
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇭🇰 HONG KONG 01-1D
-      - G I C A B N H T H N
-      - 🇩🇪 德国-法兰克福-001-1M
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - VLESS-1S
-      - 🇩🇪 德国-法兰克福-002-1I
-      - VLESS-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇺🇸 美国 抗封线-1B
-      - VLESS-1G
-      - VLESS-1F
-      - VLESS-2N
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇺🇸 美国 抗封线-1G
-      - VLESS-1K
-      - 🇩🇪 德国-法兰克福-001-1F
-      - VLESS-2M
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 中国-北京-线路1
-      - 🇺🇸 US-1B
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-003-1K
       - 🇩🇪 德国-法兰克福-001-1J
-      - VLESS-1H
-      - 🇺🇸 美国 抗封线-1C
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国 抗封线-1A
-      - 🇩🇪 德国-法兰克福-002-1N
+      - VLESS-1Z
+      - 🇩🇪 德国-法兰克福-003-1C
+      - VLESS-1R
+      - VLESS-1P
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇺🇸 US-1A
+      - VLESS-1I
+      - G I C A B N H T H N
+      - 🇭🇰 HK-1A
+      - VLESS-2H
+      - VLESS-2O
       - 🇩🇪 德国-法兰克福-003-1I
-      - 🇺🇸 US-1H
-      - VLESS-1J
-      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-001-1K
+      - VLESS-1x
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 德国-法兰克福-001-1L
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇯🇵 JP-1D
+      - 🇩🇪 德国-法兰克福-002-1K
+      - VLESS-2G
+      - 🇭🇰 HONG KONG 01-1K
+      - 🇺🇸 美国 抗封线-1F
+      - VLESS-1H
+      - VLESS-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 美国 抗封线-1C
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇹🇼 台湾高速节点2
       - 🇹🇼 台湾高速节点
       - 🇹🇼 台湾高速节点3
+      - 🇹🇼 台湾高速节点2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - VLESS-1W
-      - MH-BRW
-      - 🇨🇳 中国联通节点1
-      - 🇭🇰 HK-1D
-      - 🇩🇪 德国-法兰克福-002-1M
-      - 🇩🇪 德国-法兰克福-001-1N
-      - VLESS-2H
-      - 🇭🇰 HK-1G
-      - 🇺🇸 美国 抗封线-1F
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇯🇵 JP-1H
-      - VLESS-1I
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JP-1C
-      - 🇺🇸 US-1F
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - B5-GHN
-      - 🇩🇪 德国-法兰克福-003-1O
-      - 🇺🇸 美国 抗封线-1D
       - 🇩🇪 德国-法兰克福-004-1E
-      - VLESS-1R
-      - 🇭🇰 HK-1H
-      - VLESS-2F
+      - VLESS-1Y
+      - VLESS-1B
+      - 中国-北京-线路1
+      - VLESS-2B
       - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇮🇳 印度-中转2区2x
-      - VLESS-2A
+      - VLESS-1K
+      - 🇭🇰 HK-1C
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国 抗封线-1H
+      - VLESS-2F
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇭🇰 HONG KONG 01-1D
+      - VLESS-2C
+      - 🇺🇸 US-1D
       - VLESS-1O
-      - VLESS-1L
+      - MJ-INZ
+      - VLESS-1W
       - 🇩🇪 德国-法兰克福-004-1K
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1O
-      - 🇭🇰 HONG KONG 01-1K
-      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 JP-1B
+      - 🇺🇸 US-1G
+      - 🇺🇸 美国 抗封线-1A
+      - 🇭🇰 HK-1F
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 德国-法兰克福-001-1A
       - VLESS-1A
-      - VLESS-2L
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇭🇰 HK-1E
+      - 🇭🇰 HONG KONG 01-1R
+      - VLESS-1J
+      - 🇺🇸 US-1C
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇭🇰 HONG KONG 01-1C
+      - VLESS-2K
+      - 🇺🇸 美国 抗封线-1B
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇮🇳 印度-中转2区2x
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇭🇰 HK-1J
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇨🇳 中国联通节点1
+      - VLESS-1F
+      - 🇯🇵 JP-1A
+      - 🇺🇸 US-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - VLESS-2A
+      - VLESS-1V
+      - 🇭🇰 HONG KONG 01-1J
+      - VLESS-1S
+      - 🇹🇼 台湾高速节点3
+      - VLESS-2D
+      - VLESS-2E
+      - VLESS-1E
+      - 🇯🇵 JP-1J
+      - 🇭🇰 HK-1B
+      - 🇯🇵 JP-1F
+      - VLESS-1U
+      - 🇯🇵 JP-1C
+      - VLESS-1T
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇩🇪 德国-法兰克福-001-1H
+      - VLESS-1G
+      - 🇯🇵 JP-1H
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 抗封线-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - VLESS-1N
+      - 🇭🇰 HK-1H
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-1G
+      - 🇺🇸 US-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇹🇼 台湾高速节点2
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇩🇪 德国-法兰克福-002-1F
+      - VLESS-1D
+      - VLESS-2M
+      - 🇺🇸 US-1F
+      - 🇺🇸 US-1E
+      - 🇩🇪 德国-法兰克福-003-1G
       - VLESS-1Q
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP-1G
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇩🇪 德国-法兰克福-004-1H
+      - VLESS-2J
+      - 🇩🇪 德国-法兰克福-002-1L
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HK-1D
+      - VLESS-2L
+      - VLESS-1L
+      - VLESS-2N
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1L
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇩🇪 德国-法兰克福-004-1L
+      - VLESS-2I
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 US-1J
+      - 🇯🇵 JP-1I
+      - 🇺🇸 美国 抗封线-1G
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇺🇸 美国 抗封线-1E
       - 🇯🇵 JP-1E
       - 🇭🇰 HK-1I
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 US-1I
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇭🇰 HONG KONG 01-1J
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JP-1I
-      - VLESS-1P
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇺🇸 美国 抗封线-1E
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇺🇸 US-1A
-      - 🇺🇸 US-1C
-      - 🇩🇪 德国-法兰克福-004-1J
+      - VLESS-2P
       - 🇩🇪 德国-法兰克福-004-1G
-      - VLESS-1Y
-      - VLESS-1V
-      - VLESS-2J
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-002-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇯🇵 JP-1F
-      - 🇯🇵 JP-1B
-      - 🇩🇪 德国-法兰克福-003-1N
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - VLESS-1U
-      - 🇭🇰 HK-1C
-      - 🇭🇰 HK-1A
-      - 🇺🇸 US-1G
-      - 🇩🇪 德国-法兰克福-002-1H
-      - VLESS-1x
-      - VLESS-2I
-      - VLESS-1B
-      - 🇺🇸 美国 抗封线-1H
-      - 🇭🇰 HK-1B
-      - 🇩🇪 德国-法兰克福-004-1H
-      - VLESS-1C
-      - 🇩🇪 德国-法兰克福-003-1B
+      - B1-PCA
+      - 🇺🇸 US-1I
+      - 🇩🇪 德国-法兰克福-002-1J
       - VLESS-1M
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HK-1E
-      - 🇺🇸 US-1E
-      - 🇩🇪 德国-法兰克福-002-1C
-      - VLESS-1Z
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1M
-      - 🇯🇵 JP-1G
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇩🇪 德国-法兰克福-001-1O
-      - 🇺🇸 US-1D
-      - VLESS-2D
-      - 🇯🇵 JP-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - VLESS-2E
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇩🇪 德国-法兰克福-004-1N
-      - VLESS-1E
-      - 🇩🇪 德国-法兰克福-001-1I
-      - VLESS-2K
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HK-1F
-      - 🇯🇵 JP-1D
-      - 🇭🇰 HONG KONG 01-1O
-      - VLESS-2B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - VLESS-2C
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-004-1M
-      - 🇭🇰 HONG KONG 01-1E
-      - VLESS-1T
-      - VLESS-2O
-      - 🇩🇪 德国-法兰克福-004-1D
-      - VLESS-1N
-      - VLESS-2G
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇭🇰 HONG KONG 01-1D
-      - G I C A B N H T H N
-      - 🇩🇪 德国-法兰克福-001-1M
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - VLESS-1S
-      - 🇩🇪 德国-法兰克福-002-1I
-      - VLESS-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇺🇸 美国 抗封线-1B
-      - VLESS-1G
-      - VLESS-1F
-      - VLESS-2N
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇺🇸 美国 抗封线-1G
-      - VLESS-1K
-      - 🇩🇪 德国-法兰克福-001-1F
-      - VLESS-2M
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 中国-北京-线路1
-      - 🇺🇸 US-1B
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-003-1K
       - 🇩🇪 德国-法兰克福-001-1J
-      - VLESS-1H
-      - 🇺🇸 美国 抗封线-1C
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国 抗封线-1A
-      - 🇩🇪 德国-法兰克福-002-1N
+      - VLESS-1Z
+      - 🇩🇪 德国-法兰克福-003-1C
+      - VLESS-1R
+      - VLESS-1P
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇺🇸 US-1A
+      - VLESS-1I
+      - G I C A B N H T H N
+      - 🇭🇰 HK-1A
+      - VLESS-2H
+      - VLESS-2O
       - 🇩🇪 德国-法兰克福-003-1I
-      - 🇺🇸 US-1H
-      - VLESS-1J
-      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-001-1K
+      - VLESS-1x
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 德国-法兰克福-001-1L
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇯🇵 JP-1D
+      - 🇩🇪 德国-法兰克福-002-1K
+      - VLESS-2G
+      - 🇭🇰 HONG KONG 01-1K
+      - 🇺🇸 美国 抗封线-1F
+      - VLESS-1H
+      - VLESS-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 美国 抗封线-1C
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - VLESS-1W
-      - MH-BRW
-      - 🇨🇳 中国联通节点1
-      - 🇭🇰 HK-1D
-      - 🇩🇪 德国-法兰克福-002-1M
-      - 🇩🇪 德国-法兰克福-001-1N
-      - VLESS-2H
-      - 🇭🇰 HK-1G
-      - 🇺🇸 美国 抗封线-1F
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇯🇵 JP-1H
-      - VLESS-1I
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JP-1C
-      - 🇺🇸 US-1F
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - B5-GHN
-      - 🇩🇪 德国-法兰克福-003-1O
-      - 🇺🇸 美国 抗封线-1D
       - 🇩🇪 德国-法兰克福-004-1E
-      - VLESS-1R
-      - 🇭🇰 HK-1H
-      - VLESS-2F
+      - VLESS-1Y
+      - VLESS-1B
+      - 中国-北京-线路1
+      - VLESS-2B
       - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇮🇳 印度-中转2区2x
-      - VLESS-2A
+      - VLESS-1K
+      - 🇭🇰 HK-1C
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国 抗封线-1H
+      - VLESS-2F
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇭🇰 HONG KONG 01-1D
+      - VLESS-2C
+      - 🇺🇸 US-1D
       - VLESS-1O
-      - VLESS-1L
+      - MJ-INZ
+      - VLESS-1W
       - 🇩🇪 德国-法兰克福-004-1K
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1O
-      - 🇭🇰 HONG KONG 01-1K
-      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 JP-1B
+      - 🇺🇸 US-1G
+      - 🇺🇸 美国 抗封线-1A
+      - 🇭🇰 HK-1F
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 德国-法兰克福-001-1A
       - VLESS-1A
-      - VLESS-2L
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇭🇰 HK-1E
+      - 🇭🇰 HONG KONG 01-1R
+      - VLESS-1J
+      - 🇺🇸 US-1C
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇭🇰 HONG KONG 01-1C
+      - VLESS-2K
+      - 🇺🇸 美国 抗封线-1B
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇮🇳 印度-中转2区2x
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇭🇰 HK-1J
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇨🇳 中国联通节点1
+      - VLESS-1F
+      - 🇯🇵 JP-1A
+      - 🇺🇸 US-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - VLESS-2A
+      - VLESS-1V
+      - 🇭🇰 HONG KONG 01-1J
+      - VLESS-1S
+      - 🇹🇼 台湾高速节点3
+      - VLESS-2D
+      - VLESS-2E
+      - VLESS-1E
+      - 🇯🇵 JP-1J
+      - 🇭🇰 HK-1B
+      - 🇯🇵 JP-1F
+      - VLESS-1U
+      - 🇯🇵 JP-1C
+      - VLESS-1T
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇩🇪 德国-法兰克福-001-1H
+      - VLESS-1G
+      - 🇯🇵 JP-1H
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 抗封线-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - VLESS-1N
+      - 🇭🇰 HK-1H
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-1G
+      - 🇺🇸 US-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇹🇼 台湾高速节点2
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇩🇪 德国-法兰克福-002-1F
+      - VLESS-1D
+      - VLESS-2M
+      - 🇺🇸 US-1F
+      - 🇺🇸 US-1E
+      - 🇩🇪 德国-法兰克福-003-1G
       - VLESS-1Q
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP-1G
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇩🇪 德国-法兰克福-004-1H
+      - VLESS-2J
+      - 🇩🇪 德国-法兰克福-002-1L
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HK-1D
+      - VLESS-2L
+      - VLESS-1L
+      - VLESS-2N
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1L
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇩🇪 德国-法兰克福-004-1L
+      - VLESS-2I
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 US-1J
+      - 🇯🇵 JP-1I
+      - 🇺🇸 美国 抗封线-1G
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇺🇸 美国 抗封线-1E
       - 🇯🇵 JP-1E
       - 🇭🇰 HK-1I
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 US-1I
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇭🇰 HONG KONG 01-1J
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JP-1I
-      - VLESS-1P
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇺🇸 美国 抗封线-1E
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇺🇸 US-1A
-      - 🇺🇸 US-1C
-      - 🇩🇪 德国-法兰克福-004-1J
+      - VLESS-2P
       - 🇩🇪 德国-法兰克福-004-1G
-      - VLESS-1Y
-      - VLESS-1V
-      - VLESS-2J
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-002-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇯🇵 JP-1F
-      - 🇯🇵 JP-1B
-      - 🇩🇪 德国-法兰克福-003-1N
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - VLESS-1U
-      - 🇭🇰 HK-1C
-      - 🇭🇰 HK-1A
-      - 🇺🇸 US-1G
-      - 🇩🇪 德国-法兰克福-002-1H
-      - VLESS-1x
-      - VLESS-2I
-      - VLESS-1B
-      - 🇺🇸 美国 抗封线-1H
-      - 🇭🇰 HK-1B
-      - 🇩🇪 德国-法兰克福-004-1H
-      - VLESS-1C
-      - 🇩🇪 德国-法兰克福-003-1B
+      - B1-PCA
+      - 🇺🇸 US-1I
+      - 🇩🇪 德国-法兰克福-002-1J
       - VLESS-1M
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HK-1E
-      - 🇺🇸 US-1E
-      - 🇩🇪 德国-法兰克福-002-1C
-      - VLESS-1Z
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1M
-      - 🇯🇵 JP-1G
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇩🇪 德国-法兰克福-001-1O
-      - 🇺🇸 US-1D
-      - VLESS-2D
-      - 🇯🇵 JP-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - VLESS-2E
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇩🇪 德国-法兰克福-004-1N
-      - VLESS-1E
-      - 🇩🇪 德国-法兰克福-001-1I
-      - VLESS-2K
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HK-1F
-      - 🇯🇵 JP-1D
-      - 🇭🇰 HONG KONG 01-1O
-      - VLESS-2B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - VLESS-2C
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-004-1M
-      - 🇭🇰 HONG KONG 01-1E
-      - VLESS-1T
-      - VLESS-2O
-      - 🇩🇪 德国-法兰克福-004-1D
-      - VLESS-1N
-      - VLESS-2G
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇭🇰 HONG KONG 01-1D
-      - G I C A B N H T H N
-      - 🇩🇪 德国-法兰克福-001-1M
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - VLESS-1S
-      - 🇩🇪 德国-法兰克福-002-1I
-      - VLESS-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇺🇸 美国 抗封线-1B
-      - VLESS-1G
-      - VLESS-1F
-      - VLESS-2N
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇺🇸 美国 抗封线-1G
-      - VLESS-1K
-      - 🇩🇪 德国-法兰克福-001-1F
-      - VLESS-2M
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 中国-北京-线路1
-      - 🇺🇸 US-1B
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-003-1K
       - 🇩🇪 德国-法兰克福-001-1J
-      - VLESS-1H
-      - 🇺🇸 美国 抗封线-1C
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国 抗封线-1A
-      - 🇩🇪 德国-法兰克福-002-1N
+      - VLESS-1Z
+      - 🇩🇪 德国-法兰克福-003-1C
+      - VLESS-1R
+      - VLESS-1P
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇺🇸 US-1A
+      - VLESS-1I
+      - G I C A B N H T H N
+      - 🇭🇰 HK-1A
+      - VLESS-2H
+      - VLESS-2O
       - 🇩🇪 德国-法兰克福-003-1I
-      - 🇺🇸 US-1H
-      - VLESS-1J
-      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-001-1K
+      - VLESS-1x
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 德国-法兰克福-001-1L
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇯🇵 JP-1D
+      - 🇩🇪 德国-法兰克福-002-1K
+      - VLESS-2G
+      - 🇭🇰 HONG KONG 01-1K
+      - 🇺🇸 美国 抗封线-1F
+      - VLESS-1H
+      - VLESS-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 美国 抗封线-1C
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VLESS-1W
-      - MH-BRW
-      - 🇨🇳 中国联通节点1
-      - 🇭🇰 HK-1D
-      - 🇩🇪 德国-法兰克福-002-1M
-      - 🇩🇪 德国-法兰克福-001-1N
-      - VLESS-2H
-      - 🇭🇰 HK-1G
-      - 🇺🇸 美国 抗封线-1F
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇯🇵 JP-1H
-      - VLESS-1I
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JP-1C
-      - 🇺🇸 US-1F
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - B5-GHN
-      - 🇩🇪 德国-法兰克福-003-1O
-      - 🇺🇸 美国 抗封线-1D
       - 🇩🇪 德国-法兰克福-004-1E
-      - VLESS-1R
-      - 🇭🇰 HK-1H
-      - VLESS-2F
+      - VLESS-1Y
+      - VLESS-1B
+      - 中国-北京-线路1
+      - VLESS-2B
       - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇮🇳 印度-中转2区2x
-      - VLESS-2A
+      - VLESS-1K
+      - 🇭🇰 HK-1C
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国 抗封线-1H
+      - VLESS-2F
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇭🇰 HONG KONG 01-1D
+      - VLESS-2C
+      - 🇺🇸 US-1D
       - VLESS-1O
-      - VLESS-1L
+      - MJ-INZ
+      - VLESS-1W
       - 🇩🇪 德国-法兰克福-004-1K
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1O
-      - 🇭🇰 HONG KONG 01-1K
-      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 JP-1B
+      - 🇺🇸 US-1G
+      - 🇺🇸 美国 抗封线-1A
+      - 🇭🇰 HK-1F
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 德国-法兰克福-001-1A
       - VLESS-1A
-      - VLESS-2L
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇭🇰 HK-1E
+      - 🇭🇰 HONG KONG 01-1R
+      - VLESS-1J
+      - 🇺🇸 US-1C
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇭🇰 HONG KONG 01-1C
+      - VLESS-2K
+      - 🇺🇸 美国 抗封线-1B
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇮🇳 印度-中转2区2x
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇭🇰 HK-1J
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇨🇳 中国联通节点1
+      - VLESS-1F
+      - 🇯🇵 JP-1A
+      - 🇺🇸 US-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - VLESS-2A
+      - VLESS-1V
+      - 🇭🇰 HONG KONG 01-1J
+      - VLESS-1S
+      - 🇹🇼 台湾高速节点3
+      - VLESS-2D
+      - VLESS-2E
+      - VLESS-1E
+      - 🇯🇵 JP-1J
+      - 🇭🇰 HK-1B
+      - 🇯🇵 JP-1F
+      - VLESS-1U
+      - 🇯🇵 JP-1C
+      - VLESS-1T
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇩🇪 德国-法兰克福-001-1H
+      - VLESS-1G
+      - 🇯🇵 JP-1H
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 抗封线-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - VLESS-1N
+      - 🇭🇰 HK-1H
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-1G
+      - 🇺🇸 US-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇹🇼 台湾高速节点2
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇩🇪 德国-法兰克福-002-1F
+      - VLESS-1D
+      - VLESS-2M
+      - 🇺🇸 US-1F
+      - 🇺🇸 US-1E
+      - 🇩🇪 德国-法兰克福-003-1G
       - VLESS-1Q
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP-1G
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇩🇪 德国-法兰克福-004-1H
+      - VLESS-2J
+      - 🇩🇪 德国-法兰克福-002-1L
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HK-1D
+      - VLESS-2L
+      - VLESS-1L
+      - VLESS-2N
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1L
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇩🇪 德国-法兰克福-004-1L
+      - VLESS-2I
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 US-1J
+      - 🇯🇵 JP-1I
+      - 🇺🇸 美国 抗封线-1G
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇺🇸 美国 抗封线-1E
       - 🇯🇵 JP-1E
       - 🇭🇰 HK-1I
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 US-1I
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇭🇰 HONG KONG 01-1J
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JP-1I
-      - VLESS-1P
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇺🇸 美国 抗封线-1E
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇺🇸 US-1A
-      - 🇺🇸 US-1C
-      - 🇩🇪 德国-法兰克福-004-1J
+      - VLESS-2P
       - 🇩🇪 德国-法兰克福-004-1G
-      - VLESS-1Y
-      - VLESS-1V
-      - VLESS-2J
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-002-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇯🇵 JP-1F
-      - 🇯🇵 JP-1B
-      - 🇩🇪 德国-法兰克福-003-1N
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - VLESS-1U
-      - 🇭🇰 HK-1C
-      - 🇭🇰 HK-1A
-      - 🇺🇸 US-1G
-      - 🇩🇪 德国-法兰克福-002-1H
-      - VLESS-1x
-      - VLESS-2I
-      - VLESS-1B
-      - 🇺🇸 美国 抗封线-1H
-      - 🇭🇰 HK-1B
-      - 🇩🇪 德国-法兰克福-004-1H
-      - VLESS-1C
-      - 🇩🇪 德国-法兰克福-003-1B
+      - B1-PCA
+      - 🇺🇸 US-1I
+      - 🇩🇪 德国-法兰克福-002-1J
       - VLESS-1M
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HK-1E
-      - 🇺🇸 US-1E
-      - 🇩🇪 德国-法兰克福-002-1C
-      - VLESS-1Z
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1M
-      - 🇯🇵 JP-1G
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇩🇪 德国-法兰克福-001-1O
-      - 🇺🇸 US-1D
-      - VLESS-2D
-      - 🇯🇵 JP-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - VLESS-2E
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇩🇪 德国-法兰克福-004-1N
-      - VLESS-1E
-      - 🇩🇪 德国-法兰克福-001-1I
-      - VLESS-2K
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HK-1F
-      - 🇯🇵 JP-1D
-      - 🇭🇰 HONG KONG 01-1O
-      - VLESS-2B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - VLESS-2C
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-004-1M
-      - 🇭🇰 HONG KONG 01-1E
-      - VLESS-1T
-      - VLESS-2O
-      - 🇩🇪 德国-法兰克福-004-1D
-      - VLESS-1N
-      - VLESS-2G
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇭🇰 HONG KONG 01-1D
-      - G I C A B N H T H N
-      - 🇩🇪 德国-法兰克福-001-1M
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - VLESS-1S
-      - 🇩🇪 德国-法兰克福-002-1I
-      - VLESS-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇺🇸 美国 抗封线-1B
-      - VLESS-1G
-      - VLESS-1F
-      - VLESS-2N
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇺🇸 美国 抗封线-1G
-      - VLESS-1K
-      - 🇩🇪 德国-法兰克福-001-1F
-      - VLESS-2M
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 中国-北京-线路1
-      - 🇺🇸 US-1B
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-003-1K
       - 🇩🇪 德国-法兰克福-001-1J
-      - VLESS-1H
-      - 🇺🇸 美国 抗封线-1C
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国 抗封线-1A
-      - 🇩🇪 德国-法兰克福-002-1N
+      - VLESS-1Z
+      - 🇩🇪 德国-法兰克福-003-1C
+      - VLESS-1R
+      - VLESS-1P
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇺🇸 US-1A
+      - VLESS-1I
+      - G I C A B N H T H N
+      - 🇭🇰 HK-1A
+      - VLESS-2H
+      - VLESS-2O
       - 🇩🇪 德国-法兰克福-003-1I
-      - 🇺🇸 US-1H
-      - VLESS-1J
-      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-001-1K
+      - VLESS-1x
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 德国-法兰克福-001-1L
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇯🇵 JP-1D
+      - 🇩🇪 德国-法兰克福-002-1K
+      - VLESS-2G
+      - 🇭🇰 HONG KONG 01-1K
+      - 🇺🇸 美国 抗封线-1F
+      - VLESS-1H
+      - VLESS-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 美国 抗封线-1C
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1375,168 +1343,164 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - VLESS-1W
-      - MH-BRW
-      - 🇨🇳 中国联通节点1
-      - 🇭🇰 HK-1D
-      - 🇩🇪 德国-法兰克福-002-1M
-      - 🇩🇪 德国-法兰克福-001-1N
-      - VLESS-2H
-      - 🇭🇰 HK-1G
-      - 🇺🇸 美国 抗封线-1F
-      - 🇩🇪 德国-法兰克福-002-1J
-      - 🇯🇵 JP-1H
-      - VLESS-1I
-      - 🇩🇪 德国-法兰克福-001-1H
-      - 🇩🇪 德国-法兰克福-004-1C
-      - 🇯🇵 JP-1C
-      - 🇺🇸 US-1F
-      - 🇩🇪 德国-法兰克福-002-1L
-      - 🇭🇰 HONG KONG 01-1H
-      - B5-GHN
-      - 🇩🇪 德国-法兰克福-003-1O
-      - 🇺🇸 美国 抗封线-1D
       - 🇩🇪 德国-法兰克福-004-1E
-      - VLESS-1R
-      - 🇭🇰 HK-1H
-      - VLESS-2F
+      - VLESS-1Y
+      - VLESS-1B
+      - 中国-北京-线路1
+      - VLESS-2B
       - 🇭🇰 HONG KONG 01-1A
-      - 🇩🇪 德国-法兰克福-001-1E
-      - 🇮🇳 印度-中转2区2x
-      - VLESS-2A
+      - VLESS-1K
+      - 🇭🇰 HK-1C
+      - 🇭🇰 HONG KONG 01-1M
+      - 🇩🇪 德国-法兰克福-003-1H
+      - 🇭🇰 HONG KONG 01-1I
+      - 🇩🇪 德国-法兰克福-001-1C
+      - 🇺🇸 美国 抗封线-1H
+      - VLESS-2F
+      - 🇩🇪 德国-法兰克福-001-1G
+      - 🇭🇰 HONG KONG 01-1D
+      - VLESS-2C
+      - 🇺🇸 US-1D
       - VLESS-1O
-      - VLESS-1L
+      - MJ-INZ
+      - VLESS-1W
       - 🇩🇪 德国-法兰克福-004-1K
-      - 🇺🇸 美国高速节点1
-      - 🇩🇪 德国-法兰克福-004-1O
-      - 🇭🇰 HONG KONG 01-1K
-      - 🇹🇼 台湾高速节点2
+      - 🇯🇵 JP-1B
+      - 🇺🇸 US-1G
+      - 🇺🇸 美国 抗封线-1A
+      - 🇭🇰 HK-1F
+      - 🇭🇰 HONG KONG 01-1B
+      - 🇩🇪 德国-法兰克福-001-1A
       - VLESS-1A
-      - VLESS-2L
+      - 🇩🇪 德国-法兰克福-004-1J
+      - 🇭🇰 HK-1E
+      - 🇭🇰 HONG KONG 01-1R
+      - VLESS-1J
+      - 🇺🇸 US-1C
+      - 🇩🇪 德国-法兰克福-004-1F
+      - 🇹🇼 台湾高速节点
+      - 🇭🇰 HONG KONG 01-1C
+      - VLESS-2K
+      - 🇺🇸 美国 抗封线-1B
+      - 🇩🇪 德国-法兰克福-002-1C
+      - 🇮🇳 印度-中转2区2x
+      - 🇩🇪 德国-法兰克福-004-1C
+      - 🇩🇪 德国-法兰克福-002-1I
+      - 🇭🇰 HK-1J
+      - 🇺🇸 美国-洛杉矶-PRO-1A
+      - 🇩🇪 德国-法兰克福-001-1E
+      - 🇨🇳 中国联通节点1
+      - VLESS-1F
+      - 🇯🇵 JP-1A
+      - 🇺🇸 US-1B
+      - 🇩🇪 德国-法兰克福-001-1B
+      - VLESS-2A
+      - VLESS-1V
+      - 🇭🇰 HONG KONG 01-1J
+      - VLESS-1S
+      - 🇹🇼 台湾高速节点3
+      - VLESS-2D
+      - VLESS-2E
+      - VLESS-1E
+      - 🇯🇵 JP-1J
+      - 🇭🇰 HK-1B
+      - 🇯🇵 JP-1F
+      - VLESS-1U
+      - 🇯🇵 JP-1C
+      - VLESS-1T
+      - 🇭🇰 HONG KONG 01-1O
+      - 🇩🇪 德国-法兰克福-001-1H
+      - VLESS-1G
+      - 🇯🇵 JP-1H
+      - 🇩🇪 德国-法兰克福-001-1D
+      - 🇺🇸 美国高速节点1
+      - 🇺🇸 美国 抗封线-1D
+      - 🇩🇪 德国-法兰克福-002-1D
+      - VLESS-1N
+      - 🇭🇰 HK-1H
+      - 🇩🇪 德国-法兰克福-002-1H
+      - 🇭🇰 HK-1G
+      - 🇺🇸 US-1H
+      - 🇩🇪 德国-法兰克福-003-1B
+      - 🇭🇰 HONG KONG 01-1L
+      - 🇹🇼 台湾高速节点2
+      - 🇭🇰 HONG KONG 01-1N
+      - 🇩🇪 德国-法兰克福-002-1F
+      - VLESS-1D
+      - VLESS-2M
+      - 🇺🇸 US-1F
+      - 🇺🇸 US-1E
+      - 🇩🇪 德国-法兰克福-003-1G
       - VLESS-1Q
+      - 🇭🇰 HONG KONG 01-1Q
+      - 🇩🇪 德国-法兰克福-004-1D
+      - 🇯🇵 JP-1G
+      - 🇭🇰 HONG KONG 01-1P
+      - 🇩🇪 德国-法兰克福-004-1H
+      - VLESS-2J
+      - 🇩🇪 德国-法兰克福-002-1L
+      - 🇩🇪 德国-法兰克福-003-1D
+      - 🇩🇪 德国-法兰克福-004-1A
+      - 🇭🇰 HK-1D
+      - VLESS-2L
+      - VLESS-1L
+      - VLESS-2N
+      - 🇩🇪 德国-法兰克福-002-1A
+      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1L
+      - 🇺🇸 美国-洛杉矶-PRO-1B
+      - 🇩🇪 德国-法兰克福-004-1L
+      - VLESS-2I
+      - 🇭🇰 HONG KONG 01-1E
+      - 🇩🇪 德国-法兰克福-001-1F
+      - 🇩🇪 德国-法兰克福-003-1E
+      - 🇺🇸 US-1J
+      - 🇯🇵 JP-1I
+      - 🇺🇸 美国 抗封线-1G
+      - 🇩🇪 德国-法兰克福-002-1B
+      - 🇩🇪 德国-法兰克福-003-1F
+      - 🇺🇸 美国 抗封线-1E
       - 🇯🇵 JP-1E
       - 🇭🇰 HK-1I
-      - 🇩🇪 德国-法兰克福-003-1C
-      - 🇺🇸 US-1I
-      - 🇩🇪 德国-法兰克福-003-1D
-      - 🇩🇪 德国-法兰克福-001-1K
-      - 🇩🇪 德国-法兰克福-004-1L
-      - 🇭🇰 HONG KONG 01-1P
-      - 🇭🇰 HONG KONG 01-1J
-      - 🇩🇪 德国-法兰克福-002-1F
-      - 🇩🇪 德国-法兰克福-003-1J
-      - 🇩🇪 德国-法兰克福-001-1D
-      - 🇯🇵 JP-1I
-      - VLESS-1P
-      - 🇩🇪 德国-法兰克福-001-1G
-      - 🇺🇸 美国 抗封线-1E
-      - 🇭🇰 HONG KONG 01-1F
-      - 🇺🇸 US-1A
-      - 🇺🇸 US-1C
-      - 🇩🇪 德国-法兰克福-004-1J
+      - VLESS-2P
       - 🇩🇪 德国-法兰克福-004-1G
-      - VLESS-1Y
-      - VLESS-1V
-      - VLESS-2J
-      - 🇩🇪 德国-法兰克福-002-1G
-      - 🇩🇪 德国-法兰克福-002-1O
-      - 🇩🇪 德国-法兰克福-002-1E
-      - 🇩🇪 德国-法兰克福-001-1L
-      - 🇯🇵 JP-1F
-      - 🇯🇵 JP-1B
-      - 🇩🇪 德国-法兰克福-003-1N
-      - 🇩🇪 德国-法兰克福-002-1K
-      - 🇩🇪 德国-法兰克福-004-1A
-      - 🇩🇪 德国-法兰克福-002-1B
-      - VLESS-1U
-      - 🇭🇰 HK-1C
-      - 🇭🇰 HK-1A
-      - 🇺🇸 US-1G
-      - 🇩🇪 德国-法兰克福-002-1H
-      - VLESS-1x
-      - VLESS-2I
-      - VLESS-1B
-      - 🇺🇸 美国 抗封线-1H
-      - 🇭🇰 HK-1B
-      - 🇩🇪 德国-法兰克福-004-1H
-      - VLESS-1C
-      - 🇩🇪 德国-法兰克福-003-1B
+      - B1-PCA
+      - 🇺🇸 US-1I
+      - 🇩🇪 德国-法兰克福-002-1J
       - VLESS-1M
-      - 🇹🇼 台湾高速节点
-      - 🇭🇰 HK-1E
-      - 🇺🇸 US-1E
-      - 🇩🇪 德国-法兰克福-002-1C
-      - VLESS-1Z
-      - 🇩🇪 德国-法兰克福-001-1A
-      - 🇩🇪 德国-法兰克福-003-1M
-      - 🇯🇵 JP-1G
-      - 🇩🇪 德国-法兰克福-003-1G
-      - 🇩🇪 德国-法兰克福-001-1O
-      - 🇺🇸 US-1D
-      - VLESS-2D
-      - 🇯🇵 JP-1A
-      - 🇩🇪 德国-法兰克福-004-1B
-      - VLESS-2E
-      - 🇭🇰 HONG KONG 01-1I
-      - 🇩🇪 德国-法兰克福-003-1F
-      - 🇩🇪 德国-法兰克福-004-1N
-      - VLESS-1E
-      - 🇩🇪 德国-法兰克福-001-1I
-      - VLESS-2K
-      - 🇩🇪 德国-法兰克福-003-1H
-      - 🇭🇰 HK-1F
-      - 🇯🇵 JP-1D
-      - 🇭🇰 HONG KONG 01-1O
-      - VLESS-2B
-      - 🇩🇪 德国-法兰克福-002-1D
-      - VLESS-2C
-      - 🇭🇰 HONG KONG 01-1G
-      - 🇩🇪 德国-法兰克福-004-1M
-      - 🇭🇰 HONG KONG 01-1E
-      - VLESS-1T
-      - VLESS-2O
-      - 🇩🇪 德国-法兰克福-004-1D
-      - VLESS-1N
-      - VLESS-2G
-      - 🇭🇰 HONG KONG 01-1M
-      - 🇭🇰 HONG KONG 01-1D
-      - G I C A B N H T H N
-      - 🇩🇪 德国-法兰克福-001-1M
-      - 🇩🇪 德国-法兰克福-001-1C
-      - 🇭🇰 HONG KONG 01-1C
-      - VLESS-1S
-      - 🇩🇪 德国-法兰克福-002-1I
-      - VLESS-1D
-      - 🇩🇪 德国-法兰克福-004-1F
-      - 🇺🇸 美国 抗封线-1B
-      - VLESS-1G
-      - VLESS-1F
-      - VLESS-2N
-      - 🇭🇰 HONG KONG 01-1L
-      - 🇩🇪 德国-法兰克福-003-1L
-      - 🇺🇸 美国 抗封线-1G
-      - VLESS-1K
-      - 🇩🇪 德国-法兰克福-001-1F
-      - VLESS-2M
-      - 🇭🇰 HONG KONG 01-1N
-      - 🇩🇪 德国-法兰克福-004-1I
-      - 中国-北京-线路1
-      - 🇺🇸 US-1B
-      - 🇩🇪 德国-法兰克福-003-1E
-      - 🇩🇪 德国-法兰克福-002-1A
-      - 🇩🇪 德国-法兰克福-003-1K
       - 🇩🇪 德国-法兰克福-001-1J
-      - VLESS-1H
-      - 🇺🇸 美国 抗封线-1C
-      - 🇭🇰 HONG KONG 01-1B
-      - 🇩🇪 德国-法兰克福-001-1B
-      - 🇹🇼 台湾高速节点3
-      - 🇺🇸 美国 抗封线-1A
-      - 🇩🇪 德国-法兰克福-002-1N
+      - VLESS-1Z
+      - 🇩🇪 德国-法兰克福-003-1C
+      - VLESS-1R
+      - VLESS-1P
+      - 🇩🇪 德国-法兰克福-002-1E
+      - 🇩🇪 德国-法兰克福-004-1I
+      - 🇺🇸 US-1A
+      - VLESS-1I
+      - G I C A B N H T H N
+      - 🇭🇰 HK-1A
+      - VLESS-2H
+      - VLESS-2O
       - 🇩🇪 德国-法兰克福-003-1I
-      - 🇺🇸 US-1H
-      - VLESS-1J
-      - 🇩🇪 德国-法兰克福-003-1A
+      - 🇩🇪 德国-法兰克福-003-1K
+      - 🇩🇪 德国-法兰克福-004-1B
+      - 🇩🇪 德国-法兰克福-003-1J
+      - 🇩🇪 德国-法兰克福-001-1K
+      - VLESS-1x
+      - 🇩🇪 德国-法兰克福-002-1G
+      - 🇭🇰 HONG KONG 01-1F
+      - 🇩🇪 德国-法兰克福-001-1L
+      - 🇩🇪 德国-法兰克福-001-1I
+      - 🇭🇰 HONG KONG 01-1G
+      - 🇯🇵 JP-1D
+      - 🇩🇪 德国-法兰克福-002-1K
+      - VLESS-2G
+      - 🇭🇰 HONG KONG 01-1K
+      - 🇺🇸 美国 抗封线-1F
+      - VLESS-1H
+      - VLESS-1C
+      - 🇭🇰 HONG KONG 01-1H
+      - 🇺🇸 美国 抗封线-1C
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
